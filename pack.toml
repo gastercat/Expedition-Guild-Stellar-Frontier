@@ -1,0 +1,13 @@
+name = "Expedition Guild Stellar Frontier"
+author = "gastercat"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "9ac1de23f4e48637f9174629407f6254ac889004fdbf540125aa22397def3450"
+
+[versions]
+forge = "47.4.10"
+minecraft = "1.20.1"

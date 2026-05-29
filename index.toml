@@ -1,0 +1,88 @@
+hash-format = "sha256"
+
+[[files]]
+file = "COMPATIBILITY.md"
+hash = "a9d44d3412703d00babb4945765fcb0dd8b5b4113a8e59c62cc54f1825eaa401"
+
+[[files]]
+file = "MODLIST.md"
+hash = "b6878bb6169ddae95fa7d5dd8d15a577c048405daf52aa7abd70fdd263093241"
+
+[[files]]
+file = "QUEST_DESIGN.md"
+hash = "466ddc4a5f4e02439b1217d13ad7f08131e877e110f16d5f90ccd0077a7107a3"
+
+[[files]]
+file = "README.md"
+hash = "974734484df093c4c9547f3f0db2e51e9f4a6f8f95d1d3ad7b0c611c816639fa"
+
+[[files]]
+file = "SERVER_TEST_PROTOCOL.md"
+hash = "0eee68056b06a533f6513efbe1ccfbf632132ff10d5eca92e76900da432f2ed1"
+
+[[files]]
+file = "add_phase1_core_mods.sh"
+hash = "9e8966692e46d88afc3f9e427d59fbf3bfca6967285b38045b605e1ea2e9c76e"
+
+[[files]]
+file = "docs/ad_astra_compatibility_notes.md"
+hash = "20cd515c0464b3764e37cbc1817b1f693fe7f08e84ec4bedc593356fff584b46"
+
+[[files]]
+file = "docs/player_roles.md"
+hash = "bd7524b502486d266ed3dcc6bd6d13407e69ae339155a4fcfcd8094eed541e56"
+
+[[files]]
+file = "docs/progression_map.md"
+hash = "1740df9ca59b7b6aa9f6c1229ee480b50cc78ba7252db9e1e595f62725d2f68d"
+
+[[files]]
+file = "docs/testing_checklist.md"
+hash = "d64da7d153f57d913d9a48367fecc4e83b83361e6b180a0d0456ea52ad15742e"
+
+[[files]]
+file = "mods/clumps.pw.toml"
+hash = "903352ffbd84d4b95fed905893f4715d9c3f88ec9fff6fb06f6e359e0b839dc3"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
+metafile = true
+
+[[files]]
+file = "mods/embeddium.pw.toml"
+hash = "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "c9081708402e1fd5e5936c3119a43717c0fd51185f940faa79dbbd8670d55a40"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "902bac905b93271f02bd0951a22bac06a3da24f5c237fcaeb469e14a7679e508"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "db5b0e49607113eb8740838753460e6d2f8c718828fcc52b9fefd13adc4e4cae"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "fc70f2509f3a5d82504637fe781c30d10de0dec31e73a2a0245cf90532879969"
+metafile = true
+
+[[files]]
+file = "scripts/check_duplicate_mods.py"
+hash = "bc793afc11e1b713bf9bebb4ec8bf62e7b4c670ba5ebaf531b8be4ba389f0c8b"
+
+[[files]]
+file = "scripts/check_modlist.py"
+hash = "20978257c7a577764bd388a45ffe2316018bcdb33eec090a6eac6f75f2653c68"
+
+[[files]]
+file = "scripts/validate_pack_structure.py"
+hash = "7087b7411a171c8ac57cdef54111dc515e7cd7e0b38709ee1a41cd0fc0c5bb99"
