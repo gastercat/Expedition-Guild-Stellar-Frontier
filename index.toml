@@ -22,11 +22,11 @@ hash = "0eee68056b06a533f6513efbe1ccfbf632132ff10d5eca92e76900da432f2ed1"
 
 [[files]]
 file = "add_phase1_ad_astra_mods.sh"
-hash = "186d6c6c5b92ad3d4f6148d8859815c2f4aed55b477ffc5b33e971846d539a52"
+hash = "b2d6e727e47e2691813b60fb6e502b8d5cdcb2ad4aab59d8f74e3d75272b1417"
 
 [[files]]
 file = "add_phase1_core_mods.sh"
-hash = "9e8966692e46d88afc3f9e427d59fbf3bfca6967285b38045b605e1ea2e9c76e"
+hash = "b5d2853ddf655b7588f84ea14554b217f84d16cd246ecc82a63351fb14ff7337"
 
 [[files]]
 file = "docs/ad_astra_compatibility_notes.md"
@@ -45,8 +45,28 @@ file = "docs/testing_checklist.md"
 hash = "d64da7d153f57d913d9a48367fecc4e83b83361e6b180a0d0456ea52ad15742e"
 
 [[files]]
+file = "mods/ad-astra.pw.toml"
+hash = "da42d2a6e6e3f7bd10df625ab23d6ba8a50ecb3545c1c3c6bda4f826caa5d51b"
+metafile = true
+
+[[files]]
+file = "mods/botarium.pw.toml"
+hash = "008c942efc2e2ec221dd1a760b4a50e2f24ede37747731ba794f5e845554adcb"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "e3dd03e7fec88831974857e2cdded54dd5c5bdcaa3f6d6248c2800e82db4dd41"
+metafile = true
+
+[[files]]
 file = "mods/clumps.pw.toml"
 hash = "903352ffbd84d4b95fed905893f4715d9c3f88ec9fff6fb06f6e359e0b839dc3"
+metafile = true
+
+[[files]]
+file = "mods/create-ad-astra-compatibility.pw.toml"
+hash = "b5cf8113a1e183014c447f667676d0f9aef078c22ec195d50c58df72b8f596dd"
 metafile = true
 
 [[files]]
@@ -77,6 +97,16 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "fc70f2509f3a5d82504637fe781c30d10de0dec31e73a2a0245cf90532879969"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-config.pw.toml"
+hash = "e242387207a2538b5ccb55697174c65e549e1eb2fef9da37e1ad3734e0372b65"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "ef0264b7d819848f72ab2f34643306187e712965a8246e1f733e1bd39d8fd681"
 metafile = true
 
 [[files]]
