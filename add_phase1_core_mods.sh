@@ -23,9 +23,12 @@ packwiz modrinth add clumps
 # - Choose Minecraft 1.20.1
 # - Choose Forge
 # - Avoid Create 6 if packwiz offers it
-packwiz modrinth add create
+# Create core - locked to 1.20.1 0.5.1j
+# CurseForge Project ID: 328085
+# CurseForge File ID: 5838779
+packwiz curseforge add --addon-id 328085 --file-id 5838779
+packwiz pin create
 
 echo "Refreshing pack index..."
 packwiz refresh
-
 echo "Done. Run: packwiz list"

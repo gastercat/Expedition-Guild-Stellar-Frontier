@@ -21,6 +21,10 @@ file = "SERVER_TEST_PROTOCOL.md"
 hash = "0eee68056b06a533f6513efbe1ccfbf632132ff10d5eca92e76900da432f2ed1"
 
 [[files]]
+file = "add_phase1_ad_astra_mods.sh"
+hash = "186d6c6c5b92ad3d4f6148d8859815c2f4aed55b477ffc5b33e971846d539a52"
+
+[[files]]
 file = "add_phase1_core_mods.sh"
 hash = "9e8966692e46d88afc3f9e427d59fbf3bfca6967285b38045b605e1ea2e9c76e"
 
@@ -47,7 +51,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
+hash = "f41389f9500b106cecf0a83d2fc68b0730036af50ceb9ef8682ac7f70b325560"
 metafile = true
 
 [[files]]
