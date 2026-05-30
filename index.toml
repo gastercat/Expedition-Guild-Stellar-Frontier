@@ -89,52 +89,13 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
 
 [[files]]
-file = "docs/EXPLORATION_TEST_NOTES.md"
-hash = "41f6676ca16590561f22e279126ba2da3b549f269f616d7359e0b8c01832d7ca"
-
-[[files]]
-file = "docs/MULTIPLAYER_TEST_NOTES.md"
-hash = "79eb87f1d9c7473dde760e11cc61962c1e13a635554bd5efd40d69d614af552a"
-
-[[files]]
-file = "docs/PHASE_STATUS.md"
-hash = "cb526718f9e5691f3fd7a27c3f26b133f0c65fb1901a21afde9421a9db093961"
-
-[[files]]
-file = "docs/QUEST_TEST_NOTES.md"
-hash = "09e667598828fe30fa21b20eccd8f83ba48398a16fb04d775227329ed3e9f398"
-
-[[files]]
-file = "docs/RUNTIME_TEST_PLAN.md"
-hash = "f8342373de02457140243a68c1393ac408ba2daef1fe33b775ee6bfbc7302a7c"
-
-[[files]]
-file = "docs/ad_astra_compatibility_notes.md"
-hash = "c2ee762251a48a717ff4c5dd176e2486fa2582a03a7b97f29af1754ed01b97df"
-
-[[files]]
-file = "docs/design/questline.md"
-hash = "3eb23079f86219472c18708083dc473ef4b388a7b2385545c5213c82988719f9"
-
-[[files]]
-file = "docs/player_roles.md"
-hash = "bd7524b502486d266ed3dcc6bd6d13407e69ae339155a4fcfcd8094eed541e56"
-
-[[files]]
-file = "docs/progression_map.md"
-hash = "1740df9ca59b7b6aa9f6c1229ee480b50cc78ba7252db9e1e595f62725d2f68d"
-
-[[files]]
-file = "docs/test-reports/v0.2.0-alpha-pretest.md"
-hash = "fa06119ee6ec0eec3e2c683b8c10c45fe83591869586c16ddf11913cf1771d06"
-
-[[files]]
-file = "docs/testing_checklist.md"
-hash = "d64da7d153f57d913d9a48367fecc4e83b83361e6b180a0d0456ea52ad15742e"
-
-[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "5e727d91523c52e5056a57556d63118fe26802d824668c662195c8abf762a265"
+metafile = true
+
+[[files]]
+file = "mods/another-furniture.pw.toml"
+hash = "90b4a61d7ee6099dc34cf85f099299293401b87fc8f3ca07ed59262c1c63c5a5"
 metafile = true
 
 [[files]]
