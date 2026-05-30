@@ -1,0 +1,106 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4"
+	group: ""
+	id: "6762BE44D3AF2A8C"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		description: ["選一片平坦、安全、遠離主要倉庫的區域作為發射場。"]
+		icon: "minecraft:smooth_stone"
+		id: "618D2C3970690F6B"
+		rewards: [{
+			count: 16
+			id: "6C1B9DE338AB650C"
+			item: "minecraft:stone_bricks"
+			type: "item"
+		}]
+		tasks: [{
+			id: "42F23DD3410C6CF3"
+			title: "標出發射場位置"
+			type: "checkmark"
+		}]
+		title: "建立發射場"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["618D2C3970690F6B"]
+		description: ["依照 JEI 查詢 Ad Astra 發射台需求。確認材料後再開始大量製作。"]
+		icon: "minecraft:iron_block"
+		id: "4E34859F2D912802"
+		tasks: [{
+			id: "788318B47C08D9B0"
+			title: "製作並鋪設發射台"
+			type: "checkmark"
+		}]
+		title: "製作發射台"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["4E34859F2D912802"]
+		description: ["確認氧氣相關設備與補給流程。不要在升空前才發現氧氣不足。"]
+		icon: "minecraft:glass_bottle"
+		id: "03A37245E774227B"
+		tasks: [{
+			id: "71D7B77F45B5E152"
+			title: "準備氧氣設備"
+			type: "checkmark"
+		}]
+		title: "準備氧氣設備"
+		x: 3.0d
+		y: -0.8d
+	}, {
+		dependencies: ["4E34859F2D912802"]
+		description: ["確認太空裝備齊全。每位升空成員都要完成裝備檢查。"]
+		icon: "minecraft:iron_chestplate"
+		id: "74D4D89529B627C7"
+		tasks: [{
+			id: "52AD16CD90414E5A"
+			title: "準備太空裝備"
+			type: "checkmark"
+		}]
+		title: "準備太空裝備"
+		x: 3.0d
+		y: 0.8d
+	}, {
+		dependencies: ["03A37245E774227B", "74D4D89529B627C7"]
+		description: ["確認燃料來源、儲存與加注方式。發射前先做一次流程演練。"]
+		icon: "minecraft:bucket"
+		id: "63D174E951A08B2D"
+		rewards: [{
+			count: 4
+			id: "482939BC40315A95"
+			item: "minecraft:copper_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			id: "29B7CA1B4C4C8F95"
+			title: "準備燃料系統"
+			type: "checkmark"
+		}]
+		title: "準備燃料系統"
+		x: 4.5d
+		y: 0.0d
+	}, {
+		dependencies: ["63D174E951A08B2D"]
+		description: ["檢查火箭、燃料、氧氣、裝備、返航補給與隊友位置。"]
+		icon: "minecraft:compass"
+		id: "1C818FBB695A7FB4"
+		rewards: [{
+			count: 6
+			id: "4D5ED81AFA3D901B"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			id: "6E7AB2057D398C0F"
+			title: "完成升空前檢查"
+			type: "checkmark"
+		}]
+		title: "完成升空檢查"
+		x: 6.0d
+		y: 0.0d
+	}]
+	title: "第 4 章：太空準備"
+}

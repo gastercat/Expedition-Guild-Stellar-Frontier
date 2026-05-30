@@ -1,0 +1,119 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3"
+	group: ""
+	id: "72D72786BD06A983"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		description: ["用輸送帶把物品從一台機械送到另一台機械。產線從搬運開始。"]
+		icon: "create:belt_connector"
+		id: "6482124F53E14EF8"
+		rewards: [{
+			count: 8
+			id: "3F48D7B8A90C1451"
+			item: "minecraft:oak_planks"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "20BFB1F21F4B504A"
+			item: "create:belt_connector"
+			title: "取得輸送帶連接器"
+			type: "item"
+		}]
+		title: "建立第一條輸送帶"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["6482124F53E14EF8"]
+		description: ["置物台可以作為機械加工的輸入與輸出點。"]
+		icon: "create:depot"
+		id: "0B4E238E3942B7A1"
+		tasks: [{
+			id: "2B1F7E2B72E9740A"
+			item: "create:depot"
+			title: "製作置物台"
+			type: "item"
+		}]
+		title: "製作置物台"
+		x: 1.5d
+		y: -0.8d
+	}, {
+		dependencies: ["6482124F53E14EF8", "0B4E238E3942B7A1"]
+		description: ["把輸送帶、置物台與機械接在一起，讓物品能自動移動。"]
+		icon: "minecraft:hopper"
+		id: "6F8F822CE2A66919"
+		tasks: [{
+			id: "5D3F6F4FD6244F8D"
+			title: "完成一段基礎搬運系統"
+			type: "checkmark"
+		}]
+		title: "建立基礎搬運系統"
+		x: 3.0d
+		y: -0.8d
+	}, {
+		dependencies: ["6F8F822CE2A66919"]
+		description: ["讓鐵錠自動進入機械壓力機，輸出鐵板。"]
+		icon: "create:iron_sheet"
+		id: "1D6E846235A7D219"
+		rewards: [{
+			count: 4
+			id: "0EF981E61B6A89A0"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "79A239C8FDF419AE"
+			item: "create:iron_sheet"
+			title: "自動產出鐵板"
+			type: "item"
+		}]
+		title: "自動壓製鐵板"
+		x: 4.5d
+		y: -0.8d
+	}, {
+		dependencies: ["1D6E846235A7D219"]
+		description: ["規劃水車、壓力機、倉儲與未來火箭材料加工區。"]
+		icon: "minecraft:bricks"
+		id: "71D601965F68F2DE"
+		tasks: [{
+			id: "7FA387687D272316"
+			title: "標出工業區範圍"
+			type: "checkmark"
+		}]
+		title: "規劃工業區"
+		x: 6.0d
+		y: -0.8d
+	}, {
+		dependencies: ["71D601965F68F2DE"]
+		description: ["太空計畫需要金屬與基礎建材。先建立公會材料庫。"]
+		icon: "minecraft:copper_ingot"
+		id: "5B4E60179DF07206"
+		rewards: [{
+			count: 12
+			id: "49575C67BF0E6228"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			count: 16
+			id: "0D951D4C69E98A5A"
+			item: "minecraft:iron_ingot"
+			title: "儲備鐵錠"
+			type: "item"
+		}, {
+			count: 16
+			id: "4AD340B4E5F26504"
+			item: "minecraft:copper_ingot"
+			title: "儲備銅錠"
+			type: "item"
+		}]
+		title: "儲備太空材料"
+		x: 7.5d
+		y: -0.8d
+	}]
+	title: "第 3 章：工業自動化"
+}

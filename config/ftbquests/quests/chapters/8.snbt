@@ -1,0 +1,51 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "8"
+	group: ""
+	id: "4B61A8F2D0E41793"
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		description: ["公會需要一座穩定的機械工坊。規劃水車、傳動、加工與輸出區，讓隊友看得懂也用得上。"]
+		icon: "create:shaft"
+		id: "2D4F8B8195C3A706"
+		tasks: [{
+			id: "5C0D0E31B4A7E908"
+			title: "標出工程工坊範圍"
+			type: "checkmark"
+		}]
+		title: "遠征公會委託：機械工坊"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["2D4F8B8195C3A706"]
+		description: ["把旋轉力送到至少三個工作點。工程師的第一項任務，是讓基地的動力穩定流動。"]
+		icon: "create:cogwheel"
+		id: "0D5A58C3F7218B44"
+		tasks: [{
+			count: 12
+			id: "426F7A21E68DB052"
+			item: "create:shaft"
+			title: "提交傳動軸材料"
+			type: "item"
+		}]
+		title: "動力診斷：三點傳動"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["0D5A58C3F7218B44"]
+		description: ["向公會展示一條可以重複運作的簡易產線。壓板、搬運或基礎加工都可以。"]
+		icon: "create:mechanical_press"
+		id: "7B89537E26C1F0AD"
+		tasks: [{
+			id: "32E929BA4A2C80C7"
+			title: "完成可展示的工程產線"
+			type: "checkmark"
+		}]
+		title: "工程師展示：基礎產線"
+		x: 3.0d
+		y: 0.0d
+	}]
+	title: "工程師委託 / Engineering Path"
+}

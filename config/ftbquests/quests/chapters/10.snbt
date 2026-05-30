@@ -1,0 +1,51 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "10"
+	group: ""
+	id: "6C05E35F9122A48B"
+	order_index: 10
+	quest_links: [ ]
+	quests: [{
+		description: ["在基地設置公告板，記錄材料需求、遠征目標與隊友分工。單人遊玩時，也可以把它當成自己的工作清單。"]
+		icon: "minecraft:oak_sign"
+		id: "73E6B7DD358EC124"
+		tasks: [{
+			id: "65315E66843884B1"
+			title: "建立公會公告板"
+			type: "checkmark"
+		}]
+		title: "遠征公會公告板"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["73E6B7DD358EC124"]
+		description: ["準備一個隊伍共用補給箱。放入食物、火把、木材與基礎工具，讓下一次出發更快。"]
+		icon: "minecraft:chest"
+		id: "627F5EE3B897C1A0"
+		tasks: [{
+			count: 2
+			id: "2A2D04421739EA79"
+			item: "minecraft:chest"
+			title: "提交補給箱"
+			type: "item"
+		}]
+		title: "補給官委託：遠征補給箱"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["627F5EE3B897C1A0"]
+		description: ["分配工程、探索、補給與太空任務。這不是強迫分工，而是讓公會知道下一步誰要做什麼。"]
+		icon: "minecraft:white_banner"
+		id: "0E740FAEFA37943D"
+		tasks: [{
+			id: "1FC12C4F9E7F430E"
+			title: "完成一次公會分工會議"
+			type: "checkmark"
+		}]
+		title: "多人分工會議"
+		x: 3.0d
+		y: 0.0d
+	}]
+	title: "公會營運 / Guild Path"
+}

@@ -49,6 +49,10 @@ file = "config/ftbquests/quests/chapters/1.snbt"
 hash = "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/10.snbt"
+hash = "bdafbe561c2793107125b2884d6455478e63aa09dda8a97b79153e773c718b52"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/2.snbt"
 hash = "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
 
@@ -71,6 +75,14 @@ hash = "ccaeb73de63c54ba9fd57fef6d2b52aafda33660f44ccfbd9b6e8989c553ca2b"
 [[files]]
 file = "config/ftbquests/quests/chapters/7.snbt"
 hash = "7981342f29cb3e0ac66b58bc23e22af6b1bcf60c6a390e5ff426645b1dec2a01"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/8.snbt"
+hash = "99ffe3ad5bbae02fbfabebcf83bf64e026adddd283a4f72ac789940611d02cf8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/9.snbt"
+hash = "1b02d3279eed725d312873ded5c757f5e4de285007a2ae635eb6e5fa7c80d211"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -113,244 +125,8 @@ file = "docs/progression_map.md"
 hash = "1740df9ca59b7b6aa9f6c1229ee480b50cc78ba7252db9e1e595f62725d2f68d"
 
 [[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/0.snbt"
-hash = "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/1.snbt"
-hash = "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/2.snbt"
-hash = "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/3.snbt"
-hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/4.snbt"
-hash = "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/5.snbt"
-hash = "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/6.snbt"
-hash = "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/7.snbt"
-hash = "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
-
-[[files]]
-file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/0.snbt"
-hash = "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/1.snbt"
-hash = "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/2.snbt"
-hash = "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/3.snbt"
-hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/4.snbt"
-hash = "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/5.snbt"
-hash = "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/6.snbt"
-hash = "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/7.snbt"
-hash = "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/0.snbt"
-hash = "0ed9d7f48bae70e72ab42a74a8edd4ace8251cc82fef369e572f5f1d73eeac4b"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/1.snbt"
-hash = "b6fed1002a5b829e83d9d6ed9094cf0d97225f129d551de530b84b2d4a039261"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/2.snbt"
-hash = "49836a2f5f68cdb3bb1dc6311beccbb7a2d711c7b00be0fc6571219f53d5f40d"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/3.snbt"
-hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/4.snbt"
-hash = "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/5.snbt"
-hash = "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/6.snbt"
-hash = "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/7.snbt"
-hash = "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
-
-[[files]]
-file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/0.snbt"
-hash = "1e9c715ba65febf1de5aa1df47bf194638be4c2ff4337908901a3eb8fcaccaa5"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/1.snbt"
-hash = "e05f35cbbcdb884141cacbedb8cb69ba521f4a40ac0aef2e89753245adcc2058"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/2.snbt"
-hash = "3e030e24555b15ee7faf7e4b6de8c85d90cb5d2b999a7c4d0250d2feac8e2211"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/3.snbt"
-hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/4.snbt"
-hash = "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/5.snbt"
-hash = "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/6.snbt"
-hash = "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/7.snbt"
-hash = "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
-
-[[files]]
-file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/0.snbt"
-hash = "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/1.snbt"
-hash = "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/2.snbt"
-hash = "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/3.snbt"
-hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/4.snbt"
-hash = "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/5.snbt"
-hash = "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/6.snbt"
-hash = "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/7.snbt"
-hash = "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
-
-[[files]]
-file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/0.snbt"
-hash = "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/1.snbt"
-hash = "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/2.snbt"
-hash = "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/3.snbt"
-hash = "cec55983e954438a599c0b6fbac6a146aaba21706d9b33a9206782e76cc56979"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/4.snbt"
-hash = "50e00b22bdefb42469a822e9e7c891bc9c0de6bd480f88cd9d3ef0682fcad395"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/5.snbt"
-hash = "40306a7513b9775a7926c43b68a7fb279bda15a5a5c5b1d982594b9cb31ade0f"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/6.snbt"
-hash = "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/7.snbt"
-hash = "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
-
-[[files]]
-file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+file = "docs/test-reports/v0.2.0-alpha-pretest.md"
+hash = "fa06119ee6ec0eec3e2c683b8c10c45fe83591869586c16ddf11913cf1771d06"
 
 [[files]]
 file = "docs/testing_checklist.md"

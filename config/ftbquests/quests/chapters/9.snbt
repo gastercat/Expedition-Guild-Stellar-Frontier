@@ -1,0 +1,49 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "9"
+	group: ""
+	id: "24BE8A17D9130F6C"
+	order_index: 9
+	quest_links: [ ]
+	quests: [{
+		description: ["探險家先把基地外圍標記清楚。記錄道路、水源、礦區與危險地形，交給公會作為遠征資料。"]
+		icon: "minecraft:filled_map"
+		id: "7F82693C1D40A55E"
+		tasks: [{
+			id: "69F14401C1F5B866"
+			title: "在地圖上標記基地外圍"
+			type: "checkmark"
+		}]
+		title: "遠征公會委託：基地外圍調查"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["7F82693C1D40A55E"]
+		description: ["用 Jade 辨識沿途看到的方塊與模組來源。好的探險報告，要能讓隊友理解資源價值。"]
+		icon: "minecraft:spyglass"
+		id: "12D3E7814C0B6F39"
+		tasks: [{
+			id: "3DEDF229D1CA20A1"
+			title: "完成 Jade 調查紀錄"
+			type: "checkmark"
+		}]
+		title: "Jade 資源調查報告"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["12D3E7814C0B6F39"]
+		description: ["把基地到重要資源點的路線標在地圖上。遠征不是走得遠，而是能安全回來。"]
+		icon: "waystones:waystone"
+		id: "71EB93E0B5B15C44"
+		tasks: [{
+			id: "2924B749E4FA97F1"
+			title: "標記一條安全遠征路線"
+			type: "checkmark"
+		}]
+		title: "遠征安全路線圖"
+		x: 3.0d
+		y: 0.0d
+	}]
+	title: "探險家委託 / Explorer Path"
+}
