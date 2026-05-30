@@ -179,6 +179,11 @@ hash = "db5b0e49607113eb8740838753460e6d2f8c718828fcc52b9fefd13adc4e4cae"
 metafile = true
 
 [[files]]
+file = "mods/macaws-furniture.pw.toml"
+hash = "976e9c737f3dd39812d87bc8dd8082197a77aeb5e08f5082d22643ac36f46a4f"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "fc70f2509f3a5d82504637fe781c30d10de0dec31e73a2a0245cf90532879969"
 metafile = true
