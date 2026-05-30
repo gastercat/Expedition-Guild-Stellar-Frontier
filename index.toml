@@ -94,11 +94,6 @@ hash = "5e727d91523c52e5056a57556d63118fe26802d824668c662195c8abf762a265"
 metafile = true
 
 [[files]]
-file = "mods/another-furniture.pw.toml"
-hash = "90b4a61d7ee6099dc34cf85f099299293401b87fc8f3ca07ed59262c1c63c5a5"
-metafile = true
-
-[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "8d0321177fed4a0b48554c40158b43db62f6cdaa768f584ef6a11575dfaa6223"
 metafile = true
