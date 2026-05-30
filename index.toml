@@ -53,6 +53,10 @@ file = "config/ftbquests/quests/chapters/10.snbt"
 hash = "bdafbe561c2793107125b2884d6455478e63aa09dda8a97b79153e773c718b52"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/11.snbt"
+hash = "e5426f8e57343b7d83c7c86af289f3a46d1848c0f22e0eb91d65298db0619eab"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/2.snbt"
 hash = "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
 
