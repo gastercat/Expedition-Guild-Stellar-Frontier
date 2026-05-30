@@ -1,0 +1,128 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6"
+	group: ""
+	id: "0AA82927A228187F"
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		description: ["抵達月球後，先確認落點安全。記下座標，避免迷路。"]
+		icon: "minecraft:compass"
+		id: "7374CD16E891E04C"
+		rewards: [{
+			count: 8
+			id: "55F949744C37B826"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			id: "3C611046C2F039E1"
+			title: "確認月球登陸地點"
+			type: "checkmark"
+		}]
+		title: "確認登陸地點"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["7374CD16E891E04C"]
+		description: ["先建立可躲避危險的臨時空間。前哨站不需要一開始就很大。"]
+		icon: "minecraft:stone_bricks"
+		id: "5707DF878E13BEA4"
+		tasks: [{
+			count: 16
+			id: "21561F25D1D8A5A7"
+			item: "minecraft:stone_bricks"
+			title: "準備庇護所建材"
+			type: "item"
+		}]
+		title: "建立臨時庇護所"
+		x: 1.5d
+		y: -0.8d
+	}, {
+		dependencies: ["5707DF878E13BEA4"]
+		description: ["確認氧氣補給可用。月球據點要能支援下一次探索。"]
+		icon: "minecraft:glass_bottle"
+		id: "5B2477814D404D5E"
+		tasks: [{
+			id: "2A5E873A3BA7D9B4"
+			title: "確認氧氣補給流程"
+			type: "checkmark"
+		}]
+		title: "設置氧氣補給"
+		x: 3.0d
+		y: -0.8d
+	}, {
+		dependencies: ["5707DF878E13BEA4"]
+		description: ["放置儲物點，集中月球採集物與返航補給。"]
+		icon: "minecraft:chest"
+		id: "5868C7F95EE769D8"
+		rewards: [{
+			count: 4
+			id: "5DB1B35A80F04108"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			count: 2
+			id: "4923FF8D27EEB3D8"
+			item: "minecraft:chest"
+			title: "準備月球儲物箱"
+			type: "item"
+		}]
+		title: "建立月球儲物點"
+		x: 3.0d
+		y: 0.8d
+	}, {
+		dependencies: ["5B2477814D404D5E", "5868C7F95EE769D8"]
+		description: ["在地圖或紀錄中標記月球基地。隊友要能找到這裡。"]
+		icon: "minecraft:filled_map"
+		id: "4D49230E6F5F89AC"
+		tasks: [{
+			id: "57D08714FC947826"
+			title: "標記月球基地位置"
+			type: "checkmark"
+		}]
+		title: "標記月球基地"
+		x: 4.5d
+		y: 0.0d
+	}, {
+		dependencies: ["4D49230E6F5F89AC"]
+		description: ["確認返航路線、燃料、氧氣與隊友狀態。不要把遠征隊留在月球。"]
+		icon: "minecraft:clock"
+		id: "07F07FF0E7D75414"
+		tasks: [{
+			id: "5D83C85994C49506"
+			title: "確認返回流程"
+			type: "checkmark"
+		}]
+		title: "建立返回流程"
+		x: 6.0d
+		y: 0.0d
+	}, {
+		dependencies: ["07F07FF0E7D75414"]
+		description: ["月球前哨站已可辨識、可存放物資，並能支援下一次任務。"]
+		icon: "minecraft:white_banner"
+		id: "34829FDF00C6D3B3"
+		rewards: [{
+			count: 8
+			id: "683187FE1D9A19F5"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}, {
+			count: 8
+			id: "01C0E7EF27776790"
+			item: "minecraft:copper_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			id: "0BD502887E3BE45C"
+			title: "完成月球前哨站"
+			type: "checkmark"
+		}]
+		title: "完成月球前哨站"
+		x: 7.5d
+		y: 0.0d
+	}]
+	title: "第 6 章：月球前哨站"
+}

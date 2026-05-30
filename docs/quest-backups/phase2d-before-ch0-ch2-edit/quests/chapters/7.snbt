@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7"
+	group: ""
+	id: "33E064378887DC57"
+	order_index: 7
+	quest_links: [ ]
+	quests: [{
+		id: "1510D88694F83CDF"
+		tasks: [{
+			id: "5AADD3A2A1AB9DBA"
+			stage: ""
+			title: "擴大組織"
+			type: "gamestage"
+		}]
+		x: 0.0d
+		y: -1.0d
+	}]
+	title: "第7章：組織擴張"
+}

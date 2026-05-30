@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4"
+	group: ""
+	id: "6762BE44D3AF2A8C"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "618D2C3970690F6B"
+		tasks: [{
+			id: "42F23DD3410C6CF3"
+			stage: ""
+			title: "為太空做準備"
+			type: "gamestage"
+		}]
+		x: 0.0d
+		y: -1.0d
+	}]
+	title: "第 4 章：太空準備階段"
+}

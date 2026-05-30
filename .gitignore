@@ -1,0 +1,14 @@
+.DS_Store
+*.mrpack
+*.log
+crash-reports/
+logs/
+run/
+test-instance/
+server/
+.idea/
+.vscode/
+.venv/
+node_modules/
+__pycache__/
+.docker/

@@ -1,0 +1,113 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7"
+	group: ""
+	id: "33E064378887DC57"
+	order_index: 7
+	quest_links: [ ]
+	quests: [{
+		description: ["分配工程、探索、補給、倉儲與太空任務。單人遊玩可規劃自己的工作清單。"]
+		icon: "minecraft:white_banner"
+		id: "1510D88694F83CDF"
+		tasks: [{
+			id: "5AADD3A2A1AB9DBA"
+			title: "完成公會分工規劃"
+			type: "checkmark"
+		}]
+		title: "建立公會分工"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["1510D88694F83CDF"]
+		description: ["建立清楚的共享倉庫。把工業材料、太空材料與補給分區存放。"]
+		icon: "minecraft:chest"
+		id: "619C4E38D665793A"
+		rewards: [{
+			count: 8
+			id: "22EC7691552D4E05"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "242E83CFE73E23CD"
+			item: "minecraft:chest"
+			title: "準備共享倉庫箱子"
+			type: "item"
+		}]
+		title: "建立共享倉庫"
+		x: 1.5d
+		y: -0.8d
+	}, {
+		dependencies: ["619C4E38D665793A"]
+		description: ["擴大 Create 工業區，讓材料加工能支援後續遠征。"]
+		icon: "create:mechanical_press"
+		id: "05F83F8F306E1027"
+		tasks: [{
+			id: "7875E4E0BDE41CF8"
+			title: "完成工業區擴建"
+			type: "checkmark"
+		}]
+		title: "擴建工業區"
+		x: 3.0d
+		y: -0.8d
+	}, {
+		dependencies: ["05F83F8F306E1027"]
+		description: ["把發射台、燃料、氧氣與補給整理成固定設施。讓升空不再是臨時工程。"]
+		icon: "minecraft:smooth_stone"
+		id: "4DDBB0F7CDCB8E53"
+		rewards: [{
+			count: 16
+			id: "030B0C94A9CF7BD7"
+			item: "minecraft:stone_bricks"
+			type: "item"
+		}]
+		tasks: [{
+			id: "25F960C2B74E55D0"
+			title: "完成永久發射設施規劃"
+			type: "checkmark"
+		}]
+		title: "建立永久發射設施"
+		x: 4.5d
+		y: -0.8d
+	}, {
+		dependencies: ["4DDBB0F7CDCB8E53"]
+		description: ["決定下一次遠征目標。可以是月球擴建、火星準備，或補齊公會工業。"]
+		icon: "minecraft:map"
+		id: "5EB09C0E3C5C152F"
+		tasks: [{
+			id: "5247D29887689F36"
+			title: "寫下下一次遠征目標"
+			type: "checkmark"
+		}]
+		title: "制定下一次遠征目標"
+		x: 6.0d
+		y: -0.8d
+	}, {
+		dependencies: ["5EB09C0E3C5C152F"]
+		description: ["v0.1.0-alpha 主線完成。這不是終點，而是公會長期經營的起點。"]
+		icon: "minecraft:gold_ingot"
+		id: "313FC74C6A35EF4A"
+		rewards: [{
+			count: 12
+			id: "4FB393746D4DF6ED"
+			item: "minecraft:bread"
+			type: "item"
+		}, {
+			count: 12
+			id: "4FD5AD5C8B16B356"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			id: "78F5F5D4A6BDB23A"
+			title: "完成 Alpha 主線"
+			type: "checkmark"
+		}]
+		title: "完成 Alpha 主線"
+		x: 7.5d
+		y: -0.8d
+	}]
+	title: "第 7 章：公會擴張"
+}

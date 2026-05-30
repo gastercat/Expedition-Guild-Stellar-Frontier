@@ -1,0 +1,147 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: ""
+	id: "34421798526B6B3A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		description: ["Create 工業從安山岩開始。先準備進入機械時代的基礎材料。"]
+		icon: "minecraft:andesite"
+		id: "5E94984E5468131F"
+		rewards: [{
+			count: 8
+			id: "65F59CCF6AA9487D"
+			item: "minecraft:andesite"
+			type: "item"
+		}]
+		tasks: [{
+			count: 16
+			id: "5E1A42C76FEE32D0"
+			item: "minecraft:andesite"
+			title: "收集安山岩"
+			type: "item"
+		}]
+		title: "收集安山岩"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["5E94984E5468131F"]
+		description: ["製作安山岩合金。這是早期 Create 傳動與機械設備的核心材料。"]
+		icon: "create:andesite_alloy"
+		id: "2F4F2E4E3614983D"
+		rewards: [{
+			count: 4
+			id: "2F95BA8784320D4E"
+			item: "minecraft:iron_nugget"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "178399D52B019774"
+			item: "create:andesite_alloy"
+			title: "製作安山岩合金"
+			type: "item"
+		}]
+		title: "製作安山岩合金"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["2F4F2E4E3614983D"]
+		description: ["傳動軸用來傳遞旋轉力。Create 的核心流程從動力傳輸開始。"]
+		icon: "create:shaft"
+		id: "4EA9AA54192E7B15"
+		tasks: [{
+			count: 8
+			id: "4DE8BC9742B8A725"
+			item: "create:shaft"
+			title: "製作傳動軸"
+			type: "item"
+		}]
+		title: "製作傳動軸"
+		x: 3.0d
+		y: -0.8d
+	}, {
+		dependencies: ["2F4F2E4E3614983D"]
+		description: ["齒輪能連接設備並調整旋轉方向。先學會讓動力到達機械。"]
+		icon: "create:cogwheel"
+		id: "0E91F6BECD98D446"
+		tasks: [{
+			count: 4
+			id: "329A2E106F020514"
+			item: "create:cogwheel"
+			title: "製作齒輪"
+			type: "item"
+		}]
+		title: "製作齒輪"
+		x: 3.0d
+		y: 0.8d
+	}, {
+		dependencies: ["4EA9AA54192E7B15", "0E91F6BECD98D446"]
+		description: ["建造第一個穩定動力來源。水車適合基地早期工業化。"]
+		icon: "create:water_wheel"
+		id: "71B69344193F12C8"
+		rewards: [{
+			count: 8
+			id: "48C6043C6C904F36"
+			item: "minecraft:oak_planks"
+			type: "item"
+		}]
+		tasks: [{
+			id: "01FC52954BD28F0D"
+			item: "create:water_wheel"
+			title: "建造水車"
+			type: "item"
+		}]
+		title: "建造水車"
+		x: 4.5d
+		y: 0.0d
+	}, {
+		dependencies: ["71B69344193F12C8"]
+		description: ["機械壓力機會把旋轉力轉成加工能力。接上水車與傳動軸後再測試。"]
+		icon: "create:mechanical_press"
+		id: "6CE0EF601D8C7E3D"
+		rewards: [{
+			count: 4
+			id: "71068EEBE492D0D1"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			id: "51028098F0667F6E"
+			item: "create:mechanical_press"
+			title: "建造機械壓力機"
+			type: "item"
+		}]
+		title: "建造機械壓力機"
+		x: 6.0d
+		y: 0.0d
+	}, {
+		dependencies: ["6CE0EF601D8C7E3D"]
+		description: ["用機械壓力機壓出第一片鐵板。旋轉力、傳動與加工流程正式串起來了。"]
+		icon: "create:iron_sheet"
+		id: "53EDAF1D0D56C217"
+		rewards: [{
+			count: 6
+			id: "2F2949301B9735E9"
+			item: "minecraft:bread"
+			type: "item"
+		}, {
+			count: 12
+			id: "1E00C27E86F7CFA3"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			id: "76CF00D27B784266"
+			item: "create:iron_sheet"
+			title: "壓製第一片鐵板"
+			type: "item"
+		}]
+		title: "壓製第一片鐵板"
+		x: 7.5d
+		y: 0.0d
+	}]
+	title: "第 2 章：機械時代"
+}

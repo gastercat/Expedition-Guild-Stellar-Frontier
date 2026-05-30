@@ -21,20 +21,21 @@
 | Forge | Loader | Phase 1：Frontier Demo | 提供模組載入環境。 | 是 | 是 | 必須使用 1.20.1 Forge 相容 build。 |
 | Java | 執行環境 | Phase 1：Frontier Demo | 統一客戶端與伺服器執行環境。 | 是 | 是 | 鎖定 Java 17。 |
 | Create | 工業核心 | Phase 1：Frontier Demo | 建立公會工業、動力、加工與物流核心。 | 是 | 是 | 鎖定 Create 0.5.1j，不使用第六版。 |
-| Ad Astra | 太空核心 | Phase 1：Frontier Demo | 提供火箭、太空裝備與星球遠征主線。 | 是 | 是 | 需同步檢查 Botarium、Resourceful Lib、Resourceful Config、Cloth Config。 |
-| Create: Ad Astra Compatibility | 太空相容 | Phase 1：Frontier Demo | 串接 Create 工業與 Ad Astra 太空流程。 | 是 | 是 | 必須同時符合 Create 0.5.1j 與 Ad Astra 版本。 |
+| Ad Astra | 太空核心 | Phase 1：Frontier Demo | 提供火箭、太空裝備與星球遠征主線。 | 是 | 是 | Stable：`ad_astra-forge-1.20.1-1.15.19.jar`，Modrinth version ID：`ZXcgZ31q`；不升到 1.15.20，除非整包遷移到 Create 6。 |
 | Botarium | Ad Astra 依賴 | Phase 1：Frontier Demo | 支援 Ad Astra 所需的共用 API。 | 是 | 是 | 版本需符合 Ad Astra 要求。 |
 | Resourceful Lib | Ad Astra 依賴 | Phase 1：Frontier Demo | 支援 Ad Astra 與 Resourceful 系列功能。 | 是 | 是 | 版本需符合 Ad Astra 要求。 |
 | Resourceful Config | Ad Astra 依賴 | Phase 1：Frontier Demo | 支援 Ad Astra 設定系統。 | 是 | 是 | 版本需符合 Ad Astra 要求。 |
 | Cloth Config | 設定依賴 | Phase 1：Frontier Demo | 提供設定介面與相關依賴。 | 是 | 是 | 必須使用 Forge 版，不可誤放 Fabric 版。 |
-| FTB Quests | 任務系統 | Phase 1：Frontier Demo | 建立公會委託、教學與進度線。 | 是 | 是 | 需與 FTB Library、FTB Teams 測試多人同步。 |
+| FTB Quests | 任務系統 | Phase 1：Frontier Demo | 建立公會委託、教學與進度線。 | 是 | 是 | Batch 3B network receiver 已通過 smoke test；目前只建立任務系統骨架，尚未寫正式任務線。 |
 | FTB Teams | 隊伍系統 | Phase 1：Frontier Demo | 支援多人隊伍、共享任務與公會分組。 | 是 | 是 | 需確認任務進度共享行為。 |
-| FTB Chunks | 區塊管理 | Phase 1：Frontier Demo | 提供據點保護、地圖區塊與載入管理。 | 是 | 是 | 需限制 chunk loading，避免伺服器負載失控。 |
+| FTB Chunks | 區塊管理 | Phase 1：Frontier Demo | 提供據點保護、地圖區塊與載入管理。 | 是 | 是 | 需限制 chunk loading，避免伺服器負載失控；Batch 3A network receiver 已通過 smoke test。 |
 | FTB Library | 任務依賴 | Phase 1：Frontier Demo | 支援 FTB Quests、Teams、Chunks。 | 是 | 是 | 依實際 FTB 系列需求加入。 |
 | JEI | 配方查詢 | Phase 1：Frontier Demo | 降低 Create 與 Ad Astra 配方學習成本。 | 是 | 建議 | 伺服器通常可不必裝，但整包測試建議保持一致。 |
-| Simple Voice Chat | 多人語音 | Phase 1：Frontier Demo | 支援遠征與建設時的即時溝通。 | 是 | 是 | 伺服器需開啟對應 UDP port。 |
-| JourneyMap 或 Xaero's | 地圖 | Phase 1：Frontier Demo | 提供探索定位、據點標記與遠征路線管理。 | 是 | 視選型 | 二選一，不建議同時加入；若選 Xaero's，需決定 Minimap 與 World Map 組合。 |
-| Waystones | 傳送便利 | Phase 1：Frontier Demo | 降低多人集合與據點往返成本。 | 是 | 是 | 需平衡跨維度傳送與 Ad Astra 遠征成本。 |
+| Simple Voice Chat | 多人語音 | Phase 1：Frontier Demo | 支援遠征與建設時的即時溝通。 | 是 | 是 | Batch 3A 初始化通過；正式伺服器需開啟對應 UDP port。 |
+| Xaero's Minimap | 地圖 | Phase 1：Frontier Demo | 提供探索定位與據點標記。 | 是 | 視選型 | Batch 3C 已通過 smoke test；Xaero online version check expired 可忽略。 |
+| Xaero's World Map | 地圖 | Phase 1：Frontier Demo | 提供世界地圖與遠征路線管理。 | 是 | 視選型 | Batch 3C 已通過 smoke test。 |
+| Waystones | 傳送便利 | Phase 1：Frontier Demo | 降低多人集合與據點往返成本。 | 是 | 是 | Batch 3C 已通過 smoke test；第一次啟動可能自動修正 `waystones-common.toml`。 |
+| Balm | Waystones 依賴 | Phase 1：Frontier Demo | 支援 Waystones。 | 是 | 是 | 作為 Waystones 自動依賴加入，Batch 3C 已通過 smoke test。 |
 | Farmer's Delight | 食物與農業 | Phase 1：Frontier Demo | 提供穩定補給與後勤玩法。 | 是 | 是 | 可與 Create 自動農場形成早期供應鏈。 |
 | Sophisticated Backpacks | 背包 | Phase 1：Frontier Demo | 提升探索、挖礦與太空遠征攜帶能力。 | 是 | 是 | 需避免過早取得過強升級。 |
 | Sophisticated Storage | 儲物 | Phase 1：Frontier Demo | 提供基地倉儲升級與整理工具。 | 是 | 是 | 與 Storage Drawers 定位需區分。 |
@@ -93,12 +94,76 @@
 | Twilight Forest | 延後至 Phase 3，避免維度內容過量。 |
 | Blue Skies | 延後至 Phase 3，避免維度內容過量。 |
 | Create 6 | 與第一版 Create 0.5.1j 鎖定策略衝突。 |
+| Ad Astra 1.15.20 | 與 Create 0.5.1j 啟動相容性衝突；除非整包遷移到 Create 6，否則不使用。 |
+| Create: Ad Astra Compatibility | Phase 1 Clean Smoke Test 前移除；目前組合造成 `create:crushed_ores` tag error。 |
+
+## Phase 1 Batch 2 定案
+
+| 項目 | 結果 |
+| --- | --- |
+| Clean Smoke Test | PASS |
+| 測試世界 | `EGSF_Phase1_CleanSmokeTest` |
+| Stable Create | 0.5.1j |
+| Stable Ad Astra | 1.15.19 |
+| Create: Ad Astra Compatibility | 已從 Phase 1 移除。 |
+| log 檢查 | 不再出現 `create_ad_astra_compat`、`Couldn't load tag create:crushed_ores`、`CreateRegistries` / `NoClassDefFoundError`。 |
+| 後續加工配方 | 未來 Ad Astra x Create processing recipes 應由 KubeJS 或 datapack 明確補上。 |
+
+## Phase 1 Batch 3A 定案
+
+| 項目 | 結果 |
+| --- | --- |
+| 名稱 | Multiplayer Foundation |
+| Clean Smoke Test | PASS |
+| 測試世界 | `EGSF_Phase1_Batch3A_MultiplayerT` |
+| 新增模組 | Simple Voice Chat、FTB Teams、FTB Chunks |
+| 自動依賴 | Architectury API、FTB Library |
+| Voice Chat | Client/server 初始化正常，整合單機測試中 server 啟動，authentication / validation 完成。 |
+| FTB network | FTB Teams / FTB Chunks network receiver 正常註冊。 |
+| 既有核心 | Ad Astra 維度仍正常儲存；Create / JEI 仍正常載入。 |
+| log 檢查 | 無 `CreateRegistries` / `NoClassDefFoundError`、無 `create_ad_astra_compat`、無 missing dependency / mod loading error / FATAL。 |
+| 注意 | FTB 顯示名稱可能含 `NeoForge`，但實際 jar 為 Forge。 |
+| 下一步 | Phase 1 Batch 3B：FTB Quests / Item Filters。不要一次加入地圖、Waystones、世界生成或結構模組。 |
+
+## Phase 1 Batch 3B 定案
+
+| 項目 | 結果 |
+| --- | --- |
+| 名稱 | Quest Foundation |
+| Smoke Test | PASS |
+| 測試世界 | `EGSF_Phase1_Batch3B_QuestTest` |
+| 新增模組 | FTB Quests、Item Filters |
+| FTB Quests | Network receiver 正常註冊。 |
+| Item Filters | Network receiver 正常註冊。 |
+| 既有多人基礎 | FTB Teams / FTB Chunks 仍正常；Simple Voice Chat 仍正常。 |
+| 既有核心 | Create / JEI 仍正常；Ad Astra 維度仍正常儲存。 |
+| log 檢查 | 無 `CreateRegistries` / `NoClassDefFoundError`、無 `create_ad_astra_compat`、無 missing dependency / mod loading error / FATAL。 |
+| 注意 | FTB 顯示名稱可能含 `NeoForge`，但實際 jar 為 Forge；FTB Quests 目前只建立任務系統骨架，尚未開始寫正式任務線。 |
+| 下一步 | Phase 1 Batch 3C：探索便利層。不要在下一批加入世界生成、結構、背包、料理、裝飾或戰鬥模組。 |
+
+## Phase 1 Batch 3C 定案
+
+| 項目 | 結果 |
+| --- | --- |
+| 名稱 | Exploration Utility |
+| Smoke Test | PASS |
+| 測試世界 | `EGSF_Phase1_Batch3C_ExploreTest` |
+| 新增模組 | Xaero's Minimap、Xaero's World Map、Waystones |
+| 自動依賴 | Balm |
+| 地圖 | Xaero's Minimap / Xaero's World Map 成功載入。 |
+| 傳送便利 | Waystones 成功載入。 |
+| 依賴 | Balm 成功載入。 |
+| 既有任務 / 多人基礎 | FTB Quests、FTB Teams / FTB Chunks、Simple Voice Chat 仍正常。 |
+| 既有核心 | Create / JEI 仍正常；Ad Astra 維度仍正常儲存。 |
+| log 檢查 | 無 `CreateRegistries` / `NoClassDefFoundError`、無 `create_ad_astra_compat`、無 missing dependency / mod loading error / FATAL。 |
+| 注意 | Waystones 第一次啟動會自動修正 `waystones-common.toml`；Xaero online version check expired 可忽略。 |
+| 下一步 | Phase 1 Baseline Freeze。先凍結目前可玩版本，建立 commit 與 server 測試準備，不要直接繼續加大型內容模組。 |
 
 ## 待決策項目
 
 | 項目 | 建議 |
 | --- | --- |
-| 地圖模組 | JourneyMap 或 Xaero's 擇一，不同時加入。 |
+| 地圖模組 | 已選 Xaero's Minimap + Xaero's World Map。 |
 | YUNG's 系列 | 先挑 Better Mineshafts、Better Dungeons、Better Strongholds、Better Desert Temples 等少量核心項目測試。 |
 | Macaw's 系列 | 先挑建築需求最高的子模組，不一次放滿整套。 |
 | 效能模組 | 先建立無效能模組基準，再逐一加入 Embeddium、ModernFix、FerriteCore、Entity Culling、Clumps。 |

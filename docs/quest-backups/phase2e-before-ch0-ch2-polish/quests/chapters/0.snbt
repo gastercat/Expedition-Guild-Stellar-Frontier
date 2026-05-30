@@ -1,0 +1,100 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0"
+	group: ""
+	id: "37F7013723A1F674"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["公會遠征開始。先確認任務書、資訊工具與起始補給。"]
+		icon: "minecraft:compass"
+		id: "5323818AFD57B584"
+		rewards: [{
+			count: 4
+			id: "6E241B9821950B40"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			id: "05545E3497CBD54C"
+			title: "打開任務書"
+			type: "checkmark"
+		}]
+		title: "歡迎加入遠征"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["5323818AFD57B584"]
+		description: ["用 JEI 查詢配方。先搜尋 create 與 ad astra。"]
+		icon: "minecraft:book"
+		id: "4C2B2C99F742D0A1"
+		tasks: [{
+			id: "09F25811DB8318D4"
+			title: "打開 JEI 並搜尋核心模組"
+			type: "checkmark"
+		}]
+		title: "打開 JEI"
+		x: 1.5d
+		y: -0.8d
+	}, {
+		dependencies: ["5323818AFD57B584"]
+		description: ["看向方塊，確認 Jade 顯示方塊名稱與模組來源。"]
+		icon: "minecraft:spyglass"
+		id: "2F9C47CC7893F1E8"
+		tasks: [{
+			id: "0B5A581FFFC2A61C"
+			title: "用 Jade 查看方塊"
+			type: "checkmark"
+		}]
+		title: "使用 Jade 檢查方塊"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["5323818AFD57B584"]
+		description: ["打開小地圖或世界地圖，準備標記公會集合點。"]
+		icon: "minecraft:map"
+		id: "7D17E7834C36E91D"
+		tasks: [{
+			id: "02B05C0A80AEB5CF"
+			title: "打開小地圖或世界地圖"
+			type: "checkmark"
+		}]
+		title: "打開地圖"
+		x: 1.5d
+		y: 0.8d
+	}, {
+		dependencies: ["4C2B2C99F742D0A1", "2F9C47CC7893F1E8", "7D17E7834C36E91D"]
+		description: ["準備基本食物與照明。公會遠征不要空手出發。"]
+		icon: "minecraft:torch"
+		id: "32D617E88A77E20B"
+		rewards: [{
+			count: 12
+			id: "24E46F47B9D2F0A0"
+			item: "minecraft:torch"
+			type: "item"
+		}, {
+			count: 2
+			id: "6043F1F08E922D7A"
+			item: "minecraft:apple"
+			type: "item"
+		}]
+		tasks: [{
+			count: 8
+			id: "19F07E93324B405E"
+			item: "minecraft:torch"
+			title: "攜帶基本照明"
+			type: "item"
+		}, {
+			count: 2
+			id: "55063EE9C750BF49"
+			item: "minecraft:bread"
+			title: "攜帶基本食物"
+			type: "item"
+		}]
+		title: "準備起始補給"
+		x: 3.0d
+		y: 0.0d
+	}]
+	title: "第 0 章：遠征啟程"
+}

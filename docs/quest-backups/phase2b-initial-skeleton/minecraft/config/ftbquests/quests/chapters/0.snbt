@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0"
+	group: ""
+	id: "37F7013723A1F674"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "5323818AFD57B584"
+		tasks: [{
+			id: "05545E3497CBD54C"
+			stage: ""
+			title: "打開任務書"
+			type: "gamestage"
+		}]
+		x: 0.5d
+		y: -1.0d
+	}]
+	title: "第0章：冒險開始"
+}

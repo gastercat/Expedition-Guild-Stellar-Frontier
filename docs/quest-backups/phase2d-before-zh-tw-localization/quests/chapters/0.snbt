@@ -1,0 +1,100 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0"
+	group: ""
+	id: "37F7013723A1F674"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["公會遠征開始。先確認任務書、資訊工具與起始補給。"]
+		icon: "minecraft:compass"
+		id: "5323818AFD57B584"
+		rewards: [{
+			count: 4
+			id: "6E241B9821950B40"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			id: "05545E3497CBD54C"
+			title: "Open the quest book"
+			type: "checkmark"
+		}]
+		title: "Welcome to the Expedition"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["5323818AFD57B584"]
+		description: ["用 JEI 查詢配方。先搜尋 create 與 ad astra。"]
+		icon: "minecraft:book"
+		id: "4C2B2C99F742D0A1"
+		tasks: [{
+			id: "09F25811DB8318D4"
+			title: "Open JEI and search for key mods"
+			type: "checkmark"
+		}]
+		title: "Open JEI"
+		x: 1.5d
+		y: -0.8d
+	}, {
+		dependencies: ["5323818AFD57B584"]
+		description: ["看向方塊，確認 Jade 顯示方塊名稱與模組來源。"]
+		icon: "minecraft:spyglass"
+		id: "2F9C47CC7893F1E8"
+		tasks: [{
+			id: "0B5A581FFFC2A61C"
+			title: "Inspect a block with Jade"
+			type: "checkmark"
+		}]
+		title: "Inspect with Jade"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["5323818AFD57B584"]
+		description: ["打開小地圖或世界地圖，準備標記公會集合點。"]
+		icon: "minecraft:map"
+		id: "7D17E7834C36E91D"
+		tasks: [{
+			id: "02B05C0A80AEB5CF"
+			title: "Open the minimap or world map"
+			type: "checkmark"
+		}]
+		title: "Open the Map"
+		x: 1.5d
+		y: 0.8d
+	}, {
+		dependencies: ["4C2B2C99F742D0A1", "2F9C47CC7893F1E8", "7D17E7834C36E91D"]
+		description: ["準備基本食物與照明。公會遠征不要空手出發。"]
+		icon: "minecraft:torch"
+		id: "32D617E88A77E20B"
+		rewards: [{
+			count: 12
+			id: "24E46F47B9D2F0A0"
+			item: "minecraft:torch"
+			type: "item"
+		}, {
+			count: 2
+			id: "6043F1F08E922D7A"
+			item: "minecraft:apple"
+			type: "item"
+		}]
+		tasks: [{
+			count: 8
+			id: "19F07E93324B405E"
+			item: "minecraft:torch"
+			title: "Carry basic lighting"
+			type: "item"
+		}, {
+			count: 2
+			id: "55063EE9C750BF49"
+			item: "minecraft:bread"
+			title: "Carry basic food"
+			type: "item"
+		}]
+		title: "Prepare Starter Supplies"
+		x: 3.0d
+		y: 0.0d
+	}]
+	title: "Chapter 0: Expedition Start"
+}

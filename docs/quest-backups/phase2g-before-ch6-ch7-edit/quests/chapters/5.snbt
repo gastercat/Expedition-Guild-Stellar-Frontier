@@ -1,0 +1,105 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5"
+	group: ""
+	id: "6685504560015C14"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		description: ["依照 Ad Astra 配方完成第一艘火箭。這是公會太空計畫的核心載具。"]
+		icon: "minecraft:firework_rocket"
+		id: "611F9BF133449581"
+		tasks: [{
+			id: "0077A783CF2A4B90"
+			title: "完成第一艘火箭"
+			type: "checkmark"
+		}]
+		title: "組裝第一艘火箭"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["611F9BF133449581"]
+		description: ["穿上完整太空裝備，再進行下一步。不要空身升空。"]
+		icon: "minecraft:iron_helmet"
+		id: "404FB0539DF1497E"
+		tasks: [{
+			id: "46F84E66D29F8E50"
+			title: "確認太空裝已裝備"
+			type: "checkmark"
+		}]
+		title: "裝備太空裝"
+		x: 1.5d
+		y: -0.8d
+	}, {
+		dependencies: ["611F9BF133449581"]
+		description: ["確認氧氣補給可用。升空前每位成員都要再次檢查。"]
+		icon: "minecraft:glass_bottle"
+		id: "15163220533E1798"
+		tasks: [{
+			id: "14E998A1A560E377"
+			title: "確認氧氣已補充"
+			type: "checkmark"
+		}]
+		title: "補充氧氣"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["611F9BF133449581"]
+		description: ["確認火箭燃料已加注。發射前不要移開燃料設備。"]
+		icon: "minecraft:bucket"
+		id: "77AF87B38C8FDB01"
+		tasks: [{
+			id: "77021D40DF10B5FD"
+			title: "確認燃料已加注"
+			type: "checkmark"
+		}]
+		title: "加注燃料"
+		x: 1.5d
+		y: 0.8d
+	}, {
+		dependencies: ["404FB0539DF1497E", "15163220533E1798", "77AF87B38C8FDB01"]
+		description: ["所有檢查完成後，執行第一次升空。這是公會進入星界邊境的里程碑。"]
+		icon: "minecraft:firework_rocket"
+		id: "222D5CC7873F2922"
+		rewards: [{
+			count: 8
+			id: "0579DD7AF6BA9D2E"
+			item: "minecraft:bread"
+			type: "item"
+		}, {
+			count: 16
+			id: "4D7B7F4EC1B159A9"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			id: "75529821E582193E"
+			title: "完成首次升空"
+			type: "checkmark"
+		}]
+		title: "首次升空"
+		x: 3.0d
+		y: 0.0d
+	}, {
+		dependencies: ["222D5CC7873F2922"]
+		description: ["抵達月球後，記錄座標並準備進入下一章的前哨站建設。"]
+		icon: "minecraft:end_stone"
+		id: "46E6671E98C956DE"
+		rewards: [{
+			count: 8
+			id: "17B4C4B4B16B81DE"
+			item: "minecraft:stone_bricks"
+			type: "item"
+		}]
+		tasks: [{
+			id: "7C160F868CE75448"
+			title: "確認已抵達月球"
+			type: "checkmark"
+		}]
+		title: "抵達月球"
+		x: 4.5d
+		y: 0.0d
+	}]
+	title: "第 5 章：首次升空"
+}

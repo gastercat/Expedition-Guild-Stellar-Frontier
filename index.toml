@@ -1,12 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "CHANGELOG.md"
+hash = "59d899d018bcfa8d2b0a51ee4150b1f99f6ed4904ee02b1c71a23bb387150f16"
+
+[[files]]
 file = "COMPATIBILITY.md"
-hash = "a9d44d3412703d00babb4945765fcb0dd8b5b4113a8e59c62cc54f1825eaa401"
+hash = "cfc4a12d6ade5943c088cc5304123d10bb6164f7a2fcd1797255ad5a25e5c5e4"
 
 [[files]]
 file = "MODLIST.md"
-hash = "b6878bb6169ddae95fa7d5dd8d15a577c048405daf52aa7abd70fdd263093241"
+hash = "6d76f46795b34b80b97574bede960f0c297b61b686c204db4c0bcd52743d2128"
 
 [[files]]
 file = "QUEST_DESIGN.md"
@@ -15,6 +19,10 @@ hash = "466ddc4a5f4e02439b1217d13ad7f08131e877e110f16d5f90ccd0077a7107a3"
 [[files]]
 file = "README.md"
 hash = "974734484df093c4c9547f3f0db2e51e9f4a6f8f95d1d3ad7b0c611c816639fa"
+
+[[files]]
+file = "RELEASE_NOTES_v0.1.0-alpha.md"
+hash = "551cdbc9dad7f658ee60a0a5234ce2f5b4c25ec88ce748a784e1e4ac5aa87073"
 
 [[files]]
 file = "SERVER_TEST_PROTOCOL.md"
@@ -29,8 +37,72 @@ file = "add_phase1_core_mods.sh"
 hash = "b5d2853ddf655b7588f84ea14554b217f84d16cd246ecc82a63351fb14ff7337"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/0.snbt"
+hash = "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/1.snbt"
+hash = "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/2.snbt"
+hash = "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/3.snbt"
+hash = "cec55983e954438a599c0b6fbac6a146aaba21706d9b33a9206782e76cc56979"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/4.snbt"
+hash = "50e00b22bdefb42469a822e9e7c891bc9c0de6bd480f88cd9d3ef0682fcad395"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/5.snbt"
+hash = "40306a7513b9775a7926c43b68a7fb279bda15a5a5c5b1d982594b9cb31ade0f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/6.snbt"
+hash = "ccaeb73de63c54ba9fd57fef6d2b52aafda33660f44ccfbd9b6e8989c553ca2b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/7.snbt"
+hash = "7981342f29cb3e0ac66b58bc23e22af6b1bcf60c6a390e5ff426645b1dec2a01"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+
+[[files]]
+file = "docs/EXPLORATION_TEST_NOTES.md"
+hash = "41f6676ca16590561f22e279126ba2da3b549f269f616d7359e0b8c01832d7ca"
+
+[[files]]
+file = "docs/MULTIPLAYER_TEST_NOTES.md"
+hash = "79eb87f1d9c7473dde760e11cc61962c1e13a635554bd5efd40d69d614af552a"
+
+[[files]]
+file = "docs/PHASE_STATUS.md"
+hash = "cb526718f9e5691f3fd7a27c3f26b133f0c65fb1901a21afde9421a9db093961"
+
+[[files]]
+file = "docs/QUEST_TEST_NOTES.md"
+hash = "09e667598828fe30fa21b20eccd8f83ba48398a16fb04d775227329ed3e9f398"
+
+[[files]]
+file = "docs/RUNTIME_TEST_PLAN.md"
+hash = "f8342373de02457140243a68c1393ac408ba2daef1fe33b775ee6bfbc7302a7c"
+
+[[files]]
 file = "docs/ad_astra_compatibility_notes.md"
-hash = "20cd515c0464b3764e37cbc1817b1f693fe7f08e84ec4bedc593356fff584b46"
+hash = "c2ee762251a48a717ff4c5dd176e2486fa2582a03a7b97f29af1754ed01b97df"
+
+[[files]]
+file = "docs/design/questline.md"
+hash = "3eb23079f86219472c18708083dc473ef4b388a7b2385545c5213c82988719f9"
 
 [[files]]
 file = "docs/player_roles.md"
@@ -41,17 +113,272 @@ file = "docs/progression_map.md"
 hash = "1740df9ca59b7b6aa9f6c1229ee480b50cc78ba7252db9e1e595f62725d2f68d"
 
 [[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/0.snbt"
+hash = "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/1.snbt"
+hash = "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/2.snbt"
+hash = "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/3.snbt"
+hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/4.snbt"
+hash = "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/5.snbt"
+hash = "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/6.snbt"
+hash = "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/7.snbt"
+hash = "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
+
+[[files]]
+file = "docs/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/data.snbt"
+hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/0.snbt"
+hash = "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/1.snbt"
+hash = "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/2.snbt"
+hash = "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/3.snbt"
+hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/4.snbt"
+hash = "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/5.snbt"
+hash = "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/6.snbt"
+hash = "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/7.snbt"
+hash = "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-ch0-ch2-edit/quests/data.snbt"
+hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/0.snbt"
+hash = "0ed9d7f48bae70e72ab42a74a8edd4ace8251cc82fef369e572f5f1d73eeac4b"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/1.snbt"
+hash = "b6fed1002a5b829e83d9d6ed9094cf0d97225f129d551de530b84b2d4a039261"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/2.snbt"
+hash = "49836a2f5f68cdb3bb1dc6311beccbb7a2d711c7b00be0fc6571219f53d5f40d"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/3.snbt"
+hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/4.snbt"
+hash = "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/5.snbt"
+hash = "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/6.snbt"
+hash = "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/7.snbt"
+hash = "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
+
+[[files]]
+file = "docs/quest-backups/phase2d-before-zh-tw-localization/quests/data.snbt"
+hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/0.snbt"
+hash = "1e9c715ba65febf1de5aa1df47bf194638be4c2ff4337908901a3eb8fcaccaa5"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/1.snbt"
+hash = "e05f35cbbcdb884141cacbedb8cb69ba521f4a40ac0aef2e89753245adcc2058"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/2.snbt"
+hash = "3e030e24555b15ee7faf7e4b6de8c85d90cb5d2b999a7c4d0250d2feac8e2211"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/3.snbt"
+hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/4.snbt"
+hash = "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/5.snbt"
+hash = "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/6.snbt"
+hash = "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/7.snbt"
+hash = "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
+
+[[files]]
+file = "docs/quest-backups/phase2e-before-ch0-ch2-polish/quests/data.snbt"
+hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/0.snbt"
+hash = "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/1.snbt"
+hash = "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/2.snbt"
+hash = "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/3.snbt"
+hash = "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/4.snbt"
+hash = "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/5.snbt"
+hash = "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/6.snbt"
+hash = "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/7.snbt"
+hash = "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
+
+[[files]]
+file = "docs/quest-backups/phase2f-before-ch3-ch5-edit/quests/data.snbt"
+hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/0.snbt"
+hash = "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/1.snbt"
+hash = "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/2.snbt"
+hash = "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/3.snbt"
+hash = "cec55983e954438a599c0b6fbac6a146aaba21706d9b33a9206782e76cc56979"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/4.snbt"
+hash = "50e00b22bdefb42469a822e9e7c891bc9c0de6bd480f88cd9d3ef0682fcad395"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/5.snbt"
+hash = "40306a7513b9775a7926c43b68a7fb279bda15a5a5c5b1d982594b9cb31ade0f"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/6.snbt"
+hash = "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/7.snbt"
+hash = "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
+
+[[files]]
+file = "docs/quest-backups/phase2g-before-ch6-ch7-edit/quests/data.snbt"
+hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+
+[[files]]
 file = "docs/testing_checklist.md"
 hash = "d64da7d153f57d913d9a48367fecc4e83b83361e6b180a0d0456ea52ad15742e"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
-hash = "da42d2a6e6e3f7bd10df625ab23d6ba8a50ecb3545c1c3c6bda4f826caa5d51b"
+hash = "5e727d91523c52e5056a57556d63118fe26802d824668c662195c8abf762a265"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "8d0321177fed4a0b48554c40158b43db62f6cdaa768f584ef6a11575dfaa6223"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a"
 metafile = true
 
 [[files]]
 file = "mods/botarium.pw.toml"
-hash = "008c942efc2e2ec221dd1a760b4a50e2f24ede37747731ba794f5e845554adcb"
+hash = "440a806e54d48cd4c5ef447ff8f1a6cd9a99d53d02ab90d50204be9b31c2f30d"
 metafile = true
 
 [[files]]
@@ -62,11 +389,6 @@ metafile = true
 [[files]]
 file = "mods/clumps.pw.toml"
 hash = "903352ffbd84d4b95fed905893f4715d9c3f88ec9fff6fb06f6e359e0b839dc3"
-metafile = true
-
-[[files]]
-file = "mods/create-ad-astra-compatibility.pw.toml"
-hash = "b5cf8113a1e183014c447f667676d0f9aef078c22ec195d50c58df72b8f596dd"
 metafile = true
 
 [[files]]
@@ -90,6 +412,36 @@ hash = "902bac905b93271f02bd0951a22bac06a3da24f5c237fcaeb469e14a7679e508"
 metafile = true
 
 [[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "6c6893267694003c8fc8a2c1a89e961d28add27991a26b60abedda1eafb0eb57"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "9db3089b9504be94818135f452daa1f2abbcb478d31abba2b19833902ea5daa5"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "7b2cc450f553b82439ae9422b8c2b4406dae1af3c48f7ce791a3576acff1d122"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "efda76423b21f9bfab4ad8d0411f0b06a199ab7e3e12ca16dc0586c1828b8f07"
+metafile = true
+
+[[files]]
+file = "mods/item-filters.pw.toml"
+hash = "ff92eddb2bf6f1afe9fa7fc73d63ea9419e0cff77fbd4fd2936b51525fe9340c"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
 hash = "db5b0e49607113eb8740838753460e6d2f8c718828fcc52b9fefd13adc4e4cae"
 metafile = true
@@ -101,12 +453,32 @@ metafile = true
 
 [[files]]
 file = "mods/resourceful-config.pw.toml"
-hash = "e242387207a2538b5ccb55697174c65e549e1eb2fef9da37e1ad3734e0372b65"
+hash = "b85e8417e797be3fdae046c487eeda8f54cdc88f3f20e462e0e229f8dd734214"
 metafile = true
 
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
-hash = "ef0264b7d819848f72ab2f34643306187e712965a8246e1f733e1bd39d8fd681"
+hash = "5c07edd0c8fe82e85efd6c027476ba54cf98291526803b74614c3436292e4ab6"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "da0719fb7c5c7d11b011f49b87313fcaf48d0c86826a6973ebde66018d8b7eab"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "5ab6f2a4a50bd53506496d3da0c2c09d5a3ca363c3ebc7ca8641ecd3f7104365"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "bf8edb8df8ec3804522e688c8ffbc351559821488d7faef2b7e90b13cee0109b"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "a6c4f857d620b6cefac579b443435020801befa64a7e6a356a8cf9520572f986"
 metafile = true
 
 [[files]]

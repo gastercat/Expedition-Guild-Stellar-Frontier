@@ -1,0 +1,123 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: ""
+	id: "41EE8D7017DD6B31"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: ["找一個能擴建、能取水、能連接道路的位置。單人也可以先建立臨時基地。"]
+		icon: "minecraft:campfire"
+		id: "1314AE296D46DF4A"
+		tasks: [{
+			id: "24DA4480F69D6FC3"
+			title: "選定共享基地位置"
+			type: "checkmark"
+		}]
+		title: "選擇基地位置"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["1314AE296D46DF4A"]
+		description: ["建立最基本的工作點。公會建設與早期製作都從工作台開始。"]
+		icon: "minecraft:crafting_table"
+		id: "76102167B0AA9E42"
+		rewards: [{
+			count: 8
+			id: "7B60397D82B4B829"
+			item: "minecraft:stick"
+			type: "item"
+		}]
+		tasks: [{
+			id: "79D5F4AD34F10827"
+			item: "minecraft:crafting_table"
+			title: "製作工作台"
+			type: "item"
+		}]
+		title: "製作工作台"
+		x: 1.5d
+		y: -1.2d
+	}, {
+		dependencies: ["76102167B0AA9E42"]
+		description: ["先把物資集中存放。多人遊玩時，清楚的倉儲能減少重複採集。"]
+		icon: "minecraft:chest"
+		id: "31550D7DB56FA83C"
+		rewards: [{
+			count: 8
+			id: "5A561450696C9248"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			count: 2
+			id: "5060546B714EDC27"
+			item: "minecraft:chest"
+			title: "準備基礎倉儲"
+			type: "item"
+		}]
+		title: "建立儲物空間"
+		x: 3.0d
+		y: -1.2d
+	}, {
+		dependencies: ["1314AE296D46DF4A"]
+		description: ["建立或加入公會隊伍。單人遊玩可手動確認完成，不需要卡在這一步。"]
+		icon: "minecraft:white_banner"
+		id: "74B35743C8533C9A"
+		tasks: [{
+			id: "74FD55C2D7D5BFC7"
+			title: "建立或加入隊伍"
+			type: "checkmark"
+		}]
+		title: "建立或加入隊伍"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["74B35743C8533C9A"]
+		description: ["使用 FTB Chunks 宣告基地核心區塊。單人遊玩也可手動確認完成。"]
+		icon: "minecraft:filled_map"
+		id: "6062AE3F3B9229B3"
+		tasks: [{
+			id: "6EB1C9641D311109"
+			title: "宣告基地區塊"
+			type: "checkmark"
+		}]
+		title: "宣告基地區塊"
+		x: 3.0d
+		y: 0.0d
+	}, {
+		dependencies: ["31550D7DB56FA83C", "6062AE3F3B9229B3"]
+		description: ["放置一個傳送石，讓隊友能穩定回到基地。"]
+		icon: "waystones:waystone"
+		id: "63CCDEBF567E4DB9"
+		tasks: [{
+			id: "7A1426E0C7BA53E2"
+			item: "waystones:waystone"
+			title: "取得傳送石"
+			type: "item"
+		}]
+		title: "放置傳送石"
+		x: 4.5d
+		y: -0.6d
+	}, {
+		dependencies: ["63CCDEBF567E4DB9"]
+		description: ["在地圖上標記基地位置。遠征隊需要清楚的回家路線。"]
+		icon: "minecraft:filled_map"
+		id: "63D58DCC408EB890"
+		rewards: [{
+			count: 4
+			id: "49C7539E27312F07"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			id: "289FA607088EB5D0"
+			title: "在地圖上標記基地"
+			type: "checkmark"
+		}]
+		title: "標記基地位置"
+		x: 6.0d
+		y: -0.6d
+	}]
+	title: "第 1 章：建立基地"
+}

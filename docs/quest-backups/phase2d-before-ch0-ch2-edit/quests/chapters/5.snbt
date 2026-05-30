@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5"
+	group: ""
+	id: "6685504560015C14"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		id: "611F9BF133449581"
+		tasks: [{
+			id: "0077A783CF2A4B90"
+			stage: ""
+			title: "發射第一枚火箭"
+			type: "gamestage"
+		}]
+		x: 0.0d
+		y: -1.0d
+	}]
+	title: "第 5 章：首次發射！"
+}

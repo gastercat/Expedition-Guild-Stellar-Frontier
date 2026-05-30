@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: ""
+	id: "41EE8D7017DD6B31"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "1314AE296D46DF4A"
+		tasks: [{
+			id: "24DA4480F69D6FC3"
+			stage: ""
+			title: "建立據點"
+			type: "gamestage"
+		}]
+		x: 0.0d
+		y: -1.0d
+	}]
+	title: "第1章：建立據點"
+}

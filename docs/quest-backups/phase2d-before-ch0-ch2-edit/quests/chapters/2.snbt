@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: ""
+	id: "34421798526B6B3A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "5E94984E5468131F"
+		tasks: [{
+			id: "5E1A42C76FEE32D0"
+			stage: ""
+			title: "進入機械時代"
+			type: "gamestage"
+		}]
+		x: 0.0d
+		y: -1.5d
+	}]
+	title: "第2章：機械時代"
+}
