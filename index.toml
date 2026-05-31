@@ -25,6 +25,10 @@ file = "RELEASE_NOTES_v0.1.0-alpha.md"
 hash = "551cdbc9dad7f658ee60a0a5234ce2f5b4c25ec88ce748a784e1e4ac5aa87073"
 
 [[files]]
+file = "RELEASE_NOTES_v0.6.0-alpha.md"
+hash = "b589e8d080236c215934ae9bb2310e500f5064622aaf748448fcd6ff78bb2934"
+
+[[files]]
 file = "SERVER_TEST_PROTOCOL.md"
 hash = "0eee68056b06a533f6513efbe1ccfbf632132ff10d5eca92e76900da432f2ed1"
 
@@ -113,6 +117,11 @@ hash = "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a"
 metafile = true
 
 [[files]]
+file = "mods/bookshelf.pw.toml"
+hash = "49f9d94df22724949d2ce1ae70b73461dfe7d92ce6ad6ceae9739cef0b34a089"
+metafile = true
+
+[[files]]
 file = "mods/botarium.pw.toml"
 hash = "440a806e54d48cd4c5ef447ff8f1a6cd9a99d53d02ab90d50204be9b31c2f30d"
 metafile = true
@@ -168,6 +177,11 @@ hash = "efda76423b21f9bfab4ad8d0411f0b06a199ab7e3e12ca16dc0586c1828b8f07"
 metafile = true
 
 [[files]]
+file = "mods/game-stages.pw.toml"
+hash = "5a9ee402a1db67f84efd6f1b5665ece795c1d2b5d477152f2d5853319c1ed590"
+metafile = true
+
+[[files]]
 file = "mods/item-filters.pw.toml"
 hash = "ff92eddb2bf6f1afe9fa7fc73d63ea9419e0cff77fbd4fd2936b51525fe9340c"
 metafile = true
@@ -180,6 +194,11 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "db5b0e49607113eb8740838753460e6d2f8c718828fcc52b9fefd13adc4e4cae"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+hash = "ed086cdfde6ba4bb175468a76f3df3b9517aea3fe95b09bed0f1fa70f7caeb6a"
 metafile = true
 
 [[files]]
@@ -200,6 +219,11 @@ metafile = true
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "5c07edd0c8fe82e85efd6c027476ba54cf98291526803b74614c3436292e4ab6"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "ca4411ac6d8a9a892948bb63cd0ba52ae5523ca5e257632d6ae8c933b660c5ee"
 metafile = true
 
 [[files]]
