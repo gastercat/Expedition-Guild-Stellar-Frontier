@@ -7,7 +7,26 @@
 	order_index: 2
 	quest_links: [ ]
 	quests: [{
-		description: ["Create 工業從安山岩開始。先準備進入機械時代的基礎材料。"]
+		description: ["公會公告：本章目標是為第一個 Boss Gate 建立後勤、裝備、補給與偵查基準。真正 Boss Gate 尚未實作，後續會由 KubeJS、GameStages 與 Boss 模組補上正式解鎖。"]
+		icon: "minecraft:white_banner"
+		id: "2A00000000000001"
+		rewards: [{
+			count: 4
+			id: "2A00000000000002"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			id: "2A00000000000003"
+			title: "閱讀第一討伐令預備公告"
+			type: "checkmark"
+		}]
+		title: "公會公告：Boss 前準備"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["2A00000000000001"]
+		description: ["工程部任務：採集安山岩作為 Create 基礎材料。第一個 Boss 尚未開放，但後勤線必須先能穩定製作機械零件。"]
 		icon: "minecraft:andesite"
 		id: "5E94984E5468131F"
 		rewards: [{
@@ -20,15 +39,15 @@
 			count: 16
 			id: "5E1A42C76FEE32D0"
 			item: "minecraft:andesite"
-			title: "收集安山岩"
+			title: "採集工程用安山岩"
 			type: "item"
 		}]
-		title: "收集安山岩"
-		x: 0.0d
+		title: "工程部：基礎石材"
+		x: 1.5d
 		y: 0.0d
 	}, {
 		dependencies: ["5E94984E5468131F"]
-		description: ["製作安山岩合金。這是早期 Create 傳動與機械設備的核心材料。"]
+		description: ["工程部任務：製作安山岩合金。這是公會制式機械零件的第一批材料，不是單人臨時工具。"]
 		icon: "create:andesite_alloy"
 		id: "2F4F2E4E3614983D"
 		rewards: [{
@@ -36,50 +55,67 @@
 			id: "2F95BA8784320D4E"
 			item: "minecraft:iron_nugget"
 			type: "item"
+		}, {
+			count: 2
+			id: "2A00000000000004"
+			item: "minecraft:copper_ingot"
+			type: "item"
 		}]
 		tasks: [{
 			count: 4
 			id: "178399D52B019774"
 			item: "create:andesite_alloy"
-			title: "製作安山岩合金"
+			title: "製作制式安山合金"
 			type: "item"
 		}]
-		title: "製作安山岩合金"
-		x: 1.5d
+		title: "工程部：制式合金"
+		x: 3.0d
 		y: 0.0d
 	}, {
 		dependencies: ["2F4F2E4E3614983D"]
-		description: ["傳動軸用來傳遞旋轉力。Create 的核心流程從動力傳輸開始。"]
+		description: ["工程部任務：傳動軸負責把動力送到加工點。Boss 前準備不只看武器，也看後勤能不能穩定運作。"]
 		icon: "create:shaft"
 		id: "4EA9AA54192E7B15"
+		rewards: [{
+			count: 4
+			id: "2A00000000000005"
+			item: "create:shaft"
+			type: "item"
+		}]
 		tasks: [{
 			count: 8
 			id: "4DE8BC9742B8A725"
 			item: "create:shaft"
-			title: "製作傳動軸"
+			title: "製作動力傳動軸"
 			type: "item"
 		}]
-		title: "製作傳動軸"
-		x: 3.0d
+		title: "工程部：傳動軸"
+		x: 4.5d
 		y: -0.8d
 	}, {
 		dependencies: ["2F4F2E4E3614983D"]
-		description: ["齒輪能連接設備並調整旋轉方向。先學會讓動力到達機械。"]
+		description: ["工程部任務：齒輪用來連接設備並調整方向。每一段傳動都應能讓其他隊友看懂與維修。"]
 		icon: "create:cogwheel"
 		id: "0E91F6BECD98D446"
+		rewards: [{
+			count: 2
+			id: "2A00000000000006"
+			item: "create:cogwheel"
+			type: "item"
+		}]
 		tasks: [{
 			count: 4
 			id: "329A2E106F020514"
 			item: "create:cogwheel"
-			title: "製作齒輪"
+			title: "製作基礎齒輪"
 			type: "item"
 		}]
-		title: "製作齒輪"
-		x: 3.0d
+		title: "工程部：齒輪傳動"
+		x: 4.5d
 		y: 0.8d
 	}, {
 		dependencies: ["4EA9AA54192E7B15", "0E91F6BECD98D446"]
-		description: ["建造第一個穩定動力來源。水車適合基地早期工業化。"]
+		description: ["工程部任務：建造第一個後勤動力源。水車不是終點，而是公會加工線開始運轉的最低標準。"]
 		icon: "create:water_wheel"
 		id: "71B69344193F12C8"
 		rewards: [{
@@ -91,15 +127,15 @@
 		tasks: [{
 			id: "01FC52954BD28F0D"
 			item: "create:water_wheel"
-			title: "建造水車"
+			title: "建造後勤水車"
 			type: "item"
 		}]
-		title: "建造水車"
-		x: 4.5d
+		title: "工程部：後勤動力源"
+		x: 6.0d
 		y: 0.0d
 	}, {
 		dependencies: ["71B69344193F12C8"]
-		description: ["機械壓力機會把旋轉力轉成加工能力。接上水車與傳動軸後再測試。"]
+		description: ["工程部任務：機械壓力機讓公會能穩定加工金屬板。接上水車與傳動軸後，再把它納入公共工坊。"]
 		icon: "create:mechanical_press"
 		id: "6CE0EF601D8C7E3D"
 		rewards: [{
@@ -111,15 +147,15 @@
 		tasks: [{
 			id: "51028098F0667F6E"
 			item: "create:mechanical_press"
-			title: "建造機械壓力機"
+			title: "建造公會壓力機"
 			type: "item"
 		}]
-		title: "建造機械壓力機"
-		x: 6.0d
+		title: "工程部：加工能力啟動"
+		x: 7.5d
 		y: 0.0d
 	}, {
 		dependencies: ["6CE0EF601D8C7E3D"]
-		description: ["用機械壓力機壓出第一片鐵板。旋轉力、傳動與加工流程正式串起來了。"]
+		description: ["工程部任務：壓出第一片鐵板，確認旋轉力、傳動與加工流程已串起來。這是第一階段加工線驗收的前置。"]
 		icon: "create:iron_sheet"
 		id: "53EDAF1D0D56C217"
 		rewards: [{
@@ -132,16 +168,174 @@
 			id: "1E00C27E86F7CFA3"
 			item: "minecraft:torch"
 			type: "item"
+		}, {
+			count: 4
+			id: "2A00000000000007"
+			item: "minecraft:coal"
+			type: "item"
 		}]
 		tasks: [{
 			id: "76CF00D27B784266"
 			item: "create:iron_sheet"
-			title: "壓製第一片鐵板"
+			title: "壓製第一片公會鐵板"
 			type: "item"
 		}]
-		title: "壓製第一片鐵板"
-		x: 7.5d
+		title: "工程部：鐵板試產"
+		x: 9.0d
 		y: 0.0d
+	}, {
+		dependencies: ["53EDAF1D0D56C217"]
+		description: ["加工線驗收：公會已能用 Create 完成基礎金屬加工。這只是 Boss 前後勤標準，不代表工業線已完成。"]
+		icon: "create:iron_sheet"
+		id: "2A00000000000008"
+		rewards: [{
+			count: 4
+			id: "2A00000000000009"
+			item: "minecraft:redstone"
+			type: "item"
+		}, {
+			count: 2
+			id: "2A0000000000000A"
+			item: "minecraft:slime_ball"
+			type: "item"
+		}]
+		tasks: [{
+			id: "2A0000000000000B"
+			title: "完成第一階段加工線驗收"
+			type: "checkmark"
+		}]
+		title: "工程部：加工線驗收"
+		x: 10.5d
+		y: 0.0d
+	}, {
+		dependencies: ["2A00000000000001"]
+		description: ["鍛造部任務：準備第一個討伐令前的基礎防具與箭矢。這不是高階裝備線，只是讓隊伍有最低安全標準。"]
+		icon: "minecraft:shield"
+		id: "2A0000000000000C"
+		rewards: [{
+			count: 16
+			id: "2A0000000000000D"
+			item: "minecraft:arrow"
+			type: "item"
+		}, {
+			count: 2
+			id: "2A0000000000000E"
+			item: "minecraft:leather"
+			type: "item"
+		}, {
+			count: 2
+			id: "2A0000000000000F"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			id: "2A00000000000010"
+			item: "minecraft:shield"
+			title: "準備基礎盾牌"
+			type: "item"
+		}, {
+			count: 16
+			id: "2A00000000000011"
+			item: "minecraft:arrow"
+			title: "準備基礎箭矢"
+			type: "item"
+		}]
+		title: "鍛造部：基礎裝備"
+		x: 4.5d
+		y: 2.0d
+	}, {
+		dependencies: ["2A00000000000001"]
+		description: ["炊事部任務：討伐前先準備食物、燃料與照明。隊伍不應在戰鬥前才發現火把或食物不足。"]
+		icon: "minecraft:cooked_beef"
+		id: "2A00000000000012"
+		rewards: [{
+			count: 4
+			id: "2A00000000000013"
+			item: "minecraft:cooked_beef"
+			type: "item"
+		}, {
+			count: 8
+			id: "2A00000000000014"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			count: 6
+			id: "2A00000000000015"
+			item: "minecraft:bread"
+			title: "準備遠征麵包"
+			type: "item"
+		}, {
+			count: 4
+			id: "2A00000000000016"
+			item: "minecraft:coal"
+			title: "準備炊事燃料"
+			type: "item"
+		}, {
+			count: 16
+			id: "2A00000000000017"
+			item: "minecraft:torch"
+			title: "準備照明補給"
+			type: "item"
+		}]
+		title: "炊事部：遠征食物"
+		x: 4.5d
+		y: 3.2d
+	}, {
+		dependencies: ["2A00000000000001"]
+		description: ["探險部任務：準備偵查紀錄與照明。第一個 Boss Gate 尚未開放，但公會仍需要路線、危險點與返航紀錄。"]
+		icon: "minecraft:paper"
+		id: "2A00000000000018"
+		rewards: [{
+			count: 4
+			id: "2A00000000000019"
+			item: "minecraft:paper"
+			type: "item"
+		}, {
+			count: 8
+			id: "2A0000000000001A"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "2A0000000000001B"
+			item: "minecraft:paper"
+			title: "準備偵查紀錄紙"
+			type: "item"
+		}, {
+			id: "2A0000000000001C"
+			item: "minecraft:filled_map"
+			title: "準備路線地圖"
+			type: "item"
+		}]
+		title: "探險部：偵查物資"
+		x: 4.5d
+		y: 4.4d
+	}, {
+		dependencies: ["2A00000000000008", "2A0000000000000C", "2A00000000000012", "2A00000000000018"]
+		description: ["第一討伐令預備完成：工程、鍛造、炊事與偵查基準已達標。真正 Boss Gate 會在後續 KubeJS、GameStages 與 Boss 模組加入後實作；目前這是公會認證占位。"]
+		icon: "minecraft:item_frame"
+		id: "2A0000000000001D"
+		rewards: [{
+			count: 1
+			id: "2A0000000000001E"
+			item: "minecraft:item_frame"
+			type: "item"
+		}, {
+			count: 1
+			id: "2A0000000000001F"
+			item: "minecraft:emerald"
+			type: "item"
+		}]
+		tasks: [{
+			id: "2A00000000000020"
+			title: "完成第一討伐令預備"
+			type: "checkmark"
+		}]
+		title: "公會：Boss Gate 預告"
+		x: 12.0d
+		y: 1.6d
 	}]
-	title: "第 2 章：機械時代"
+	title: "第 2 章：第一個 Boss 前準備"
 }

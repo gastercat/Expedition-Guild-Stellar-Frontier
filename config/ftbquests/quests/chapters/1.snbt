@@ -7,20 +7,39 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
-		description: ["找一個能擴建、能取水、能連接道路的位置。單人也可以先建立臨時基地。"]
+		description: ["公會公告：本章建立公會本部最低運作標準，並進行 Vanguard、Gunner、Arcanist 三線試訓。這些是認證占位與部門試用；正式職業技能、GameStages、裝備鎖與轉職系統尚未實作。"]
+		icon: "minecraft:white_banner"
+		id: "1A00000000000001"
+		rewards: [{
+			count: 2
+			id: "1A00000000000002"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			id: "1A00000000000003"
+			title: "閱讀公會試訓公告"
+			type: "checkmark"
+		}]
+		title: "公會公告：本部與試訓"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["1A00000000000001"]
+		description: ["選定公會本部的臨時集合點。優先考慮擴建空間、取水、道路與隊友可辨識性；這不是個人小屋，而是後續部門任務的集合中心。"]
 		icon: "minecraft:campfire"
 		id: "1314AE296D46DF4A"
 		tasks: [{
 			id: "24DA4480F69D6FC3"
-			title: "選定共享基地位置"
+			title: "選定公會本部集合點"
 			type: "checkmark"
 		}]
-		title: "選擇基地位置"
-		x: 0.0d
+		title: "公會本部選址"
+		x: 1.5d
 		y: 0.0d
 	}, {
 		dependencies: ["1314AE296D46DF4A"]
-		description: ["建立最基本的工作點。公會建設與早期製作都從工作台開始。"]
+		description: ["設置臨時工務桌，作為公會本部第一個製作與分配點。所有早期工具、箱子與標示都從這裡開始集中。"]
 		icon: "minecraft:crafting_table"
 		id: "76102167B0AA9E42"
 		rewards: [{
@@ -28,19 +47,24 @@
 			id: "7B60397D82B4B829"
 			item: "minecraft:stick"
 			type: "item"
+		}, {
+			count: 4
+			id: "1A00000000000004"
+			item: "minecraft:torch"
+			type: "item"
 		}]
 		tasks: [{
 			id: "79D5F4AD34F10827"
 			item: "minecraft:crafting_table"
-			title: "製作工作台"
+			title: "設置臨時工務桌"
 			type: "item"
 		}]
-		title: "製作工作台"
-		x: 1.5d
+		title: "本部工務桌"
+		x: 3.0d
 		y: -1.2d
 	}, {
 		dependencies: ["76102167B0AA9E42"]
-		description: ["先把物資集中存放。多人遊玩時，清楚的倉儲能減少重複採集。"]
+		description: ["建立公共物資集中點。至少準備兩個箱子，讓建材、食物、工具與任務物資不要分散在個人背包裡。"]
 		icon: "minecraft:chest"
 		id: "31550D7DB56FA83C"
 		rewards: [{
@@ -48,60 +72,65 @@
 			id: "5A561450696C9248"
 			item: "minecraft:torch"
 			type: "item"
+		}, {
+			count: 1
+			id: "1A00000000000005"
+			item: "minecraft:chest"
+			type: "item"
 		}]
 		tasks: [{
 			count: 2
 			id: "5060546B714EDC27"
 			item: "minecraft:chest"
-			title: "準備基礎倉儲"
+			title: "準備公共物資箱"
 			type: "item"
 		}]
-		title: "建立儲物空間"
-		x: 3.0d
+		title: "公共物資集中點"
+		x: 4.5d
 		y: -1.2d
 	}, {
 		dependencies: ["1314AE296D46DF4A"]
-		description: ["建立或加入公會隊伍。單人遊玩可手動確認完成，不需要卡在這一步。"]
+		description: ["建立或加入公會隊伍，讓任務、領地與部門分工能用同一套名冊管理。單人遊玩可手動確認完成。"]
 		icon: "minecraft:white_banner"
 		id: "74B35743C8533C9A"
 		tasks: [{
 			id: "74FD55C2D7D5BFC7"
-			title: "建立或加入隊伍"
+			title: "登記公會隊伍名冊"
 			type: "checkmark"
 		}]
-		title: "建立或加入隊伍"
-		x: 1.5d
+		title: "公會名冊登記"
+		x: 3.0d
 		y: 0.0d
 	}, {
 		dependencies: ["74B35743C8533C9A"]
-		description: ["使用 FTB Chunks 宣告基地核心區塊。單人遊玩也可手動確認完成。"]
+		description: ["使用 FTB Chunks 宣告基地核心區塊。核心區塊是公會本部的最低保護範圍，不建議一開始載入過多區域。"]
 		icon: "minecraft:filled_map"
 		id: "6062AE3F3B9229B3"
 		tasks: [{
 			id: "6EB1C9641D311109"
-			title: "宣告基地區塊"
+			title: "宣告本部核心區塊"
 			type: "checkmark"
 		}]
-		title: "宣告基地區塊"
-		x: 3.0d
+		title: "本部核心區塊"
+		x: 4.5d
 		y: 0.0d
 	}, {
 		dependencies: ["31550D7DB56FA83C", "6062AE3F3B9229B3"]
-		description: ["放置一個傳送石，讓隊友能穩定回到基地。"]
+		description: ["設置公會返航點，讓隊友能穩定回到本部。命名要清楚，並把位置寫入地圖或公告板。"]
 		icon: "waystones:waystone"
 		id: "63CCDEBF567E4DB9"
 		tasks: [{
 			id: "7A1426E0C7BA53E2"
 			item: "waystones:waystone"
-			title: "取得傳送石"
+			title: "取得公會返航石"
 			type: "item"
 		}]
-		title: "放置傳送石"
-		x: 4.5d
+		title: "公會返航點"
+		x: 6.0d
 		y: -0.6d
 	}, {
 		dependencies: ["63CCDEBF567E4DB9"]
-		description: ["在地圖上標記基地位置。遠征隊需要清楚的回家路線。"]
+		description: ["在地圖上標記本部位置與返航路線。遠征隊需要知道集合點、物資點與安全回程方向。"]
 		icon: "minecraft:filled_map"
 		id: "63D58DCC408EB890"
 		rewards: [{
@@ -112,12 +141,167 @@
 		}]
 		tasks: [{
 			id: "289FA607088EB5D0"
-			title: "在地圖上標記基地"
+			title: "歸檔本部座標"
 			type: "checkmark"
 		}]
-		title: "標記基地位置"
-		x: 6.0d
+		title: "本部座標歸檔"
+		x: 7.5d
 		y: -0.6d
+	}, {
+		dependencies: ["1A00000000000001"]
+		description: ["Vanguard 前鋒試訓：確認有人能站在隊伍最前方承擔近身風險。這不是正式轉職，只是公會臨時認證占位。"]
+		icon: "minecraft:shield"
+		id: "1A00000000000006"
+		rewards: [{
+			count: 2
+			id: "1A00000000000007"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}, {
+			count: 2
+			id: "1A00000000000008"
+			item: "minecraft:leather"
+			type: "item"
+		}]
+		tasks: [{
+			id: "1A00000000000009"
+			item: "minecraft:shield"
+			title: "提交前鋒盾牌"
+			type: "item"
+		}]
+		title: "Vanguard 基礎武裝檢查"
+		x: 3.0d
+		y: 1.2d
+	}, {
+		dependencies: ["1A00000000000001"]
+		description: ["Gunner 銃士線尚未加入正式槍械模組。本次先用弓、箭與弦作遠程補給占位，確認隊伍有人負責安全距離輸出與彈藥管理。"]
+		icon: "minecraft:bow"
+		id: "1A0000000000000A"
+		rewards: [{
+			count: 16
+			id: "1A0000000000000B"
+			item: "minecraft:arrow"
+			type: "item"
+		}, {
+			count: 2
+			id: "1A0000000000000C"
+			item: "minecraft:string"
+			type: "item"
+		}]
+		tasks: [{
+			id: "1A0000000000000D"
+			item: "minecraft:bow"
+			title: "準備臨時遠程武器"
+			type: "item"
+		}, {
+			count: 16
+			id: "1A0000000000000E"
+			item: "minecraft:arrow"
+			title: "準備遠程彈藥"
+			type: "item"
+		}]
+		title: "Gunner 遠程補給檢查"
+		x: 3.0d
+		y: 2.4d
+	}, {
+		dependencies: ["1A00000000000001"]
+		description: ["Arcanist 奧術線尚未加入正式魔法模組。本次先建立研究材料占位，讓隊伍保留控場、護盾解除與支援法術的未來位置。"]
+		icon: "minecraft:book"
+		id: "1A0000000000000F"
+		rewards: [{
+			count: 4
+			id: "1A00000000000010"
+			item: "minecraft:paper"
+			type: "item"
+		}, {
+			count: 1
+			id: "1A00000000000011"
+			item: "minecraft:redstone"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "1A00000000000012"
+			item: "minecraft:paper"
+			title: "準備研究紙張"
+			type: "item"
+		}, {
+			id: "1A00000000000013"
+			item: "minecraft:book"
+			title: "準備研究書冊"
+			type: "item"
+		}, {
+			count: 4
+			id: "1A00000000000014"
+			item: "minecraft:glass"
+			title: "準備觀測玻璃"
+			type: "item"
+		}]
+		title: "Arcanist 研究材料檢查"
+		x: 3.0d
+		y: 3.6d
+	}, {
+		dependencies: ["31550D7DB56FA83C"]
+		description: ["補給官試用：把食物、照明、燃料與公共箱集中管理。多人遠征的第一個瓶頸通常不是戰鬥，而是出發前沒人整理補給。"]
+		icon: "minecraft:bread"
+		id: "1A00000000000015"
+		rewards: [{
+			count: 2
+			id: "1A00000000000016"
+			item: "minecraft:cooked_beef"
+			type: "item"
+		}, {
+			count: 8
+			id: "1A00000000000017"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "1A00000000000018"
+			item: "minecraft:bread"
+			title: "存入出發食物"
+			type: "item"
+		}, {
+			count: 4
+			id: "1A00000000000019"
+			item: "minecraft:coal"
+			title: "存入燃料"
+			type: "item"
+		}, {
+			count: 16
+			id: "1A0000000000001A"
+			item: "minecraft:torch"
+			title: "存入照明"
+			type: "item"
+		}]
+		title: "炊事 / 補給檢查"
+		x: 6.0d
+		y: 2.4d
+	}, {
+		dependencies: ["63D58DCC408EB890", "1A00000000000006", "1A0000000000000A", "1A0000000000000F", "1A00000000000015"]
+		description: ["E 級本部運作許可：集合點、公共物資、返航點、三職業試訓與補給檢查完成。公會聲望 +1 目前只是任務文字占位，尚未連接完整聲望商店。"]
+		icon: "minecraft:item_frame"
+		id: "1A0000000000001B"
+		rewards: [{
+			count: 1
+			id: "1A0000000000001C"
+			item: "minecraft:item_frame"
+			type: "item"
+		}, {
+			count: 1
+			id: "1A0000000000001D"
+			item: "minecraft:emerald"
+			type: "item"
+		}]
+		tasks: [{
+			id: "1A0000000000001E"
+			title: "完成 E 級本部驗收"
+			type: "checkmark"
+		}]
+		title: "公會本部驗收"
+		x: 9.0d
+		y: 1.2d
 	}]
-	title: "第 1 章：建立基地"
+	title: "第 1 章：三職業訓練場"
 }
