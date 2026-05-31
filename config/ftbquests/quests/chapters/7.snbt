@@ -7,20 +7,26 @@
 	order_index: 7
 	quest_links: [ ]
 	quests: [{
-		description: ["分配工程、探索、補給、倉儲與太空任務。單人遊玩可規劃自己的工作清單。"]
-		icon: "minecraft:white_banner"
-		id: "1510D88694F83CDF"
+		description: ["星界局公告：本章是公會星界遠征準備，不是普通大型科技線。Create 在這裡負責火箭後勤與材料加工；本輪不會送火箭本體、太空服整套或氧氣設備成品。KubeJS / GameStages Gate、完整前哨站評級、太空電梯與星界兵站網尚未實作。"]
+		icon: "minecraft:paper"
+		id: "7A00000000000001"
+		rewards: [{
+			count: 4
+			id: "7A00000000000002"
+			item: "minecraft:paper"
+			type: "item"
+		}]
 		tasks: [{
-			id: "5AADD3A2A1AB9DBA"
-			title: "完成公會分工規劃"
+			id: "7A00000000000003"
+			title: "閱讀火箭工程簡報"
 			type: "checkmark"
 		}]
-		title: "建立公會分工"
+		title: "星界局：火箭工程簡報"
 		x: 0.0d
 		y: 0.0d
 	}, {
-		dependencies: ["1510D88694F83CDF"]
-		description: ["建立清楚的共享倉庫。把工業材料、太空材料與補給分區存放。"]
+		dependencies: ["7A00000000000001"]
+		description: ["星界遠征材料要分艙管理。把工業材料、燃料線材料、建材與遠征補給分開存放，避免發射準備被個人背包打散。"]
 		icon: "minecraft:chest"
 		id: "619C4E38D665793A"
 		rewards: [{
@@ -28,86 +34,171 @@
 			id: "22EC7691552D4E05"
 			item: "minecraft:torch"
 			type: "item"
+		}, {
+			count: 1
+			id: "7A00000000000004"
+			item: "minecraft:chest"
+			type: "item"
 		}]
 		tasks: [{
 			count: 4
 			id: "242E83CFE73E23CD"
 			item: "minecraft:chest"
-			title: "準備共享倉庫箱子"
+			title: "準備星界材料分艙"
 			type: "item"
 		}]
-		title: "建立共享倉庫"
+		title: "星界材料與補給分艙"
 		x: 1.5d
 		y: -0.8d
 	}, {
 		dependencies: ["619C4E38D665793A"]
-		description: ["擴大 Create 工業區，讓材料加工能支援後續遠征。"]
-		icon: "create:mechanical_press"
+		description: ["工程部任務：擴大 Create 工業區，讓銅、鐵、合金、傳動軸與齒輪能支撐 Ad Astra 發射工程。Create 是火箭後勤骨架，不是獨立大型科技包。"]
+		icon: "create:cogwheel"
 		id: "05F83F8F306E1027"
+		rewards: [{
+			count: 4
+			id: "7A00000000000005"
+			item: "minecraft:copper_ingot"
+			type: "item"
+		}, {
+			count: 4
+			id: "7A00000000000006"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}, {
+			count: 4
+			id: "7A00000000000007"
+			item: "create:shaft"
+			type: "item"
+		}, {
+			count: 2
+			id: "7A00000000000008"
+			item: "create:cogwheel"
+			type: "item"
+		}]
 		tasks: [{
 			id: "7875E4E0BDE41CF8"
-			title: "完成工業區擴建"
+			title: "完成燃料與材料加工線規劃"
 			type: "checkmark"
 		}]
-		title: "擴建工業區"
+		title: "工程部：燃料與材料加工線"
 		x: 3.0d
 		y: -0.8d
 	}, {
-		dependencies: ["05F83F8F306E1027"]
-		description: ["把發射台、燃料、氧氣與補給整理成固定設施。讓升空不再是臨時工程。"]
-		icon: "minecraft:smooth_stone"
+		dependencies: ["7A00000000000001"]
+		description: ["補給部任務：先準備食物、照明、玻璃與臨時營地物資。氧氣設備本體不在本輪獎勵中；本任務只處理發射前補給與建材準備。"]
+		icon: "minecraft:cooked_beef"
+		id: "7A00000000000009"
+		rewards: [{
+			count: 4
+			id: "7A0000000000000A"
+			item: "minecraft:cooked_beef"
+			type: "item"
+		}, {
+			count: 8
+			id: "7A0000000000000B"
+			item: "minecraft:glass"
+			type: "item"
+		}, {
+			count: 4
+			id: "7A0000000000000C"
+			item: "minecraft:coal"
+			type: "item"
+		}]
+		tasks: [{
+			count: 6
+			id: "7A0000000000000D"
+			item: "minecraft:bread"
+			title: "準備升空前食物"
+			type: "item"
+		}, {
+			count: 16
+			id: "7A0000000000000E"
+			item: "minecraft:torch"
+			title: "準備發射場照明"
+			type: "item"
+		}, {
+			count: 8
+			id: "7A0000000000000F"
+			item: "minecraft:glass"
+			title: "準備觀測與建材玻璃"
+			type: "item"
+		}, {
+			id: "7A00000000000010"
+			item: "minecraft:campfire"
+			title: "準備臨時補給營火"
+			type: "item"
+		}]
+		title: "補給部：氧氣 / 食物 / 建材準備"
+		x: 3.0d
+		y: 1.0d
+	}, {
+		dependencies: ["05F83F8F306E1027", "7A00000000000009"]
+		description: ["探險部任務：選定發射場並完成安全標記。發射場應遠離主倉庫，標記返航路線，清空安全區域，並建立隊友集合點。"]
+		icon: "minecraft:white_banner"
 		id: "4DDBB0F7CDCB8E53"
 		rewards: [{
 			count: 16
 			id: "030B0C94A9CF7BD7"
 			item: "minecraft:stone_bricks"
 			type: "item"
+		}, {
+			count: 1
+			id: "7A00000000000011"
+			item: "minecraft:white_banner"
+			type: "item"
 		}]
 		tasks: [{
 			id: "25F960C2B74E55D0"
-			title: "完成永久發射設施規劃"
+			title: "完成發射場選址與安全標記"
 			type: "checkmark"
 		}]
-		title: "建立永久發射設施"
+		title: "探險部：發射場選址"
 		x: 4.5d
-		y: -0.8d
+		y: 0.0d
 	}, {
 		dependencies: ["4DDBB0F7CDCB8E53"]
-		description: ["決定下一次遠征目標。可以是月球擴建、火星準備，或補齊公會工業。"]
-		icon: "minecraft:map"
+		description: ["寫下首次星界遠征目標。可以是月球降落點、火星準備、補齊發射場建材，或檢查 Create 後勤缺口。"]
+		icon: "minecraft:paper"
 		id: "5EB09C0E3C5C152F"
-		tasks: [{
-			id: "5247D29887689F36"
-			title: "寫下下一次遠征目標"
-			type: "checkmark"
-		}]
-		title: "制定下一次遠征目標"
-		x: 6.0d
-		y: -0.8d
-	}, {
-		dependencies: ["5EB09C0E3C5C152F"]
-		description: ["v0.1.0-alpha 主線完成。這不是終點，而是公會長期經營的起點。"]
-		icon: "minecraft:gold_ingot"
-		id: "313FC74C6A35EF4A"
 		rewards: [{
-			count: 12
-			id: "4FB393746D4DF6ED"
+			count: 4
+			id: "7A00000000000012"
 			item: "minecraft:bread"
 			type: "item"
+		}]
+		tasks: [{
+			id: "5247D29887689F36"
+			title: "寫下星界遠征目標"
+			type: "checkmark"
+		}]
+		title: "星界遠征目標"
+		x: 6.0d
+		y: 0.0d
+	}, {
+		dependencies: ["5EB09C0E3C5C152F"]
+		description: ["星界遠征許可：預備核准。工程、補給、發射場與遠征目標已完成任務層占位。真正的 Gate 會等 KubeJS、GameStages 與 Ad Astra 進度鎖加入後實作。星界局聲望 +1 目前只是文字占位，尚未連接完整聲望商店。"]
+		icon: "minecraft:item_frame"
+		id: "313FC74C6A35EF4A"
+		rewards: [{
+			count: 1
+			id: "7A00000000000013"
+			item: "minecraft:item_frame"
+			type: "item"
 		}, {
-			count: 12
-			id: "4FD5AD5C8B16B356"
-			item: "minecraft:iron_ingot"
+			count: 1
+			id: "7A00000000000014"
+			item: "minecraft:emerald"
 			type: "item"
 		}]
 		tasks: [{
 			id: "78F5F5D4A6BDB23A"
-			title: "完成 Alpha 主線"
+			title: "取得星界遠征預備許可"
 			type: "checkmark"
 		}]
-		title: "完成 Alpha 主線"
+		title: "公會：星界遠征許可"
 		x: 7.5d
-		y: -0.8d
+		y: 0.0d
 	}]
-	title: "第 7 章：公會擴張"
+	title: "第 7 章：星界遠征準備"
 }

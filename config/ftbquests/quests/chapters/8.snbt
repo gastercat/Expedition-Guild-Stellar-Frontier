@@ -7,45 +7,214 @@
 	order_index: 8
 	quest_links: [ ]
 	quests: [{
-		description: ["公會需要一座穩定的機械工坊。規劃水車、傳動、加工與輸出區，讓隊友看得懂也用得上。"]
+		description: ["公會公告：本章用 FTB Quests 文字與任務結算建立星界前哨站評級占位。E / D / C / B 是本輪 MVP 目標；A 級殖民與 S 級星界兵站是後續占位。完整評級系統、太空電梯與星界兵站網尚未實作。"]
+		icon: "minecraft:paper"
+		id: "8A00000000000001"
+		rewards: [{
+			count: 4
+			id: "8A00000000000002"
+			item: "minecraft:paper"
+			type: "item"
+		}]
+		tasks: [{
+			id: "8A00000000000003"
+			title: "閱讀前哨站評級公告"
+			type: "checkmark"
+		}]
+		title: "公會公告：前哨站評級占位"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["8A00000000000001"]
+		description: ["E 級降落點：標記落點、返航路線與隊友集合點。星界遠征不是抵達後各自挖礦，而是先建立所有人都能找到的臨時據點。"]
+		icon: "minecraft:white_banner"
+		id: "8A00000000000004"
+		rewards: [{
+			count: 4
+			id: "8A00000000000005"
+			item: "minecraft:bread"
+			type: "item"
+		}, {
+			count: 8
+			id: "8A00000000000006"
+			item: "minecraft:torch"
+			type: "item"
+		}]
+		tasks: [{
+			id: "8A00000000000007"
+			title: "完成 E 級降落點標記"
+			type: "checkmark"
+		}]
+		title: "E 級：臨時降落點"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["8A00000000000004"]
+		description: ["D 級短期生存：前哨站需要能暫存、能照明、能補給，並能讓隊伍等待返航。這不是永久基地，只是安全存活標準。"]
+		icon: "minecraft:campfire"
+		id: "8A00000000000008"
+		rewards: [{
+			count: 1
+			id: "8A00000000000009"
+			item: "minecraft:chest"
+			type: "item"
+		}, {
+			count: 4
+			id: "8A0000000000000A"
+			item: "minecraft:coal"
+			type: "item"
+		}]
+		tasks: [{
+			id: "8A0000000000000B"
+			item: "minecraft:chest"
+			title: "準備前哨暫存箱"
+			type: "item"
+		}, {
+			count: 16
+			id: "8A0000000000000C"
+			item: "minecraft:torch"
+			title: "準備前哨照明"
+			type: "item"
+		}, {
+			count: 4
+			id: "8A0000000000000D"
+			item: "minecraft:bread"
+			title: "準備返航等待補給"
+			type: "item"
+		}, {
+			id: "8A0000000000000E"
+			item: "minecraft:campfire"
+			title: "準備短期生存營火"
+			type: "item"
+		}]
+		title: "D 級：短期生存"
+		x: 3.0d
+		y: 0.0d
+	}, {
+		dependencies: ["8A00000000000008"]
+		description: ["C 級採礦前哨：建立樣本箱、材料標示與回收路線。此任務不給星界礦物，也不跳過實際採集；重點是讓採集結果能回到公會。"]
+		icon: "minecraft:item_frame"
+		id: "8A0000000000000F"
+		rewards: [{
+			count: 4
+			id: "8A00000000000010"
+			item: "minecraft:paper"
+			type: "item"
+		}, {
+			count: 1
+			id: "8A00000000000011"
+			item: "minecraft:item_frame"
+			type: "item"
+		}]
+		tasks: [{
+			id: "8A00000000000012"
+			item: "minecraft:chest"
+			title: "準備樣本箱"
+			type: "item"
+		}, {
+			id: "8A00000000000013"
+			item: "minecraft:item_frame"
+			title: "準備材料標示"
+			type: "item"
+		}]
+		title: "C 級：可採礦前哨"
+		x: 4.5d
+		y: 0.0d
+	}, {
+		dependencies: ["8A0000000000000F"]
+		description: ["B 級加工前哨：把既有工程師支線提升為前哨站加工能力驗收。規劃水車、傳動、加工與輸出區，讓隊友看得懂也用得上。"]
 		icon: "create:shaft"
 		id: "2D4F8B8195C3A706"
 		tasks: [{
 			id: "5C0D0E31B4A7E908"
-			title: "標出工程工坊範圍"
+			title: "標出前哨加工工坊範圍"
 			type: "checkmark"
 		}]
-		title: "遠征公會委託：機械工坊"
-		x: 0.0d
-		y: 0.0d
+		title: "B 級：加工前哨規劃"
+		x: 6.0d
+		y: -0.8d
 	}, {
 		dependencies: ["2D4F8B8195C3A706"]
-		description: ["把旋轉力送到至少三個工作點。工程師的第一項任務，是讓基地的動力穩定流動。"]
+		description: ["B 級加工前哨驗收：把旋轉力送到至少三個工作點。這代表前哨站能支援初步加工，不代表完整星界兵站網已完成。"]
 		icon: "create:cogwheel"
 		id: "0D5A58C3F7218B44"
+		rewards: [{
+			count: 4
+			id: "8A00000000000014"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}, {
+			count: 4
+			id: "8A00000000000015"
+			item: "minecraft:copper_ingot"
+			type: "item"
+		}, {
+			count: 4
+			id: "8A00000000000016"
+			item: "create:shaft"
+			type: "item"
+		}]
 		tasks: [{
 			count: 12
 			id: "426F7A21E68DB052"
 			item: "create:shaft"
-			title: "提交傳動軸材料"
+			title: "提交前哨傳動軸材料"
 			type: "item"
 		}]
-		title: "動力診斷：三點傳動"
-		x: 1.5d
-		y: 0.0d
+		title: "B 級：三點傳動"
+		x: 7.5d
+		y: -0.8d
 	}, {
 		dependencies: ["0D5A58C3F7218B44"]
-		description: ["向公會展示一條可以重複運作的簡易產線。壓板、搬運或基礎加工都可以。"]
+		description: ["B 級加工前哨完成：向公會展示一條可以重複運作的簡易產線。壓板、搬運或基礎加工都可以，但不要把前哨站變成搬家式主基地。"]
 		icon: "create:mechanical_press"
 		id: "7B89537E26C1F0AD"
 		tasks: [{
 			id: "32E929BA4A2C80C7"
-			title: "完成可展示的工程產線"
+			title: "完成可展示的前哨加工線"
 			type: "checkmark"
 		}]
-		title: "工程師展示：基礎產線"
-		x: 3.0d
-		y: 0.0d
+		title: "B 級：加工前哨驗收"
+		x: 9.0d
+		y: -0.8d
+	}, {
+		dependencies: ["7B89537E26C1F0AD"]
+		description: ["A 級殖民預告占位：火星、溫室與長期殖民會在後續模組與任務補上。本任務只標記未來方向，不代表殖民系統已完成。"]
+		icon: "minecraft:white_banner"
+		id: "8A00000000000017"
+		rewards: [{
+			count: 1
+			id: "8A00000000000018"
+			item: "minecraft:white_banner"
+			type: "item"
+		}]
+		tasks: [{
+			id: "8A00000000000019"
+			title: "閱讀 A 級殖民預告"
+			type: "checkmark"
+		}]
+		title: "A 級：殖民預告占位"
+		x: 10.5d
+		y: -0.8d
+	}, {
+		dependencies: ["8A00000000000017"]
+		description: ["S 級星界兵站預告占位：星界兵站網、太空電梯與終局物流待後續實作。本任務只是任務書內的遠期目標標記。"]
+		icon: "minecraft:emerald"
+		id: "8A0000000000001A"
+		rewards: [{
+			count: 1
+			id: "8A0000000000001B"
+			item: "minecraft:emerald"
+			type: "item"
+		}]
+		tasks: [{
+			id: "8A0000000000001C"
+			title: "閱讀 S 級兵站預告"
+			type: "checkmark"
+		}]
+		title: "S 級：星界兵站預告"
+		x: 12.0d
+		y: -0.8d
 	}]
-	title: "工程師委託 / Engineering Path"
+	title: "第 8 章：月球 / 火星前哨站"
 }
