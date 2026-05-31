@@ -7,160 +7,161 @@
 	order_index: 11
 	quest_links: [ ]
 	quests: [{
-		description: ["Phase 2 先把已經存在的職業工作落地：補給、建築、倉儲、工程、探索與太空準備。還沒加入的戰鬥、魔法、飾品與生態模組只列入後續規劃，不會卡住這一輪。"]
-		icon: "minecraft:white_banner"
-		id: "28A7D3C10F5E94B2"
+		description: ["公會公告：本章是後終局挑戰、收藏、稱號與重複挑戰的任務層占位。Avaritia 神格化兵裝、三線融合終局職業、太空電梯、星界兵站網、後終局龍災、武器記憶完成神格化、公會稱號系統、收藏系統、重複挑戰系統、戰利品獨立顯示系統、Loot Integrations 與 KubeJS / GameStages 後終局鎖尚未實作。本章不假裝後終局系統已完成。"]
+		icon: "minecraft:paper"
+		id: "11A0000000000001"
+		rewards: [{
+			count: 4
+			id: "11A0000000000002"
+			item: "minecraft:paper"
+			type: "item"
+		}]
 		tasks: [{
-			id: "4E5C8A12DB73F609"
-			title: "確認 Phase 2 職業分工"
+			id: "11A0000000000003"
+			title: "閱讀後終局挑戰公告"
 			type: "checkmark"
 		}]
-		title: "Phase 2：職業路線啟動"
+		title: "公會公告：後終局挑戰占位"
 		x: 0.0d
 		y: 0.0d
 	}, {
-		dependencies: ["28A7D3C10F5E94B2"]
-		description: ["這條是目前可完成的鍋任務。先使用原版 Cauldron 與 Campfire 建立公會熱食與補水點；未來若加入 Farmer's Delight，才會擴充成真正的料理產線。"]
-		icon: "minecraft:cauldron"
-		id: "5D418FBD0C2A763E"
+		dependencies: ["11A0000000000001"]
+		description: ["Avaritia 神格化兵裝尚未接入。本任務只保留神格化兵裝方向，不發放終局武器、終局材料、Nether Star、Dragon Egg 或任何未確認模組物品。"]
+		icon: "minecraft:lapis_lazuli"
+		id: "11A0000000000004"
 		rewards: [{
 			count: 4
-			id: "0C74EBD4825597AA"
-			item: "minecraft:bread"
+			id: "11A0000000000005"
+			item: "minecraft:lapis_lazuli"
 			type: "item"
 		}]
 		tasks: [{
-			id: "1A4F927E6C80D35B"
-			item: "minecraft:cauldron"
-			title: "準備公會大鍋"
-			type: "item"
-		}, {
-			id: "72D9E6530BEA41C8"
-			item: "minecraft:campfire"
-			title: "準備熱食火源"
-			type: "item"
+			id: "11A0000000000006"
+			title: "確認神格化兵裝占位"
+			type: "checkmark"
 		}]
-		title: "鍋任務：公會大鍋"
+		title: "神格化兵裝占位"
 		x: 1.5d
-		y: -1.2d
+		y: -1.5d
 	}, {
-		dependencies: ["5D418FBD0C2A763E"]
-		description: ["把出發前一定會消耗的食物與照明集中到補給點。這一步只使用目前已存在的原版物品，避免任務卡在未加入的料理模組。"]
-		icon: "minecraft:bread"
-		id: "6C8932A0F41D7E5B"
+		dependencies: ["11A0000000000001"]
+		description: ["太空電梯尚未實作。這裡只保留星界工程終點與公會大型建設方向，未來才會接入材料、藍圖、物流與 Gate。"]
+		icon: "minecraft:white_banner"
+		id: "11A0000000000007"
 		rewards: [{
-			count: 8
-			id: "4E172A9C03DE68F5"
-			item: "minecraft:torch"
+			count: 1
+			id: "11A0000000000008"
+			item: "minecraft:white_banner"
 			type: "item"
 		}]
 		tasks: [{
-			count: 8
-			id: "7F4028B9AE136CD1"
-			item: "minecraft:bread"
-			title: "存入基礎食物"
-			type: "item"
-		}, {
-			count: 16
-			id: "3D8BC1A79F0452E6"
-			item: "minecraft:torch"
-			title: "存入照明補給"
-			type: "item"
-		}]
-		title: "鍋任務：熱食補給"
-		x: 3.0d
-		y: -1.2d
-	}, {
-		dependencies: ["6C8932A0F41D7E5B"]
-		description: ["補給官要在每次遠征前確認：食物、火把、回程方式、Waystone 或地圖標記都已準備。多人遊玩時，這是出發前的共同檢查點。"]
-		icon: "waystones:waystone"
-		id: "64F0A9D3C7B2185E"
-		tasks: [{
-			id: "241B6C7D50A38E9F"
-			title: "完成一次出發前補給檢查"
+			id: "11A0000000000009"
+			title: "確認太空電梯占位"
 			type: "checkmark"
 		}]
-		title: "補給官：出發前檢查"
-		x: 4.5d
-		y: -1.2d
-	}, {
-		dependencies: ["28A7D3C10F5E94B2"]
-		description: ["使用 JEI 搜尋 Macaw's Furniture，挑選椅子、桌子、櫃子或架子作為公會大廳的第一批家具。這一步用手動確認，避免指定到玩家尚未製作的特定木種。"]
-		icon: "minecraft:oak_planks"
-		id: "3BE7F8501C9A62D4"
-		tasks: [{
-			id: "15C62F7D9E04B3A8"
-			title: "用 JEI 搜尋並製作任一 Macaw's Furniture 家具"
-			type: "checkmark"
-		}]
-		title: "建築師：家具工坊"
+		title: "太空電梯占位"
 		x: 1.5d
-		y: 0.8d
+		y: -0.5d
 	}, {
-		dependencies: ["3BE7F8501C9A62D4"]
-		description: ["在公會大廳或工坊旁做一個休息區。至少放置座位、桌面與儲物或展示區，讓基地看起來像真正有人使用。"]
+		dependencies: ["11A0000000000001"]
+		description: ["星界兵站網尚未實作。本任務只保留跨星球物流、前哨站串聯與終局補給網方向，不給高階星界材料。"]
+		icon: "minecraft:redstone"
+		id: "11A000000000000A"
+		rewards: [{
+			count: 4
+			id: "11A000000000000B"
+			item: "minecraft:redstone"
+			type: "item"
+		}]
+		tasks: [{
+			id: "11A000000000000C"
+			title: "確認星界兵站網占位"
+			type: "checkmark"
+		}]
+		title: "星界兵站網占位"
+		x: 1.5d
+		y: 0.5d
+	}, {
+		dependencies: ["11A0000000000001"]
+		description: ["後終局龍災與自動事件尚未接入。未來可承接 Ice and Fire、Guild Threat、Boss Gate 與守城波次；目前只建立事件方向占位。"]
 		icon: "minecraft:item_frame"
-		id: "1F6D4B8E927C0A53"
+		id: "11A000000000000D"
 		rewards: [{
-			count: 8
-			id: "0A29D8F3BC617E54"
-			item: "minecraft:oak_planks"
+			count: 1
+			id: "11A000000000000E"
+			item: "minecraft:item_frame"
 			type: "item"
 		}]
 		tasks: [{
-			id: "7D095A6B3E1F482C"
-			title: "完成公會休息區"
+			id: "11A000000000000F"
+			title: "確認後終局龍災占位"
 			type: "checkmark"
 		}]
-		title: "建築師：公會休息區"
-		x: 3.0d
-		y: 0.8d
+		title: "後終局龍災占位"
+		x: 1.5d
+		y: 1.5d
 	}, {
-		dependencies: ["28A7D3C10F5E94B2"]
-		description: ["倉管先用箱子、告示牌與展示框建立分類牆。至少分出建材、礦物、Create 零件、Ad Astra 材料、補給與公共工具六類。"]
-		icon: "minecraft:chest"
-		id: "0E4A97B53D6C28F1"
+		dependencies: ["11A0000000000004", "11A0000000000007", "11A000000000000A", "11A000000000000D"]
+		description: ["公會稱號與收藏系統尚未完成。這裡吸收舊版公告板、展示與分類牆精神，未來才會擴充成稱號、收藏、展示與公會檔案。"]
+		icon: "minecraft:emerald"
+		id: "11A0000000000010"
 		rewards: [{
-			count: 4
-			id: "617E0F492AD8C3B5"
-			item: "minecraft:oak_sign"
+			count: 1
+			id: "11A0000000000011"
+			item: "minecraft:emerald"
 			type: "item"
 		}]
 		tasks: [{
-			count: 6
-			id: "1C9F73E05A42DB68"
-			item: "minecraft:chest"
-			title: "準備分類箱"
+			id: "11A0000000000012"
+			title: "確認公會稱號與收藏占位"
+			type: "checkmark"
+		}]
+		title: "公會稱號 / 收藏占位"
+		x: 3.0d
+		y: 0.0d
+	}, {
+		dependencies: ["11A0000000000010"]
+		description: ["重複挑戰、戰利品獨立顯示與 Loot Integrations 尚未接入。Loot Integrations 未來必須防止普通箱子刷出 Boss Gate、Create、Ad Astra 或終局關鍵材料；玩家戰利品獨立顯示未來用於多人戰利品可見性、掉落展示與歸屬感。"]
+		icon: "minecraft:experience_bottle"
+		id: "11A0000000000013"
+		rewards: [{
+			count: 2
+			id: "11A0000000000014"
+			item: "minecraft:experience_bottle"
+			type: "item"
+		}]
+		tasks: [{
+			id: "11A0000000000015"
+			title: "確認重複挑戰與戰利品整合占位"
+			type: "checkmark"
+		}]
+		title: "重複挑戰與戰利品整合占位"
+		x: 4.5d
+		y: 0.0d
+	}, {
+		dependencies: ["11A0000000000013"]
+		description: ["後終局檔案封存：真正後終局鎖會等 KubeJS / GameStages、終局模組、戰利品系統與稱號收藏系統後實作。現在只完成任務層占位。"]
+		icon: "minecraft:item_frame"
+		id: "11A0000000000016"
+		rewards: [{
+			count: 1
+			id: "11A0000000000017"
+			item: "minecraft:emerald"
 			type: "item"
 		}, {
-			count: 6
-			id: "53B87D26C0E14A9F"
+			count: 1
+			id: "11A0000000000018"
 			item: "minecraft:item_frame"
-			title: "準備分類標示"
-			type: "item"
-		}]
-		title: "倉管：共享分類牆"
-		x: 1.5d
-		y: 2.0d
-	}, {
-		dependencies: ["64F0A9D3C7B2185E", "1F6D4B8E927C0A53", "0E4A97B53D6C28F1"]
-		description: ["把下一批缺口寫在公告板：戰鬥、魔法、飾品、生態、料理與更多建築裝飾都需要未來新增模組後再實作。這一輪只完成現有模組能支撐的 Phase 2 起點。"]
-		icon: "minecraft:oak_sign"
-		id: "43C2F8A19D607E5B"
-		rewards: [{
-			count: 12
-			id: "6A9E13D7B0254C8F"
-			item: "minecraft:bread"
 			type: "item"
 		}]
 		tasks: [{
-			id: "7B3D0C2A9E5816F4"
-			title: "在公告板列出下一批職業缺口"
+			id: "11A0000000000019"
+			title: "封存後終局挑戰檔案"
 			type: "checkmark"
 		}]
-		title: "Phase 2 看板：下一批職業缺口"
+		title: "公會：後終局檔案封存"
 		x: 6.0d
 		y: 0.0d
 	}]
-	title: "第 11 章：Phase 2 職業支線"
+	title: "第 11 章：後終局挑戰"
 }

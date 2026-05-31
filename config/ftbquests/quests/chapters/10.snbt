@@ -7,45 +7,161 @@
 	order_index: 10
 	quest_links: [ ]
 	quests: [{
-		description: ["在基地設置公告板，記錄材料需求、遠征目標與隊友分工。單人遊玩時，也可以把它當成自己的工作清單。"]
-		icon: "minecraft:oak_sign"
-		id: "73E6B7DD358EC124"
+		description: ["公會公告：本章是終局災厄與神格化前壓力的任務層占位。Cataclysm Boss、Terramity 災厄 Boss、Allthemodium / Vibranium / Unobtainium、Avaritia / Re:Avaritia、Tempad、星界重炮、兆級顯示、禁忌研究債務、終局 Gate 與 KubeJS / GameStages 終局鎖尚未實作。本章不假裝終局 Boss、終局材料或終局 Gate 已完成。"]
+		icon: "minecraft:paper"
+		id: "10A0000000000001"
+		rewards: [{
+			count: 4
+			id: "10A0000000000002"
+			item: "minecraft:paper"
+			type: "item"
+		}]
 		tasks: [{
-			id: "65315E66843884B1"
-			title: "建立公會公告板"
+			id: "10A0000000000003"
+			title: "閱讀終局災厄公告"
 			type: "checkmark"
 		}]
-		title: "遠征公會公告板"
+		title: "公會公告：終局災厄占位"
 		x: 0.0d
 		y: 0.0d
 	}, {
-		dependencies: ["73E6B7DD358EC124"]
-		description: ["準備一個隊伍共用補給箱。放入食物、火把、木材與基礎工具，讓下一次出發更快。"]
-		icon: "minecraft:chest"
-		id: "627F5EE3B897C1A0"
-		tasks: [{
-			count: 2
-			id: "2A2D04421739EA79"
-			item: "minecraft:chest"
-			title: "提交補給箱"
+		dependencies: ["10A0000000000001"]
+		description: ["遺物監管局占位：玩家越接近神格化，世界越開始修正你。禁忌研究債務目前只是設計占位，不會生成債務、詛咒、Boss 額外階段或禁忌物品。"]
+		icon: "minecraft:item_frame"
+		id: "10A0000000000004"
+		rewards: [{
+			count: 1
+			id: "10A0000000000005"
+			item: "minecraft:item_frame"
+			type: "item"
+		}, {
+			count: 4
+			id: "10A0000000000006"
+			item: "minecraft:lapis_lazuli"
 			type: "item"
 		}]
-		title: "補給官委託：遠征補給箱"
+		tasks: [{
+			count: 4
+			id: "10A0000000000007"
+			item: "minecraft:paper"
+			title: "準備禁忌研究紀錄"
+			type: "item"
+		}, {
+			count: 1
+			id: "10A0000000000008"
+			item: "minecraft:item_frame"
+			title: "準備監管標記框"
+			type: "item"
+		}, {
+			count: 4
+			id: "10A0000000000009"
+			item: "minecraft:lapis_lazuli"
+			title: "準備研究媒介"
+			type: "item"
+		}]
+		title: "遺物監管局：禁忌研究債務占位"
+		x: 1.5d
+		y: -1.0d
+	}, {
+		dependencies: ["10A0000000000001"]
+		description: ["星界局占位：星界兵站網、太空電梯與終局物流尚未實作。本任務只保留終局星界兵站方向，不發放高階星界材料。"]
+		icon: "minecraft:white_banner"
+		id: "10A000000000000A"
+		rewards: [{
+			count: 1
+			id: "10A000000000000B"
+			item: "minecraft:white_banner"
+			type: "item"
+		}]
+		tasks: [{
+			id: "10A000000000000C"
+			title: "閱讀終局星界兵站占位"
+			type: "checkmark"
+		}]
+		title: "星界局：終局星界兵站占位"
 		x: 1.5d
 		y: 0.0d
 	}, {
-		dependencies: ["627F5EE3B897C1A0"]
-		description: ["分配工程、探索、補給與太空任務。這不是強迫分工，而是讓公會知道下一步誰要做什麼。"]
-		icon: "minecraft:white_banner"
-		id: "0E740FAEFA37943D"
+		dependencies: ["10A0000000000001"]
+		description: ["軍械部占位：星界重炮目前只是終局軍械方向。本章明確不給大砲、星界重炮、TNT 或高階機械，只用紅石、銅材與齒輪做方向驗收。"]
+		icon: "create:cogwheel"
+		id: "10A000000000000D"
+		rewards: [{
+			count: 4
+			id: "10A000000000000E"
+			item: "minecraft:redstone"
+			type: "item"
+		}, {
+			count: 2
+			id: "10A000000000000F"
+			item: "create:cogwheel"
+			type: "item"
+		}]
 		tasks: [{
-			id: "1FC12C4F9E7F430E"
-			title: "完成一次公會分工會議"
+			count: 4
+			id: "10A0000000000010"
+			item: "minecraft:redstone"
+			title: "準備重炮控制粉"
+			type: "item"
+		}, {
+			count: 4
+			id: "10A0000000000011"
+			item: "minecraft:copper_ingot"
+			title: "準備導能銅材"
+			type: "item"
+		}, {
+			count: 2
+			id: "10A0000000000012"
+			item: "create:cogwheel"
+			title: "準備重炮方向齒輪"
+			type: "item"
+		}]
+		title: "軍械部：星界重炮占位"
+		x: 1.5d
+		y: 1.0d
+	}, {
+		dependencies: ["10A0000000000004", "10A000000000000A", "10A000000000000D"]
+		description: ["兆級數字顯示目前只是數值表現方向，不代表大數字系統已完成。底層數值仍應克制，爽感未來靠顯示、戰役倍率與階段解鎖呈現。"]
+		icon: "minecraft:experience_bottle"
+		id: "10A0000000000013"
+		rewards: [{
+			count: 2
+			id: "10A0000000000014"
+			item: "minecraft:experience_bottle"
+			type: "item"
+		}]
+		tasks: [{
+			id: "10A0000000000015"
+			title: "確認兆級數字顯示占位"
 			type: "checkmark"
 		}]
-		title: "多人分工會議"
+		title: "公會：兆級數字顯示占位"
 		x: 3.0d
 		y: 0.0d
+	}, {
+		dependencies: ["10A0000000000013"]
+		description: ["終局災厄 Gate 占位：KubeJS / GameStages 終局鎖尚未實作。真正終局災厄會等 Boss、終局材料、控制層與獎勵表加入後才會啟用。"]
+		icon: "minecraft:emerald"
+		id: "10A0000000000016"
+		rewards: [{
+			count: 1
+			id: "10A0000000000017"
+			item: "minecraft:emerald"
+			type: "item"
+		}, {
+			count: 1
+			id: "10A0000000000018"
+			item: "minecraft:item_frame"
+			type: "item"
+		}]
+		tasks: [{
+			id: "10A0000000000019"
+			title: "取得終局災厄 Gate 占位"
+			type: "checkmark"
+		}]
+		title: "公會：終局災厄 Gate 占位"
+		x: 4.5d
+		y: 0.0d
 	}]
-	title: "公會營運 / Guild Path"
+	title: "第 10 章：終局災厄"
 }

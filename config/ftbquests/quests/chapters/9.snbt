@@ -7,43 +7,194 @@
 	order_index: 9
 	quest_links: [ ]
 	quests: [{
-		description: ["探險家先把基地外圍標記清楚。記錄道路、水源、礦區與危險地形，交給公會作為遠征資料。"]
-		icon: "minecraft:filled_map"
-		id: "7F82693C1D40A55E"
+		description: ["公會公告：本章是融合職業與三線連攜的任務層占位。Spellblade、Arcane Ballistics、Assault Vanguard 真職業尚未實作；Palladium / Pufferfish's Skills 主動技能尚未接入；三職業連攜技、職業裝備鎖、星界灌注、龍鋼與 KubeJS / GameStages 融合 Gate 尚未實作。本章只建立方向認證，不假裝真技能或真融合兵裝已完成。"]
+		icon: "minecraft:paper"
+		id: "9A00000000000001"
+		rewards: [{
+			count: 4
+			id: "9A00000000000002"
+			item: "minecraft:paper"
+			type: "item"
+		}]
 		tasks: [{
-			id: "69F14401C1F5B866"
-			title: "在地圖上標記基地外圍"
+			id: "9A00000000000003"
+			title: "閱讀跨職業融合公告"
 			type: "checkmark"
 		}]
-		title: "遠征公會委託：基地外圍調查"
+		title: "公會公告：跨職業融合占位"
 		x: 0.0d
 		y: 0.0d
 	}, {
-		dependencies: ["7F82693C1D40A55E"]
-		description: ["用 Jade 辨識沿途看到的方塊與模組來源。好的探險報告，要能讓隊友理解資源價值。"]
-		icon: "minecraft:spyglass"
-		id: "12D3E7814C0B6F39"
-		tasks: [{
-			id: "3DEDF229D1CA20A1"
-			title: "完成 Jade 調查紀錄"
-			type: "checkmark"
+		dependencies: ["9A00000000000001"]
+		description: ["Spellblade 方向：未來定位是前鋒近戰破甲結合奧術元素附魔 / 法術強化。現在只是方向認證占位，不啟用真職業、真技能或裝備鎖。"]
+		icon: "minecraft:lapis_lazuli"
+		id: "9A00000000000004"
+		rewards: [{
+			count: 4
+			id: "9A00000000000005"
+			item: "minecraft:lapis_lazuli"
+			type: "item"
+		}, {
+			count: 2
+			id: "9A00000000000006"
+			item: "minecraft:iron_ingot"
+			type: "item"
 		}]
-		title: "Jade 資源調查報告"
+		tasks: [{
+			count: 4
+			id: "9A00000000000007"
+			item: "minecraft:paper"
+			title: "準備融合研究紙"
+			type: "item"
+		}, {
+			count: 4
+			id: "9A00000000000008"
+			item: "minecraft:lapis_lazuli"
+			title: "準備奧術媒介"
+			type: "item"
+		}, {
+			count: 2
+			id: "9A00000000000009"
+			item: "minecraft:iron_ingot"
+			title: "準備近戰框架鐵材"
+			type: "item"
+		}]
+		title: "Spellblade：前鋒 + 奧術融合方向"
+		x: 1.5d
+		y: -1.0d
+	}, {
+		dependencies: ["9A00000000000001"]
+		description: ["Arcane Ballistics 方向：未來定位是奧術彈道、弱點標記與魔法強化槍械。現在沒有真槍械升階、真彈道技能或奧術彈藥，只做方向認證占位。"]
+		icon: "minecraft:redstone"
+		id: "9A0000000000000A"
+		rewards: [{
+			count: 4
+			id: "9A0000000000000B"
+			item: "minecraft:redstone"
+			type: "item"
+		}, {
+			count: 2
+			id: "9A0000000000000C"
+			item: "minecraft:copper_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "9A0000000000000D"
+			item: "minecraft:redstone"
+			title: "準備彈道控制粉"
+			type: "item"
+		}, {
+			count: 4
+			id: "9A0000000000000E"
+			item: "minecraft:lapis_lazuli"
+			title: "準備奧術校準媒介"
+			type: "item"
+		}, {
+			count: 2
+			id: "9A0000000000000F"
+			item: "minecraft:copper_ingot"
+			title: "準備導能銅材"
+			type: "item"
+		}]
+		title: "Arcane Ballistics：銃士 + 奧術融合方向"
 		x: 1.5d
 		y: 0.0d
 	}, {
-		dependencies: ["12D3E7814C0B6F39"]
-		description: ["把基地到重要資源點的路線標在地圖上。遠征不是走得遠，而是能安全回來。"]
-		icon: "waystones:waystone"
-		id: "71EB93E0B5B15C44"
+		dependencies: ["9A00000000000001"]
+		description: ["Assault Vanguard 方向：未來定位是破陣銃衛、近戰突入與短距離火力支援。現在只是前鋒與銃士的戰術方向占位，不啟用真融合職業。"]
+		icon: "create:shaft"
+		id: "9A00000000000010"
+		rewards: [{
+			count: 4
+			id: "9A00000000000011"
+			item: "create:shaft"
+			type: "item"
+		}]
 		tasks: [{
-			id: "2924B749E4FA97F1"
-			title: "標記一條安全遠征路線"
+			count: 2
+			id: "9A00000000000012"
+			item: "minecraft:iron_ingot"
+			title: "準備突入框架鐵材"
+			type: "item"
+		}, {
+			count: 4
+			id: "9A00000000000013"
+			item: "minecraft:redstone"
+			title: "準備短距離火力控制粉"
+			type: "item"
+		}, {
+			count: 4
+			id: "9A00000000000014"
+			item: "create:shaft"
+			title: "準備演訓傳動軸"
+			type: "item"
+		}]
+		title: "Assault Vanguard：前鋒 + 銃士融合方向"
+		x: 1.5d
+		y: 1.0d
+	}, {
+		dependencies: ["9A00000000000004", "9A0000000000000A", "9A00000000000010"]
+		description: ["星界局占位：星界灌注、龍鋼、星界材料融合與職業兵裝融合尚未實作。本任務只保留未來從月球 / 火星前哨站銜接到融合兵裝的方向，不發放任何星界高階材料。"]
+		icon: "minecraft:item_frame"
+		id: "9A00000000000015"
+		rewards: [{
+			count: 1
+			id: "9A00000000000016"
+			item: "minecraft:item_frame"
+			type: "item"
+		}]
+		tasks: [{
+			id: "9A00000000000017"
+			title: "閱讀星界灌注占位說明"
 			type: "checkmark"
 		}]
-		title: "遠征安全路線圖"
+		title: "星界局：星界灌注占位"
 		x: 3.0d
 		y: 0.0d
+	}, {
+		dependencies: ["9A00000000000015"]
+		description: ["三職業連攜技尚未實作。未來會由 Vanguard 破甲、Gunner 標記、Arcanist 解盾共同觸發；現在只做戰術編組與團隊語氣占位。"]
+		icon: "minecraft:experience_bottle"
+		id: "9A00000000000018"
+		rewards: [{
+			count: 2
+			id: "9A00000000000019"
+			item: "minecraft:experience_bottle"
+			type: "item"
+		}]
+		tasks: [{
+			id: "9A0000000000001A"
+			title: "確認三職業連攜技占位"
+			type: "checkmark"
+		}]
+		title: "公會：三職業連攜技占位"
+		x: 4.5d
+		y: 0.0d
+	}, {
+		dependencies: ["9A00000000000018"]
+		description: ["融合兵裝認證：占位核准。真正融合 Gate 會等 KubeJS / GameStages、技能模組與裝備模組後實作；目前沒有融合兵裝、龍鋼或星界灌注獎勵。"]
+		icon: "minecraft:emerald"
+		id: "9A0000000000001B"
+		rewards: [{
+			count: 1
+			id: "9A0000000000001C"
+			item: "minecraft:emerald"
+			type: "item"
+		}, {
+			count: 1
+			id: "9A0000000000001D"
+			item: "minecraft:item_frame"
+			type: "item"
+		}]
+		tasks: [{
+			id: "9A0000000000001E"
+			title: "取得融合兵裝認證占位"
+			type: "checkmark"
+		}]
+		title: "公會：融合兵裝認證占位"
+		x: 6.0d
+		y: 0.0d
 	}]
-	title: "探險家委託 / Explorer Path"
+	title: "第 9 章：跨職業融合"
 }

@@ -50,11 +50,11 @@ hash = "ef5553add2721f742f5b2ea3eb6fe0215495b866267b3b2b381ab8a5d0e3d7ad"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10.snbt"
-hash = "bdafbe561c2793107125b2884d6455478e63aa09dda8a97b79153e773c718b52"
+hash = "2a058368f98a37a6b3cf2245a8e10b1baf903f90ede2563080c9a273b02253d6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/11.snbt"
-hash = "e5426f8e57343b7d83c7c86af289f3a46d1848c0f22e0eb91d65298db0619eab"
+hash = "07f9e04b76f6c6b0d09328389bea7f2b4c76b9bfbb7388a542e2e969665acc4b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2.snbt"
@@ -86,7 +86,7 @@ hash = "e3ccaacbf0bfe4947e880e2690265773960f9dc0069d269d9b78981b107c5801"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/9.snbt"
-hash = "1b02d3279eed725d312873ded5c757f5e4de285007a2ae635eb6e5fa7c80d211"
+hash = "bb68add89d68033eb188eb011ae7adb80707ba154615e571ab86097fc39ebc97"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
