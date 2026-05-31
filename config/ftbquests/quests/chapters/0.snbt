@@ -7,7 +7,7 @@
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
-		description: ["歡迎來到 Expedition Guild。這是公會遠征、地表工業化與太空探索的起點。"]
+		description: ["歡迎來到 Expedition Guild。這是公會遠征、地表工業化與太空探索的起點。先打開任務書，讀完本章的操作手冊，再出發建立第一個集合點。"]
 		icon: "minecraft:compass"
 		id: "5323818AFD57B584"
 		rewards: [{
@@ -26,7 +26,7 @@
 		y: 0.0d
 	}, {
 		dependencies: ["5323818AFD57B584"]
-		description: ["打開 JEI 查詢配方。先搜尋 create 與 ad astra，了解本包的工業與太空主軸。"]
+		description: ["打開 JEI 查詢配方。先搜尋 Create、Ad Astra 與 Macaw's Furniture，確認配方、用途與材料路線。遇到不熟悉的物品時，先用 JEI 查來源，不要只靠猜。"]
 		icon: "minecraft:book"
 		id: "4C2B2C99F742D0A1"
 		tasks: [{
@@ -39,7 +39,7 @@
 		y: -0.8d
 	}, {
 		dependencies: ["5323818AFD57B584"]
-		description: ["看向任意方塊，確認 Jade 顯示名稱與模組來源。探索時先知道自己看到的是什麼。"]
+		description: ["看向任意方塊或實體，確認 Jade 顯示名稱與模組來源。探索、建築與檢查機器時，先知道自己看到的是什麼，再決定要不要拆除或帶回公會。"]
 		icon: "minecraft:spyglass"
 		id: "2F9C47CC7893F1E8"
 		tasks: [{
@@ -52,7 +52,7 @@
 		y: 0.0d
 	}, {
 		dependencies: ["5323818AFD57B584"]
-		description: ["開啟世界地圖或小地圖。遠征隊需要能找到集合點與回家的路。"]
+		description: ["開啟 Xaero's Minimap 或 Xaero's World Map。遠征隊需要能找到集合點、標記資源、記錄危險區域，並保留回家的路線。"]
 		icon: "minecraft:map"
 		id: "7D17E7834C36E91D"
 		tasks: [{
@@ -65,6 +65,71 @@
 		y: 0.8d
 	}, {
 		dependencies: ["4C2B2C99F742D0A1", "2F9C47CC7893F1E8", "7D17E7834C36E91D"]
+		description: ["把任務書、JEI、Jade、地圖與公會工具當成標準流程。每次遇到新模組或新設備，先查配方、看來源、標記位置，再回報給公會。"]
+		icon: "minecraft:writable_book"
+		id: "6A5D13B0E91C4F27"
+		tasks: [{
+			id: "44E7B2C98A0F1D63"
+			title: "讀完遠征操作手冊"
+			type: "checkmark"
+		}]
+		title: "遠征操作手冊"
+		x: 3.0d
+		y: -1.2d
+	}, {
+		dependencies: ["6A5D13B0E91C4F27"]
+		description: ["Waystones 是公會集合與返航的重要工具。放置前先確認位置安全，命名要清楚；多人伺服器中，重要傳送點應寫在公告板或地圖標記裡。"]
+		icon: "waystones:waystone"
+		id: "1C7E9A42D0B5F836"
+		tasks: [{
+			id: "7B1A58E36D9C204F"
+			title: "確認 Waystones 使用規則"
+			type: "checkmark"
+		}]
+		title: "Waystones 返航規則"
+		x: 4.5d
+		y: -1.2d
+	}, {
+		dependencies: ["6A5D13B0E91C4F27"]
+		description: ["使用 FTB Teams 建立或加入隊伍，再用 FTB Chunks 宣告基地核心區塊。不要隨意載入過多區塊；多人伺服器要把領地、共享箱與公共機器的使用規則說清楚。"]
+		icon: "minecraft:white_banner"
+		id: "2D4B8F03A6C9175E"
+		tasks: [{
+			id: "35F0C6A7E91D482B"
+			title: "確認隊伍與區塊規則"
+			type: "checkmark"
+		}]
+		title: "FTB Teams / Chunks 規則"
+		x: 4.5d
+		y: 0.0d
+	}, {
+		dependencies: ["6A5D13B0E91C4F27"]
+		description: ["Simple Voice Chat 可用來建立語音群組、調整輸入輸出裝置與音量。正式遠征前先確認語音能通，避免升空、探索或戰鬥時臨時失聯。"]
+		icon: "minecraft:note_block"
+		id: "55E2A7F64C9130BD"
+		tasks: [{
+			id: "638D2F1A0B4C75E9"
+			title: "確認語音聊天設定"
+			type: "checkmark"
+		}]
+		title: "Simple Voice Chat 檢查"
+		x: 4.5d
+		y: 1.2d
+	}, {
+		dependencies: ["1C7E9A42D0B5F836", "2D4B8F03A6C9175E", "55E2A7F64C9130BD"]
+		description: ["本包採小步驟驗證。Create 固定 1.20.1-0.5.1j，不升 Create 6；Ad Astra 固定 1.20.1-1.15.19，不升 1.15.20。遇到效能問題時，先降低視距、關閉高負載畫面設定，並保留 latest.log。"]
+		icon: "minecraft:anvil"
+		id: "7290E4C35B8A16FD"
+		tasks: [{
+			id: "0D95B8E41A6C3F72"
+			title: "確認版本鎖定與效能提醒"
+			type: "checkmark"
+		}]
+		title: "穩定基線與效能提醒"
+		x: 6.0d
+		y: 0.0d
+	}, {
+		dependencies: ["7290E4C35B8A16FD"]
 		description: ["準備食物與火把。出發前先確保能活過第一個夜晚。"]
 		icon: "minecraft:torch"
 		id: "32D617E88A77E20B"
