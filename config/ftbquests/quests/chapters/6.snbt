@@ -7,122 +7,198 @@
 	order_index: 6
 	quest_links: [ ]
 	quests: [{
-		description: ["抵達月球後，先確認落點安全。記下座標，避免迷路。"]
-		icon: "minecraft:compass"
+		description: ["公會公告：本章是中階職業裝備方向占位，不代表任何裝備模組已加入。Simply Swords、Silent Gear、Apotheosis、Artifacts / L2 Artifacts、SlashBlade、Terramity 中階 Boss、武器記憶、Legendary Tooltips / Item Borders、稀有度外框與職業裝備鎖尚未實作。本章不發放神器、Boss 裝備或高階材料。"]
+		icon: "minecraft:paper"
+		id: "6A00000000000001"
+		rewards: [{
+			count: 4
+			id: "6A00000000000002"
+			item: "minecraft:paper"
+			type: "item"
+		}]
+		tasks: [{
+			id: "6A00000000000003"
+			title: "閱讀中階裝備占位公告"
+			type: "checkmark"
+		}]
+		title: "公會公告：中階職業裝備占位"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["6A00000000000001"]
+		description: ["Vanguard 方向：未來近戰線會負責破甲、格擋反擊與 Boss Break。現在只是方向認證占位，不會啟用職業裝備鎖或正式技能。"]
+		icon: "minecraft:shield"
 		id: "7374CD16E891E04C"
 		rewards: [{
-			count: 8
-			id: "55F949744C37B826"
-			item: "minecraft:torch"
+			count: 2
+			id: "6A00000000000004"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}, {
+			count: 2
+			id: "6A00000000000005"
+			item: "minecraft:leather"
 			type: "item"
 		}]
 		tasks: [{
 			id: "3C611046C2F039E1"
-			title: "確認月球登陸地點"
-			type: "checkmark"
+			item: "minecraft:shield"
+			title: "準備近戰升階盾牌"
+			type: "item"
+		}, {
+			count: 2
+			id: "6A00000000000006"
+			item: "minecraft:iron_ingot"
+			title: "準備近戰升階鐵材"
+			type: "item"
 		}]
-		title: "確認登陸地點"
-		x: 0.0d
-		y: 0.0d
+		title: "Vanguard：近戰升階方向"
+		x: 1.5d
+		y: -1.2d
 	}, {
-		dependencies: ["7374CD16E891E04C"]
-		description: ["先建立可躲避危險的臨時空間。前哨站不需要一開始就很大。"]
-		icon: "minecraft:stone_bricks"
+		dependencies: ["6A00000000000001"]
+		description: ["Gunner 方向：TaCZ 與槍械升階尚未加入，暫用遠程備戰占位。未來會處理槍械配件、彈藥管理與防空定位。"]
+		icon: "minecraft:arrow"
 		id: "5707DF878E13BEA4"
+		rewards: [{
+			count: 16
+			id: "6A00000000000007"
+			item: "minecraft:arrow"
+			type: "item"
+		}, {
+			count: 2
+			id: "6A00000000000008"
+			item: "minecraft:string"
+			type: "item"
+		}]
 		tasks: [{
 			count: 16
 			id: "21561F25D1D8A5A7"
-			item: "minecraft:stone_bricks"
-			title: "準備庇護所建材"
+			item: "minecraft:arrow"
+			title: "準備遠程升階箭矢"
+			type: "item"
+		}, {
+			count: 2
+			id: "6A00000000000009"
+			item: "minecraft:string"
+			title: "準備遠程升階弦材"
 			type: "item"
 		}]
-		title: "建立臨時庇護所"
+		title: "Gunner：槍械 / 遠程升階方向"
 		x: 1.5d
-		y: -0.8d
+		y: 0.0d
 	}, {
-		dependencies: ["5707DF878E13BEA4"]
-		description: ["確認氧氣補給可用。月球據點要能支援下一次探索。"]
-		icon: "minecraft:glass_bottle"
+		dependencies: ["6A00000000000001"]
+		description: ["Arcanist 方向：法術、元素標記與護盾解除尚未實作。現在只做奧術研究方向占位，保留未來控場與支援能力位置。"]
+		icon: "minecraft:lapis_lazuli"
 		id: "5B2477814D404D5E"
-		tasks: [{
-			id: "2A5E873A3BA7D9B4"
-			title: "確認氧氣補給流程"
-			type: "checkmark"
-		}]
-		title: "設置氧氣補給"
-		x: 3.0d
-		y: -0.8d
-	}, {
-		dependencies: ["5707DF878E13BEA4"]
-		description: ["放置儲物點，集中月球採集物與返航補給。"]
-		icon: "minecraft:chest"
-		id: "5868C7F95EE769D8"
 		rewards: [{
 			count: 4
-			id: "5DB1B35A80F04108"
-			item: "minecraft:bread"
+			id: "6A0000000000000A"
+			item: "minecraft:lapis_lazuli"
+			type: "item"
+		}, {
+			count: 2
+			id: "6A0000000000000B"
+			item: "minecraft:experience_bottle"
 			type: "item"
 		}]
 		tasks: [{
-			count: 2
-			id: "4923FF8D27EEB3D8"
-			item: "minecraft:chest"
-			title: "準備月球儲物箱"
+			count: 4
+			id: "2A5E873A3BA7D9B4"
+			item: "minecraft:paper"
+			title: "準備奧術研究紙"
+			type: "item"
+		}, {
+			count: 4
+			id: "6A0000000000000C"
+			item: "minecraft:lapis_lazuli"
+			title: "準備少量青金石"
 			type: "item"
 		}]
-		title: "建立月球儲物點"
-		x: 3.0d
-		y: 0.8d
+		title: "Arcanist：法術 / 控場升階方向"
+		x: 1.5d
+		y: 1.2d
 	}, {
-		dependencies: ["5B2477814D404D5E", "5868C7F95EE769D8"]
-		description: ["在地圖或紀錄中標記月球基地。隊友要能找到這裡。"]
-		icon: "minecraft:filled_map"
+		dependencies: ["7374CD16E891E04C", "5707DF878E13BEA4", "5B2477814D404D5E"]
+		description: ["鍛造部占位：武器記憶未實作。未來可能記錄 Boss、守城、龍災、星界灌注與神格化；目前只建立記錄與驗收流程。"]
+		icon: "minecraft:item_frame"
+		id: "5868C7F95EE769D8"
+		rewards: [{
+			count: 1
+			id: "6A0000000000000D"
+			item: "minecraft:item_frame"
+			type: "item"
+		}, {
+			count: 4
+			id: "6A0000000000000E"
+			item: "minecraft:paper"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "4923FF8D27EEB3D8"
+			item: "minecraft:paper"
+			title: "準備武器記憶紀錄紙"
+			type: "item"
+		}, {
+			id: "6A0000000000000F"
+			item: "minecraft:item_frame"
+			title: "準備武器記憶標記框"
+			type: "item"
+		}, {
+			count: 2
+			id: "6A00000000000010"
+			item: "minecraft:iron_ingot"
+			title: "準備驗收鐵材"
+			type: "item"
+		}]
+		title: "鍛造部：武器記憶占位"
+		x: 3.0d
+		y: 0.0d
+	}, {
+		dependencies: ["5868C7F95EE769D8"]
+		description: ["遺物監管局占位：Artifacts、Apotheosis gem、Legendary Tooltips、Item Borders 尚未加入或未確認。本章不發放任何相關物品。未來稀有度外框只會給職業主武器、Boss 掉落、進化武器、神器、終局材料與特殊遺物。"]
+		icon: "minecraft:white_banner"
 		id: "4D49230E6F5F89AC"
+		rewards: [{
+			count: 1
+			id: "6A00000000000011"
+			item: "minecraft:white_banner"
+			type: "item"
+		}]
 		tasks: [{
 			id: "57D08714FC947826"
-			title: "標記月球基地位置"
+			title: "閱讀神器與稀有度外框規範"
 			type: "checkmark"
 		}]
-		title: "標記月球基地"
+		title: "遺物監管局：神器 / 稀有度外框占位"
 		x: 4.5d
 		y: 0.0d
 	}, {
 		dependencies: ["4D49230E6F5F89AC"]
-		description: ["確認返航路線、燃料、氧氣與隊友狀態。不要把遠征隊留在月球。"]
-		icon: "minecraft:clock"
-		id: "07F07FF0E7D75414"
-		tasks: [{
-			id: "5D83C85994C49506"
-			title: "確認返回流程"
-			type: "checkmark"
-		}]
-		title: "建立返回流程"
-		x: 6.0d
-		y: 0.0d
-	}, {
-		dependencies: ["07F07FF0E7D75414"]
-		description: ["月球前哨站已可辨識、可存放物資，並能支援下一次任務。"]
-		icon: "minecraft:white_banner"
+		description: ["中階裝備認證：占位核准。真正裝備升階會等 Simply Swords、Silent Gear、Apotheosis、Artifacts、SlashBlade、Terramity、KubeJS 與 GameStages 後實作。"]
+		icon: "minecraft:emerald"
 		id: "34829FDF00C6D3B3"
 		rewards: [{
-			count: 8
-			id: "683187FE1D9A19F5"
-			item: "minecraft:iron_ingot"
+			count: 1
+			id: "6A00000000000012"
+			item: "minecraft:emerald"
 			type: "item"
 		}, {
-			count: 8
-			id: "01C0E7EF27776790"
-			item: "minecraft:copper_ingot"
+			count: 4
+			id: "6A00000000000013"
+			item: "create:shaft"
 			type: "item"
 		}]
 		tasks: [{
 			id: "0BD502887E3BE45C"
-			title: "完成月球前哨站"
+			title: "取得中階裝備認證占位"
 			type: "checkmark"
 		}]
-		title: "完成月球前哨站"
-		x: 7.5d
+		title: "公會：中階裝備認證占位"
+		x: 6.0d
 		y: 0.0d
 	}]
-	title: "第 6 章：月球前哨站"
+	title: "第 6 章：中階職業裝備"
 }

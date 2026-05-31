@@ -7,99 +7,188 @@
 	order_index: 5
 	quest_links: [ ]
 	quests: [{
-		description: ["依照 Ad Astra 配方完成第一艘火箭。這是公會太空計畫的核心載具。"]
-		icon: "minecraft:firework_rocket"
-		id: "611F9BF133449581"
+		description: ["公會公告：第一次守城演習後，公會開始監測異常。這是災變系統的任務層占位，不是真正事件系統。Born in Chaos 尚未安裝，Terramity、Enigmatic Legacy、Twilight Forest、Ice and Fire 龍災尚未接入；Guild Threat 目前只是文字概念，怪物池升級、自動事件觸發、KubeJS / GameStages 威脅鎖尚未實作。"]
+		icon: "minecraft:paper"
+		id: "5A00000000000001"
+		rewards: [{
+			count: 4
+			id: "5A00000000000002"
+			item: "minecraft:paper"
+			type: "item"
+		}]
 		tasks: [{
-			id: "0077A783CF2A4B90"
-			title: "完成第一艘火箭"
+			id: "5A00000000000003"
+			title: "閱讀災變前兆公告"
 			type: "checkmark"
 		}]
-		title: "組裝第一艘火箭"
+		title: "公會公告：災變前兆"
 		x: 0.0d
 		y: 0.0d
 	}, {
-		dependencies: ["611F9BF133449581"]
-		description: ["穿上完整太空裝備，再進行下一步。不要空身升空。"]
-		icon: "minecraft:iron_helmet"
-		id: "404FB0539DF1497E"
-		tasks: [{
-			id: "46F84E66D29F8E50"
-			title: "確認太空裝已裝備"
-			type: "checkmark"
+		dependencies: ["5A00000000000001"]
+		description: ["探險部任務：標記異常地點、洞穴入口與怪物密度變化。不要使用任何未安裝災變模組物品；目前只建立調查流程與地圖紀錄。"]
+		icon: "minecraft:compass"
+		id: "611F9BF133449581"
+		rewards: [{
+			count: 8
+			id: "5A00000000000004"
+			item: "minecraft:torch"
+			type: "item"
+		}, {
+			count: 1
+			id: "5A00000000000005"
+			item: "minecraft:compass"
+			type: "item"
 		}]
-		title: "裝備太空裝"
+		tasks: [{
+			id: "0077A783CF2A4B90"
+			item: "minecraft:compass"
+			title: "準備異常調查羅盤"
+			type: "item"
+		}, {
+			count: 8
+			id: "5A00000000000006"
+			item: "minecraft:torch"
+			title: "準備調查照明"
+			type: "item"
+		}, {
+			count: 4
+			id: "5A00000000000007"
+			item: "minecraft:paper"
+			title: "準備異常足跡紀錄"
+			type: "item"
+		}]
+		title: "探險部：異常足跡調查"
 		x: 1.5d
-		y: -0.8d
+		y: -1.2d
 	}, {
-		dependencies: ["611F9BF133449581"]
-		description: ["確認氧氣補給可用。升空前每位成員都要再次檢查。"]
-		icon: "minecraft:glass_bottle"
-		id: "15163220533E1798"
-		tasks: [{
-			id: "14E998A1A560E377"
-			title: "確認氧氣已補充"
-			type: "checkmark"
+		dependencies: ["5A00000000000001"]
+		description: ["奧術院占位：Enigmatic Legacy 與禁忌神器系統尚未接入。本任務只建立異常紀錄流程，不發放任何禁忌、神器或遺物物品。"]
+		icon: "minecraft:item_frame"
+		id: "404FB0539DF1497E"
+		rewards: [{
+			count: 4
+			id: "5A00000000000008"
+			item: "minecraft:paper"
+			type: "item"
+		}, {
+			count: 1
+			id: "5A00000000000009"
+			item: "minecraft:item_frame"
+			type: "item"
 		}]
-		title: "補充氧氣"
+		tasks: [{
+			count: 4
+			id: "46F84E66D29F8E50"
+			item: "minecraft:paper"
+			title: "準備禁忌殘響紀錄"
+			type: "item"
+		}, {
+			id: "5A0000000000000A"
+			item: "minecraft:item_frame"
+			title: "準備異常樣本標記"
+			type: "item"
+		}]
+		title: "奧術院：禁忌殘響紀錄占位"
 		x: 1.5d
 		y: 0.0d
 	}, {
-		dependencies: ["611F9BF133449581"]
-		description: ["確認火箭燃料已加注。發射前不要移開燃料設備。"]
-		icon: "minecraft:bucket"
-		id: "77AF87B38C8FDB01"
-		tasks: [{
-			id: "77021D40DF10B5FD"
-			title: "確認燃料已加注"
-			type: "checkmark"
-		}]
-		title: "加注燃料"
-		x: 1.5d
-		y: 0.8d
-	}, {
-		dependencies: ["404FB0539DF1497E", "15163220533E1798", "77AF87B38C8FDB01"]
-		description: ["所有檢查完成後，執行第一次升空。這是公會進入星界邊境的里程碑。"]
-		icon: "minecraft:firework_rocket"
-		id: "222D5CC7873F2922"
+		dependencies: ["5A00000000000001"]
+		description: ["軍械部任務：威脅提升後，需要更穩定的備戰物資。這不是高階武器線，只是箭矢、弦、皮革與少量鐵的備戰標準。"]
+		icon: "minecraft:arrow"
+		id: "15163220533E1798"
 		rewards: [{
-			count: 8
-			id: "0579DD7AF6BA9D2E"
-			item: "minecraft:bread"
+			count: 16
+			id: "5A0000000000000B"
+			item: "minecraft:arrow"
 			type: "item"
 		}, {
+			count: 2
+			id: "5A0000000000000C"
+			item: "minecraft:string"
+			type: "item"
+		}, {
+			count: 2
+			id: "5A0000000000000D"
+			item: "minecraft:leather"
+			type: "item"
+		}]
+		tasks: [{
 			count: 16
-			id: "4D7B7F4EC1B159A9"
-			item: "minecraft:torch"
+			id: "14E998A1A560E377"
+			item: "minecraft:arrow"
+			title: "準備威脅升級箭矢"
+			type: "item"
+		}, {
+			count: 2
+			id: "5A0000000000000E"
+			item: "minecraft:string"
+			title: "準備弦材"
+			type: "item"
+		}, {
+			count: 2
+			id: "5A0000000000000F"
+			item: "minecraft:leather"
+			title: "準備護具皮革"
+			type: "item"
+		}, {
+			count: 2
+			id: "5A00000000000010"
+			item: "minecraft:iron_ingot"
+			title: "準備少量備戰鐵材"
+			type: "item"
+		}]
+		title: "軍械部：威脅升級備戰"
+		x: 1.5d
+		y: 1.2d
+	}, {
+		dependencies: ["611F9BF133449581", "404FB0539DF1497E", "15163220533E1798"]
+		description: ["Guild Threat / 公會威脅值目前未實作。未來來源可能包含 Boss、守城、火箭、龍鋼、禁忌神器、Avaritia 材料與太空電梯；未來影響可能包含怪物池升級、守城波次、Boss 額外階段、龍災提前與星界入侵。現在這只是設計公告。"]
+		icon: "minecraft:white_banner"
+		id: "77AF87B38C8FDB01"
+		rewards: [{
+			count: 1
+			id: "5A00000000000011"
+			item: "minecraft:white_banner"
+			type: "item"
+		}]
+		tasks: [{
+			id: "77021D40DF10B5FD"
+			title: "閱讀 Guild Threat 占位說明"
+			type: "checkmark"
+		}]
+		title: "公會：Guild Threat 占位說明"
+		x: 3.0d
+		y: 0.0d
+	}, {
+		dependencies: ["77AF87B38C8FDB01"]
+		description: ["災變前兆報告：已提交。這只是任務層占位；後續才會接 Born in Chaos、Terramity、Twilight Forest、Ice and Fire 與 Guild Threat 系統。玩家越強，世界越開始反擊，目前只是戰役敘事占位。"]
+		icon: "minecraft:item_frame"
+		id: "222D5CC7873F2922"
+		rewards: [{
+			count: 1
+			id: "5A00000000000012"
+			item: "minecraft:emerald"
+			type: "item"
+		}, {
+			count: 1
+			id: "5A00000000000013"
+			item: "minecraft:item_frame"
+			type: "item"
+		}, {
+			count: 2
+			id: "5A00000000000014"
+			item: "minecraft:cooked_beef"
 			type: "item"
 		}]
 		tasks: [{
 			id: "75529821E582193E"
-			title: "完成首次升空"
+			title: "提交災變前兆報告"
 			type: "checkmark"
 		}]
-		title: "首次升空"
-		x: 3.0d
-		y: 0.0d
-	}, {
-		dependencies: ["222D5CC7873F2922"]
-		description: ["抵達月球後，記錄座標並準備進入下一章的前哨站建設。"]
-		icon: "minecraft:end_stone"
-		id: "46E6671E98C956DE"
-		rewards: [{
-			count: 8
-			id: "17B4C4B4B16B81DE"
-			item: "minecraft:stone_bricks"
-			type: "item"
-		}]
-		tasks: [{
-			id: "7C160F868CE75448"
-			title: "確認已抵達月球"
-			type: "checkmark"
-		}]
-		title: "抵達月球"
+		title: "公會：災變前兆報告提交"
 		x: 4.5d
 		y: 0.0d
 	}]
-	title: "第 5 章：首次升空"
+	title: "第 5 章：災變前兆"
 }
