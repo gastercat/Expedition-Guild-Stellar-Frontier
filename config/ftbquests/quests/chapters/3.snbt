@@ -7,113 +7,188 @@
 	order_index: 3
 	quest_links: [ ]
 	quests: [{
-		description: ["用輸送帶把物品從一台機械送到另一台機械。產線從搬運開始。"]
-		icon: "create:belt_connector"
-		id: "6482124F53E14EF8"
+		description: ["公會公告：第一討伐令是 Boss Gate 的任務層占位。本章只做三職業作戰演習與補給確認；KubeJS Boss Gate、GameStages 階段鎖、Boss 擊殺偵測、真正第一 Boss 與武器進化掉落尚未實作。"]
+		icon: "minecraft:paper"
+		id: "3A00000000000001"
 		rewards: [{
-			count: 8
-			id: "3F48D7B8A90C1451"
-			item: "minecraft:oak_planks"
+			count: 4
+			id: "3A00000000000002"
+			item: "minecraft:paper"
 			type: "item"
 		}]
 		tasks: [{
-			count: 4
-			id: "20BFB1F21F4B504A"
-			item: "create:belt_connector"
-			title: "取得輸送帶連接器"
-			type: "item"
+			id: "3A00000000000003"
+			title: "閱讀第一討伐令占位公告"
+			type: "checkmark"
 		}]
-		title: "建立第一條輸送帶"
+		title: "公會公告：第一討伐令占位"
 		x: 0.0d
 		y: 0.0d
 	}, {
-		dependencies: ["6482124F53E14EF8"]
-		description: ["置物台可以作為機械加工的輸入與輸出點。"]
-		icon: "create:depot"
-		id: "0B4E238E3942B7A1"
-		tasks: [{
-			id: "2B1F7E2B72E9740A"
-			item: "create:depot"
-			title: "製作置物台"
+		dependencies: ["3A00000000000001"]
+		description: ["Vanguard 演習：前鋒負責近身承壓、破盾與保護後排。這只是作戰演習，不是正式技能，也不代表 Boss Gate 已經開放。"]
+		icon: "minecraft:shield"
+		id: "3A00000000000004"
+		rewards: [{
+			count: 2
+			id: "3A00000000000005"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}, {
+			count: 2
+			id: "3A00000000000006"
+			item: "minecraft:leather"
 			type: "item"
 		}]
-		title: "製作置物台"
+		tasks: [{
+			id: "3A00000000000007"
+			item: "minecraft:shield"
+			title: "準備近身破盾盾牌"
+			type: "item"
+		}]
+		title: "Vanguard：近身破盾演習"
 		x: 1.5d
-		y: -0.8d
+		y: -1.2d
 	}, {
-		dependencies: ["6482124F53E14EF8", "0B4E238E3942B7A1"]
-		description: ["把輸送帶、置物台與機械接在一起，讓物品能自動移動。"]
-		icon: "minecraft:hopper"
-		id: "6F8F822CE2A66919"
-		tasks: [{
-			id: "5D3F6F4FD6244F8D"
-			title: "完成一段基礎搬運系統"
-			type: "checkmark"
-		}]
-		title: "建立基礎搬運系統"
-		x: 3.0d
-		y: -0.8d
-	}, {
-		dependencies: ["6F8F822CE2A66919"]
-		description: ["讓鐵錠自動進入機械壓力機，輸出鐵板。"]
-		icon: "create:iron_sheet"
-		id: "1D6E846235A7D219"
+		dependencies: ["3A00000000000001"]
+		description: ["Gunner 演習：銃士線尚未有槍械模組，本輪暫用弓箭作遠程壓制占位。重點是安全距離、彈藥管理與支援前鋒。"]
+		icon: "minecraft:bow"
+		id: "3A00000000000008"
 		rewards: [{
-			count: 4
-			id: "0EF981E61B6A89A0"
-			item: "minecraft:iron_ingot"
-			type: "item"
-		}]
-		tasks: [{
-			count: 4
-			id: "79A239C8FDF419AE"
-			item: "create:iron_sheet"
-			title: "自動產出鐵板"
-			type: "item"
-		}]
-		title: "自動壓製鐵板"
-		x: 4.5d
-		y: -0.8d
-	}, {
-		dependencies: ["1D6E846235A7D219"]
-		description: ["規劃水車、壓力機、倉儲與未來火箭材料加工區。"]
-		icon: "minecraft:bricks"
-		id: "71D601965F68F2DE"
-		tasks: [{
-			id: "7FA387687D272316"
-			title: "標出工業區範圍"
-			type: "checkmark"
-		}]
-		title: "規劃工業區"
-		x: 6.0d
-		y: -0.8d
-	}, {
-		dependencies: ["71D601965F68F2DE"]
-		description: ["太空計畫需要金屬與基礎建材。先建立公會材料庫。"]
-		icon: "minecraft:copper_ingot"
-		id: "5B4E60179DF07206"
-		rewards: [{
-			count: 12
-			id: "49575C67BF0E6228"
-			item: "minecraft:torch"
-			type: "item"
-		}]
-		tasks: [{
 			count: 16
-			id: "0D951D4C69E98A5A"
-			item: "minecraft:iron_ingot"
-			title: "儲備鐵錠"
+			id: "3A00000000000009"
+			item: "minecraft:arrow"
+			type: "item"
+		}, {
+			count: 2
+			id: "3A0000000000000A"
+			item: "minecraft:string"
+			type: "item"
+		}]
+		tasks: [{
+			id: "3A0000000000000B"
+			item: "minecraft:bow"
+			title: "準備遠程壓制武器"
 			type: "item"
 		}, {
 			count: 16
-			id: "4AD340B4E5F26504"
-			item: "minecraft:copper_ingot"
-			title: "儲備銅錠"
+			id: "3A0000000000000C"
+			item: "minecraft:arrow"
+			title: "準備壓制箭矢"
 			type: "item"
 		}]
-		title: "儲備太空材料"
-		x: 7.5d
-		y: -0.8d
+		title: "Gunner：遠程壓制演習"
+		x: 1.5d
+		y: 0.0d
+	}, {
+		dependencies: ["3A00000000000001"]
+		description: ["Arcanist 占位：魔法模組尚未進場。本次先做異常紀錄、控場標記與護盾解除的任務層占位，保留未來奧術支援位置。"]
+		icon: "minecraft:item_frame"
+		id: "3A0000000000000D"
+		rewards: [{
+			count: 4
+			id: "3A0000000000000E"
+			item: "minecraft:paper"
+			type: "item"
+		}, {
+			count: 1
+			id: "3A0000000000000F"
+			item: "minecraft:item_frame"
+			type: "item"
+		}]
+		tasks: [{
+			count: 4
+			id: "3A00000000000010"
+			item: "minecraft:paper"
+			title: "準備異常紀錄紙"
+			type: "item"
+		}, {
+			id: "3A00000000000011"
+			item: "minecraft:item_frame"
+			title: "準備控場標記框"
+			type: "item"
+		}, {
+			count: 8
+			id: "3A00000000000012"
+			item: "minecraft:torch"
+			title: "準備觀測照明"
+			type: "item"
+		}]
+		title: "Arcanist：異常觀測 / 控場占位"
+		x: 1.5d
+		y: 1.2d
+	}, {
+		dependencies: ["3A00000000000001"]
+		description: ["工程部演習：討伐不是只靠輸出，也需要補給箱、照明、返航點與撤退路線。這是討伐前後勤補給演習，不是自動化產線驗收。"]
+		icon: "minecraft:chest"
+		id: "6482124F53E14EF8"
+		rewards: [{
+			count: 8
+			id: "3A00000000000013"
+			item: "minecraft:torch"
+			type: "item"
+		}, {
+			count: 4
+			id: "3A00000000000014"
+			item: "minecraft:coal"
+			type: "item"
+		}, {
+			count: 4
+			id: "3A00000000000015"
+			item: "minecraft:bread"
+			type: "item"
+		}]
+		tasks: [{
+			id: "20BFB1F21F4B504A"
+			item: "minecraft:chest"
+			title: "準備討伐補給箱"
+			type: "item"
+		}, {
+			count: 16
+			id: "3A00000000000016"
+			item: "minecraft:torch"
+			title: "準備討伐照明"
+			type: "item"
+		}, {
+			count: 4
+			id: "3A00000000000017"
+			item: "minecraft:bread"
+			title: "準備撤退補給"
+			type: "item"
+		}, {
+			count: 4
+			id: "3A00000000000018"
+			item: "minecraft:coal"
+			title: "準備補給燃料"
+			type: "item"
+		}]
+		title: "工程部：補給箱與返航點確認"
+		x: 3.0d
+		y: 0.0d
+	}, {
+		dependencies: ["3A00000000000004", "3A00000000000008", "3A0000000000000D", "6482124F53E14EF8"]
+		description: ["第一討伐令：預備核准。三職業演習與工程補給確認完成。這只是任務層占位；真正 Gate 會等 KubeJS、GameStages 與 Boss 模組後實作。討伐部門聲望 +1 目前只是文字占位。"]
+		icon: "minecraft:item_frame"
+		id: "313FC74C6A35EF4A"
+		rewards: [{
+			count: 1
+			id: "3A00000000000019"
+			item: "minecraft:item_frame"
+			type: "item"
+		}, {
+			count: 1
+			id: "3A0000000000001A"
+			item: "minecraft:emerald"
+			type: "item"
+		}]
+		tasks: [{
+			id: "78F5F5D4A6BDB23A"
+			title: "取得第一討伐令預備核准"
+			type: "checkmark"
+		}]
+		title: "公會：第一討伐令預備核准"
+		x: 4.5d
+		y: 0.0d
 	}]
-	title: "第 3 章：工業自動化"
+	title: "第 3 章：第一討伐令"
 }

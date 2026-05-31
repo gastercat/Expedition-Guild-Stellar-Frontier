@@ -7,100 +7,223 @@
 	order_index: 4
 	quest_links: [ ]
 	quests: [{
-		description: ["選一片平坦、安全、遠離主要倉庫的區域作為發射場。"]
-		icon: "minecraft:smooth_stone"
+		description: ["公會公告：本章是守城系統的任務層占位。Defend Your Base / The Hordes / Wave Defense 尚未安裝；公會核心耐久、Guild Threat、自動觸發入侵、龍災襲城、砲台與 Create Big Cannons 尚未實作。本章只做 E 級防線演習。"]
+		icon: "minecraft:white_banner"
+		id: "4A00000000000001"
+		rewards: [{
+			count: 1
+			id: "4A00000000000002"
+			item: "minecraft:white_banner"
+			type: "item"
+		}]
+		tasks: [{
+			id: "4A00000000000003"
+			title: "閱讀第一次守城演習公告"
+			type: "checkmark"
+		}]
+		title: "公會公告：第一次守城演習占位"
+		x: 0.0d
+		y: 0.0d
+	}, {
+		dependencies: ["4A00000000000001"]
+		description: ["工程部任務：準備正門、牆線、通道與觀察點的材料標準。這不是自動守城系統，只是公會本部的 E 級防線材料檢查。"]
+		icon: "minecraft:stone_bricks"
 		id: "618D2C3970690F6B"
 		rewards: [{
 			count: 16
 			id: "6C1B9DE338AB650C"
 			item: "minecraft:stone_bricks"
 			type: "item"
+		}, {
+			count: 4
+			id: "4A00000000000004"
+			item: "minecraft:ladder"
+			type: "item"
 		}]
 		tasks: [{
+			count: 16
 			id: "42F23DD3410C6CF3"
-			title: "標出發射場位置"
-			type: "checkmark"
+			item: "minecraft:stone_bricks"
+			title: "準備防線磚材"
+			type: "item"
+		}, {
+			count: 8
+			id: "4A00000000000005"
+			item: "minecraft:iron_bars"
+			title: "準備觀察柵欄"
+			type: "item"
+		}, {
+			count: 8
+			id: "4A00000000000006"
+			item: "minecraft:oak_fence"
+			title: "準備臨時圍欄"
+			type: "item"
+		}, {
+			count: 4
+			id: "4A00000000000007"
+			item: "minecraft:ladder"
+			title: "準備牆線通道梯"
+			type: "item"
 		}]
-		title: "建立發射場"
-		x: 0.0d
-		y: 0.0d
-	}, {
-		dependencies: ["618D2C3970690F6B"]
-		description: ["依照 JEI 查詢 Ad Astra 發射台需求。確認材料後再開始大量製作。"]
-		icon: "minecraft:iron_block"
-		id: "4E34859F2D912802"
-		tasks: [{
-			id: "788318B47C08D9B0"
-			title: "製作並鋪設發射台"
-			type: "checkmark"
-		}]
-		title: "製作發射台"
+		title: "工程部：防線材料檢查"
 		x: 1.5d
 		y: 0.0d
 	}, {
-		dependencies: ["4E34859F2D912802"]
-		description: ["確認氧氣相關設備與補給流程。不要在升空前才發現氧氣不足。"]
-		icon: "minecraft:glass_bottle"
+		dependencies: ["4A00000000000001"]
+		description: ["Gunner 占位：暫用弓箭火力點做遠程防守演習。槍械、砲台、防空系統與 Create Big Cannons 尚未實作。"]
+		icon: "minecraft:arrow"
+		id: "4E34859F2D912802"
+		rewards: [{
+			count: 16
+			id: "4A00000000000008"
+			item: "minecraft:arrow"
+			type: "item"
+		}]
+		tasks: [{
+			count: 16
+			id: "788318B47C08D9B0"
+			item: "minecraft:arrow"
+			title: "準備遠程火力箭矢"
+			type: "item"
+		}, {
+			count: 2
+			id: "4A00000000000009"
+			item: "minecraft:string"
+			title: "準備弓弦備料"
+			type: "item"
+		}]
+		title: "Gunner：遠程火力點占位"
+		x: 3.0d
+		y: -1.2d
+	}, {
+		dependencies: ["4A00000000000001"]
+		description: ["Vanguard 占位：前鋒負責正門攔截與近戰防線。這是守城演習，不是正式守城事件，也不會自動觸發入侵。"]
+		icon: "minecraft:shield"
 		id: "03A37245E774227B"
+		rewards: [{
+			count: 2
+			id: "4A0000000000000A"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}]
 		tasks: [{
 			id: "71D7B77F45B5E152"
-			title: "準備氧氣設備"
-			type: "checkmark"
+			item: "minecraft:shield"
+			title: "準備正門攔截盾牌"
+			type: "item"
 		}]
-		title: "準備氧氣設備"
+		title: "Vanguard：正門攔截點占位"
 		x: 3.0d
-		y: -0.8d
+		y: 0.0d
 	}, {
-		dependencies: ["4E34859F2D912802"]
-		description: ["確認太空裝備齊全。每位升空成員都要完成裝備檢查。"]
-		icon: "minecraft:iron_chestplate"
+		dependencies: ["4A00000000000001"]
+		description: ["Arcanist 占位：魔法與異常監測系統未實作。先用照明、標記與異常紀錄做控場占位，減少夜間與視線死角風險。"]
+		icon: "minecraft:torch"
 		id: "74D4D89529B627C7"
-		tasks: [{
-			id: "52AD16CD90414E5A"
-			title: "準備太空裝備"
-			type: "checkmark"
+		rewards: [{
+			count: 8
+			id: "4A0000000000000B"
+			item: "minecraft:torch"
+			type: "item"
+		}, {
+			count: 4
+			id: "4A0000000000000C"
+			item: "minecraft:paper"
+			type: "item"
 		}]
-		title: "準備太空裝備"
+		tasks: [{
+			count: 16
+			id: "52AD16CD90414E5A"
+			item: "minecraft:torch"
+			title: "準備防線照明"
+			type: "item"
+		}, {
+			count: 4
+			id: "4A0000000000000D"
+			item: "minecraft:paper"
+			title: "準備異常監測紀錄"
+			type: "item"
+		}, {
+			id: "4A0000000000000E"
+			item: "minecraft:item_frame"
+			title: "準備防線標記框"
+			type: "item"
+		}]
+		title: "Arcanist：控場 / 照明 / 異常監測占位"
 		x: 3.0d
-		y: 0.8d
+		y: 1.2d
 	}, {
-		dependencies: ["03A37245E774227B", "74D4D89529B627C7"]
-		description: ["確認燃料來源、儲存與加注方式。發射前先做一次流程演練。"]
-		icon: "minecraft:bucket"
+		dependencies: ["4A00000000000001"]
+		description: ["補給部任務：守城前要先能吃、能照明、能集合。熱食、燃料、火把與營火是防線能持續運作的最低標準。"]
+		icon: "minecraft:campfire"
 		id: "63D174E951A08B2D"
 		rewards: [{
 			count: 4
 			id: "482939BC40315A95"
-			item: "minecraft:copper_ingot"
+			item: "minecraft:cooked_beef"
+			type: "item"
+		}, {
+			count: 4
+			id: "4A0000000000000F"
+			item: "minecraft:coal"
 			type: "item"
 		}]
 		tasks: [{
+			count: 6
 			id: "29B7CA1B4C4C8F95"
-			title: "準備燃料系統"
-			type: "checkmark"
+			item: "minecraft:bread"
+			title: "準備守城麵包"
+			type: "item"
+		}, {
+			count: 4
+			id: "4A00000000000010"
+			item: "minecraft:cooked_beef"
+			title: "準備守城熱食"
+			type: "item"
+		}, {
+			count: 16
+			id: "4A00000000000011"
+			item: "minecraft:torch"
+			title: "準備守城火把"
+			type: "item"
+		}, {
+			id: "4A00000000000012"
+			item: "minecraft:campfire"
+			title: "準備集合營火"
+			type: "item"
 		}]
-		title: "準備燃料系統"
+		title: "補給部：守城熱食與火把"
 		x: 4.5d
 		y: 0.0d
 	}, {
-		dependencies: ["63D174E951A08B2D"]
-		description: ["檢查火箭、燃料、氧氣、裝備、返航補給與隊友位置。"]
-		icon: "minecraft:compass"
+		dependencies: ["618D2C3970690F6B", "4E34859F2D912802", "03A37245E774227B", "74D4D89529B627C7", "63D174E951A08B2D"]
+		description: ["E 級防線驗收：工程材料、遠程火力點、正門攔截、異常監測與補給完成。這只是守城占位；後續才會接守城波次、Guild Threat、公會核心耐久、砲台與龍災。"]
+		icon: "minecraft:item_frame"
 		id: "1C818FBB695A7FB4"
 		rewards: [{
-			count: 6
-			id: "4D5ED81AFA3D901B"
-			item: "minecraft:bread"
+			count: 1
+			id: "4A00000000000013"
+			item: "minecraft:item_frame"
+			type: "item"
+		}, {
+			count: 1
+			id: "4A00000000000014"
+			item: "minecraft:emerald"
+			type: "item"
+		}, {
+			count: 4
+			id: "4A00000000000015"
+			item: "create:shaft"
 			type: "item"
 		}]
 		tasks: [{
 			id: "6E7AB2057D398C0F"
-			title: "完成升空前檢查"
+			title: "完成 E 級防線驗收"
 			type: "checkmark"
 		}]
-		title: "完成升空檢查"
+		title: "公會：E 級防線驗收"
 		x: 6.0d
 		y: 0.0d
 	}]
-	title: "第 4 章：太空準備"
+	title: "第 4 章：第一次守城演習"
 }
