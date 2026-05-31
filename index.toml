@@ -97,6 +97,10 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
 
 [[files]]
+file = "kubejs/server_scripts/eg_stages.js"
+hash = "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "5e727d91523c52e5056a57556d63118fe26802d824668c662195c8abf762a265"
 metafile = true
