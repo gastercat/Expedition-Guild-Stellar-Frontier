@@ -162,6 +162,21 @@
 			id: "1A00000000000008"
 			item: "minecraft:leather"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage remove @s eg.class.gunner"
+			id: "1C00000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage remove @s eg.class.arcanist"
+			id: "1C00000000000002"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.class.vanguard"
+			id: "1C00000000000003"
+			type: "command"
 		}]
 		tasks: [{
 			id: "1A00000000000009"
@@ -187,6 +202,21 @@
 			id: "1A0000000000000C"
 			item: "minecraft:string"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage remove @s eg.class.vanguard"
+			id: "1C00000000000004"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage remove @s eg.class.arcanist"
+			id: "1C00000000000005"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.class.gunner"
+			id: "1C00000000000006"
+			type: "command"
 		}]
 		tasks: [{
 			id: "1A0000000000000D"
@@ -218,6 +248,21 @@
 			id: "1A00000000000011"
 			item: "minecraft:redstone"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage remove @s eg.class.vanguard"
+			id: "1C00000000000007"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage remove @s eg.class.gunner"
+			id: "1C00000000000008"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.class.arcanist"
+			id: "1C00000000000009"
+			type: "command"
 		}]
 		tasks: [{
 			count: 4
