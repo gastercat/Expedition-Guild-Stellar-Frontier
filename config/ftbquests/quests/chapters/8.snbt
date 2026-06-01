@@ -169,6 +169,12 @@
 		description: ["B 級加工前哨完成：向公會展示一條可以重複運作的簡易產線。壓板、搬運或基礎加工都可以，但不要把前哨站變成搬家式主基地。"]
 		icon: "create:mechanical_press"
 		id: "7B89537E26C1F0AD"
+		rewards: [{
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.8.outpost_rating"
+			id: "8C00000000000001"
+			type: "command"
+		}]
 		tasks: [{
 			id: "32E929BA4A2C80C7"
 			title: "完成可展示的前哨加工線"
