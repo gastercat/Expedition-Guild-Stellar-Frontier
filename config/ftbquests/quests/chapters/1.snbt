@@ -338,6 +338,11 @@
 			id: "1A0000000000001D"
 			item: "minecraft:emerald"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.1.class_training"
+			id: "1C0000000000000A"
+			type: "command"
 		}]
 		tasks: [{
 			id: "1A0000000000001E"
