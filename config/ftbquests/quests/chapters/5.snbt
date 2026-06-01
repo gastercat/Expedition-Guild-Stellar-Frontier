@@ -15,11 +15,6 @@
 			id: "5A00000000000002"
 			item: "minecraft:paper"
 			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.chapter.5.calamity_foreshadowing"
-			id: "5C00000000000001"
-			type: "command"
 		}]
 		tasks: [{
 			id: "5A00000000000003"
@@ -167,6 +162,67 @@
 		y: 0.0d
 	}, {
 		dependencies: ["77AF87B38C8FDB01"]
+		description: ["公會災變前兆調查 MVP：回收少量異常樣本，擊退少量異常目標，並整理成初步報告。這是 FTB Quests item / kill task 驗證與災變前兆回報 gate，不代表 Guild Threat、Dragon Disaster、raid / wave / invasion system、mob escalation 或 KubeJS scheduled event 已實作。"]
+		icon: "minecraft:spider_eye"
+		id: "5D00000000000001"
+		rewards: [{
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.5.calamity_foreshadowing"
+			id: "5C00000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.gate.calamity_reported"
+			id: "5C00000000000002"
+			type: "command"
+		}]
+		tasks: [{
+			count: 3
+			id: "5D00000000000002"
+			item: "minecraft:rotten_flesh"
+			title: "提交腐化樣本"
+			type: "item"
+		}, {
+			count: 3
+			id: "5D00000000000003"
+			item: "minecraft:bone"
+			title: "提交異常骨質樣本"
+			type: "item"
+		}, {
+			id: "5D00000000000004"
+			item: "minecraft:spider_eye"
+			title: "提交毒性樣本"
+			type: "item"
+		}, {
+			count: 4
+			id: "5D00000000000005"
+			item: "minecraft:paper"
+			title: "整理前兆調查紀錄"
+			type: "item"
+		}, {
+			entity: "minecraft:zombie"
+			id: "5D00000000000006"
+			title: "擊退異常 Zombie"
+			type: "kill"
+			value: 3L
+		}, {
+			entity: "minecraft:skeleton"
+			id: "5D00000000000007"
+			title: "擊退異常 Skeleton"
+			type: "kill"
+			value: 2L
+		}, {
+			entity: "minecraft:spider"
+			id: "5D00000000000008"
+			title: "擊退異常 Spider"
+			type: "kill"
+			value: 2L
+		}]
+		title: "公會：災變前兆調查完成確認"
+		x: 4.5d
+		y: -1.2d
+	}, {
+		dependencies: ["5D00000000000001"]
 		description: ["災變前兆報告：已提交。這只是任務層占位；後續才會接 Born in Chaos、Terramity、Twilight Forest、Ice and Fire 與 Guild Threat 系統。玩家越強，世界越開始反擊，目前只是戰役敘事占位。"]
 		icon: "minecraft:item_frame"
 		id: "222D5CC7873F2922"
@@ -185,11 +241,6 @@
 			id: "5A00000000000014"
 			item: "minecraft:cooked_beef"
 			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.gate.calamity_reported"
-			id: "5C00000000000002"
-			type: "command"
 		}]
 		tasks: [{
 			id: "75529821E582193E"
