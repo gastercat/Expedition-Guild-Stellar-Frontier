@@ -327,6 +327,16 @@
 			id: "2A0000000000001F"
 			item: "minecraft:emerald"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.2.boss_prep"
+			id: "2C00000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.gate.first_hunt_ready"
+			id: "2C00000000000002"
+			type: "command"
 		}]
 		tasks: [{
 			id: "2A00000000000020"
