@@ -220,11 +220,6 @@
 			id: "4A00000000000015"
 			item: "create:shaft"
 			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.chapter.4.first_defense"
-			id: "4C00000000000002"
-			type: "command"
 		}]
 		tasks: [{
 			id: "6E7AB2057D398C0F"
@@ -233,6 +228,51 @@
 		}]
 		title: "公會：E 級防線驗收"
 		x: 6.0d
+		y: 0.0d
+	}, {
+		dependencies: ["1C818FBB695A7FB4"]
+		description: ["公會第一次守城演習 MVP：提交少量守城補給，並擊退演習來襲目標。這是 FTB Quests item / kill task 驗證與公會防線完成 gate，不代表完整 wave system、Guild Threat、Dragon Disaster、raid 或 invasion system 已實作。"]
+		icon: "minecraft:shield"
+		id: "4D00000000000001"
+		rewards: [{
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.4.first_defense"
+			id: "4C00000000000002"
+			type: "command"
+		}]
+		tasks: [{
+			count: 8
+			id: "4D00000000000002"
+			item: "minecraft:torch"
+			title: "提交演習防線火把"
+			type: "item"
+		}, {
+			count: 3
+			id: "4D00000000000003"
+			item: "minecraft:bread"
+			title: "提交演習補給麵包"
+			type: "item"
+		}, {
+			count: 8
+			id: "4D00000000000004"
+			item: "minecraft:arrow"
+			title: "提交演習防線箭矢"
+			type: "item"
+		}, {
+			entity: "minecraft:zombie"
+			id: "4D00000000000005"
+			title: "擊退演習來襲 Zombie"
+			type: "kill"
+			value: 3L
+		}, {
+			entity: "minecraft:skeleton"
+			id: "4D00000000000006"
+			title: "擊退演習來襲 Skeleton"
+			type: "kill"
+			value: 2L
+		}]
+		title: "公會：第一次守城演習完成確認"
+		x: 7.5d
 		y: 0.0d
 	}]
 	title: "第 4 章：第一次守城演習"
