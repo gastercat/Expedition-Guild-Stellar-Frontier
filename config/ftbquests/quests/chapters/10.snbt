@@ -153,6 +153,16 @@
 			id: "10A0000000000018"
 			item: "minecraft:item_frame"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.10.endgame_calamity"
+			id: "10C0000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.gate.endgame_preapproved"
+			id: "10C0000000000002"
+			type: "command"
 		}]
 		tasks: [{
 			id: "10A0000000000019"
