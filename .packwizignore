@@ -1,1 +1,5 @@
 docs/
+.opencode.bak/
+*.mrpack
+Expedition Guild Stellar Frontier-0.1.0.mrpack
+.DS_Store

@@ -1,5 +1,6 @@
 .DS_Store
 *.mrpack
+.opencode.bak/
 *.log
 crash-reports/
 logs/
