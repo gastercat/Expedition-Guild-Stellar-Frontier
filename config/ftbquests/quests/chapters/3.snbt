@@ -189,6 +189,27 @@
 		title: "公會：第一討伐令預備核准"
 		x: 4.5d
 		y: 0.0d
+	}, {
+		dependencies: ["313FC74C6A35EF4A"]
+		description: ["公會第一討伐令 MVP：擊殺一隻 Blaze 作為第一討伐目標。這是 FTB Quests kill task 驗證與公會任務完成 gate，不代表完整 Boss 系統、Boss chain、Guild Threat 或武器進化掉落已實作。"]
+		icon: "minecraft:blaze_rod"
+		id: "3C00000000000001"
+		rewards: [{
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.3.first_hunt"
+			id: "3C00000000000003"
+			type: "command"
+		}]
+		tasks: [{
+			entity: "minecraft:blaze"
+			id: "3C00000000000002"
+			title: "擊殺第一討伐目標：Blaze"
+			type: "kill"
+			value: 1L
+		}]
+		title: "公會：第一討伐目標完成確認"
+		x: 6.0d
+		y: 0.0d
 	}]
 	title: "第 3 章：第一討伐令"
 }
