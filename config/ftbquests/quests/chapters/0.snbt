@@ -68,6 +68,12 @@
 		description: ["把任務書、JEI、Jade、地圖與公會工具當成標準流程。每次遇到新模組或新設備，先查配方、看來源、標記位置，再回報給公會。"]
 		icon: "minecraft:writable_book"
 		id: "6A5D13B0E91C4F27"
+		rewards: [{
+			auto: "disabled"
+			command: "gamestage add @s eg.guild.joined"
+			id: "0A00000000000001"
+			type: "command"
+		}]
 		tasks: [{
 			id: "44E7B2C98A0F1D63"
 			title: "讀完遠征操作手冊"
@@ -143,6 +149,11 @@
 			id: "6043F1F08E922D7A"
 			item: "minecraft:apple"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.0.handbook"
+			id: "0A00000000000002"
+			type: "command"
 		}]
 		tasks: [{
 			count: 8
