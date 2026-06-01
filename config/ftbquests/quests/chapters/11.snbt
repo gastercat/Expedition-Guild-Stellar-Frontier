@@ -153,6 +153,16 @@
 			id: "11A0000000000018"
 			item: "minecraft:item_frame"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.11.postgame"
+			id: "11C0000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.gate.postgame_archived"
+			id: "11C0000000000002"
+			type: "command"
 		}]
 		tasks: [{
 			id: "11A0000000000019"
