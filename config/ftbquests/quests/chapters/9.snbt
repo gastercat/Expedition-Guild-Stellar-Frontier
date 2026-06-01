@@ -186,6 +186,16 @@
 			id: "9A0000000000001D"
 			item: "minecraft:item_frame"
 			type: "item"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.9.hybridization"
+			id: "9C00000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.gate.fusion_certified"
+			id: "9C00000000000002"
+			type: "command"
 		}]
 		tasks: [{
 			id: "9A0000000000001E"
