@@ -1,4 +1,5 @@
 docs/
+RELEASE_NOTES_*.md
 .opencode.bak/
 *.mrpack
 Expedition Guild Stellar Frontier-0.1.0.mrpack

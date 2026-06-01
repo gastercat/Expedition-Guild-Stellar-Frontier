@@ -21,14 +21,6 @@ file = "README.md"
 hash = "974734484df093c4c9547f3f0db2e51e9f4a6f8f95d1d3ad7b0c611c816639fa"
 
 [[files]]
-file = "RELEASE_NOTES_v0.1.0-alpha.md"
-hash = "551cdbc9dad7f658ee60a0a5234ce2f5b4c25ec88ce748a784e1e4ac5aa87073"
-
-[[files]]
-file = "RELEASE_NOTES_v0.6.0-alpha.md"
-hash = "b589e8d080236c215934ae9bb2310e500f5064622aaf748448fcd6ff78bb2934"
-
-[[files]]
 file = "SERVER_TEST_PROTOCOL.md"
 hash = "0eee68056b06a533f6513efbe1ccfbf632132ff10d5eca92e76900da432f2ed1"
 
