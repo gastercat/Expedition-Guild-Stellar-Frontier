@@ -4,3 +4,5 @@ RELEASE_NOTES_*.md
 *.mrpack
 Expedition Guild Stellar Frontier-0.1.0.mrpack
 .DS_Store
+
+SKILL.md
