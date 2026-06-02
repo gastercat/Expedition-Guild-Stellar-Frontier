@@ -15,11 +15,6 @@
 			id: "7A00000000000002"
 			item: "minecraft:paper"
 			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.chapter.7.astral_prep"
-			id: "7C00000000000001"
-			type: "command"
 		}]
 		tasks: [{
 			id: "7A00000000000003"
@@ -195,11 +190,6 @@
 			id: "7A00000000000014"
 			item: "minecraft:emerald"
 			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.gate.astral_license_preapproved"
-			id: "7C00000000000002"
-			type: "command"
 		}]
 		tasks: [{
 			id: "78F5F5D4A6BDB23A"
@@ -208,6 +198,93 @@
 		}]
 		title: "公會：星界遠征許可"
 		x: 7.5d
+		y: 0.0d
+	}, {
+		dependencies: ["313FC74C6A35EF4A"]
+		description: ["星界執照預核准 MVP：提交公會文件、生命維持補給、發射場標記與 Create 後勤材料，並確認 Vanguard / Gunner / Arcanist 遠征分工。這是 FTB Quests inventory-first 星界執照 gate，不代表實際火箭發射、登月、氧氣系統自動化、Ad Astra progression lock 或 KubeJS 偵測已實作。"]
+		icon: "minecraft:compass"
+		id: "7D00000000000001"
+		rewards: [{
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.7.astral_prep"
+			id: "7C00000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.gate.astral_license_preapproved"
+			id: "7C00000000000002"
+			type: "command"
+		}]
+		tasks: [{
+			count: 4
+			id: "7D00000000000002"
+			item: "minecraft:paper"
+			title: "提交星界執照申請文件"
+			type: "item"
+		}, {
+			id: "7D00000000000003"
+			item: "minecraft:compass"
+			title: "提交返航定位羅盤"
+			type: "item"
+		}, {
+			count: 6
+			id: "7D00000000000004"
+			item: "minecraft:bread"
+			title: "提交遠征口糧"
+			type: "item"
+		}, {
+			count: 16
+			id: "7D00000000000005"
+			item: "minecraft:torch"
+			title: "提交發射場與前哨照明"
+			type: "item"
+		}, {
+			count: 8
+			id: "7D00000000000006"
+			item: "minecraft:glass"
+			title: "提交觀測與生命維持玻璃"
+			type: "item"
+		}, {
+			id: "7D00000000000007"
+			item: "minecraft:chest"
+			title: "提交遠征補給箱"
+			type: "item"
+		}, {
+			id: "7D00000000000008"
+			item: "minecraft:white_banner"
+			title: "提交發射場安全標記"
+			type: "item"
+		}, {
+			count: 4
+			id: "7D00000000000009"
+			item: "minecraft:copper_ingot"
+			title: "提交星界工程銅材"
+			type: "item"
+		}, {
+			count: 4
+			id: "7D0000000000000A"
+			item: "minecraft:iron_ingot"
+			title: "提交星界工程鐵材"
+			type: "item"
+		}, {
+			count: 4
+			id: "7D0000000000000B"
+			item: "create:shaft"
+			title: "提交 Create 後勤傳動軸"
+			type: "item"
+		}, {
+			count: 2
+			id: "7D0000000000000C"
+			item: "create:cogwheel"
+			title: "提交 Create 後勤齒輪"
+			type: "item"
+		}, {
+			id: "7D0000000000000D"
+			title: "確認 Vanguard / Gunner / Arcanist 星界遠征分工"
+			type: "checkmark"
+		}]
+		title: "公會：星界執照預核准完成確認"
+		x: 9.0d
 		y: 0.0d
 	}]
 	title: "第 7 章：星界遠征準備"
