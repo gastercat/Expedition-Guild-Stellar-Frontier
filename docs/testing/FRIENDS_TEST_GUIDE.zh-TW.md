@@ -126,6 +126,28 @@ Lootr 的目標是改善多人探索時的戰利品公平感。測試時請至�
 - 容器外觀或開啟狀態是否容易理解。
 - 是否有人無法開箱、開箱後斷線，或 loot 消失。
 
+## Simply Swords 武器測試
+
+Simply Swords 的目標是先提供更多近戰武器選擇與 Vanguard 武器展示，不是完成最終武器平衡。
+
+建議流程：
+
+1. 用 JEI 搜尋 Simply Swords 武器。
+2. 在創造模式拿幾把普通武器，確認不 crash。
+3. 在創造模式拿 1 把 unique weapon，確認不 crash。
+4. 簡單打幾隻普通怪，觀察手感與傷害是否明顯失控。
+5. 探索自然 / Lootr 箱子時，觀察是否出現 Simply Swords 武器。
+6. 如果出現武器，記錄它出現在哪種箱子、數量是否太多、是否太早、是否太強。
+7. 檢查 latest.log 是否有 Simply Swords ERROR、registry ERROR、loot table ERROR 或 FATAL。
+
+請回報：
+
+- JEI 是否能正常搜尋武器。
+- 普通武器與 unique weapon 是否能正常拿取。
+- 武器是否讓 Vanguard 有更明顯的武器選擇感。
+- 武器是否太早、太多、太強。
+- 自然 / Lootr 箱是否出現 Simply Swords 武器；如果找不到，記錄為「loot injection not yet confirmed」，不要當成測試失敗。
+
 ## 職業感受回饋
 
 請從三個職業角度觀察：
