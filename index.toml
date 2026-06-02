@@ -108,6 +108,11 @@ hash = "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8"
 metafile = true
 
 [[files]]
+file = "mods/artifacts.pw.toml"
+hash = "2de33e7d757cfa1108b05247cb59f6db2f08000af824da328322d78cdb7c4c4d"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a"
 metafile = true
@@ -135,6 +140,11 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "f41389f9500b106cecf0a83d2fc68b0730036af50ceb9ef8682ac7f70b325560"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
 metafile = true
 
 [[files]]
