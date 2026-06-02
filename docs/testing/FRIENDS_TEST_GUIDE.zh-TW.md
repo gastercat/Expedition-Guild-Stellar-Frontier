@@ -177,6 +177,35 @@ Artifacts 的目標是先提供更多遺物與飾品收藏，讓多人探索與�
 - artifact 是否太早、太多、太強。
 - 多人開箱後 artifacts 是否過量。
 
+## Macaw 基地生活 / 建築測試
+
+Macaw 基地生活內容的目標是讓公會據點、休息區、遠征準備區和朋友共同基地更有生活感。這不是最終建築系統，也不是一次加入所有 Macaw 模組。
+
+建議流程：
+
+1. 在 Mods list 確認看得到 Macaw's Doors。
+2. 在 Mods list 確認看得到 Macaw's Windows。
+3. 在 Mods list 確認看得到 Macaw's Lights and Lamps。
+4. 用 JEI 搜尋 doors / windows / lights。
+5. 在創造模式放置數個 doors，確認不 crash。
+6. 在創造模式放置數個 windows，確認不 crash。
+7. 在創造模式放置數個 lights / lamps，確認不 crash。
+8. 測試 doors 開關互動。
+9. 測試 lights / lamps 發光或互動。
+10. 存檔、離開、重進世界後，確認方塊仍正常。
+11. 如果多人測試，請讓另一位玩家也互動同一批門窗與燈具。
+12. 檢查 latest.log 是否有 Macaw ERROR、registry ERROR、model ERROR、texture ERROR 或 FATAL。
+
+請回報：
+
+- Mods list 是否看得到 Macaw's Doors / Windows / Lights and Lamps。
+- JEI 是否能正常搜尋 doors / windows / lights。
+- doors / windows / lights 是否能正常放置與破壞。
+- doors 開關互動是否正常。
+- lights / lamps 是否正常發光或互動。
+- 存檔重進後方塊是否仍正常。
+- 是否有 texture/model error、放置 crash、互動 crash、光源問題或效能問題。
+
 ## 職業感受回饋
 
 請從三個職業角度觀察：

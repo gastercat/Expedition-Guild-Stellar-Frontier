@@ -10,7 +10,7 @@ v0.8.0 的目標是讓朋友一起玩時，有更多可以看見、可以探索�
 - 更多近戰武器選擇；Simply Swords 已加入預覽基準，先作為 Vanguard 武器展示與冒險戰利品觀察，不代表最終武器進度或完整平衡已完成。
 - 更多遺物與飾品收藏；Artifacts 與 Curios API 已加入預覽基準，先作為公會戰利品殿堂方向與多人探索驚喜觀察，不代表最終遺物進度或完整平衡已完成。
 - 更好的多人戰利品感受；Lootr 已加入預覽基準，讓朋友開同一類戰利品容器時更不容易互相搶空。
-- 更多基地生活、家具、建築與夥伴風味。
+- 更多基地生活、家具、建築與夥伴風味；Macaw 系列目前已包含 Furniture、Doors、Windows、Lights and Lamps，先作為公會據點生活感 / 建築展示，不代表最終建築系統已完成。
 - 讓公會遠征不只是跑任務，也有一起出門、分裝、佈置、回報的感覺。
 
 這仍然是內容預覽，不是完整正式版。
@@ -37,14 +37,14 @@ v0.8.0 不會一次把所有候選模組全部塞進來。
 - Simply Swords：已加入，提供更多近戰武器選擇與 Vanguard 武器展示，但還不是最終職業平衡。
 - Artifacts：已加入，提供更多遺物與飾品收藏，作為公會戰利品殿堂方向的早期預覽；目前仍會觀察是否太早、太多或太強。
 - Dungeon Crawl：增加探索地城的內容，但需要測試世界生成與戰利品節奏。
-- Macaw / furniture / building content：增加基地生活、家具、建築與公會據點氛圍。
+- Macaw / furniture / building content：已加入 Furniture、Doors、Windows、Lights and Lamps，增加基地生活、門窗、燈具與公會據點氛圍；其他 Macaw 模組不代表已全部加入。
 - Touhou Little Maid：提供生活與夥伴風味，但需要測試多人與效能。
 - Twilight Forest：大型維度與 Boss 線，會比較晚測。
 - Terramity：高風險戰鬥與 Boss 內容，會最後才評估。
 
 大型維度、高風險 Boss、災厄節奏相關內容會晚一點測，不會一開始就全部打開。
 
-目前 Lootr、Simply Swords、Artifacts 與 Curios API 已經進入 v0.8.0 預覽基準。其他候選內容仍需要分別研究、安裝與測試，沒有保證會一次全部加入。
+目前 Lootr、Simply Swords、Artifacts、Curios API，以及第一批 Macaw 基地生活內容已經進入 v0.8.0 預覽基準。其他候選內容仍需要分別研究、安裝與測試，沒有保證會一次全部加入。
 
 ## 朋友測試時希望注意什麼
 
