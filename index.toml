@@ -6,7 +6,7 @@ hash = "f888956515446ea3d51492b4263b9e876287fa87141696ac9e775cdabb1447f0"
 
 [[files]]
 file = "COMPATIBILITY.md"
-hash = "b054a2c65ae52099e0479aeb573b12633ffc309f2fe69c56ac44672d6ea199c6"
+hash = "7e4f865748924077c68ca457690126c800fc47cf0af7859684d7554576997bc3"
 
 [[files]]
 file = "MODLIST.md"
@@ -213,8 +213,23 @@ hash = "e8b4876d403b4f4daab64bad9704a5b271a33031d1ff8d19d23ebd1e3b8dd39a"
 metafile = true
 
 [[files]]
+file = "mods/macaws-doors.pw.toml"
+hash = "4284966610d17ac7b865da1fad6738b9e24704e817a6cc6650d423db285e6e5a"
+metafile = true
+
+[[files]]
 file = "mods/macaws-furniture.pw.toml"
 hash = "976e9c737f3dd39812d87bc8dd8082197a77aeb5e08f5082d22643ac36f46a4f"
+metafile = true
+
+[[files]]
+file = "mods/macaws-lights-and-lamps.pw.toml"
+hash = "44fccb986223e1c667e26127337c41e651c90b6583316d9f0f83201f668a8d23"
+metafile = true
+
+[[files]]
+file = "mods/macaws-windows.pw.toml"
+hash = "eb6a1c1455632c6ea1ab12259d7082a19400be018eae95e44150a9f8fed330eb"
 metafile = true
 
 [[files]]
