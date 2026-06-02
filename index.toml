@@ -233,6 +233,11 @@ hash = "da0719fb7c5c7d11b011f49b87313fcaf48d0c86826a6973ebde66018d8b7eab"
 metafile = true
 
 [[files]]
+file = "mods/simply-swords.pw.toml"
+hash = "60fffd9990be454a9dffb87a2804f654e6deb21b2ee63924ef4a84d443612352"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "5ab6f2a4a50bd53506496d3da0c2c09d5a3ca363c3ebc7ca8641ecd3f7104365"
 metafile = true
