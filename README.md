@@ -4,11 +4,11 @@
 
 ## 這是什麼？
 
-Expedition Guild: Stellar Frontier 是一個 Minecraft 1.20.1 Forge alpha 模組包，核心目標是做成「遠征公會式多人進度戰役包」，不是單純把很多模組堆在一起的 kitchen sink。
+Expedition Guild: Stellar Frontier 是一個 Minecraft 1.20.1 Forge Alpha（測試版）模組包，核心目標是做成「遠征公會式多人進度戰役包」，不是單純把很多模組堆在一起的 kitchen sink。
 
-玩家的出發點是加入公會、跟著 FTB Quests 了解目前目標、建立基地與後勤，逐步推進戰鬥、守城、Create 產線、Ad Astra 星界遠征，以及後續更高階的災厄與裝備成長內容。
+玩家的出發點是加入公會、打開 FTB Quests（任務書 / 公會任務）了解目前目標、建立基地與後勤，逐步推進戰鬥、守城、Create（後勤與自動化模組）產線、Ad Astra（星界遠征模組）太空遠征，以及後續更高階的災厄與裝備成長內容。
 
-目前 repo 已經有任務章節、GameStages 階段標記基礎、Create / Ad Astra / 多人便利 / 效能基線。部分中後期系統仍是任務文案與 progression 框架，尚未代表完整自動化玩法或完整職業技能已完成。
+目前 repo 已經有任務章節、GameStages（進度標記 / 解鎖階段）基礎、Create / Ad Astra / 多人便利 / 效能基線。部分中後期系統仍是 MVP（最小可行版本）、Framework（框架）或 Placeholder（佔位內容），不代表完整自動化玩法或完整職業技能已完成。
 
 ## 核心玩法
 
@@ -18,7 +18,7 @@ Expedition Guild: Stellar Frontier 是一個 Minecraft 1.20.1 Forge alpha 模組
 - 探索地城、準備討伐、完成 Boss Gate / defense gate 的任務層目標。
 - 逐步解鎖 Create 後勤、Ad Astra 星界遠征與高階戰鬥方向。
 - 多人分工：探索、補給、後勤、戰鬥、建築、太空前哨。
-- 三職業構想：Vanguard、Gunner、Arcanist，作為未來職業技能與裝備路線的設計方向。
+- 三職業構想：Vanguard（近戰前排）、Gunner（槍械遠程）、Arcanist（魔法職業），作為未來職業技能與裝備路線的設計方向。
 
 ## 目前版本狀態
 
@@ -52,11 +52,11 @@ Current development state: alpha documentation pass.
 
 ## 職業構想
 
-Design direction / planned system:
+Design direction / planned system（設計方向 / 計畫中系統）：
 
-- Vanguard：近戰、坦克、Boss 決鬥、前排承壓，後期 Boss 戰定位強。
-- Gunner：槍械或遠程、守城、清怪、火力支援，守城與群怪場景定位強。
-- Arcanist：魔法、控場、AOE、治療、召喚與功能解法。
+- Vanguard（近戰前排）：近戰、坦克、Boss 決鬥、前排承壓，後期 Boss 戰定位強。
+- Gunner（槍械遠程）：槍械或遠程、守城、清怪、火力支援，守城與群怪場景定位強。
+- Arcanist（魔法職業）：魔法、控場、AOE、治療、召喚與功能解法。
 
 目前 repo 內職業主要是 FTB Quests 任務層認證與 GameStages class stage foundation；尚未完成 Palladium、Pufferfish's Skills、正式技能樹、職業裝備鎖或完整法術曲線。
 
@@ -77,10 +77,13 @@ Design direction / planned system:
 
 ## 文件入口
 
-- [CHANGELOG.md](CHANGELOG.md)
-- [COMPATIBILITY.md](COMPATIBILITY.md)
-- [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md)
-- [docs/releases/INDEX.md](docs/releases/INDEX.md)
+- [docs/PLAYER_GUIDE.md](docs/PLAYER_GUIDE.md) - 給第一次進服朋友看的玩家指南。
+- [docs/PROGRESSION_OVERVIEW.md](docs/PROGRESSION_OVERVIEW.md) - Chapter 0-11 進度總覽與狀態標籤。
+- [docs/TESTING_GUIDE.md](docs/TESTING_GUIDE.md) - 測試清單與 bug 回報模板。
+- [CHANGELOG.md](CHANGELOG.md) - 總覽式 changelog。
+- [COMPATIBILITY.md](COMPATIBILITY.md) - 相容性策略與版本鎖定。
+- [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) - 專案結構與安全修改邊界。
+- [docs/releases/INDEX.md](docs/releases/INDEX.md) - release notes 索引。
 - [MODLIST.md](MODLIST.md)
 - [QUEST_DESIGN.md](QUEST_DESIGN.md)
 - [SERVER_TEST_PROTOCOL.md](SERVER_TEST_PROTOCOL.md)

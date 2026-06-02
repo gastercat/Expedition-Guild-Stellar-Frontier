@@ -1,5 +1,7 @@
 # 玩家職業分工
 
+> Note / 注意：這是較舊的參考文件。最新的朋友入門指南請看 [PLAYER_GUIDE.md](PLAYER_GUIDE.md)；目前 Chapter 0-11 進度結構請看 [PROGRESSION_OVERVIEW.md](PROGRESSION_OVERVIEW.md)。
+
 ## 核心職業
 
 | 職業 | 定位 | 主要工作 | 適合玩家 |

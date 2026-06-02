@@ -1,5 +1,7 @@
 # 進度地圖
 
+> Note / 注意：這是較舊的高層次參考文件。最新 Chapter 0-11 進度結構與狀態標籤請看 [PROGRESSION_OVERVIEW.md](PROGRESSION_OVERVIEW.md)。
+
 ## 總覽
 
 | 階段 | 主要玩法 | 進入條件 | 離開條件 |
