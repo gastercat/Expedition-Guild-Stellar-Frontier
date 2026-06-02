@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "59d899d018bcfa8d2b0a51ee4150b1f99f6ed4904ee02b1c71a23bb387150f16"
+hash = "f888956515446ea3d51492b4263b9e876287fa87141696ac9e775cdabb1447f0"
 
 [[files]]
 file = "COMPATIBILITY.md"
-hash = "cfc4a12d6ade5943c088cc5304123d10bb6164f7a2fcd1797255ad5a25e5c5e4"
+hash = "b054a2c65ae52099e0479aeb573b12633ffc309f2fe69c56ac44672d6ea199c6"
 
 [[files]]
 file = "MODLIST.md"
@@ -18,7 +18,7 @@ hash = "466ddc4a5f4e02439b1217d13ad7f08131e877e110f16d5f90ccd0077a7107a3"
 
 [[files]]
 file = "README.md"
-hash = "974734484df093c4c9547f3f0db2e51e9f4a6f8f95d1d3ad7b0c611c816639fa"
+hash = "5324433d31284338b7e4008dee0ae243282b9501036c2ae7c4c74d6b90e3ded9"
 
 [[files]]
 file = "SERVER_TEST_PROTOCOL.md"
@@ -70,7 +70,7 @@ hash = "73c82b89a08b910d3d32aa600982e93f248c53486eaa220989c6a27d59baaf4c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6.snbt"
-hash = "ceccec18dffc0739f9588e0afc6e7f8ee0143e5d5e34c0fb0733c28f645c7d26"
+hash = "8e86ecbc98725fd2ac4d0c9296e796afb05d855d298f373d47a6381d8e382579"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/7.snbt"

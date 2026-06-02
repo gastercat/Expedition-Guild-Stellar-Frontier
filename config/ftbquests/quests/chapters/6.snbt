@@ -15,11 +15,6 @@
 			id: "6A00000000000002"
 			item: "minecraft:paper"
 			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.chapter.6.mid_gear"
-			id: "6C00000000000001"
-			type: "command"
 		}]
 		tasks: [{
 			id: "6A00000000000003"
@@ -195,11 +190,6 @@
 			id: "6A00000000000013"
 			item: "create:shaft"
 			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.gate.mid_gear_certified"
-			id: "6C00000000000002"
-			type: "command"
 		}]
 		tasks: [{
 			id: "0BD502887E3BE45C"
@@ -208,6 +198,72 @@
 		}]
 		title: "公會：中階裝備認證占位"
 		x: 6.0d
+		y: 0.0d
+	}, {
+		dependencies: ["34829FDF00C6D3B3"]
+		description: ["公會中階裝備認證 MVP：提交中階裝備與材料證明，並完成少量戰鬥認證。這是 FTB Quests item / kill task 驗證與中階裝備語義 gate，不代表 ItemStages、equipment lock、class skill / skill tree、Palladium、Pufferfish's Skills 或 weapon specialization enforcement 已實作。"]
+		icon: "minecraft:iron_chestplate"
+		id: "6D00000000000001"
+		rewards: [{
+			auto: "disabled"
+			command: "gamestage add @s eg.chapter.6.mid_gear"
+			id: "6C00000000000001"
+			type: "command"
+		}, {
+			auto: "disabled"
+			command: "gamestage add @s eg.gate.mid_gear_certified"
+			id: "6C00000000000002"
+			type: "command"
+		}]
+		tasks: [{
+			id: "6D00000000000002"
+			item: "minecraft:shield"
+			title: "提交 Vanguard 防護證明"
+			type: "item"
+		}, {
+			count: 4
+			id: "6D00000000000003"
+			item: "minecraft:iron_ingot"
+			title: "提交中階鍛造鐵材"
+			type: "item"
+		}, {
+			id: "6D00000000000004"
+			item: "minecraft:bow"
+			title: "提交 Gunner 遠程武器證明"
+			type: "item"
+		}, {
+			count: 16
+			id: "6D00000000000005"
+			item: "minecraft:arrow"
+			title: "提交遠程認證箭矢"
+			type: "item"
+		}, {
+			count: 4
+			id: "6D00000000000006"
+			item: "minecraft:lapis_lazuli"
+			title: "提交 Arcanist 青金石樣本"
+			type: "item"
+		}, {
+			count: 4
+			id: "6D00000000000007"
+			item: "minecraft:paper"
+			title: "提交中階裝備認證紀錄"
+			type: "item"
+		}, {
+			entity: "minecraft:zombie"
+			id: "6D00000000000008"
+			title: "完成中階戰鬥認證：Zombie"
+			type: "kill"
+			value: 3L
+		}, {
+			entity: "minecraft:skeleton"
+			id: "6D00000000000009"
+			title: "完成中階戰鬥認證：Skeleton"
+			type: "kill"
+			value: 2L
+		}]
+		title: "公會：中階裝備認證完成確認"
+		x: 7.5d
 		y: 0.0d
 	}]
 	title: "第 6 章：中階職業裝備"
