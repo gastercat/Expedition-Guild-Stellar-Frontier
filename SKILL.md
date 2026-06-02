@@ -297,6 +297,78 @@ text shield / iron_ingot / bow / arrow / lapis_lazuli / paper + zombie / skeleto
 
 Not ItemStages, equipment lock, KubeJS equipment check, class skill system, Palladium, Pufferfish’s Skills, or weapon specialization.
 
+## Roadmap Memory / Version Scope
+
+### v0.8.0 Friends Content Preview candidates
+
+Candidate content layers:
+
+- Twilight Forest
+- Terramity
+- Touhou Little Maid
+- Macaw series / furniture and building content
+- Lootr
+- Dungeon Crawl
+- Simply Swords
+- Artifacts
+
+Rules:
+
+- These are candidate content layers, not blind install-all targets.
+- Integrate them through guild quests, side content, loot rules, base life,
+  RPG exploration, and multiplayer cooperation.
+- v0.8.0 should not become a huge full integration pass.
+- Use Inventory-first and Experience-filter before adding any content.
+- Prefer low-risk FTB Quests, docs, item tasks, checkmarks, and content
+  preview structure before KubeJS or GameStages complexity.
+
+### Gunner / TaCZ development rhythm
+
+- TaCZ is the future Gunner line foundation.
+- Do not rush full balancing, ammo economy, weapon progression, or large
+  KubeJS logic in one step.
+- Early phases should focus on install verification, JEI / item id scan, basic
+  weapon availability, a simple FTB Quest introduction, and no full boss
+  balance yet.
+- Gunner should be strong in defense, ranged support, wave clearing, and
+  expedition safety, not single-target boss deletion.
+
+### Arcanist / Iron's Spells development rhythm
+
+- Iron's Spells & Spellbooks is the future Arcanist line foundation.
+- Early spells may feel weak, so progression must be supported through quests,
+  starter guidance, and later addon / balance review.
+- Do not unlock high-tier spells, inks, or late-game magic materials too early.
+- Early phases should focus on starter spell identity, Arcanist role
+  explanation, support / control / utility fantasy, and no full magic rebalance
+  yet.
+- Arcanist should be strong in AOE, control, healing / support, summons, and
+  utility solutions.
+
+### Magic backend decisions
+
+- Botania is postponed until v1.0.x or later.
+- Forbidden & Arcanus is a later candidate for forbidden materials / ritual
+  flavor.
+- If Forbidden & Arcanus is integrated later, prefer Create semi-processing
+  prerequisites while preserving F&A ritual identity.
+- Do not add Botania in v0.8.x / v0.9.x planning unless explicitly instructed.
+
+### Hypixel SkyBlock-style lightweight systems
+
+Candidate lightweight systems:
+
+- Guild Research Codex
+- Guild Logistics Facilities
+- Maid / Relic Companion / Class Assistant
+- Guild Loot Hall
+
+Rules:
+
+- Start these as MVP FTB Quests text / checkmark / item tasks.
+- Do not implement real skill XP, pets, minions, economy, auction, complex
+  KubeJS, recipes, loot, or new systems without explicit approval.
+
 ## v0.8.x Backlog Only
 
 Do not implement these during v0.7.4 work.
