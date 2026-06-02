@@ -86,7 +86,15 @@ AppleSkin is present as food information QoL. Farmer's Delight is mentioned in p
 
 ### Combat / RPG
 
-The current metadata does not include dedicated combat, spell, guns, relic, Curios, dungeon, or Boss content mods. Vanguard / Gunner / Arcanist are currently design direction and quest/stage framework, not completed class skill systems.
+The v0.8.0 Friends Content Preview currently includes a small tested RPG content layer:
+
+- Lootr is installed and manually tested for multiplayer loot fairness.
+- Simply Swords is installed and smoke-tested for Vanguard weapon variety.
+- Artifacts and Curios API are installed and smoke-tested for relic / accessory preview.
+
+This is preview compatibility, not final balance. Better Combat is not installed yet and should remain future research. Dungeon Crawl, Twilight Forest, Terramity, and Touhou Little Maid are not installed yet. Additional Macaw expansions are not installed yet beyond the existing Macaw's Furniture baseline.
+
+Vanguard / Gunner / Arcanist are still design direction and quest/stage framework, not completed class skill systems.
 
 ### Dimensions / Structures
 
