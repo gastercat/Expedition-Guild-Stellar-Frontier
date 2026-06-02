@@ -148,6 +148,35 @@ Simply Swords 的目標是先提供更多近戰武器選擇與 Vanguard 武器�
 - 武器是否太早、太多、太強。
 - 自然 / Lootr 箱是否出現 Simply Swords 武器；如果找不到，記錄為「loot injection not yet confirmed」，不要當成測試失敗。
 
+## Artifacts / Curios 遺物測試
+
+Artifacts 的目標是先提供更多遺物與飾品收藏，讓多人探索與公會戰利品殿堂方向更有期待感。這不是最終遺物平衡。
+
+建議流程：
+
+1. 在 Mods list 確認看得到 Artifacts。
+2. 在 Mods list 確認看得到 Curios API。
+3. 開啟 Curios UI / 裝備欄，確認不 crash。
+4. 用 JEI 搜尋 Artifacts。
+5. 在創造模式拿 1 個 artifact，確認不 crash。
+6. 裝備 1 個 artifact，確認不 crash。
+7. 使用 Simply Swords 加上 artifact 做普通戰鬥測試，確認不 crash。
+8. 探索自然 / Lootr 箱子時，觀察是否出現 artifact。
+9. 如果出現 artifact，記錄它出現在哪種箱子、數量是否太多、是否太早、是否太強。
+10. 多人開箱後，觀察 artifacts 是否因 Lootr 獨立戰利品而變得過量。
+11. 檢查 latest.log 是否有 Artifacts ERROR、Curios ERROR、registry ERROR、loot table ERROR 或 FATAL。
+
+請回報：
+
+- Mods list 是否看得到 Artifacts / Curios。
+- Curios UI / 裝備欄是否正常。
+- JEI 是否能正常搜尋 Artifacts。
+- artifact 是否能正常拿取與裝備。
+- Simply Swords + artifact 普通戰鬥是否穩定。
+- 自然 / Lootr 箱是否出現 artifact。
+- artifact 是否太早、太多、太強。
+- 多人開箱後 artifacts 是否過量。
+
 ## 職業感受回饋
 
 請從三個職業角度觀察：
