@@ -113,5 +113,5 @@ Technical installability is necessary, but not enough. The content must improve 
 
 - Use this file as a decision filter before changing quests, planning docs, mod lists, or candidate-mod phases.
 - Use it to keep future implementation aligned with player feel and controlled batching.
-- Do not treat this file as installed mod truth, final balance policy, or active quest implementation detail.
+- Do not treat this file as installed-mod truth, final balance policy, or active quest implementation detail.
 - For current implementation state, check `docs/PROGRESSION_OVERVIEW.md`, `docs/releases/`, active FTB Quests files, KubeJS, and packwiz metadata.
