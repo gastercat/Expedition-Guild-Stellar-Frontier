@@ -14,16 +14,16 @@ Design documents should be read as source material for decisions, not as proof t
 
 ## Planned Design Source Corpus
 
-These files are planned for a later design-source split. They are not created in Phase 0.
+These files are the planned design-source split. Phase 1 creates the first skeleton batch and leaves the remaining files planned.
 
-- `01_EGSF_Genesis_Design.md`
-- `02_EGSF_Direction_Reframe_Player_Feel.md`
+- `01_EGSF_Genesis_Design.md` - created in Phase 1
+- `02_EGSF_Direction_Reframe_Player_Feel.md` - created in Phase 1
 - `03_EGSF_Class_Progression_Calamity_Layer.md`
 - `04_EGSF_System_Integration.md`
 - `05_EGSF_Mod_Integration_Scope_Review.md`
 - `06_EGSF_RPG_Server_Archaeology.md`
-- `07_EGSF_Friends_Content_Preview.md`
-- `backlog/EGSF_Hypixel_Style_Life_RPG_Backlog.md`
+- `07_EGSF_Friends_Content_Preview.md` - created in Phase 1
+- `backlog/EGSF_Hypixel_Style_Life_RPG_Backlog.md` - created in Phase 1
 
 ## Legacy Notes
 
