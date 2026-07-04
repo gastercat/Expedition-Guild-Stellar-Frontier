@@ -1,5 +1,9 @@
 # 任務線設計
 
+> Legacy notice:
+> This is an early EG:SF quest design draft. It may describe older Chapter 0-7 planning and does not fully represent the current Chapter 0-11 FTB Quests implementation.
+> For current progression structure, check docs/PROGRESSION_OVERVIEW.md, docs/releases/, and active files under config/ftbquests/quests/.
+
 此文件是 FTB Quests 任務線草稿。任務名稱與需求先以設計語言描述，後續實作時再轉成實際物品 ID、隊伍任務、檢測行為與交付條件。
 
 ## 任務設計原則

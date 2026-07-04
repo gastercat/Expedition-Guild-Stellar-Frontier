@@ -1,5 +1,9 @@
 # Expedition Guild: Stellar Frontier Questline Design
 
+> Legacy notice:
+> This is an early EG:SF quest design draft. It may describe older Chapter 0-7 planning and does not fully represent the current Chapter 0-11 FTB Quests implementation.
+> For current progression structure, check docs/PROGRESSION_OVERVIEW.md, docs/releases/, and active files under config/ftbquests/quests/.
+
 本文件是任務線設計草稿，只描述章節目標、節奏與驗收方向。正式 FTB Quests 資料尚未建立，避免在基準穩定前直接修改遊戲任務資料。
 
 ## Design Principles
