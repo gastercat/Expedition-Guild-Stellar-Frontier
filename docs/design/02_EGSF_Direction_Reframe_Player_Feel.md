@@ -1,6 +1,6 @@
 # EG:SF Direction Reframe｜委託方需求與玩家體感
 
-Status: design source / skeleton
+Status: design source / expanded
 Project: Expedition Guild: Stellar Frontier / 遠征公會：星界邊境
 Last Updated: 2026-07-04
 Use: Guide player-feel decisions, Chapter 0 onboarding direction, requester tradeoffs, and safe batch implementation.

@@ -1,6 +1,6 @@
 # EG:SF Genesis Design｜初版世界觀與主題
 
-Status: design source / skeleton
+Status: design source / expanded
 Project: Expedition Guild: Stellar Frontier / 遠征公會：星界邊境
 Last Updated: 2026-07-04
 Use: Preserve the original EG:SF identity, world concept, and core design sentence.

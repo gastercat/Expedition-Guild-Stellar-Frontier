@@ -1,6 +1,6 @@
 # EG:SF RPG Server Archaeology｜RPG 服考古與可吸收設計
 
-Status: design source / skeleton
+Status: design source / expanded
 Project: Expedition Guild: Stellar Frontier / 遠征公會：星界邊境
 Last Updated: 2026-07-04
 Use: Preserve reference lessons from past Minecraft RPG servers and convert them into EG:SF-safe design principles.

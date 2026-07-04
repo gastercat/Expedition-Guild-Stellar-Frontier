@@ -1,6 +1,6 @@
 # EG:SF Mod Integration Scope Review｜模組審核與需求方清單收束
 
-Status: design source / skeleton
+Status: design source / expanded
 Project: Expedition Guild: Stellar Frontier / 遠征公會：星界邊境
 Last Updated: 2026-07-04
 Use: Guide future mod candidate decisions through Chapter, Guild Tier, class role, player experience, and implementation risk.

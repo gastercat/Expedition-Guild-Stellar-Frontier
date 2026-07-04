@@ -1,6 +1,6 @@
 # EG:SF Friends Content Preview｜v0.8.x 內容展示層
 
-Status: design source / skeleton
+Status: design source / expanded
 Project: Expedition Guild: Stellar Frontier / 遠征公會：星界邊境
 Last Updated: 2026-07-04
 Use: Guide v0.8.x Friends Content Preview planning and pacing.

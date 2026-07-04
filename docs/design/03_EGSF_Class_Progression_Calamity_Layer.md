@@ -1,6 +1,6 @@
 # EG:SF Class Progression｜三職業與災厄式進度層
 
-Status: design source / skeleton
+Status: design source / expanded
 Project: Expedition Guild: Stellar Frontier / 遠征公會：星界邊境
 Last Updated: 2026-07-04
 Use: Guide future v0.9.x class identity, Guild Tier, class setup, transfer/subclass, and Calamity-like progression planning.

@@ -1,6 +1,6 @@
 # EG:SF Hypixel-style Life RPG Backlog｜輕量生活 RPG 系統暫存
 
-Status: design source / skeleton
+Status: design source / backlog / expanded
 Project: Expedition Guild: Stellar Frontier / 遠征公會：星界邊境
 Last Updated: 2026-07-04
 Use: Preserve the v0.8.x backlog idea for lightweight Hypixel SkyBlock-inspired guild systems.
