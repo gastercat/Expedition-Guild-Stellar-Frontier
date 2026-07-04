@@ -68,6 +68,33 @@ Design direction / planned system（設計方向 / 計畫中系統）：
 4. 跟著公會任務建立集合點、公共物資、返航點與地圖標記。
 5. 不要只挖礦；盡早分工探索、後勤、戰鬥與基地建設。
 
+## 專案導覽
+
+如果你是第一次看這個 repo，可以先照這個順序讀：
+
+1. `README.md`：確認這個模組包的玩家體驗、目前狀態與朋友測試入口。
+2. `docs/PLAYER_GUIDE.md`：給實際進服玩家看的開始方式。
+3. `docs/TESTING_GUIDE.md`：記錄 crash、卡關、任務問題與平衡回饋。
+4. `docs/PROGRESSION_OVERVIEW.md`：確認 Chapter 0-11 的目前進度與哪些內容仍是 MVP / Framework / Placeholder。
+5. `docs/design/INDEX.md`：查設計來源與 MOC，但不要把設計文件當成已實作真相。
+
+## 協作與回饋流程
+
+朋友測試回饋請先以「能不能重現、玩家當下卡在哪裡、是否影響多人進度」為核心。最有用的回饋包含：
+
+- 發生在哪個世界、章節、任務或遊玩階段。
+- 玩家原本想做什麼，實際發生什麼。
+- 是否有 crash、log、截圖、任務無法完成、loot 過早取得、裝備過強或伺服器同步問題。
+- 若是平衡感受，請描述「太難 / 太簡單 / 太拖 / 不知道下一步」的具體情境。
+
+## Issue 與 Pull Request 最小規則
+
+- 開 Issue 前，先確認是否能用 `docs/TESTING_GUIDE.md` 的格式描述問題。
+- Issue 標題請保留可搜尋的關鍵字，例如 crash、FTB Quests、loot、server sync、Chapter 編號或相關 mod 名稱。
+- Pull Request 請保持小範圍，說明玩家體驗會改變什麼，以及是否只改文件。
+- 不要在同一個 Issue 或 Pull Request 混合 mod add/update、FTB Quests、KubeJS、release flow 與文件整理。
+- 朋友預覽階段的文件補充可以很小；先讓下一位朋友知道要看哪裡、怎麼回報，就已經足夠。
+
 ## 注意事項
 
 - 這是 alpha pack，平衡與任務流程仍會調整。

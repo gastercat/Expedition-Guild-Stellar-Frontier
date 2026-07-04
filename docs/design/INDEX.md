@@ -38,6 +38,12 @@ Phase 1 與 Phase 2 建立了初始 corpus 結構。Phase 3A-3F 完成第一輪�
 - 必須暫時停放的 lightweight life/RPG side-system ideas：`backlog/EGSF_Hypixel_Style_Life_RPG_Backlog.md`
 - 當前實作真相：使用 `docs/PROGRESSION_OVERVIEW.md`、`docs/releases/`、active FTB Quests files、KubeJS files、packwiz metadata，以及 `docs/design/` 以外的 compatibility docs。
 
+## 朋友預覽回饋入口
+
+朋友測試時，請先從 `README.md` 的「專案導覽」、「協作與回饋流程」與「Issue 與 Pull Request 最小規則」開始。若回饋涉及 v0.8.x 朋友內容預覽的設計脈絡，再閱讀 `07_EGSF_Friends_Content_Preview.md`。
+
+設計回饋可以放在 Issue 或 Pull Request 說明裡，但請明確標示它是玩家感受、設計建議，或已在遊戲中重現的問題。這個索引只負責指出設計來源，不負責新增治理規則。
+
 ## Legacy Notes
 
 以下檔案是早期 quest design drafts：
