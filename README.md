@@ -22,11 +22,11 @@ Expedition Guild: Stellar Frontier 是一個 Minecraft 1.20.1 Forge Alpha（測�
 
 ## 目前版本狀態
 
-Latest visible release tag / notes in this repo: `v0.7.3-alpha`.
+Latest visible release tag / notes in this repo: `v0.8.1-friends-feedback-test`.
 
-Current development state: alpha documentation pass.
+Current development state: v0.8.1 Friends Feedback Test pre-release; waiting for friends feedback on early quest feel, reward feel, and Create / Ad Astra preview clarity.
 
-`pack.toml` 仍標示 pack version `0.1.0`，而 git tag / release notes 已整理到 `v0.7.3-alpha`。因此請以 release notes 與 changelog 作為目前開發脈絡，以 pack metadata 版本作為尚未同步的打包資訊看待。
+`pack.toml` 仍標示 pack version `0.1.0`，而 GitHub pre-release / release notes 已整理到 `v0.8.1-friends-feedback-test`。因此請以 release notes 與 changelog 作為目前開發脈絡，以 pack metadata 版本作為尚未同步的打包資訊看待。
 
 ## 已有主軸
 
@@ -35,8 +35,8 @@ Current development state: alpha documentation pass.
 - FTB Quests progression：`config/ftbquests/quests/` 有 Chapter 0-11。
 - GameStages progression flags：Chapter milestones 與 gate stage 已透過 FTB Quests command rewards 建立基礎。
 - KubeJS stage naming skeleton：目前是命名/常數骨架，不是完整 gameplay logic。
-- Create logistics line：Create `0.5.1j` 已在 pack metadata 中固定並 pin。
-- Ad Astra stellar exploration line：Ad Astra `1.15.19` 與必要依賴已在 pack metadata 中。
+- Create logistics line：Create `1.20.1-6.0.8` 已在 pack metadata 中。
+- Ad Astra stellar exploration line：Ad Astra `1.20.1-1.15.20` 與必要依賴已在 pack metadata 中。
 - Multiplayer support：FTB Teams、FTB Chunks、Simple Voice Chat、Waystones、Xaero's Minimap / World Map。
 - Performance baseline：Embeddium、ModernFix、FerriteCore、Entity Culling、Clumps。
 - Player utility：JEI、Jade、AppleSkin。

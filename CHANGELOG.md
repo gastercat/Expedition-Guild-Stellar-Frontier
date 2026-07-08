@@ -8,6 +8,18 @@ This changelog is a short project overview. Full release notes are organized in 
 - Added clearer distinction between implemented systems, installed foundations, planned systems, and deferred content.
 - Moved root release notes into `docs/releases/`.
 
+## v0.8.1 Friends Feedback Test
+
+- Released GitHub pre-release `v0.8.1-friends-feedback-test` from commit `e12bca1`.
+- Published `EGSF-v0.8.1-friends-feedback-test.mrpack` as the release asset.
+- Polished Chapter 0 into stronger guild onboarding and expedition preparation.
+- Polished Chapter 1 to preview Create engineering, Ad Astra foreshadowing, and Vanguard / Gunner / Arcanist class fantasy.
+- Updated quest text to match the v0.8.x baseline: Create `1.20.1-6.0.8` and Ad Astra `1.20.1-1.15.20`.
+- Tuned early quest rewards into low-risk guild supply rewards.
+- Refreshed packwiz index / pack hash during implementation and improved `.packwizignore` to avoid Python cache pollution.
+- RC smoke test passed for import, main menu, mod list, new world, FTB Quests, Chapter 0 / 1 / 2 / 7 visibility, Create, Ad Astra, JEI, Sophisticated Storage / Backpacks, Twilight Forest, Terramity, Dungeon Crawl, and packaging cleanliness.
+- Did not include TaCZ full integration, Iron's Spells full integration, Better Combat, full class skills, Dragon Disaster, Guild Threat, Create Aeronautics, Tom's Simple Storage, or Touhou Little Maid.
+
 ## v0.7.3-alpha
 
 - Added Chapter 5 calamity foreshadowing MVP gate release notes.
