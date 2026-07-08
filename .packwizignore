@@ -15,3 +15,8 @@ QUEST_DESIGN.md
 SERVER_TEST_PROTOCOL.md
 SKILL.md
 add_phase1_*.sh
+
+# Python cache files
+__pycache__/
+**/__pycache__/
+*.pyc
