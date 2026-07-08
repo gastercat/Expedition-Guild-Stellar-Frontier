@@ -5,4 +5,13 @@ RELEASE_NOTES_*.md
 Expedition Guild Stellar Frontier-0.1.0.mrpack
 .DS_Store
 
+AGENT.md
+PROGRESS.md
+README.md
+CHANGELOG.md
+COMPATIBILITY.md
+MODLIST.md
+QUEST_DESIGN.md
+SERVER_TEST_PROTOCOL.md
 SKILL.md
+add_phase1_*.sh

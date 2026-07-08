@@ -1,38 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "CHANGELOG.md"
-hash = "f888956515446ea3d51492b4263b9e876287fa87141696ac9e775cdabb1447f0"
-
-[[files]]
-file = "COMPATIBILITY.md"
-hash = "7e4f865748924077c68ca457690126c800fc47cf0af7859684d7554576997bc3"
-
-[[files]]
-file = "MODLIST.md"
-hash = "6d76f46795b34b80b97574bede960f0c297b61b686c204db4c0bcd52743d2128"
-
-[[files]]
-file = "QUEST_DESIGN.md"
-hash = "466ddc4a5f4e02439b1217d13ad7f08131e877e110f16d5f90ccd0077a7107a3"
-
-[[files]]
-file = "README.md"
-hash = "5324433d31284338b7e4008dee0ae243282b9501036c2ae7c4c74d6b90e3ded9"
-
-[[files]]
-file = "SERVER_TEST_PROTOCOL.md"
-hash = "0eee68056b06a533f6513efbe1ccfbf632132ff10d5eca92e76900da432f2ed1"
-
-[[files]]
-file = "add_phase1_ad_astra_mods.sh"
-hash = "b2d6e727e47e2691813b60fb6e502b8d5cdcb2ad4aab59d8f74e3d75272b1417"
-
-[[files]]
-file = "add_phase1_core_mods.sh"
-hash = "b5d2853ddf655b7588f84ea14554b217f84d16cd246ecc82a63351fb14ff7337"
-
-[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
@@ -94,7 +62,7 @@ hash = "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
-hash = "5e727d91523c52e5056a57556d63118fe26802d824668c662195c8abf762a265"
+hash = "d7a30358cb8314c296fec14e4ea74b8301edf093d6054dafac121e8fe9ac434f"
 metafile = true
 
 [[files]]
@@ -128,6 +96,11 @@ hash = "440a806e54d48cd4c5ef447ff8f1a6cd9a99d53d02ab90d50204be9b31c2f30d"
 metafile = true
 
 [[files]]
+file = "mods/caelus.pw.toml"
+hash = "8a8ea0af79b88d9c192d208aa5be4bacd934e2b92d4721566e2e796eb9761e10"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "e3dd03e7fec88831974857e2cdded54dd5c5bdcaa3f6d6248c2800e82db4dd41"
 metafile = true
@@ -139,12 +112,17 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "f41389f9500b106cecf0a83d2fc68b0730036af50ceb9ef8682ac7f70b325560"
+hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
 metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
+metafile = true
+
+[[files]]
+file = "mods/dungeoncrawl.pw.toml"
+hash = "c06061257b39a438aaa6205493090ac772564bc2d53d2c34a664de117fe6f4c0"
 metafile = true
 
 [[files]]
@@ -155,6 +133,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "c9081708402e1fd5e5936c3119a43717c0fd51185f940faa79dbbd8670d55a40"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "d478b8c5149f9c37bc0072d0608e2fbc6ff38cd3d15420f99c8a7ed2a55c8f0e"
 metafile = true
 
 [[files]]
@@ -188,6 +171,11 @@ hash = "5a9ee402a1db67f84efd6f1b5665ece795c1d2b5d477152f2d5853319c1ed590"
 metafile = true
 
 [[files]]
+file = "mods/geckolib.pw.toml"
+hash = "7ffae05c3b8101588b231db8116c34b36a77a0c6e6d7e6af867ae1c5b47e4d10"
+metafile = true
+
+[[files]]
 file = "mods/item-filters.pw.toml"
 hash = "ff92eddb2bf6f1afe9fa7fc73d63ea9419e0cff77fbd4fd2936b51525fe9340c"
 metafile = true
@@ -213,8 +201,18 @@ hash = "e8b4876d403b4f4daab64bad9704a5b271a33031d1ff8d19d23ebd1e3b8dd39a"
 metafile = true
 
 [[files]]
+file = "mods/macaws-bridges.pw.toml"
+hash = "0261f8fb3b0880b572044ff084edceecd2c91f39ee71c477198313ac2a253f4d"
+metafile = true
+
+[[files]]
 file = "mods/macaws-doors.pw.toml"
 hash = "4284966610d17ac7b865da1fad6738b9e24704e817a6cc6650d423db285e6e5a"
+metafile = true
+
+[[files]]
+file = "mods/macaws-fences-and-walls.pw.toml"
+hash = "f009a177c97f9d189e9131704095060364b8201c83bd9118d89a11d25a6d2655"
 metafile = true
 
 [[files]]
@@ -228,6 +226,21 @@ hash = "44fccb986223e1c667e26127337c41e651c90b6583316d9f0f83201f668a8d23"
 metafile = true
 
 [[files]]
+file = "mods/macaws-paths-and-pavings.pw.toml"
+hash = "bd555889b27b5518a595b27838464e1af089c282873fde02ea50c75394edb25f"
+metafile = true
+
+[[files]]
+file = "mods/macaws-roofs.pw.toml"
+hash = "1191b45155fb0f23f5a3fe4b9170b73f52a1c9599de504fe922e4ea7e7e3c95f"
+metafile = true
+
+[[files]]
+file = "mods/macaws-trapdoors.pw.toml"
+hash = "8728882e97cd2c7ff8746d95598be7f15fcb392dc9a146319504e0119f052a8e"
+metafile = true
+
+[[files]]
 file = "mods/macaws-windows.pw.toml"
 hash = "eb6a1c1455632c6ea1ab12259d7082a19400be018eae95e44150a9f8fed330eb"
 metafile = true
@@ -235,6 +248,11 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "fc70f2509f3a5d82504637fe781c30d10de0dec31e73a2a0245cf90532879969"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+hash = "2242b76f7c4ee6d7f396a2d1380bee615d78408d00bff5cca38e4df777b18dc5"
 metafile = true
 
 [[files]]
@@ -260,6 +278,31 @@ metafile = true
 [[files]]
 file = "mods/simply-swords.pw.toml"
 hash = "60fffd9990be454a9dffb87a2804f654e6deb21b2ee63924ef4a84d443612352"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "6bbd8a47475b37a85c13b60e7025ffe225834d4f6e6669df7d4d8f46c738bee2"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "1475a50d80b62a60ab6b79405c5b677662d740db937506a3502d4253240d7376"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage.pw.toml"
+hash = "e58849663e4e64cc144649a91ba67bed09ae7279eb808c069da7e509bb115758"
+metafile = true
+
+[[files]]
+file = "mods/terramity.pw.toml"
+hash = "06c36396febd12e1bc59a2d8bdfd48377a1081941160d2d968d2e307d2774658"
+metafile = true
+
+[[files]]
+file = "mods/the-twilight-forest.pw.toml"
+hash = "d1f859de9867b7433305aef1631aa22a436a4c3924474a21c0a22ab5f2093c04"
 metafile = true
 
 [[files]]
