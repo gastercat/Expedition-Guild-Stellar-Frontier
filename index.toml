@@ -62,7 +62,7 @@ hash = "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
-hash = "5e727d91523c52e5056a57556d63118fe26802d824668c662195c8abf762a265"
+hash = "d7a30358cb8314c296fec14e4ea74b8301edf093d6054dafac121e8fe9ac434f"
 metafile = true
 
 [[files]]
@@ -107,7 +107,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "f41389f9500b106cecf0a83d2fc68b0730036af50ceb9ef8682ac7f70b325560"
+hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
 metafile = true
 
 [[files]]
