@@ -1,38 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "CHANGELOG.md"
-hash = "f888956515446ea3d51492b4263b9e876287fa87141696ac9e775cdabb1447f0"
-
-[[files]]
-file = "COMPATIBILITY.md"
-hash = "7e4f865748924077c68ca457690126c800fc47cf0af7859684d7554576997bc3"
-
-[[files]]
-file = "MODLIST.md"
-hash = "6d76f46795b34b80b97574bede960f0c297b61b686c204db4c0bcd52743d2128"
-
-[[files]]
-file = "QUEST_DESIGN.md"
-hash = "466ddc4a5f4e02439b1217d13ad7f08131e877e110f16d5f90ccd0077a7107a3"
-
-[[files]]
-file = "README.md"
-hash = "5324433d31284338b7e4008dee0ae243282b9501036c2ae7c4c74d6b90e3ded9"
-
-[[files]]
-file = "SERVER_TEST_PROTOCOL.md"
-hash = "0eee68056b06a533f6513efbe1ccfbf632132ff10d5eca92e76900da432f2ed1"
-
-[[files]]
-file = "add_phase1_ad_astra_mods.sh"
-hash = "b2d6e727e47e2691813b60fb6e502b8d5cdcb2ad4aab59d8f74e3d75272b1417"
-
-[[files]]
-file = "add_phase1_core_mods.sh"
-hash = "b5d2853ddf655b7588f84ea14554b217f84d16cd246ecc82a63351fb14ff7337"
-
-[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
