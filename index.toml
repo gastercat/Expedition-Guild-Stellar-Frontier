@@ -96,6 +96,11 @@ hash = "440a806e54d48cd4c5ef447ff8f1a6cd9a99d53d02ab90d50204be9b31c2f30d"
 metafile = true
 
 [[files]]
+file = "mods/caelus.pw.toml"
+hash = "8a8ea0af79b88d9c192d208aa5be4bacd934e2b92d4721566e2e796eb9761e10"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "e3dd03e7fec88831974857e2cdded54dd5c5bdcaa3f6d6248c2800e82db4dd41"
 metafile = true
@@ -116,6 +121,11 @@ hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
 metafile = true
 
 [[files]]
+file = "mods/dungeoncrawl.pw.toml"
+hash = "c06061257b39a438aaa6205493090ac772564bc2d53d2c34a664de117fe6f4c0"
+metafile = true
+
+[[files]]
 file = "mods/embeddium.pw.toml"
 hash = "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
 metafile = true
@@ -123,6 +133,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "c9081708402e1fd5e5936c3119a43717c0fd51185f940faa79dbbd8670d55a40"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "d478b8c5149f9c37bc0072d0608e2fbc6ff38cd3d15420f99c8a7ed2a55c8f0e"
 metafile = true
 
 [[files]]
@@ -153,6 +168,11 @@ metafile = true
 [[files]]
 file = "mods/game-stages.pw.toml"
 hash = "5a9ee402a1db67f84efd6f1b5665ece795c1d2b5d477152f2d5853319c1ed590"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "7ffae05c3b8101588b231db8116c34b36a77a0c6e6d7e6af867ae1c5b47e4d10"
 metafile = true
 
 [[files]]
@@ -231,6 +251,11 @@ hash = "fc70f2509f3a5d82504637fe781c30d10de0dec31e73a2a0245cf90532879969"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "2242b76f7c4ee6d7f396a2d1380bee615d78408d00bff5cca38e4df777b18dc5"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-config.pw.toml"
 hash = "b85e8417e797be3fdae046c487eeda8f54cdc88f3f20e462e0e229f8dd734214"
 metafile = true
@@ -253,6 +278,31 @@ metafile = true
 [[files]]
 file = "mods/simply-swords.pw.toml"
 hash = "60fffd9990be454a9dffb87a2804f654e6deb21b2ee63924ef4a84d443612352"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "6bbd8a47475b37a85c13b60e7025ffe225834d4f6e6669df7d4d8f46c738bee2"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "1475a50d80b62a60ab6b79405c5b677662d740db937506a3502d4253240d7376"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage.pw.toml"
+hash = "e58849663e4e64cc144649a91ba67bed09ae7279eb808c069da7e509bb115758"
+metafile = true
+
+[[files]]
+file = "mods/terramity.pw.toml"
+hash = "06c36396febd12e1bc59a2d8bdfd48377a1081941160d2d968d2e307d2774658"
+metafile = true
+
+[[files]]
+file = "mods/the-twilight-forest.pw.toml"
+hash = "d1f859de9867b7433305aef1631aa22a436a4c3924474a21c0a22ab5f2093c04"
 metafile = true
 
 [[files]]
