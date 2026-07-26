@@ -2,6 +2,22 @@
 
 This document summarizes the current compatibility strategy for Expedition Guild: Stellar Frontier. It is based on the repo state during this documentation pass, especially `pack.toml`, `mods/*.pw.toml`, release notes, and existing docs.
 
+## Evidence And Status Labels
+
+- `CURRENTLY_INSTALLED`: present in current `index.toml` and the corresponding
+  `mods/*.pw.toml` metadata.
+- `TESTED`: supported by a named runtime test or release record; metadata
+  presence alone is not runtime evidence.
+- `PLANNED`: a design or roadmap direction, not current installation truth.
+- `DEFERRED`: intentionally outside the current authorized scope.
+- `HISTORICAL`: retained evidence for an earlier baseline, not current
+  compatibility authority.
+
+Current installation authority is `pack.toml`, `index.toml`, and
+`mods/*.pw.toml`. Historical notes and design documents do not override those
+files. `CURRENTLY_INSTALLED` does not mean fully integrated, balanced, or
+runtime-verified.
+
 ## Minecraft / Loader
 
 - Minecraft: `1.20.1`
@@ -58,47 +74,74 @@ Current note: FTB Quests Chapter 0-11 exists. GameStages rewards and class stage
 
 ### Create Logistics
 
-- Create
-
-Current metadata confirms `create-1.20.1-0.5.1.j.jar` and `pin = true`.
+- Status: `CURRENTLY_INSTALLED`
+- Metadata: `create-1.20.1-6.0.8.jar`
+- Modrinth project / version: `LNytGWDc` / `8amzvn9x`
+- No explicit pin field is present in the current metadata.
+- Test status: `TESTED` in the v0.8.1 RC smoke-test record.
 
 ### Space Exploration
 
+- Status: `CURRENTLY_INSTALLED`
 - Ad Astra
 - Botarium
 - Resourceful Lib
 - Resourceful Config
 - Cloth Config API
 
-Current metadata confirms `ad_astra-forge-1.20.1-1.15.19.jar`.
+- Metadata: `ad_astra-forge-1.20.1-1.15.20.jar`
+- Modrinth project / version: `3ufwT9JF` / `Qf7QFXk2`
+- No explicit pin field is present in the current metadata.
+- Test status: `TESTED` in the v0.8.1 RC smoke-test record.
 
 ### Building / Furniture
 
-- Macaw's Furniture
+- Status: `CURRENTLY_INSTALLED`
+- Macaw's Furniture, Bridges, Doors, Fences and Walls, Lights and Lamps, Paths
+  and Pavings, Roofs, Trapdoors, and Windows are present in current metadata.
+- Metadata presence does not establish final building balance or complete
+  player-facing integration.
 
 ### Storage
 
-No dedicated storage system such as Refined Storage, Applied Energistics 2, Sophisticated Storage, or Storage Drawers is present in the current `mods/*.pw.toml` metadata.
+- Status: `CURRENTLY_INSTALLED`
+- Sophisticated Backpacks, Sophisticated Core, and Sophisticated Storage are
+  present in current metadata.
+- Test status: Sophisticated Storage / Backpacks are `TESTED` in the v0.8.1 RC
+  smoke-test record.
+- Refined Storage, Applied Energistics 2, and Storage Drawers are not present in
+  current metadata.
 
 ### Food / Farming
 
-AppleSkin is present as food information QoL. Farmer's Delight is mentioned in planning docs but is not present in current `mods/*.pw.toml` metadata.
+- Status: `CURRENTLY_INSTALLED`
+- AppleSkin and Farmer's Delight are present in current metadata.
+- This metadata evidence does not establish current-release runtime validation
+  or final food progression balance for Farmer's Delight.
 
 ### Combat / RPG
 
-The v0.8.0 Friends Content Preview currently includes a small tested RPG content layer:
+The current metadata includes a small RPG and exploration content layer:
 
-- Lootr is installed and manually tested for multiplayer loot fairness.
-- Simply Swords is installed and smoke-tested for Vanguard weapon variety.
-- Artifacts and Curios API are installed and smoke-tested for relic / accessory preview.
+- Lootr, Simply Swords, Artifacts, and Curios API are `CURRENTLY_INSTALLED`.
+- Existing project records describe earlier Lootr, Simply Swords, and Artifacts
+  tests, but installation status alone does not extend those results to every
+  current configuration.
+- Dungeon Crawl, Twilight Forest, and Terramity are `CURRENTLY_INSTALLED` and
+  separately `TESTED` in the v0.8.1 RC smoke-test record.
 
-This is preview compatibility, not final balance. Better Combat is not installed yet and should remain future research. Dungeon Crawl, Twilight Forest, Terramity, and Touhou Little Maid are not installed yet. Additional Macaw expansions are not installed yet beyond the existing Macaw's Furniture baseline.
+This is preview compatibility, not final balance or full integration. Better
+Combat and Touhou Little Maid are not present in current metadata and remain
+`DEFERRED` under the current project state.
 
 Vanguard / Gunner / Arcanist are still design direction and quest/stage framework, not completed class skill systems.
 
 ### Dimensions / Structures
 
-Ad Astra is the confirmed space / planet exploration system. Other dimension or structure mods such as Twilight Forest, Blue Skies, Cataclysm, Terralith, YUNG's series, or When Dungeons Arise are not present in current `mods/*.pw.toml` metadata.
+Ad Astra and Twilight Forest are `CURRENTLY_INSTALLED`. Dungeon Crawl is also
+present as structure content. Blue Skies, Cataclysm, Terralith, YUNG's series,
+and When Dungeons Arise are not present in current metadata. Do not infer final
+dimension progression or balance from metadata presence.
 
 ## Integration Risk Levels
 
@@ -121,14 +164,28 @@ Confirmed by current repo metadata or docs:
 
 - Minecraft is locked to `1.20.1`.
 - Loader is Forge.
-- Create is locked to `create-1.20.1-0.5.1.j.jar` with `pin = true`.
-- Ad Astra is locked to `ad_astra-forge-1.20.1-1.15.19.jar`.
-- Ad Astra `1.15.20` is avoided with Create `0.5.1j` because release notes and compatibility docs record a startup crash involving `CreateRegistries`.
+- Forge metadata is `47.4.10`.
+- Java `17` is the documented runtime target.
+- Create metadata is `create-1.20.1-6.0.8.jar` with no explicit pin field.
+- Ad Astra metadata is `ad_astra-forge-1.20.1-1.15.20.jar` with no explicit pin
+  field.
 - Create: Ad Astra Compatibility is not present in current metadata and was deferred from Phase 1 after compatibility issues.
 - KubeJS is present, but current release notes say no new KubeJS gameplay logic was added for the Chapter 3-5 MVP gates.
 - Refined Storage is not present in the current pack metadata.
 - Applied Energistics 2 is not present in the current pack metadata.
 - Botania is not present in the current pack metadata.
+
+## Historical Create / Ad Astra Compatibility Record
+
+Status: `HISTORICAL`
+
+- Under the earlier Create `0.5.1j` baseline, Ad Astra `1.15.20` produced a
+  startup crash involving `com/simibubi/create/api/registry/CreateRegistries`.
+- The historical mitigation downgraded Ad Astra to `1.15.19` and removed
+  Create: Ad Astra Compatibility from that Phase 1 combination.
+- The old crash, error class, and downgrade remain relevant historical
+  evidence, but they do not override the current Create `6.0.8` / Ad Astra
+  `1.15.20` packwiz metadata.
 
 ## Planned / Deferred Content
 

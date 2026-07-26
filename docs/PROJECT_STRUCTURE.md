@@ -72,8 +72,12 @@ Do not edit unless explicitly requested:
 - The pack format is packwiz.
 - Minecraft is `1.20.1`.
 - Forge is `47.4.10`.
-- Create metadata confirms `create-1.20.1-0.5.1.j.jar` and `pin = true`.
-- Ad Astra metadata confirms `ad_astra-forge-1.20.1-1.15.19.jar`.
+- Java `17` is the documentation target; Java is not declared in the current
+  packwiz version metadata.
+- Create metadata confirms `create-1.20.1-6.0.8.jar`.
+- Ad Astra metadata confirms `ad_astra-forge-1.20.1-1.15.20.jar`.
+- Neither current mod metadata file contains an explicit pin field.
+- Current release context is `v0.8.1-friends-feedback-test`.
 - FTB Quests active chapters exist from `0.snbt` through `11.snbt`.
 - `kubejs/server_scripts/eg_stages.js` exists.
 - Release notes are now organized under `docs/releases/`.
