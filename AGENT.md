@@ -25,6 +25,18 @@ dragon threats -> merge class paths -> endgame calamity -> divine/postgame gear.
 - Do not commit unless explicitly asked.
 - Do not commit `.mrpack` artifacts.
 
+## 文件語言規範（Documentation Language Policy）
+
+- Repo 中新撰寫或更新的說明文件，原則上使用繁體中文（zh-TW）。
+- Mod、工具、API、類別、函式、識別字、狀態 token、檔案路徑、指令、
+  程式碼、設定鍵、log 與版本資訊應保留英文原文。
+- 必要時可在英文專有名詞第一次出現時附上繁中解釋，但不得自行建立會
+  造成歧義的新譯名。
+- 翻譯與在地化不得改變技術含義、權威來源、狀態分類、驗證結果或規則
+  強度。
+- 修改既有英文文件時，應在任務範圍允許的情況下逐步繁中化；若任務未
+  授權完整翻譯，應維持原文並回報待辦，不得擴張修改範圍。
+
 ## Technical Baseline
 
 - Minecraft: `1.20.1`
