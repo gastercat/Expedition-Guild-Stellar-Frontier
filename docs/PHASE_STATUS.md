@@ -1,8 +1,8 @@
 # Phase Status（歷史階段紀錄）
 
-> **歷史權威界線 — `HISTORICAL_TEST_RECORD`**
+> **歷史權威界線 — `HISTORICAL_PHASE_RECORD`**
 >
-> 本文件保存 Create `0.5.1j`／Ad Astra `1.15.19` 基線時期的規劃、測試、`PASS`、規則、世界名稱與當時的 `Next Step`。這些內容只適用於當時的測試基線，不是 `v0.8.1-friends-feedback-test` 的現行安裝或 runtime authority，也不得用來宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。現行安裝狀態以 packwiz metadata 與 `COMPATIBILITY.md` 為準；現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
+> 本文件保存 Phase 1 的階段狀態、版本 Locks、Rules、當時的 `Next Step` 與相關 runtime evidence；其中版本與測試結果只適用於當時的 Create `0.5.1j`／Ad Astra `1.15.19` 基線。本文件不是 `v0.8.1-friends-feedback-test` 的 current implementation authority，也不得用來宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。現行安裝狀態以 packwiz metadata 與 `COMPATIBILITY.md` 為準；現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
 
 ## 當時階段
 

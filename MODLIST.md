@@ -1,8 +1,8 @@
 # 模組清單（歷史規劃紀錄）
 
-> **歷史權威界線 — `HISTORICAL_TEST_RECORD`**
+> **歷史權威界線 — `HISTORICAL_PLANNING_INVENTORY`**
 >
-> 本文件保存 Create `0.5.1j`／Ad Astra `1.15.19` 基線時期的規劃、測試、`PASS`、規則、世界名稱與當時的 `Next Step`。這些內容只適用於當時的測試基線，不是 `v0.8.1-friends-feedback-test` 的現行安裝或 runtime authority，也不得用來宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。現行安裝狀態以 packwiz metadata 與 `COMPATIBILITY.md` 為準；現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
+> 本文件保存早期規劃、候選 Mod、批次決策與當時 scope；其中版本鎖定、`PASS` 與取捨只適用於當時的 Create `0.5.1j`／Ad Astra `1.15.19` 基線，不是 `v0.8.1-friends-feedback-test` 的 current installed inventory 或 implementation authority。現行已安裝清單應查閱 `index.toml`、`mods/*.pw.toml` 與 `COMPATIBILITY.md`；不得用本文件宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。
 
 > 狀態說明：此文件是規劃清單，不代表 jar 已下載或存在。所有模組後續仍需逐一確認 Minecraft 1.20.1、Forge、Java 17 與實際依賴版本。
 
