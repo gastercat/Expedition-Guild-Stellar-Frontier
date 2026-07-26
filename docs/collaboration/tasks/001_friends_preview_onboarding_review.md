@@ -2,7 +2,7 @@
 
 - Mode：`READ_ONLY`
 - Status：`OPEN`
-- Owner／final authority：Yoi
+- Owner／final authority：Project Maintainer
 - Deliverable：5 至 10 個具體 observation reports
 
 ## Objective
@@ -50,4 +50,4 @@
 - 需要啟動遊戲、修改 Repo 或擴大到 Scope 外才能回答。
 - 發現可能影響 authority、Release 或主線設計的問題。
 
-命中 stop condition 時，保留已完成 observations，標記 `STOP POINT`，並將衝突或缺口交給 Yoi。
+命中 stop condition 時，保留已完成 observations，標記 `STOP POINT`，並將衝突或缺口交給 Project Maintainer。
