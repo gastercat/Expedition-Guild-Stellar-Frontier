@@ -22,6 +22,12 @@ Expedition Guild: Stellar Frontier 接受小範圍、可 Review、可回滾的�
 
 - 不得直接修改或提交到 `main`。
 - 所有 Repo 寫入工作都必須使用獨立 branch 與 Pull Request。
-- 流程固定為：specification → small batch → validation → Pull Request → Yoi Review → merge。
-- Yoi 是最終設計、scope 與 Release authority；協作者不得自行擴張主線或替專案做未授權決策。
+- 流程固定為：specification → small batch → validation → Pull Request → Project Maintainer Review → merge。
+- Project Maintainer 是最終設計、scope 與 Release authority；協作者不得自行擴張主線或替專案做未授權決策。
 - 發現 authority conflict、scope 不明或證據不足時，停止並回報，不得靜默修正。
+
+## Identity Boundary
+
+- 外部協作者不需要知道 Project Maintainer 的私人身份；協作文件以專案名稱與 `Project Maintainer` 角色稱呼為準。
+- 不得將私人姓名、email、本機路徑或其他 private identifier 複製到任務、提示詞、回報或協作文件。
+- 本文件規則不改變 Git commit attribution、GitHub attribution 或 repository ownership。

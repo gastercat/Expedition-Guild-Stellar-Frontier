@@ -129,4 +129,4 @@ stop_conditions:
   - "Validation cannot support the requested result"
 ```
 
-Controlled implementation 必須使用獨立 branch 與 Pull Request，並在 Yoi Review 後才能 merge。Prompt 只描述授權；它不會自行創造權限。
+Controlled implementation 必須使用獨立 branch 與 Pull Request，並在 Project Maintainer Review 後才能 merge。Prompt 只描述授權；它不會自行創造權限。

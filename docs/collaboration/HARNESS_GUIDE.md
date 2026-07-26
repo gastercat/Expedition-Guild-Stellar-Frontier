@@ -73,11 +73,11 @@ Design source 可以保存方向、候選與歷史脈絡，但不等於 current 
 1. `STOP`，不要繼續寫入。
 2. 列出衝突位置、來源、觀察到的文字與可能影響。
 3. 不得自行選擇方便的版本或靜默修正。
-4. 將 evidence 與建議選項回報給 Yoi，等待決策。
+4. 將 evidence 與建議選項回報給 Project Maintainer，等待決策。
 
 ## 寫入工作流程
 
-所有 Repo 寫入變更採用：specification → preflight → independent branch → small scoped change → validation → Pull Request → Yoi Review → merge。
+所有 Repo 寫入變更採用：specification → preflight → independent branch → small scoped change → validation → Pull Request → Project Maintainer Review → merge。
 
 - 不得直接修改 `main`。
 - 預設採可回滾的 doc-only 或 isolated change。

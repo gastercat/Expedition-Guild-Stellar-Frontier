@@ -35,6 +35,6 @@
 2. Small batch：只處理能獨立 Review 的最小範圍。
 3. Evidence before `PASS`：沒有相稱的 file、command 或 runtime evidence，就使用 `PARTIAL` 或 `UNVERIFIED`。
 4. 寫入工作使用獨立 branch；不得直接修改 `main`。
-5. 提交 Pull Request，等待 Yoi Review；禁止自動 merge。
+5. 提交 Pull Request，等待 Project Maintainer Review；禁止自動 merge。
 
 遇到路徑不存在、authority conflict、未授權檔案、需要擴大 scope 或無法驗證時，立即停止並回報。不要選擇「看起來方便」的版本，也不要自行補做相鄰工作。

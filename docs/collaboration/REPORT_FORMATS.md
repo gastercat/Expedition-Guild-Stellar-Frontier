@@ -60,4 +60,4 @@ status_after:
   stop_point: "<where work stopped and whose review is required>"
 ```
 
-不要把 static metadata、檔案存在或文字檢查描述為 runtime verification。若因 authority conflict、scope expansion 或缺少證據停止，請在 result／status_after 明確寫出 `STOP POINT` 並交由 Yoi 決策。
+不要把 static metadata、檔案存在或文字檢查描述為 runtime verification。若因 authority conflict、scope expansion 或缺少證據停止，請在 result／status_after 明確寫出 `STOP POINT` 並交由 Project Maintainer 決策。
