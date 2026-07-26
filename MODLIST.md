@@ -1,8 +1,12 @@
-# 模組清單
+# 模組清單（歷史規劃紀錄）
+
+> **歷史權威界線 — `HISTORICAL_TEST_RECORD`**
+>
+> 本文件保存 Create `0.5.1j`／Ad Astra `1.15.19` 基線時期的規劃、測試、`PASS`、規則、世界名稱與當時的 `Next Step`。這些內容只適用於當時的測試基線，不是 `v0.8.1-friends-feedback-test` 的現行安裝或 runtime authority，也不得用來宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。現行安裝狀態以 packwiz metadata 與 `COMPATIBILITY.md` 為準；現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
 
 > 狀態說明：此文件是規劃清單，不代表 jar 已下載或存在。所有模組後續仍需逐一確認 Minecraft 1.20.1、Forge、Java 17 與實際依賴版本。
 
-## 固定環境
+## 當時固定環境
 
 | 項目 | 值 | 備註 |
 | --- | --- | --- |
@@ -84,7 +88,7 @@
 | Applied Energistics 2 | 儲存網路 | Phase 3：Stellar Expansion | 支援大型基地、跨星球物流與後期自動化。 | 是 | 是 | 不放入 Phase 1；加入後需重新設計儲存進度。 |
 | Ad Astra: Structures Overhaul | 太空結構擴充 | Phase 3：Stellar Expansion | 擴展太空探索中的結構與遠征目標。 | 是 | 是 | 需確認支援目前 Ad Astra 版本與 Forge 1.20.1。 |
 
-## 第一版明確不加入
+## 當時第一版明確不加入
 
 | 模組 | 原因 |
 | --- | --- |
@@ -159,7 +163,7 @@
 | 注意 | Waystones 第一次啟動會自動修正 `waystones-common.toml`；Xaero online version check expired 可忽略。 |
 | 下一步 | Phase 1 Baseline Freeze。先凍結目前可玩版本，建立 commit 與 server 測試準備，不要直接繼續加大型內容模組。 |
 
-## 待決策項目
+## 當時待決策項目
 
 | 項目 | 建議 |
 | --- | --- |

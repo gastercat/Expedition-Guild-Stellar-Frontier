@@ -1,6 +1,10 @@
-# Phase Status
+# Phase Status（歷史階段紀錄）
 
-## Current Phase
+> **歷史權威界線 — `HISTORICAL_TEST_RECORD`**
+>
+> 本文件保存 Create `0.5.1j`／Ad Astra `1.15.19` 基線時期的規劃、測試、`PASS`、規則、世界名稱與當時的 `Next Step`。這些內容只適用於當時的測試基線，不是 `v0.8.1-friends-feedback-test` 的現行安裝或 runtime authority，也不得用來宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。現行安裝狀態以 packwiz metadata 與 `COMPATIBILITY.md` 為準；現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
+
+## 當時階段
 
 Phase 1: Frontier Demo
 
@@ -103,7 +107,7 @@ Accepted notes:
 - Waystones may auto-correct `waystones-common.toml` on first launch.
 - Xaero online version check expired can be ignored.
 
-## Current Locks
+## 當時版本鎖定
 
 - Minecraft: 1.20.1
 - Loader: Forge
@@ -140,7 +144,7 @@ Accepted notes:
 - Decision: remove from Phase 1 for demo stability.
 - Future recipe path: use KubeJS or datapack for explicit Ad Astra x Create processing recipes.
 
-## Hard Rules
+## 當時 Hard Rules
 
 - Do not use Create 6
 - Do not use Ad Astra 1.15.20 unless the whole pack migrates to Create 6
@@ -163,7 +167,7 @@ Accepted notes:
   - `ftb-chunks-forge-2001.3.7.jar`
 - Ad Astra 1.15.19 may show as outdated; ignore it unless the whole pack migrates to Create 6.
 
-## Next Step
+## 當時 Next Step
 
 Runtime Test Environment:
 - packwiz serve

@@ -1,6 +1,10 @@
-# Runtime Test Plan
+# Runtime Test Plan（歷史測試計畫）
 
-## Environment
+> **歷史權威界線 — `HISTORICAL_TEST_RECORD`**
+>
+> 本文件保存 Create `0.5.1j`／Ad Astra `1.15.19` 基線時期的規劃、測試、`PASS`、規則、世界名稱與當時的 `Next Step`。這些內容只適用於當時的測試基線，不是 `v0.8.1-friends-feedback-test` 的現行安裝或 runtime authority，也不得用來宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。現行安裝狀態以 packwiz metadata 與 `COMPATIBILITY.md` 為準；現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
+
+## 當時 Environment
 
 - Minecraft: 1.20.1
 - Loader: Forge
@@ -8,7 +12,7 @@
 - Java: 17
 - Pack manager: packwiz
 
-## Start packwiz server
+## 當時 packwiz server 啟動方式
 
 Command:
 
@@ -16,7 +20,7 @@ Command:
 /Users/gastercat/go/bin/packwiz serve
 ```
 
-## Prism Launcher Test
+## 當時 Prism Launcher Test
 
 測試流程：
 1. 建立 Minecraft 1.20.1 Forge 47.4.10 instance
@@ -28,7 +32,7 @@ Command:
 7. 建立新世界
 8. 不要使用正式世界測試
 
-## Client Smoke Test
+## 當時 Client Smoke Test
 
 目前結果：
 - Prism Launcher 測試 instance 已成功進入主選單
@@ -77,7 +81,7 @@ Command:
 - 創造模式物品欄有 Create 物品
 - 創造模式物品欄有 Ad Astra 物品
 
-## New World Test
+## 當時 New World Test
 
 目前結果：新世界 smoke test 已通過。
 
@@ -89,7 +93,7 @@ Command:
 - 使用 JEI 查看 Create / Ad Astra 配方
 - 不測正式世界
 
-## Failure Criteria
+## 當時 Failure Criteria
 
 任一條成立就停止新增模組：
 - 遊戲無法啟動
@@ -102,12 +106,12 @@ Command:
 - JEI 無法載入
 - crash log 出現 mixin 或 dependency error
 
-## Recipe Policy
+## 當時 Recipe Policy
 
 - Phase 1 不使用 Create: Ad Astra Compatibility。
 - Future Ad Astra x Create processing recipes should be handled by KubeJS or datapack.
 
-## Multiplayer Smoke Test
+## 當時 Multiplayer Smoke Test
 
 目前結果：Phase 1 Batch 3A 已通過。
 
@@ -131,7 +135,7 @@ Command:
 - Phase 1 Batch 3B：FTB Quests / Item Filters。
 - 不要一次加入地圖、Waystones、世界生成或結構模組。
 
-## Quest Foundation Smoke Test
+## 當時 Quest Foundation Smoke Test
 
 目前結果：Phase 1 Batch 3B 已通過。
 
@@ -156,7 +160,7 @@ Command:
 - Phase 1 Batch 3C：探索便利層。
 - 不要在下一批加入世界生成、結構、背包、料理、裝飾或戰鬥模組。
 
-## Exploration Utility Smoke Test
+## 當時 Exploration Utility Smoke Test
 
 目前結果：Phase 1 Batch 3C 已通過。
 

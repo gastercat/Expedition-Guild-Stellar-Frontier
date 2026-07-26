@@ -1,6 +1,10 @@
-# Ad Astra 相容性筆記
+# Ad Astra 相容性筆記（歷史紀錄）
 
-## 必備模組關係
+> **狀態 — `HISTORICAL_COMPATIBILITY_RECORD`**
+>
+> 本文件主要保存 Create `0.5.1j`／Ad Astra `1.15.19` 基線的相容性調查、crash、`PASS`、世界名稱、版本禁令與檢查程序。所有版本鎖定、禁止事項、配方方向與測試步驟只適用於當時基線，不是 `v0.8.1-friends-feedback-test` 的現行 authority。現行 packwiz metadata 為 Create `6.0.8`／Ad Astra `1.15.20`；這不表示新基線已完成 runtime test。Create: Ad Astra Compatibility 不在目前 packwiz metadata 中，不得作為預設安裝或測試步驟；任何加入都需要獨立授權。現行安裝狀態以 `COMPATIBILITY.md` 為準，現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
+
+## 當時必備模組關係
 
 | 模組 | 關係 |
 | --- | --- |
@@ -11,7 +15,7 @@
 | Cloth Config | 設定介面依賴，需使用 Forge 版。 |
 | Create: Ad Astra Compatibility | 必須加入，用於 Create 與 Ad Astra 的玩法銜接。 |
 
-## 目前鎖定版本
+## 當時鎖定版本
 
 | 項目 | 版本 |
 | --- | --- |
@@ -20,7 +24,7 @@
 | Ad Astra Modrinth version ID | `ZXcgZ31q`。 |
 | Create: Ad Astra Compatibility | Phase 1 已移除。 |
 
-## 已知不相容版本
+## 當時已知不相容版本
 
 | 版本 | 問題 | 決策 |
 | --- | --- | --- |
@@ -46,7 +50,7 @@ root cause：Ad Astra 1.15.20 的 CreateCompat 嘗試呼叫 `com/simibubi/create
 
 未來若需要 Ad Astra x Create processing recipes，應由 KubeJS 或 datapack 明確補配方。
 
-## 檢查順序
+## 當時檢查順序
 
 | 順序 | 檢查 |
 | --- | --- |
@@ -56,7 +60,7 @@ root cause：Ad Astra 1.15.20 的 CreateCompat 嘗試呼叫 `com/simibubi/create
 | 4 | 確認 Ad Astra 是 1.15.19，不是 1.15.20。 |
 | 5 | 確認 Phase 1 不含 Create: Ad Astra Compatibility。 |
 
-## 遊戲內測試點
+## 當時遊戲內測試點
 
 | 測試 | 通過條件 |
 | --- | --- |
@@ -65,7 +69,7 @@ root cause：Ad Astra 1.15.20 的 CreateCompat 嘗試呼叫 `com/simibubi/create
 | 火箭流程 | 裝備、燃料、氧氣、發射不崩潰。 |
 | 伺服器同步 | 多人觀看或操作太空相關方塊不斷線。 |
 
-## 常見失敗來源
+## 當時常見失敗來源
 
 | 現象 | 可能原因 |
 | --- | --- |
