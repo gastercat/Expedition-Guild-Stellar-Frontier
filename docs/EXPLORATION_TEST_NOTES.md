@@ -1,4 +1,8 @@
-# Exploration Test Notes
+# Exploration Test Notes（歷史測試紀錄）
+
+> **歷史權威界線 — `HISTORICAL_TEST_RECORD`**
+>
+> 本文件保存 Create `0.5.1j`／Ad Astra `1.15.19` 基線時期的規劃、測試、`PASS`、規則、世界名稱與當時的 `Next Step`。這些內容只適用於當時的測試基線，不是 `v0.8.1-friends-feedback-test` 的現行安裝或 runtime authority，也不得用來宣稱 Create `6.0.8`／Ad Astra `1.15.20` 已完成 runtime test。現行安裝狀態以 packwiz metadata 與 `COMPATIBILITY.md` 為準；現行 server/runtime 程序以 `SERVER_TEST_PROTOCOL.md` 為準。
 
 ## Phase 1 Batch 3C - Exploration Utility
 
@@ -6,7 +10,7 @@
 
 測試世界：`EGSF_Phase1_Batch3C_ExploreTest`
 
-## Installed Mods
+## 當時 Installed Mods
 
 | 模組 | 狀態 | 備註 |
 | --- | --- | --- |
@@ -14,13 +18,13 @@
 | Xaero's World Map | 通過 | 成功載入。 |
 | Waystones | 通過 | 成功載入。 |
 
-## Automatic Dependencies
+## 當時 Automatic Dependencies
 
 | 依賴 | 狀態 | 備註 |
 | --- | --- | --- |
 | Balm | 通過 | 作為 Waystones 依賴成功載入。 |
 
-## Existing Systems
+## 當時 Existing Systems
 
 | 系統 | 結果 |
 | --- | --- |
@@ -31,7 +35,7 @@
 | Create / JEI | 仍正常 |
 | Ad Astra 維度 | 仍正常儲存 |
 
-## Log Checks
+## 當時 Log Checks
 
 | 檢查項目 | 結果 |
 | --- | --- |
@@ -41,7 +45,7 @@
 | Mod loading error | 未出現 |
 | FATAL | 未出現 |
 
-## Accepted Notes
+## 當時 Accepted Notes
 
 | 項目 | 說明 |
 | --- | --- |
@@ -49,7 +53,7 @@
 | Xaero online check | Xaero online version check expired 可忽略。 |
 | Ad Astra outdated 提示 | Ad Astra 1.15.19 顯示 outdated 可忽略；禁止升到 1.15.20，除非整包遷移到 Create 6。 |
 
-## Next Step
+## 當時 Next Step
 
 Phase 1 Baseline Freeze。
 
