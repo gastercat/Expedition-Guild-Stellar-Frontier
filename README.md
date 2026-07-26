@@ -80,6 +80,8 @@ Design direction / planned system（設計方向 / 計畫中系統）：
 
 ## 協作與回饋流程
 
+第一次參與 Repo 協作，請先閱讀 [CONTRIBUTING.md](CONTRIBUTING.md)；角色入口、Harness 閱讀順序、提示詞模板、回報格式與已授權任務請看 [docs/collaboration/README.md](docs/collaboration/README.md)。
+
 朋友測試回饋請先以「能不能重現、玩家當下卡在哪裡、是否影響多人進度」為核心。最有用的回饋包含：
 
 - 發生在哪個世界、章節、任務或遊玩階段。
