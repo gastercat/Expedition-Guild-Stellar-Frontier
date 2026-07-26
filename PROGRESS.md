@@ -8,6 +8,21 @@
 - Release asset: `EGSF-v0.8.1-friends-feedback-test.mrpack` (45.9 MB).
 - Phase: waiting for friends feedback on early quest feel, reward feel, and Create / Ad Astra preview clarity.
 
+## Current State
+
+- `v0.8.1-friends-feedback-test` is published as a GitHub pre-release from
+  commit `e12bca1`.
+- Release documentation closeout commit `f50c331` is on current `main`.
+- The project is waiting for friends feedback on early quest feel, reward feel,
+  and Create / Ad Astra preview clarity.
+- The project-owner handoff dated 2026-07-26 records incident
+  `EGSF-v0.8.1-Render-Native-Crash` as `WAITING_FOR_SECOND_AB_TEST`.
+- The required next test is Twilight Forest ON / Embeddium OFF.
+- No tracked incident document or second A/B test result exists in this repo.
+  Missing repo evidence is not proof that the incident is resolved.
+- No active gameplay, quest, KubeJS, mod, packwiz, export, or release
+  implementation is currently authorized.
+
 ## Last Known Good State
 
 - RC smoke test for `v0.8.1-friends-feedback-test` passed.
@@ -24,10 +39,14 @@
 
 ## Current Goal
 
-Documentation closeout for the v0.8.1 Friends Feedback Test release.
-
-No gameplay, quest, KubeJS, mod, packwiz metadata, or exported `.mrpack`
-changes should happen in this closeout task.
+- Collect and triage friends feedback for `v0.8.1-friends-feedback-test`.
+- Preserve the required Twilight Forest ON / Embeddium OFF A/B test as the next
+  unresolved Render Native Crash investigation step.
+- Keep authority and status documentation aligned while feedback and incident
+  evidence are pending.
+- Keep any follow-up proposal small, separate, and evidence-backed.
+- Maintain `no-active-implementation` until a new scoped task is explicitly
+  authorized.
 
 ## Next Allowed Tasks
 
@@ -62,5 +81,13 @@ changes should happen in this closeout task.
 
 ## Stop Point
 
-Stop after updating release documentation, changelog, progress/status, and any
-small current-version README references. Do not commit yet.
+Stop before any gameplay, quest, KubeJS, mod, packwiz metadata, export, release,
+or Render Incident remediation work.
+
+Allowed next work is limited to bounded friends-feedback collection or triage,
+the required Twilight Forest ON / Embeddium OFF A/B test under a separately
+authorized runtime task, doc-only authority repair, or a separate proposal to
+preserve Render Incident evidence in the repo.
+
+Do not treat the missing repo incident record as proof of resolution. Do not
+begin active implementation without a new scoped authorization.

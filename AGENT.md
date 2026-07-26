@@ -25,18 +25,33 @@ dragon threats -> merge class paths -> endgame calamity -> divine/postgame gear.
 - Do not commit unless explicitly asked.
 - Do not commit `.mrpack` artifacts.
 
+## 文件語言規範（Documentation Language Policy）
+
+- Repo 中新撰寫或更新的說明文件，原則上使用繁體中文（zh-TW）。
+- Mod、工具、API、類別、函式、識別字、狀態 token、檔案路徑、指令、
+  程式碼、設定鍵、log 與版本資訊應保留英文原文。
+- 必要時可在英文專有名詞第一次出現時附上繁中解釋，但不得自行建立會
+  造成歧義的新譯名。
+- 翻譯與在地化不得改變技術含義、權威來源、狀態分類、驗證結果或規則
+  強度。
+- 修改既有英文文件時，應在任務範圍允許的情況下逐步繁中化；若任務未
+  授權完整翻譯，應維持原文並回報待辦，不得擴張修改範圍。
+
 ## Technical Baseline
 
 - Minecraft: `1.20.1`
 - Loader: Forge
 - Forge: `47.4.10`
-- Java: `17`
+- Java target: `17` (documentation target)
 - Pack format/tooling: packwiz (`packwiz:1.1.0`)
-- Create is pinned to `1.20.1-0.5.1.j`
-- Do not use Create 6 under the current baseline.
-- Do not use Ad Astra `1.15.20` unless the whole pack migrates to Create 6.
-- Create: Ad Astra Compatibility is deferred until its compatibility issues are
-  resolved.
+- Create metadata: `create-1.20.1-6.0.8.jar`
+- Ad Astra metadata: `ad_astra-forge-1.20.1-1.15.20.jar`
+- Determine current installed versions from `pack.toml`, `index.toml`, and
+  `mods/*.pw.toml`.
+- Do not claim a mod is pinned unless its current metadata explicitly contains
+  a pin field.
+- Create: Ad Astra Compatibility is not present in current packwiz metadata.
+  Do not add it without a separately approved compatibility phase.
 
 ## Design Frameworks
 
@@ -65,13 +80,17 @@ dragon threats -> merge class paths -> endgame calamity -> divine/postgame gear.
 
 ## Current Version Direction
 
-- Current direction: `v0.8.0 Friends Content Preview`.
-- Focus: friend-visible content in small, testable phases.
-- Already documented preview layers include Lootr, Simply Swords, Artifacts, and
-  selected Macaw/base-life content.
-- Dungeon Crawl, Touhou Little Maid, Twilight Forest, and Terramity require
-  separate research phases before installation.
-- Better Combat is postponed to `v0.9.0 Class Identity Expansion`.
+- Current release: `v0.8.1-friends-feedback-test`.
+- Current state: the pre-release is published and the project is waiting for
+  friends feedback on early quest feel, reward feel, and Create / Ad Astra
+  preview clarity.
+- Current installation truth must be read from packwiz metadata. Do not classify
+  a mod as installed, absent, or planned from this summary alone.
+- Keep follow-up work small, evidence-backed, and separately authorized.
+- No active gameplay, quest, KubeJS, mod, or packwiz implementation is open by
+  default.
+- Better Combat, Touhou Little Maid, full class systems, Guild Threat, and
+  Dragon Disaster remain outside the current authorized scope.
 
 ## Work Protocol
 
@@ -100,6 +119,12 @@ At minimum, report git state before and after scoped work:
 For quest changes, also inspect the exact chapter diff and verify relevant stage
 reward sources. For mod changes, use packwiz metadata checks, launch testing,
 world entry, FTB Quests, JEI search, and log review for `ERROR`/`FATAL`.
+
+- Do not report PASS without file, command, or runtime evidence appropriate to
+  the claim.
+- Static metadata checks are not runtime verification.
+- If required validation was not executed, report `PARTIAL` or `UNVERIFIED` and
+  state what evidence is missing.
 
 ## Git Rules
 
