@@ -80,6 +80,7 @@ disable-model-invocation: true
 
 - 每個 PR 都已 merge。尚未 merge 的跳過並回報。
 - `main` 上對應 merge commit 的 Pack CI 通過。失敗時這是最優先的事：依 `WORKFLOW.md`，`main` 必須隨時可以啟動，回報失敗原因並建議 revert，等 Project Maintainer 決定，不做其他同步。
+- 結果是 `cancelled` 不等於失敗：Pack CI 設有 `cancel-in-progress`，短時間內連續 merge 時，較早的 run 會被下一個 merge 取消。只要之後某個 merge commit 的 run 是 success（它的內容已包含被取消的那次），就視為通過，並在回報中註明是哪一次 run 涵蓋了它。如果 `main` 最新的 run 本身是 `cancelled` 且沒有後續 run，則等它重新執行或請 Project Maintainer 手動觸發，不要當成通過。
 
 ### 2. 起草同步內容
 
