@@ -48,13 +48,13 @@ GitHub Actions workflow [`.github/workflows/pack-ci.yml`](../../.github/workflow
 | Job | 內容 | 失敗條件 |
 | --- | --- | --- |
 | Static checks and mrpack export | 執行 `packwiz refresh` 確認 index 是最新的，跑 `scripts/` 的檢查，再用 `packwiz mr export` 打包 `.mrpack` 並上傳成 artifact。 | `index.toml` 或 `pack.toml` 與 refresh 結果不同，或任一檢查失敗。 |
-| Dedicated server smoke test | 用 Java 17 安裝 Forge server，依 packwiz metadata 安裝 server 端 mod，啟動 server 等到啟動完成後關閉。 | 逾時仍未啟動完成、server 中途結束、產生 crash report，或 KubeJS server log 出現錯誤。 |
+| Dedicated server smoke test | 用 Java 17 安裝 Forge server，依 packwiz metadata 安裝 server 端 mod，啟動 server 等到啟動完成後關閉。 | 逾時仍未啟動完成、server 中途結束、產生 crash report，或 KubeJS 的 `startup.log`／`server.log` 出現錯誤。 |
 
 `.mrpack` artifact 在 PR 頁面的 Checks 分頁下載，GitHub 會把它包成 `.zip`，解壓縮後再匯入 Prism Launcher。Server log 也會上傳成 artifact，失敗時可以直接下載來看，兩者都保留 14 天。
 
 本機要重現 server smoke test 時，執行 `scripts/ci/server_smoke_test.sh`，並用環境變數 `JAVA` 指定 Java 17。CI 無法執行時，改由 Project Maintainer 依 [`docs/operations/SERVER_TEST_PROTOCOL.md`](../operations/SERVER_TEST_PROTOCOL.md) Stage 3 手動測試。
 
-Server smoke test 能抓到 mod 載入失敗、缺少前置 mod 與 KubeJS 錯誤，但抓不到畫面相關的 crash，也無法驗證 quest 在遊戲裡的操作結果。FTB Quests 的設定錯誤只有在造成 server 無法啟動時才會讓測試失敗，因此 CI 通過只能回報 server 啟動 `PASS`，不得寫成 client runtime `PASS`。
+Server smoke test 能抓到 mod 載入失敗、缺少前置 mod，以及 KubeJS startup scripts（例如自訂物品的註冊）與 server scripts 的錯誤，但抓不到 client scripts 的錯誤與畫面相關的 crash，也無法驗證 quest 在遊戲裡的操作結果。FTB Quests 的設定錯誤只有在造成 server 無法啟動時才會讓測試失敗，因此 CI 通過只能回報 server 啟動 `PASS`，不得寫成 client runtime `PASS`。
 
 ## PR 的 runtime 測試清單
 
