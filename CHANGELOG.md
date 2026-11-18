@@ -4,6 +4,14 @@ This changelog is a short project overview. Full release notes are organized in 
 
 ## Unreleased
 
+- 新增 Pack CI：packwiz index 檢查、`scripts/` 驗證、`.mrpack` export 與 dedicated server smoke test；每個 PR 都能下載 `.mrpack` artifact 測試（PR #10）。
+- 新增設計提案 `08` Astral Infusion 與 `09` Seven Curses Backlash，皆為 proposed draft，未核准實作（PR #11、#12）。
+- `PROGRESS.md` 同步到目前狀態並改為繁中；Render Native Crash incident 以 `CLOSED_UNRESOLVED` 關閉，保留原始歷史（PR #13）。
+- 文件重新分類：現行文件移到 `docs/operations/`、`docs/player/`、`docs/testing/`，歷史文件收進 `docs/archive/`；CI 新增 Markdown 連結檢查，移除只檢查歷史文件的 `check_modlist.py`（PR #14）。
+- Agent 入口改為 `AGENTS.md`（所有 Agent 共用）與 `CLAUDE.md`；`SKILL.md` 拆成 `EXECUTION_GUIDE.md` 與 `VERIFIED_FORMATS.md`，舊檔原文保存在 archive（PR #15）。
+- 新增 Claude Code skills：`/release`（版本發佈流程）與 `/merge-prep`（merge 前檢查與 merge 後同步）（PR #16）。
+- Agent 規則層調整：必讀文件減為 `AGENTS.md` 與 `PROGRESS.md`；對話中的明確指示可作為授權來源；紅線改為 5 條；Tag 與 GitHub Release 經指定版本與 commit 授權後可由 Agent 建立；交叉 Review 只對 `RUNTIME` 類任務強制（PR #17）。
+- CI 的 server smoke test 新增 KubeJS `startup.log` 檢查，startup scripts（例如自訂物品）的錯誤會讓 CI 失敗（PR #18）。
 - Documentation pass for README, compatibility strategy, release note organization, and project structure.
 - Added clearer distinction between implemented systems, installed foundations, planned systems, and deferred content.
 - Moved root release notes into `docs/releases/`.
