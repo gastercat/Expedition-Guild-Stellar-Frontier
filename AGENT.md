@@ -141,8 +141,8 @@ Prefer these sources instead of duplicating details here:
 
 - `SKILL.md` for mandatory agent workflow and verified formats.
 - `README.md` for player-facing project overview.
-- `COMPATIBILITY.md` for version locks and compatibility policy.
+- `docs/operations/COMPATIBILITY.md` for version locks and compatibility policy.
 - `docs/ROADMAP.md` for release direction.
 - `docs/PROGRESSION_OVERVIEW.md` for Chapter 0-11 status.
-- `docs/planning/v0.8.0-friends-content-preview.md` for v0.8.0 preview scope.
-- `docs/PHASE_STATUS.md` for baseline lock history.
+- `docs/archive/planning/v0.8.0-friends-content-preview.md` for v0.8.0 preview scope.
+- `docs/archive/phase-records/PHASE_STATUS.md` for baseline lock history.

@@ -73,8 +73,8 @@ Design direction / planned system（設計方向 / 計畫中系統）：
 如果你是第一次看這個 repo，可以先照這個順序讀：
 
 1. `README.md`：確認這個模組包的玩家體驗、目前狀態與朋友測試入口。
-2. `docs/PLAYER_GUIDE.md`：給實際進服玩家看的開始方式。
-3. `docs/TESTING_GUIDE.md`：記錄 crash、卡關、任務問題與平衡回饋。
+2. `docs/player/PLAYER_GUIDE.md`：給實際進服玩家看的開始方式。
+3. `docs/testing/TESTING_GUIDE.md`：記錄 crash、卡關、任務問題與平衡回饋。
 4. `docs/PROGRESSION_OVERVIEW.md`：確認 Chapter 0-11 的目前進度與哪些內容仍是 MVP / Framework / Placeholder。
 5. `docs/design/INDEX.md`：查設計來源與 MOC，但不要把設計文件當成已實作真相。
 
@@ -91,7 +91,7 @@ Design direction / planned system（設計方向 / 計畫中系統）：
 
 ## Issue 與 Pull Request 最小規則
 
-- 開 Issue 前，先確認是否能用 `docs/TESTING_GUIDE.md` 的格式描述問題。
+- 開 Issue 前，先確認是否能用 `docs/testing/TESTING_GUIDE.md` 的格式描述問題。
 - Issue 標題請保留可搜尋的關鍵字，例如 crash、FTB Quests、loot、server sync、Chapter 編號或相關 mod 名稱。
 - Pull Request 請保持小範圍，說明玩家體驗會改變什麼，以及是否只改文件。
 - 不要在同一個 Issue 或 Pull Request 混合 mod add/update、FTB Quests、KubeJS、release flow 與文件整理。
@@ -102,17 +102,17 @@ Design direction / planned system（設計方向 / 計畫中系統）：
 - 這是 alpha pack，平衡與任務流程仍會調整。
 - 部分系統目前是任務/文案/進度框架，未必已完整自動化。
 - 測試時請回報 crash、quest parsing error、無法完成的任務、過早取得的 loot、過強裝備與伺服器同步問題。
-- 不要自行升級 Create 或 Ad Astra；目前相容性鎖定請看 [COMPATIBILITY.md](COMPATIBILITY.md)。
+- 不要自行升級 Create 或 Ad Astra；目前相容性鎖定請看 [docs/operations/COMPATIBILITY.md](docs/operations/COMPATIBILITY.md)。
 
 ## 文件入口
 
-- [docs/PLAYER_GUIDE.md](docs/PLAYER_GUIDE.md) - 給第一次進服朋友看的玩家指南。
+- [docs/player/PLAYER_GUIDE.md](docs/player/PLAYER_GUIDE.md) - 給第一次進服朋友看的玩家指南。
 - [docs/PROGRESSION_OVERVIEW.md](docs/PROGRESSION_OVERVIEW.md) - Chapter 0-11 進度總覽與狀態標籤。
-- [docs/TESTING_GUIDE.md](docs/TESTING_GUIDE.md) - 測試清單與 bug 回報模板。
+- [docs/testing/TESTING_GUIDE.md](docs/testing/TESTING_GUIDE.md) - 測試清單與 bug 回報模板。
 - [CHANGELOG.md](CHANGELOG.md) - 總覽式 changelog。
-- [COMPATIBILITY.md](COMPATIBILITY.md) - 相容性策略與版本鎖定。
-- [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) - 專案結構與安全修改邊界。
+- [docs/operations/COMPATIBILITY.md](docs/operations/COMPATIBILITY.md) - 相容性策略與版本鎖定。
+- [docs/operations/PROJECT_STRUCTURE.md](docs/operations/PROJECT_STRUCTURE.md) - 專案結構與安全修改邊界。
 - [docs/releases/INDEX.md](docs/releases/INDEX.md) - release notes 索引。
-- [MODLIST.md](MODLIST.md)
-- [QUEST_DESIGN.md](QUEST_DESIGN.md)
-- [SERVER_TEST_PROTOCOL.md](SERVER_TEST_PROTOCOL.md)
+- [docs/archive/planning/MODLIST.md](docs/archive/planning/MODLIST.md) - 歷史：早期規劃 mod 清單。
+- [docs/archive/planning/QUEST_DESIGN.md](docs/archive/planning/QUEST_DESIGN.md) - 歷史：早期任務線草稿。
+- [docs/operations/SERVER_TEST_PROTOCOL.md](docs/operations/SERVER_TEST_PROTOCOL.md) - Server／runtime 測試程序。

@@ -14,7 +14,7 @@
 - FTB Quests Chapter 0：[`config/ftbquests/quests/chapters/0.snbt`](../../../config/ftbquests/quests/chapters/0.snbt)
 - FTB Quests Chapter 1：[`config/ftbquests/quests/chapters/1.snbt`](../../../config/ftbquests/quests/chapters/1.snbt)
 - [`README.md`](../../../README.md)
-- [`docs/TESTING_GUIDE.md`](../../TESTING_GUIDE.md)
+- [`docs/testing/TESTING_GUIDE.md`](../../testing/TESTING_GUIDE.md)
 - [`docs/testing/FRIENDS_TEST_GUIDE.zh-TW.md`](../../testing/FRIENDS_TEST_GUIDE.zh-TW.md)
 
 ## Goals

@@ -8,10 +8,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_FILES = [
     "README.md",
-    "MODLIST.md",
-    "COMPATIBILITY.md",
-    "QUEST_DESIGN.md",
-    "SERVER_TEST_PROTOCOL.md",
+    "PROGRESS.md",
+    "docs/operations/COMPATIBILITY.md",
+    "docs/operations/SERVER_TEST_PROTOCOL.md",
 ]
 
 REQUIRED_DIRS = [
