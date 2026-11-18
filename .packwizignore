@@ -20,3 +20,8 @@ add_phase1_*.sh
 __pycache__/
 **/__pycache__/
 *.pyc
+
+# Repo tooling and collaboration files (not part of the pack)
+.github/
+CONTRIBUTING.md
+scripts/

@@ -1,0 +1,119 @@
+name: Pack CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pack-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Same packwiz commit the maintainer uses locally.
+  PACKWIZ_VERSION: v0.0.0-20260218225342-dfd8b68a4796
+
+jobs:
+  static:
+    name: Static checks and mrpack export
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
+      - name: Install packwiz
+        run: |
+          go install "github.com/packwiz/packwiz@${PACKWIZ_VERSION}"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Check packwiz index is up to date
+        run: |
+          packwiz refresh
+          if ! git diff --exit-code -- index.toml pack.toml; then
+            echo "::error::index.toml / pack.toml are stale. Run 'packwiz refresh' and commit the result."
+            exit 1
+          fi
+
+      - name: Repo validation scripts
+        run: |
+          python3 -I scripts/validate_pack_structure.py
+          python3 -I scripts/check_duplicate_mods.py
+          python3 -I scripts/check_modlist.py
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/packwiz
+          key: packwiz-cache-${{ hashFiles('index.toml') }}
+          restore-keys: packwiz-cache-
+
+      - name: Export mrpack
+        id: export
+        run: |
+          name="EGSF-${GITHUB_SHA::7}"
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            name="EGSF-pr${{ github.event.pull_request.number }}-${GITHUB_SHA::7}"
+          fi
+          packwiz mr export -y -o "$RUNNER_TEMP/$name.mrpack" < /dev/null
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.export.outputs.name }}
+          path: ${{ runner.temp }}/${{ steps.export.outputs.name }}.mrpack
+          retention-days: 14
+
+  server-smoke-test:
+    name: Dedicated server smoke test
+    needs: static
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
+      - name: Install packwiz
+        run: |
+          go install "github.com/packwiz/packwiz@${PACKWIZ_VERSION}"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/egsf-ci-cache
+          key: egsf-installers-${{ hashFiles('pack.toml') }}
+          restore-keys: egsf-installers-
+
+      - name: Run server smoke test
+        env:
+          SERVER_MEMORY: 6G
+        run: scripts/ci/server_smoke_test.sh
+
+      - name: Upload server logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-logs-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/egsf-server/*.out
+            ${{ runner.temp }}/egsf-server/logs/
+            ${{ runner.temp }}/egsf-server/crash-reports/
+            ${{ runner.temp }}/egsf-server/kubejs-errors.txt
+          if-no-files-found: ignore
+          retention-days: 14
