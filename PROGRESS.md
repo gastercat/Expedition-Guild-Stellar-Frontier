@@ -30,6 +30,7 @@
 - 歷史：2026-07-26 的 project-owner handoff 記錄此 incident 為 `WAITING_FOR_SECOND_AB_TEST`，下一步為 Twilight Forest ON／Embeddium OFF 的 A/B 測試。該 handoff、crash log 與第一次 A/B 測試結果都沒有收進 Repo。
 - 關閉原因：Project Maintainer 於 2026-11-18 確認原始證據已無法追回，決定不再追查。
 - 關閉不代表已修復：根因未知，第二次 A/B 測試未執行，不得把此 incident 當成已解決或已排除的證據。
+- 未驗證的推論（`UNVERIFIED`）：朋友測試者推測 Twilight Forest 的 Naga（納迦）Boss 可能讓部分電腦（推測為 Windows 筆電搭配內顯）在開啟實例時閃退。Project Maintainer 沒有對應硬體可重現，此推論沒有 log 或測試支持，只能作為日後重開 incident 時的優先懷疑方向。
 - 若再次發生 render 相關的 native crash，應另開新 incident，並在 Repo 內保存 crash report、`latest.log`、mod 組合與重現步驟。
 
 ## 最後已知的良好狀態
@@ -85,6 +86,7 @@
 - KubeJS gameplay logic、recipe rewrites、loot rewrites 與 GameStages schema 重新設計。
 - Botania 與更深入的魔法後端工作。
 - Postgame boss rush、divine gear loop、稱號收集與大型 endgame 獎勵系統。
+- 互補型 client 效能優化 mod（與 Embeddium 並用，不取代它）：Project Maintainer 於 2026-11-18 決定 Embeddium 維持不變，之後另開 `RUNTIME_MODS` task 評估。
 
 ## Stop Point
 
