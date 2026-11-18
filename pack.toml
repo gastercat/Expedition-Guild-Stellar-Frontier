@@ -1,6 +1,6 @@
 name = "Expedition Guild Stellar Frontier"
 author = "gastercat"
-version = "0.1.0"
+version = "0.8.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
