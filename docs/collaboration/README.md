@@ -26,8 +26,9 @@
 1. 閱讀根目錄的 [CONTRIBUTING.md](../../CONTRIBUTING.md)。
 2. 依 [Harness Guide](HARNESS_GUIDE.md) 的順序確認 authority 與 STOP POINT。
 3. 從 [已授權任務索引](tasks/README.md)選擇狀態為 `OPEN` 的任務。
-4. 需要建立任務包時使用 [Prompt Templates](PROMPT_TEMPLATES.md)。
-5. 完成後使用 [Report Formats](REPORT_FORMATS.md) 回報 evidence、風險與未驗證項目。
+4. 依 [協作工作流程](WORKFLOW.md) 確認任務分類、並行上限與完成前需要的驗證。
+5. 需要建立任務包時使用 [Prompt Templates](PROMPT_TEMPLATES.md)。
+6. 完成後使用 [Report Formats](REPORT_FORMATS.md) 回報 evidence、風險與未驗證項目。
 
 ## 最小工作流程
 

@@ -2,6 +2,7 @@
 
 - Task：
 - Mode：
+- 任務分類（`STATIC`／`RUNTIME`／`RUNTIME_MODS`）：
 - Branch：
 - 授權 scope／allowlist：
 - 玩家或維護者影響：
@@ -25,6 +26,19 @@
 - 靜態檢查：
 - Runtime evidence（若有明確授權）：
 - 結果：`PASS`／`PARTIAL`／`UNVERIFIED`
+
+## Runtime 測試清單
+
+`RUNTIME`／`RUNTIME_MODS` 類 PR 必填，`STATIC` 類填 `N/A`。格式見 `docs/collaboration/WORKFLOW.md` 的「PR 的 runtime 測試清單」。
+
+| # | 操作 | 預期結果 | 結果 |
+| --- | --- | --- | --- |
+| 1 |  |  |  |
+
+## 交叉 Review
+
+- Reviewer Agent：
+- Review 結果與已修正項目：
 
 ## 未執行的驗證
 

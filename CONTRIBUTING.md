@@ -25,6 +25,7 @@ Expedition Guild: Stellar Frontier 接受小範圍、可 Review、可回滾的�
 - 流程固定為：specification → small batch → validation → Pull Request → Project Maintainer Review → merge。
 - Project Maintainer 是最終設計、scope 與 Release authority；協作者不得自行擴張主線或替專案做未授權決策。
 - 發現 authority conflict、scope 不明或證據不足時，停止並回報，不得靜默修正。
+- 多個 Agent 並行時的任務分類、並行上限與 runtime 測試清單，依 [協作工作流程](docs/collaboration/WORKFLOW.md)。
 
 ## Identity Boundary
 
