@@ -17,7 +17,7 @@
 Command:
 
 ```bash
-/Users/gastercat/go/bin/packwiz serve
+packwiz serve
 ```
 
 ## 當時 Prism Launcher Test

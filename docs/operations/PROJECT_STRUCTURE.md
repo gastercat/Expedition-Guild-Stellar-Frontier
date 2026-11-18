@@ -6,17 +6,23 @@
 |---|---|---|---|
 | `README.md` | 面向玩家的專案總覽與快速開始。 | 安全 | 僅限文件。應透明呈現 alpha 狀態。 |
 | `CHANGELOG.md` | 簡短 changelog 索引與 Release 摘要。 | 安全 | 不要在此貼入完整 Release notes；連結至 `docs/releases/`。 |
+| `PROGRESS.md` | 目前階段、允許的任務與 STOP POINT。 | 謹慎 | 這是 Agent 的現況權威；只在任務授權時更新，且必須與 `main` 的實際內容一致。 |
+| `AGENTS.md` | 所有 AI Agent 共用的入口與紅線。 | 謹慎 | 規則變更必須經 Project Maintainer 核准。 |
+| `CLAUDE.md` | Claude Code 專用補充，以 `@AGENTS.md` 匯入共用規則。 | 謹慎 | 不得放寬 `AGENTS.md` 的規則。 |
+| `CONTRIBUTING.md` | 協作者最短入口。 | 安全 | 僅限文件。 |
 | `docs/operations/COMPATIBILITY.md` | 相容性策略、風險等級、已確認鎖定與 planned／deferred systems。 | 安全 | 所有宣稱必須以 Repo metadata 與既有筆記為依據。 |
-| `docs/archive/planning/MODLIST.md` | 以規劃為主的 Mod 清單與 phase notes。 | 謹慎 | 部分項目是 `PLANNED`，不是已安裝內容。不得把所有列出項目視為目前存在。 |
-| `docs/archive/planning/QUEST_DESIGN.md` | Quest 與 progression design notes。 | 謹慎 | 雖然是文件，但接近 gameplay design。未經明確要求，不得依此重寫 quest logic。 |
 | `docs/operations/SERVER_TEST_PROTOCOL.md` | Server／runtime test procedure。 | 安全 | 僅限文件。 |
-| `docs/` | 專案文件、testing notes、design notes、Release 索引與 backups。 | 安全 | 可用於文件修改。未經明確要求，不得修改 quest backups。 |
+| `docs/` | 專案文件、design notes、Release 索引與歷史紀錄。 | 安全 | 整個資料夾已列在 `.packwizignore`，不會進入 pack。 |
+| `docs/collaboration/` | 協作入口、Harness Guide、工作流程、執行程序、已驗證格式、提示詞與回報格式、任務索引。 | 謹慎 | 規則類文件的變更必須經 Project Maintainer 核准。 |
+| `docs/operations/` | 現行的相容性策略、server 測試程序與本專案結構圖。 | 謹慎 | 現行權威文件；所有宣稱必須以 Repo metadata 與 evidence 為依據。 |
+| `docs/player/`、`docs/testing/` | 玩家指南、測試指南與朋友測試指南。 | 安全 | 僅限文件。 |
+| `docs/archive/` | 歷史規劃、phase 紀錄、測試紀錄、quest backups、legacy reference 與舊版 Agent 指南。 | 除非明確要求，否則不得修改 | 只作為歷史 evidence，不是現行安裝、程序或 runtime 結果。 |
+| `docs/archive/planning/MODLIST.md` | 早期以規劃為主的 Mod 清單與 phase notes。 | 除非明確要求，否則不得修改 | 部分項目是 `PLANNED`，不是已安裝內容。目前安裝狀態以 packwiz metadata 為準。 |
+| `docs/archive/planning/QUEST_DESIGN.md` | 早期 quest 與 progression design notes。 | 除非明確要求，否則不得修改 | 接近 gameplay design；不得依此重寫 quest logic。 |
 | `docs/releases/` | 整理後的 Release notes。 | 安全 | 在此保存各版本 Release note files 與 `INDEX.md`。 |
 | `docs/operations/PROJECT_STRUCTURE.md` | 本結構與安全邊界指南。 | 安全 | Repo layout 改變時更新。 |
 | `docs/design/` | 設計專用文件。 | 謹慎 | 可能描述 planned progression；不得宣稱 planned systems 已實作。 |
-| `docs/archive/test-records/test-reports/` | 手動或 pretest reports。 | 安全 | 只在任務要求時新增 test reports。 |
-| `docs/archive/quest-backups/` | 歷史 FTB Quests backups。 | 除非明確要求，否則不得修改 | 視為 archived snapshots。不得作為 active quest files 使用。 |
-| `docs/archive/reference/` | Reference 或 legacy notes。 | 謹慎 | 部分檔案可能描述舊計畫或已放棄清單；必須明確標記 context。 |
+| `docs/archive/quest-backups/` | 歷史 FTB Quests backups。 | 除非明確要求，否則不得修改 | 視為 archived snapshots，不再新增；改以 git 歷史保存。不得作為 active quest files 使用。 |
 | `pack.toml` | packwiz pack metadata：pack name、author、pack version、pack format、Minecraft／Forge versions 與 index hash。 | 除非明確要求，否則不得修改 | 修改此檔屬於 pack metadata work。本任務明確不處理。 |
 | `index.toml` | packwiz file index 與 hashes。 | 除非明確要求，否則不得修改 | 通常由 `packwiz refresh` 更新；docs-only pass 不得手動修改。 |
 | `.packwizignore` | 從 packwiz exports 與 index 排除的檔案。 | 謹慎 | 修改可能影響 exported packs。 |
@@ -27,32 +33,34 @@
 | `config/ftbquests/quests/chapters/` | Active FTB Quests chapter SNBT files。 | 除非明確要求，否則不得修改 | 目前 Repo 有 Chapter 0-11。應視為 active gameplay data。 |
 | `kubejs/` | KubeJS scripts 與未來 gameplay integration logic。 | 除非明確要求，否則不得修改 | 目前 script 是 stage naming skeleton。docs-only task 不得新增 event logic。 |
 | `kubejs/server_scripts/eg_stages.js` | 現有 GameStages naming skeleton。 | 除非明確要求，否則不得修改 | docs-only work 不得變更 gate names 或 gameplay hooks。 |
-| `scripts/` | 本機 validation／check scripts。 | 謹慎 | Audit 時可安全執行；修改 script 必須有明確授權。 |
+| `scripts/` | Validation／check scripts，CI 也會執行。 | 謹慎 | Audit 時可安全執行；修改 script 必須有明確授權。 |
+| `scripts/ci/` | CI 專用 scripts，例如 server smoke test。 | 謹慎 | 修改會影響所有 PR 的 CI 結果。 |
+| `.github/` | Pull Request template 與 GitHub Actions workflow。 | 謹慎 | 修改 workflow 會影響所有 PR 的 CI 結果。 |
+| `.claude/` | Claude Code 的 Repo 專用設定與 skills。 | 謹慎 | 已列在 `.packwizignore`。 |
 | `scripts/legacy/add_phase1_core_mods.sh` | 新增 Phase 1 core mods 的歷史 helper script。 | 除非明確要求，否則不得修改 | 執行此檔可能改變 mod metadata。 |
 | `scripts/legacy/add_phase1_ad_astra_mods.sh` | 新增 Ad Astra 相關 Mod 的歷史 helper script。 | 除非明確要求，否則不得修改 | 執行此檔可能改變 mod metadata。 |
 | `.gitignore` | Git ignore rules。 | 謹慎 | 可能影響哪些檔案會出現在 commits 中。 |
 | Repo root 的 `RELEASE_NOTES_*.md` | 過去分散保存 Release notes 的位置。 | 謹慎 | 本次整理已將 Release notes 移至 `docs/releases/`。未來 notes 應放在該處。 |
 
-## Codex／本機 Agent 的安全邊界
+## Agent 的安全邊界
 
 進行 documentation-only pass 時，可安全修改的範圍限於：
 
 - `README.md`
 - `CHANGELOG.md`
-- `docs/operations/COMPATIBILITY.md`
-- `docs/*.md`
+- `docs/player/`、`docs/testing/`
 - `docs/releases/*.md`
 - `docs/` 下的新文件
 
 修改以下項目時必須格外謹慎：
 
-- `docs/archive/planning/MODLIST.md`
-- `docs/archive/planning/QUEST_DESIGN.md`
-- `docs/operations/SERVER_TEST_PROTOCOL.md`
+- `PROGRESS.md`、`AGENTS.md`、`CLAUDE.md`
+- `docs/collaboration/`
+- `docs/operations/`
 - `docs/design/`
-- `docs/archive/reference/`
 - `.packwizignore`
 - `.gitignore`
+- `.github/`
 - `scripts/`
 
 除非任務明確要求，否則不得修改：
@@ -64,8 +72,8 @@
 - `config/ftbquests/quests/`
 - `config/ftbquests/quests/chapters/`
 - `kubejs/`
-- `docs/archive/quest-backups/`
-- 會新增或更新 Mod 的 helper scripts
+- `docs/archive/`
+- 會新增或更新 Mod 的 helper scripts（`scripts/legacy/`）
 
 ## 本次盤點確認的目前 Repo 事實
 

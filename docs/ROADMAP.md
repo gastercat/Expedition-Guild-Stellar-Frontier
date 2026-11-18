@@ -12,9 +12,8 @@ the expedition guild campaign.
 
 ## Current baseline
 
-- v0.7.x focuses on Chapter 0-11 gate skeleton, FTB Quests MVP gates,
-  GameStages reward checks, Traditional Chinese player-facing docs, and
-  low-risk progression structure.
+- 目前 release 為 `v0.8.1-friends-feedback-test`（GitHub pre-release），正在收集朋友回饋；目前狀態與允許的任務以 [`PROGRESS.md`](../PROGRESS.md) 為準。
+- v0.7.x 建立了 Chapter 0-11 gate skeleton、FTB Quests MVP gates、GameStages reward checks 與繁中玩家文件；v0.8.x 加入朋友預覽內容並 polish Chapter 0／1。
 - Release notes are stored in `docs/releases/`.
 
 ## v0.8.0 Friends Content Preview
@@ -50,6 +49,7 @@ MVP rule:
 - Start with FTB Quests text/checkmark/item tasks.
 - No real skill XP, pets, minions, auction/economy, complex KubeJS, recipes,
   loot, or new systems without explicit approval.
+- 之後接在 Chapter 1 公會據點／早期進度附近，不另開新章節；第一版 MVP 不使用 KubeJS、GameStages、配方或 loot 變更，也不加新 mod，不動 Chapter 3／4／5／9／10／11（移自舊版 `SKILL.md` 的 v0.8.x Backlog）。
 
 ## v0.9.0 Class Identity Expansion
 
@@ -62,6 +62,26 @@ Planned direction:
 - Do not rush full balancing.
 - Start with install verification, JEI/item ID scan, basic starter quests, role
   identity, and safe availability.
+
+### 開發節奏（移自舊版 `SKILL.md` 的 Roadmap Memory）
+
+Gunner／TaCZ：
+
+- 不要一次完成完整平衡、彈藥經濟、武器進度或大型 KubeJS logic。
+- 早期階段聚焦安裝驗證、JEI／item id 掃描、基本武器取得、簡單的 FTB Quests 介紹，先不做完整 Boss 平衡。
+- Gunner 的強項是守城、遠程支援、清怪與遠征安全，不是單體秒殺 Boss。
+
+Arcanist／Iron's Spells & Spellbooks：
+
+- 早期法術可能偏弱，需要用任務、入門引導與之後的 addon／平衡 review 支撐成長感。
+- 不要太早解鎖高階法術、墨水或後期魔法材料。
+- 早期階段聚焦入門法術的職業識別、Arcanist 定位說明與支援／控場／功能 fantasy，先不做完整魔法平衡。
+- Arcanist 的強項是 AOE、控場、治療／支援、召喚與功能解法。
+
+魔法後端決策：
+
+- Botania 延後到 v1.0.x 以後；v0.8.x／v0.9.x 規劃不加入 Botania，除非另有明確指示。
+- Forbidden & Arcanus 是之後禁忌材料／儀式風格的候選。若之後整合，優先以 Create 半加工作為前置條件，同時保留 F&A 的儀式特色。
 
 ## v1.0.0 Campaign Coherence
 
