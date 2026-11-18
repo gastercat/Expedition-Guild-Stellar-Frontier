@@ -30,9 +30,15 @@ Expedition Guild: Stellar Frontier（遠征公會：星界邊境）是 Minecraft
 Repo 寫入需要 Project Maintainer 的授權，來源可以是：
 
 - [`docs/collaboration/tasks/`](docs/collaboration/tasks/README.md) 中狀態為 `OPEN` 的 task file；或
-- Project Maintainer 在對話中的直接指示。這時 PR 描述必須寫明授權來源、範圍與 allowlist。
+- Project Maintainer 在對話中的明確指示。
 
-`RUNTIME_MODS`（新增、移除或升級 mod）一律需要 task file。授權只涵蓋明說的範圍；發現相鄰問題時回報，不順手處理。
+兩種來源適用所有任務分類，包括 `RUNTIME_MODS`。使用對話中的指示時，PR 描述的「授權來源」欄位必須標記：
+
+```text
+Project Maintainer 於 YYYY-MM-DD 在對話中明確指示：<指示內容摘要>
+```
+
+並寫明範圍與 allowlist。授權只涵蓋明說的範圍；發現相鄰問題時回報，不順手處理。
 
 ## 紅線
 

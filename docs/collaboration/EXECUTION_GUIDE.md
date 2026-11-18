@@ -94,7 +94,7 @@ Project Maintainer 在 Prism Launcher 依 runtime 測試清單測試，並把結
 - `index.toml` 中被修改檔案的 hash。
 - `pack.toml` 的 `[index].hash`。
 
-若 `index.toml` 出現其他變更（新增或移除檔案、其他檔案的 hash 改變），停止並回報；通常代表 `.packwizignore` 漏掉了某個檔案。新增、移除或升級 mod 屬於 `RUNTIME_MODS`，必須另外開立 task file。
+若 `index.toml` 出現其他變更（新增或移除檔案、其他檔案的 hash 改變），停止並回報；通常代表 `.packwizignore` 漏掉了某個檔案。新增、移除或升級 mod 屬於 `RUNTIME_MODS`，必須另外取得授權（task file 或 Project Maintainer 的明確指示）。
 
 `index.toml` 與 `pack.toml` 中不得出現以下 artifact：
 

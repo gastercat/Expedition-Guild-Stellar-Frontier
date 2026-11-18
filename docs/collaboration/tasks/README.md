@@ -9,7 +9,7 @@
 
 Task 002 目前僅為 `PLANNED` 索引，不可領取，不授權啟動或執行 runtime test，且沒有對應 task file。
 
-Project Maintainer 在對話中直接指示的工作不需要列在這裡，但 PR 描述必須寫明授權來源；`RUNTIME_MODS` 一律需要 task file（見 [`AGENTS.md`](../../../AGENTS.md) 的「授權」一節）。
+Project Maintainer 在對話中直接指示的工作不需要列在這裡，但 PR 描述必須依 [`AGENTS.md`](../../../AGENTS.md)「授權」一節的格式標記授權來源。
 
 ## 領取規則
 

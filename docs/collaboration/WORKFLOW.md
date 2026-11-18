@@ -31,7 +31,7 @@ Agent 的分工是預設值，task file 可以另外指定，指定時以 task f
 
 ## 一張任務的流程
 
-1. 任務：授權來源是 [`tasks/`](tasks/README.md) 的 task file（Project Maintainer 開立，或由 Agent 起草後經核准），或 Project Maintainer 在對話中的直接指示；後者由 Agent 把分類、allowlist 與授權來源寫進 PR 描述。`RUNTIME_MODS` 一律需要 task file。
+1. 任務：授權來源是 [`tasks/`](tasks/README.md) 的 task file（Project Maintainer 開立，或由 Agent 起草後經核准），或 Project Maintainer 在對話中的明確指示；後者由 Agent 依 `AGENTS.md`「授權」一節的格式，把授權來源、分類與 allowlist 寫進 PR 描述。兩種來源適用所有分類。
 2. 實作：一張任務對應一條 branch，Claude Code 每條 branch 使用獨立的 worktree，避免互相覆寫。
 3. Static validation：Agent 執行 `scripts/` 的檢查並確認 diff 只在 allowlist 內。
 4. 交叉 Review：`RUNTIME` 與 `RUNTIME_MODS` 的 PR 由另一個 Agent 先做 static Review，Review 結果寫在 PR 留言，問題修正後才交給 Project Maintainer。`STATIC` 的 PR 可以略過，由 Project Maintainer 直接 Review。

@@ -4,7 +4,7 @@
 - Mode：
 - 任務分類（`STATIC`／`RUNTIME`／`RUNTIME_MODS`）：
 - Branch：
-- 授權來源（task file 路徑，或 Project Maintainer 直接指示的日期與內容）：
+- 授權來源（task file 路徑，或「Project Maintainer 於 YYYY-MM-DD 在對話中明確指示：<摘要>」）：
 - 授權 scope／allowlist：
 - 玩家或維護者影響：
 

@@ -77,7 +77,7 @@
 - Tom's Simple Storage。
 - Touhou Little Maid。
 - v0.9.0 class／stress-test planning，除非另外以獨立任務開啟。
-- 實作設計提案 `08`（Astral Infusion）與 `09`（Seven Curses Backlash），包含加入 Celestisynth 或 Enigmatic Legacy，除非另外開立 task file。
+- 實作設計提案 `08`（Astral Infusion）與 `09`（Seven Curses Backlash），包含加入 Celestisynth 或 Enigmatic Legacy，除非另外取得授權（task file 或 Project Maintainer 的明確指示）。
 
 ## Deferred Items
 
