@@ -319,15 +319,3 @@ metafile = true
 file = "mods/xaeros-world-map.pw.toml"
 hash = "a6c4f857d620b6cefac579b443435020801befa64a7e6a356a8cf9520572f986"
 metafile = true
-
-[[files]]
-file = "scripts/check_duplicate_mods.py"
-hash = "bc793afc11e1b713bf9bebb4ec8bf62e7b4c670ba5ebaf531b8be4ba389f0c8b"
-
-[[files]]
-file = "scripts/check_modlist.py"
-hash = "20978257c7a577764bd388a45ffe2316018bcdb33eec090a6eac6f75f2653c68"
-
-[[files]]
-file = "scripts/validate_pack_structure.py"
-hash = "7087b7411a171c8ac57cdef54111dc515e7cd7e0b38709ee1a41cd0fc0c5bb99"
