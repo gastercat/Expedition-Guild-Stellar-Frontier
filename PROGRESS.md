@@ -77,7 +77,7 @@
 - Tom's Simple Storage。
 - Touhou Little Maid。
 - v0.9.0 class／stress-test planning，除非另外以獨立任務開啟。
-- 實作設計提案 `08`（Astral Infusion）與 `09`（Seven Curses Backlash），包含加入 Celestisynth 或 Enigmatic Legacy，除非另外開立 task file。
+- 實作設計提案 `08`（Astral Infusion）與 `09`（Seven Curses Backlash），包含加入 Celestisynth 或 Enigmatic Legacy，除非另外取得授權（task file 或 Project Maintainer 的明確指示）。
 
 ## Deferred Items
 
@@ -92,6 +92,6 @@
 
 在任何 gameplay、quest、KubeJS、mod、packwiz metadata、export 或 release 工作之前停止。
 
-下一步允許的工作僅限：有範圍的朋友回饋收集或整理、doc-only 的 authority 修正與文件整理、task file 或設計提案的起草，以及另外經 Project Maintainer 核准的 task file 所授權的工作。
+下一步允許的工作僅限：有範圍的朋友回饋收集或整理、doc-only 的 authority 修正與文件整理、task file 或設計提案的起草，以及另外經 Project Maintainer 授權的工作（task file 或直接指示，見 `AGENTS.md` 的「授權」一節）。
 
 `CLOSED_UNRESOLVED` 的 incident 不得當成問題已解決的證據。沒有新的 scoped authorization，不得開始任何實作。

@@ -13,10 +13,9 @@ Expedition Guild: Stellar Frontier 接受小範圍、可 Review、可回滾的�
 
 ## 第一次協作的閱讀順序
 
-1. 閱讀 [協作者主導覽](docs/collaboration/README.md) 並選擇適合的入口。
-2. 閱讀 [AGENTS.md](AGENTS.md) 與任務指定文件。
-3. 確認任務的 authoritative sources、scope、allowed changes、forbidden changes 與 stop conditions。
-4. 先蒐集 evidence，再判斷是否能回報 `PASS`。
+1. 閱讀 [AGENTS.md](AGENTS.md) 的「開工前」一節；它列出必讀文件，以及依任務類型再讀哪些。
+2. 閱讀 [協作者主導覽](docs/collaboration/README.md) 選擇適合的入口與權限級別。
+3. 先蒐集 evidence，再判斷是否能回報 `PASS`。
 
 ## 寫入與 Review 規則
 

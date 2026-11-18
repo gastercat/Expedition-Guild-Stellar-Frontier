@@ -9,7 +9,7 @@ Do Not Use For: 當前實作真相、已核准的 mod 清單、已確認的平�
 > Note:
 > 這是一份設計來源文件，內容是提案，沒有任何決策已拍板，也不代表已核准實作。
 > Enigmatic Legacy 目前沒有安裝在本模組包，本檔所有可行性判斷都是 static evidence（讀取 jar 內的 `mods.toml`、`LICENSE.md` 與參考實例的 config 檔），沒有任何一項經過 runtime 驗證。
-> 加入 Enigmatic Legacy 屬於 `RUNTIME_MODS` 任務，必須另外開立 task file，本檔不授權任何 mod、KubeJS、config 或 quest 變更。
+> 加入 Enigmatic Legacy 屬於 `RUNTIME_MODS` 任務，必須另外取得授權（task file 或 Project Maintainer 的明確指示，見 [`AGENTS.md`](../../AGENTS.md) 的「授權」一節），本檔不授權任何 mod、KubeJS、config 或 quest 變更。
 > 若要確認當前實作狀態，請檢查 docs/PROGRESSION_OVERVIEW.md、docs/releases/、active FTB Quests files、KubeJS，以及 packwiz metadata。
 
 ## 0. 摘要

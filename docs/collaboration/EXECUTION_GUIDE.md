@@ -1,6 +1,6 @@
 # 執行程序（Execution Guide）
 
-本文件說明 Agent 執行 `RUNTIME` 類任務時的步驟，特別是 FTB Quests 章節與 packwiz metadata 的變更。任務能不能開始、能改哪些檔案，仍以 [`PROGRESS.md`](../../PROGRESS.md) 與 task file 為準；任務分類、並行上限與 PR 流程見 [`WORKFLOW.md`](WORKFLOW.md)。
+本文件說明 Agent 執行 `RUNTIME` 類任務時的步驟，特別是 FTB Quests 章節與 packwiz metadata 的變更。任務能不能開始、能改哪些檔案，仍以 [`PROGRESS.md`](../../PROGRESS.md) 與授權內容（task file 或 Project Maintainer 的直接指示）為準；任務分類、並行上限與 PR 流程見 [`WORKFLOW.md`](WORKFLOW.md)。
 
 內容改寫自舊版 `SKILL.md` 的 Phase A／B／C（原文見 [`docs/archive/agent-guides/SKILL.md`](../archive/agent-guides/SKILL.md)），並依目前的 branch／Pull Request／CI 流程調整。
 
@@ -94,7 +94,7 @@ Project Maintainer 在 Prism Launcher 依 runtime 測試清單測試，並把結
 - `index.toml` 中被修改檔案的 hash。
 - `pack.toml` 的 `[index].hash`。
 
-若 `index.toml` 出現其他變更（新增或移除檔案、其他檔案的 hash 改變），停止並回報；通常代表 `.packwizignore` 漏掉了某個檔案。新增、移除或升級 mod 屬於 `RUNTIME_MODS`，必須另外開立 task file。
+若 `index.toml` 出現其他變更（新增或移除檔案、其他檔案的 hash 改變），停止並回報；通常代表 `.packwizignore` 漏掉了某個檔案。新增、移除或升級 mod 屬於 `RUNTIME_MODS`，必須另外取得授權（task file 或 Project Maintainer 的明確指示）。
 
 `index.toml` 與 `pack.toml` 中不得出現以下 artifact：
 
@@ -108,6 +108,19 @@ opencode.db-wal
 RELEASE_NOTES_*.md
 .claude/
 ```
+
+## 第一次使用新語法
+
+依 `AGENTS.md` 的紅線「不得臆測格式」，寫自訂物品、規則或腳本時，可以使用 [`VERIFIED_FORMATS.md`](VERIFIED_FORMATS.md) 以外的語法，但必須走以下流程：
+
+1. 找到對應版本的來源：官方文件、mod 原始碼，或 Repo 既有檔案。版本要對上（例如 KubeJS 以 `mods/kubejs.pw.toml` 的版本為準），不得使用其他 Minecraft 版本的範例。
+2. 在 PR 描述的 Authoritative sources 中列出來源連結，並標明哪些語法是第一次使用。
+3. CI 通過，且 Project Maintainer 的 client runtime 測試確認行為正確。
+4. 在同一個 PR 或後續的 `STATIC` PR 中，把驗證過的語法與驗證版本補進 `VERIFIED_FORMATS.md`。
+
+## Prism 實例
+
+Prism Launcher 的實例只用於測試與格式探索。不得把實例裡的 quest 檔或其他檔案複製回 Repo，正式修改一律在 Repo 中進行。
 
 ## Commit 訊息
 

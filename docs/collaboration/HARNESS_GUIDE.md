@@ -1,15 +1,8 @@
 # EG:SF Harness Guide
 
-EG:SF Harness 是一組既有治理文件、implementation evidence、任務規格與 Git／Pull Request 流程。它的目的，是讓協作者知道先讀什麼、誰負責什麼、何時必須停止；`docs/collaboration/` 本身不是技術版本權威。
+EG:SF Harness 是一組既有治理文件、implementation evidence、任務規格與 Git／Pull Request 流程。本文件說明文件之間誰說了算、static 與 runtime evidence 的界線，以及衝突時怎麼停止；`docs/collaboration/` 本身不是技術版本權威。
 
-## 固定閱讀順序
-
-1. [`AGENTS.md`](../../AGENTS.md)：Repo red lines、語言規範、Git／Pull Request 與驗證規則。Claude Code 另讀 [`CLAUDE.md`](../../CLAUDE.md)。
-2. [`PROGRESS.md`](../../PROGRESS.md)：目前 phase、goal、已知狀態與 STOP POINT。
-3. 任務指定文件：本次 objective、authoritative sources、allowlist 與 stop conditions。
-4. [`docs/operations/COMPATIBILITY.md`](../operations/COMPATIBILITY.md)：相容性分類、installed／planned／deferred／historical 邊界。
-5. 依任務需要：[`EXECUTION_GUIDE.md`](EXECUTION_GUIDE.md)（quest／metadata 任務的執行程序）與 [`VERIFIED_FORMATS.md`](VERIFIED_FORMATS.md)（已驗證格式）。
-6. 需要 runtime 驗證時，才閱讀 [`docs/operations/SERVER_TEST_PROTOCOL.md`](../operations/SERVER_TEST_PROTOCOL.md) 並依其保存 evidence。
+開工前要讀什麼，只以 [`AGENTS.md`](../../AGENTS.md) 的「開工前」一節為準，本文件不另列閱讀順序。
 
 舊版 `AGENT.md` 與 `SKILL.md` 已由上述文件取代，原文保存在 [`docs/archive/agent-guides/`](../archive/agent-guides/)，只作為歷史紀錄。
 
@@ -83,6 +76,6 @@ Design source 可以保存方向、候選與歷史脈絡，但不等於 current 
 
 - 不得直接修改 `main`。
 - 預設採可回滾的 doc-only 或 isolated change。
-- Maintainer-controlled paths 只有在任務明確授權時才能修改。
+- 受控路徑只有在授權的 allowlist 明確列出時才能修改；授權來源見 `AGENTS.md` 的「授權」一節。
 - 協作資料夾只負責導覽、模板與任務索引，不得宣告新的版本 baseline。
 - 任務分類（`STATIC`／`RUNTIME`／`RUNTIME_MODS`）、並行上限、交叉 Review 與 server smoke test 的位置，見 [協作工作流程](WORKFLOW.md)。

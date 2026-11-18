@@ -1,6 +1,6 @@
 # 已驗證格式（Verified Formats）
 
-本文件收錄已經由 Repo diff、既有檔案或遊戲內測試證實可用的格式。Agent 撰寫 FTB Quests、GameStages 相關內容時，只能使用這裡或既有檔案中出現過的格式；需要新格式時，必須先在獨立任務中驗證，再補進本文件。
+本文件收錄已經由 Repo diff、既有檔案或遊戲內測試證實可用的格式。Agent 撰寫 FTB Quests、KubeJS、GameStages 相關內容時，優先使用這裡或既有檔案中出現過的格式；使用新語法時，依 [`EXECUTION_GUIDE.md`](EXECUTION_GUIDE.md) 的「第一次使用新語法」流程查證來源、通過測試，再補進本文件。
 
 內容移自舊版 `SKILL.md` 的 Verified Formats 一節（原文見 [`docs/archive/agent-guides/SKILL.md`](../archive/agent-guides/SKILL.md)）。
 

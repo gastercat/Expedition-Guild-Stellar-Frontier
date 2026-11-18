@@ -27,11 +27,11 @@ disable-model-invocation: true
 | --- | --- | --- |
 | 1 | Head commit 的 Pack CI 兩個 job（Static checks and mrpack export、Dedicated server smoke test）都是 success | ❌ 不能 merge |
 | 2 | `mergeable_state` 為 `clean`，沒有衝突 | ❌ 不能 merge |
-| 3 | PR 描述有填任務分類（`STATIC`／`RUNTIME`／`RUNTIME_MODS`） | ⚠️ 請作者補上 |
+| 3 | PR 描述有填任務分類與授權來源：task file 路徑，或依 `AGENTS.md`「授權」一節格式標記的對話指示（日期與內容摘要） | ❌ 沒有授權來源；⚠️ 格式不完整時請作者補上 |
 | 4 | 變更檔案符合任務分類（見下表） | ❌ 分類錯誤或越界 |
 | 5 | 變更檔案都在 PR 描述的 allowlist 內 | ❌ 越界，列出多出來的檔案 |
 | 6 | `RUNTIME`／`RUNTIME_MODS`：PR 附有 runtime 測試清單，而且 Project Maintainer 已在 PR 寫回 client runtime 結果 | ❌ 尚未完成 client runtime 測試 |
-| 7 | 有另一個 Agent 的交叉 Review 留言，且提出的問題已處理 | ⚠️ 依 `WORKFLOW.md` 尚未完成；由 Project Maintainer 決定是否放行 |
+| 7 | `RUNTIME`／`RUNTIME_MODS`：有另一個 Agent 的交叉 Review 留言，且提出的問題已處理（`STATIC` 跳過此項） | ⚠️ 依 `WORKFLOW.md` 尚未完成；由 Project Maintainer 決定是否放行 |
 | 8 | 沒有把 CI 或 static evidence 寫成 client runtime `PASS` | ❌ 請作者修正描述 |
 | 9 | `RUNTIME_MODS` 同時只有 1 條；其他 open PR 沒有修改同一個檔案或同一章節 | ⚠️ 列出可能衝突的 PR |
 | 10 | 仍是 draft | ⚠️ 提醒先按 Ready for review |
@@ -42,7 +42,7 @@ disable-model-invocation: true
 | --- | --- | --- |
 | `STATIC` | 文件、`docs/**`、`.github/`、`scripts/`、`.claude/`、`.packwizignore` | `mods/**`、`config/**`、`kubejs/**`；`index.toml`、`pack.toml` 除非 task file 明確授權（例如 `/release` 的版本號） |
 | `RUNTIME` | task file 指定的 `config/**`、`kubejs/**`，以及只變動對應 hash 的 `index.toml`、`pack.toml` | `mods/**` |
-| `RUNTIME_MODS` | `mods/**`、`index.toml`、`pack.toml`，以及 task file 指定的 config | 與該 mod 無關的 quest 或 KubeJS 變更 |
+| `RUNTIME_MODS` | `mods/**`、`index.toml`、`pack.toml`，以及授權範圍內的 config | 與該 mod 無關的 quest 或 KubeJS 變更 |
 
 `index.toml` 有變動時，檢查 diff：`RUNTIME` 只能是被修改檔案的 hash，出現新增或移除的條目要標 ❌。
 
