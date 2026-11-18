@@ -25,6 +25,7 @@ Phase 1 與 Phase 2 建立了初始 corpus 結構。Phase 3A-3F 完成第一輪�
 - `06_EGSF_RPG_Server_Archaeology.md` - 將 RPG server archaeology 轉譯成可重用的 EG:SF 設計原則，而不是複製舊系統。
 - `07_EGSF_Friends_Content_Preview.md` - v0.8.x 朋友內容預覽 / content visibility layer，不是完整 class 或 endgame 系統。
 - `08_EGSF_Astral_Infusion_Design.md` - 星界灌注（Astral Infusion）機制提案，定義武器記憶系統「Astral-Witnessed」稱號的觸發方式。狀態為 proposed draft，第 9 節決策已拍板，技術可行性與材料尚待驗證。
+- `09_EGSF_Seven_Curses_Backlash_Design.md` - 以 Enigmatic Legacy 的 Ring of the Seven Curses 作為 Forbidden Debt「世界反噬」懲罰的提案。狀態為 proposed draft，開放決策尚待 Project Maintainer 決定，Enigmatic Legacy 尚未安裝，可行性只有 static evidence。
 - `backlog/EGSF_Hypixel_Style_Life_RPG_Backlog.md` - 僅列入 backlog / 尚未實作的 lightweight Hypixel-style life/RPG systems。
 
 ## 應該使用哪個檔案
@@ -37,6 +38,7 @@ Phase 1 與 Phase 2 建立了初始 corpus 結構。Phase 3A-3F 完成第一輪�
 - 舊 RPG server inspiration，以及可重用的 progression / loot / armory 原則：`06_EGSF_RPG_Server_Archaeology.md`
 - v0.8.x 面向朋友體驗的 content preview decisions：`07_EGSF_Friends_Content_Preview.md`
 - 星界灌注、Astral-Witnessed 稱號，以及 Ad Astra 進度線上的武器紀念機制：`08_EGSF_Astral_Infusion_Design.md`。這份提案依賴的武器記憶系統、`#egsf:trackable_weapons` tag 與 Bossbane 稱號目前都尚未實作，材料來源 Celestisynth 也還沒加入模組包，安裝狀態以 `COMPATIBILITY.md` 與 packwiz metadata 為準。
+- Forbidden Debt 的世界反噬、七詛咒之戒的強制配戴與淨化任務線：`09_EGSF_Seven_Curses_Backlash_Design.md`。這份提案與星界灌注無關，Enigmatic Legacy 目前沒有加入模組包，安裝狀態以 `COMPATIBILITY.md` 與 packwiz metadata 為準。
 - 必須暫時停放的 lightweight life/RPG side-system ideas：`backlog/EGSF_Hypixel_Style_Life_RPG_Backlog.md`
 - 當前實作真相：使用 `docs/PROGRESSION_OVERVIEW.md`、`docs/releases/`、active FTB Quests files、KubeJS files、packwiz metadata，以及 `docs/design/` 以外的 compatibility docs。
 
