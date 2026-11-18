@@ -19,22 +19,22 @@ Agent 的分工是預設值，task file 可以另外指定，指定時以 task f
 
 ## 任務分類
 
-每張任務在 task file 裡標明屬於哪一類，分類決定能不能並行，以及完成前需要哪些驗證。
+每張任務在 task file 或 PR 描述裡標明屬於哪一類，分類決定能不能並行，以及完成前需要哪些驗證。
 
 | 分類 | 範例 | 同時進行的上限 | 完成前需要 |
 | --- | --- | --- | --- |
-| `STATIC` | 設計文件、玩家說明、協作文件、翻譯 | 不限，但兩條 branch 不得修改同一個檔案 | Static validation 與另一個 Agent 的 Review |
-| `RUNTIME` | quest 任務與獎勵、KubeJS、config | 最多 3 條 | Static validation、server smoke test、client runtime 測試 |
+| `STATIC` | 設計文件、玩家說明、協作文件、翻譯 | 不限，但兩條 branch 不得修改同一個檔案 | Static validation；交叉 Review 為選擇性 |
+| `RUNTIME` | quest 任務與獎勵、KubeJS、config | 最多 3 條 | Static validation、交叉 Review、server smoke test、client runtime 測試 |
 | `RUNTIME_MODS` | 新增、移除或升級 mod，任何會改到 `index.toml` 的變更 | 1 條 | 同 `RUNTIME`，加上 `packwiz refresh` 後的 hash 檢查 |
 
 `RUNTIME_MODS` 限制為 1 條，原因是每次修改 mod 都會改寫 `index.toml` 與 `pack.toml` 的 hash，兩條 branch 同時進行一定會衝突，也很難判斷 crash 來自哪一個 mod。quest 檔案依章節分開（`config/ftbquests/quests/chapters/N.snbt`），不同章節的 `RUNTIME` 任務可以並行，同一章節則一次只開一條。
 
 ## 一張任務的流程
 
-1. 任務：Project Maintainer 在 [`tasks/`](tasks/README.md) 開立 task file，或由 Agent 起草後經 Project Maintainer 核准，內容包含分類、allowlist、authoritative sources 與 stop conditions。
+1. 任務：授權來源是 [`tasks/`](tasks/README.md) 的 task file（Project Maintainer 開立，或由 Agent 起草後經核准），或 Project Maintainer 在對話中的直接指示；後者由 Agent 把分類、allowlist 與授權來源寫進 PR 描述。`RUNTIME_MODS` 一律需要 task file。
 2. 實作：一張任務對應一條 branch，Claude Code 每條 branch 使用獨立的 worktree，避免互相覆寫。
 3. Static validation：Agent 執行 `scripts/` 的檢查並確認 diff 只在 allowlist 內。
-4. 交叉 Review：PR 由另一個 Agent 先做 static Review，Review 結果寫在 PR 留言，問題修正後才交給 Project Maintainer。
+4. 交叉 Review：`RUNTIME` 與 `RUNTIME_MODS` 的 PR 由另一個 Agent 先做 static Review，Review 結果寫在 PR 留言，問題修正後才交給 Project Maintainer。`STATIC` 的 PR 可以略過，由 Project Maintainer 直接 Review。
 5. Server smoke test：`RUNTIME` 與 `RUNTIME_MODS` 任務需通過 CI 的 dedicated server 啟動測試，詳見下一節。
 6. Client runtime 測試：Project Maintainer 下載該 PR 的 `.mrpack`，在 Prism Launcher 依 PR 裡的 runtime 測試清單操作，結果寫回 PR。
 7. Merge：通過後由 Project Maintainer merge，不通過的 PR 附上 crash log、截圖或觀察紀錄後退回原 branch 修正。

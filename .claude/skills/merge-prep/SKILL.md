@@ -27,11 +27,11 @@ disable-model-invocation: true
 | --- | --- | --- |
 | 1 | Head commit 的 Pack CI 兩個 job（Static checks and mrpack export、Dedicated server smoke test）都是 success | ❌ 不能 merge |
 | 2 | `mergeable_state` 為 `clean`，沒有衝突 | ❌ 不能 merge |
-| 3 | PR 描述有填任務分類（`STATIC`／`RUNTIME`／`RUNTIME_MODS`） | ⚠️ 請作者補上 |
+| 3 | PR 描述有填任務分類與授權來源（task file 或 Project Maintainer 直接指示）；`RUNTIME_MODS` 必須是 task file | ⚠️ 請作者補上；`RUNTIME_MODS` 沒有 task file 時 ❌ |
 | 4 | 變更檔案符合任務分類（見下表） | ❌ 分類錯誤或越界 |
 | 5 | 變更檔案都在 PR 描述的 allowlist 內 | ❌ 越界，列出多出來的檔案 |
 | 6 | `RUNTIME`／`RUNTIME_MODS`：PR 附有 runtime 測試清單，而且 Project Maintainer 已在 PR 寫回 client runtime 結果 | ❌ 尚未完成 client runtime 測試 |
-| 7 | 有另一個 Agent 的交叉 Review 留言，且提出的問題已處理 | ⚠️ 依 `WORKFLOW.md` 尚未完成；由 Project Maintainer 決定是否放行 |
+| 7 | `RUNTIME`／`RUNTIME_MODS`：有另一個 Agent 的交叉 Review 留言，且提出的問題已處理（`STATIC` 跳過此項） | ⚠️ 依 `WORKFLOW.md` 尚未完成；由 Project Maintainer 決定是否放行 |
 | 8 | 沒有把 CI 或 static evidence 寫成 client runtime `PASS` | ❌ 請作者修正描述 |
 | 9 | `RUNTIME_MODS` 同時只有 1 條；其他 open PR 沒有修改同一個檔案或同一章節 | ⚠️ 列出可能衝突的 PR |
 | 10 | 仍是 draft | ⚠️ 提醒先按 Ready for review |

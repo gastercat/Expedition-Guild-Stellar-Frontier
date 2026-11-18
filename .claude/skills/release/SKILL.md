@@ -1,7 +1,7 @@
 ---
 name: release
-description: 準備 EG:SF 的版本發佈。`/release <tag>` 做前置檢查並開 release prep PR（pack.toml 版本、CHANGELOG、release notes 草稿）；`/release <tag> closeout` 在 Project Maintainer 發佈 GitHub Release 後補齊 release notes、INDEX 與 PROGRESS。只在 Project Maintainer 手動呼叫時使用。
-argument-hint: <tag> [closeout]
+description: 準備 EG:SF 的版本發佈。`/release <tag>` 做前置檢查並開 release prep PR（pack.toml 版本、CHANGELOG、release notes 草稿）；`/release <tag> publish <full-sha>` 在 Project Maintainer 授權後代為建立 tag 與 GitHub Release；`/release <tag> closeout` 在發佈後補齊 release notes、INDEX 與 PROGRESS。只在 Project Maintainer 手動呼叫時使用。
+argument-hint: <tag> [publish <full-sha> | closeout]
 disable-model-invocation: true
 ---
 
@@ -17,7 +17,9 @@ Project Maintainer 手動呼叫本 skill，即授權本次發佈的下列寫入�
 - `CHANGELOG.md`、`PROGRESS.md`。
 - `docs/releases/<tag>.md` 與 `docs/releases/INDEX.md`。
 
-本 skill **不授權**：建立或 push tag、建立 GitHub Release、上傳 asset、merge 任何 PR、修改 `mods/**`、`config/**`、`kubejs/**`、`index.toml`，或替 Project Maintainer 填寫 runtime 測試結果。這些都由 Project Maintainer 處理。
+建立 tag 與 GitHub Release 需要另外的授權：依 `AGENTS.md` 的「Tag 與 GitHub Release」，Project Maintainer 必須指定版本與完整 commit，也就是 `/release <tag> publish <full-sha>`。單純呼叫 `/release <tag>` 不包含這項授權。
+
+本 skill **不授權**：merge 任何 PR、修改 `mods/**`、`config/**`、`kubejs/**`、`index.toml`，或替 Project Maintainer 填寫 runtime 測試結果。
 
 ## 發佈流程總覽
 
@@ -26,7 +28,7 @@ Project Maintainer 手動呼叫本 skill，即授權本次發佈的下列寫入�
 | 1. Prep PR | Agent（`/release <tag>`） | 前置檢查、更新 `pack.toml` 版本、CHANGELOG、release notes 草稿，開 PR |
 | 2. Merge | Project Maintainer | Review 並 merge prep PR，等 `main` 的 Pack CI 通過 |
 | 3. 整包測試 | Project Maintainer | 下載該 merge commit 的 `.mrpack` artifact，依 `SERVER_TEST_PROTOCOL.md` 測試 |
-| 4. Tag 與 Release | Project Maintainer | 對**同一個 commit** 打 tag，建立 GitHub Release 並上傳 asset |
+| 4. Tag 與 Release | Project Maintainer，或經授權的 Agent（`/release <tag> publish <full-sha>`） | 對**同一個 commit** 打 tag，建立 GitHub Release 並上傳 asset |
 | 5. Closeout PR | Agent（`/release <tag> closeout`） | 補齊 commit、asset、測試結果、INDEX 與 PROGRESS，開 PR |
 
 被測試的 commit、被 tag 的 commit 與 `.mrpack` 的來源必須是同一個 commit。步驟 2 之後如果 `main` 又有新的 merge，回到步驟 1 重新確認。
@@ -112,12 +114,36 @@ git diff --stat <prev>..origin/main -- config/ kubejs/
 
 6. 完成後呼叫 `/release <tag> closeout`，並附上測試結果。
 
+步驟 4–5 也可以交給 Agent：測試結果可以發佈時，呼叫 `/release <tag> publish <full-sha>`，並附上測試結果。
+
+## 步驟 4（選擇性）：`/release <tag> publish <full-sha>`
+
+Project Maintainer 用這個指令授權 Agent 對指定 commit 建立 tag 與 GitHub Release。
+
+### 4-1 確認授權與狀態
+
+逐項檢查，任何一項不符合就停止並回報：
+
+1. 指令中有 `<tag>` 與 40 字元的 `<full-sha>`。缺少任何一項就停止，不得自行推斷。
+2. `<full-sha>` 是 prep PR 的 merge commit，位於 `origin/main`，而且該 commit 的 Pack CI 兩個 job 都是 success。
+3. GitHub 上沒有同名的 tag 或 release。
+4. Project Maintainer 提供了測試結果，並明確表示可以發佈。結果是 `PARTIAL` 或 `UNVERIFIED` 時，要再次確認 Project Maintainer 仍要發佈，並在 release 說明中如實標註。
+5. 本 session 有建立 tag 與 GitHub Release 的工具與權限。沒有的話（例如雲端 session 不能 push tag，或沒有建立 Release 的工具），改為回報步驟 2–4 的操作清單，請 Project Maintainer 手動完成。
+
+### 4-2 建立 tag 與 Release
+
+1. 對 `<full-sha>` 建立 annotated tag 並 push，不得 push 其他 ref。
+2. 下載該 commit 的 CI artifact `EGSF-<sha7>`，取出 `.mrpack` 並改名為 `EGSF-<tag>.mrpack`。
+3. 建立 GitHub Release：依類型設定 pre-release，上傳 asset，說明使用 `docs/releases/<tag>.md` 的內容。
+4. 回報 tag、release 連結、asset 名稱與大小，以及授權內容（指令原文與日期），接著進行步驟 5。
+
 ## 步驟 5：`/release <tag> closeout`
 
 ### 5-1 確認發佈結果
 
 - 用 GitHub 工具讀取 `<tag>` 的 release：確認存在、類型（pre-release 與否）、asset 名稱與大小。
 - 確認 tag 指向的 commit 與 prep PR 的 merge commit 相同。不同時停止並回報。
+- 若 tag 與 Release 由 Agent 建立，release notes 的 Release Artifact 一節要記錄授權內容（指令原文與日期）。
 - 向 Project Maintainer 取得測試結果。沒有提供時不得自行填寫，標記為 `UNVERIFIED` 並在回報中列出。
 
 ### 5-2 開 closeout PR

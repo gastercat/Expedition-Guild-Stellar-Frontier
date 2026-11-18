@@ -4,6 +4,7 @@
 - Mode：
 - 任務分類（`STATIC`／`RUNTIME`／`RUNTIME_MODS`）：
 - Branch：
+- 授權來源（task file 路徑，或 Project Maintainer 直接指示的日期與內容）：
 - 授權 scope／allowlist：
 - 玩家或維護者影響：
 
@@ -36,6 +37,8 @@
 | 1 |  |  |  |
 
 ## 交叉 Review
+
+`RUNTIME`／`RUNTIME_MODS` 類 PR 必填，`STATIC` 類可填 `N/A`。
 
 - Reviewer Agent：
 - Review 結果與已修正項目：
