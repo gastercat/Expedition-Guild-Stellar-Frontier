@@ -4,21 +4,22 @@ EG:SF Harness 是一組既有治理文件、implementation evidence、任務規�
 
 ## 固定閱讀順序
 
-1. [`AGENT.md`](../../AGENT.md)：Repo red lines、語言規範、範圍與 Git 安全規則。
-2. [`SKILL.md`](../../SKILL.md)：強制工作流程、已驗證格式與 validation expectations。
-3. [`PROGRESS.md`](../../PROGRESS.md)：目前 phase、goal、已知狀態與 STOP POINT。
+1. [`AGENTS.md`](../../AGENTS.md)：Repo red lines、語言規範、Git／Pull Request 與驗證規則。Claude Code 另讀 [`CLAUDE.md`](../../CLAUDE.md)。
+2. [`PROGRESS.md`](../../PROGRESS.md)：目前 phase、goal、已知狀態與 STOP POINT。
+3. 任務指定文件：本次 objective、authoritative sources、allowlist 與 stop conditions。
 4. [`docs/operations/COMPATIBILITY.md`](../operations/COMPATIBILITY.md)：相容性分類、installed／planned／deferred／historical 邊界。
-5. 任務指定文件：本次 objective、authoritative sources、allowlist 與 stop conditions。
+5. 依任務需要：[`EXECUTION_GUIDE.md`](EXECUTION_GUIDE.md)（quest／metadata 任務的執行程序）與 [`VERIFIED_FORMATS.md`](VERIFIED_FORMATS.md)（已驗證格式）。
 6. 需要 runtime 驗證時，才閱讀 [`docs/operations/SERVER_TEST_PROTOCOL.md`](../operations/SERVER_TEST_PROTOCOL.md) 並依其保存 evidence。
 
-本 Repo 實際存在的檔名是單數 `AGENT.md`。不得假設存在 `AGENTS.md`，也不得在未授權任務中處理 rename。
+舊版 `AGENT.md` 與 `SKILL.md` 已由上述文件取代，原文保存在 [`docs/archive/agent-guides/`](../archive/agent-guides/)，只作為歷史紀錄。
 
 ## 文件責任
 
 | 來源 | 責任 | 不代表什麼 |
 | --- | --- | --- |
-| `AGENT.md` | 安全治理、red lines、語言與 scope 規則。 | 不取代實際 metadata 或任務規格。 |
-| `SKILL.md` | 執行順序、已驗證格式、validation 與 publish 邊界。 | 不自動授權任何修改。 |
+| `AGENTS.md` | 安全治理、red lines、語言、Git 與驗證規則。 | 不取代實際 metadata 或任務規格。 |
+| `docs/collaboration/EXECUTION_GUIDE.md` | Quest 與 packwiz metadata 任務的執行順序與 validation。 | 不自動授權任何修改。 |
+| `docs/collaboration/VERIFIED_FORMATS.md` | 已驗證的 GameStages／FTB Quests 格式。 | 不代表格式以外的 gameplay 行為已驗證。 |
 | `PROGRESS.md` | 目前專案狀態、goal、blocked／deferred 與 STOP POINT。 | 不單獨證明 runtime 狀態或 installed inventory。 |
 | `docs/operations/COMPATIBILITY.md` | 相容性狀態與證據分類的 current guidance。 | 不取代 packwiz metadata。 |
 | 任務指定文件 | 本次工作的 objective、scope、allowlist、forbidden 與完成條件。 | 不得自行擴張到相鄰問題。 |
@@ -36,9 +37,10 @@ EG:SF Harness 是一組既有治理文件、implementation evidence、任務規�
 
 ### Current governance
 
-- `AGENT.md`
-- `SKILL.md`
+- `AGENTS.md`
 - `PROGRESS.md`
+- `docs/collaboration/EXECUTION_GUIDE.md`
+- `docs/collaboration/VERIFIED_FORMATS.md`
 - `docs/operations/COMPATIBILITY.md`
 - `docs/operations/SERVER_TEST_PROTOCOL.md`
 

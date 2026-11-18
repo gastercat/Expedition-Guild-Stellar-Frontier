@@ -11,7 +11,7 @@
 | 測試者 | [已授權任務索引](tasks/README.md)與任務指定的測試指南 | 觀察、重現、回報；預設不修改 Repo。 |
 | 文件協作者 | [Harness Guide](HARNESS_GUIDE.md)、[Prompt Templates](PROMPT_TEMPLATES.md) | 只修改任務明確列出的文件。 |
 | 研究協作者 | [Prompt Templates](PROMPT_TEMPLATES.md)的 Compatibility research 與 [Report Formats](REPORT_FORMATS.md) | 蒐集與分類證據；不把研究建議寫成 implementation truth。 |
-| 工程協作者 | `AGENT.md`、`SKILL.md`、任務規格與 [Harness Guide](HARNESS_GUIDE.md) | 只執行明確授權、可隔離的小型變更。 |
+| 工程協作者 | [`AGENTS.md`](../../AGENTS.md)、任務規格、[Harness Guide](HARNESS_GUIDE.md) 與 [Execution Guide](EXECUTION_GUIDE.md) | 只執行明確授權、可隔離的小型變更。 |
 
 ## Scope 與權限級別
 

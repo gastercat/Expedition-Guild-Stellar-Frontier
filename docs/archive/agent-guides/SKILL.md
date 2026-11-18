@@ -1,5 +1,9 @@
 # Expedition Guild: Stellar Frontier — Agent Skill Guide
 
+> **歷史權威界線 — `HISTORICAL_AGENT_GUIDE`**
+>
+> 本文件是 2026-11-18 以前根目錄 `SKILL.md` 的原文，已由 [`AGENTS.md`](../../../AGENTS.md)、[`docs/collaboration/EXECUTION_GUIDE.md`](../../collaboration/EXECUTION_GUIDE.md) 與 [`docs/collaboration/VERIFIED_FORMATS.md`](../../collaboration/VERIFIED_FORMATS.md) 取代，只作為歷史紀錄保存，不是現行規則。內容中的版本、路徑、流程（例如「push 由使用者處理」「不得執行 packwiz refresh」）只適用於當時。
+
 This skill guide defines the safe workflow for AI coding agents working on the Minecraft 1.20.1 Forge modpack project:
 
 Expedition Guild: Stellar Frontier
