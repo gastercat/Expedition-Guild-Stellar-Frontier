@@ -19,7 +19,7 @@ REQUIRED_DIRS = [
     "scripts",
     "config",
     "kubejs",
-    "quests",
+    "config/ftbquests/quests",
 ]
 
 
