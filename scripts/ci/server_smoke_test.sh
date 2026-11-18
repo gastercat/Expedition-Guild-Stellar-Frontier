@@ -3,7 +3,7 @@
 #
 # Installs Forge and the server-side mods from packwiz metadata into a fresh
 # directory, starts the dedicated server, waits for it to finish loading, then
-# stops it and checks for crash reports and KubeJS errors.
+# stops it and checks for crash reports and KubeJS startup/server script errors.
 #
 # This only proves the server starts. It is not client runtime evidence.
 #
@@ -166,8 +166,16 @@ if compgen -G "crash-reports/*" > /dev/null; then
   FAILED=1
 fi
 
-KUBEJS_LOG="logs/kubejs/server.log"
-if [[ -f "$KUBEJS_LOG" ]] && grep -E '\[ERR|ERROR' "$KUBEJS_LOG" > kubejs-errors.txt; then
+# startup.log covers startup_scripts (item/block registration); server.log
+# covers server_scripts. Script errors there usually do not stop the server
+# from reaching Done, so they have to be checked explicitly. client.log is
+# not produced on a dedicated server.
+: > kubejs-errors.txt
+for KUBEJS_LOG in logs/kubejs/startup.log logs/kubejs/server.log; do
+  [[ -f "$KUBEJS_LOG" ]] || continue
+  grep -HE '\[ERR|ERROR' "$KUBEJS_LOG" >> kubejs-errors.txt || true
+done
+if [[ -s kubejs-errors.txt ]]; then
   log "KubeJS errors found:"
   cat kubejs-errors.txt
   FAILED=1
