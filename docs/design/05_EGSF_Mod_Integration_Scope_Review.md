@@ -171,6 +171,6 @@ Do not convert deferred items into implementation tasks without a new review.
 
 - Use this file before deciding whether to add a mod.
 - Use it to classify candidates as mainline, side content, preview, backlog, deferred, rejected, or post-endgame only.
-- Use it with `docs/PROGRESSION_OVERVIEW.md`, `COMPATIBILITY.md`, `MODLIST.md`, `docs/releases/`, and packwiz metadata.
+- Use it with `docs/PROGRESSION_OVERVIEW.md`, `docs/operations/COMPATIBILITY.md`, `docs/archive/planning/MODLIST.md`, `docs/releases/`, and packwiz metadata.
 - Do not use it as installed-mod truth.
 - Do not use it as a substitute for compatibility checks or release notes.

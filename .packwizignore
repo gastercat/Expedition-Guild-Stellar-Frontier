@@ -5,16 +5,14 @@ RELEASE_NOTES_*.md
 Expedition Guild Stellar Frontier-0.1.0.mrpack
 .DS_Store
 
+# Root documentation (not part of the pack)
 AGENT.md
+AGENTS.md
+CLAUDE.md
 PROGRESS.md
 README.md
 CHANGELOG.md
-COMPATIBILITY.md
-MODLIST.md
-QUEST_DESIGN.md
-SERVER_TEST_PROTOCOL.md
 SKILL.md
-add_phase1_*.sh
 
 # Python cache files
 __pycache__/
@@ -23,5 +21,6 @@ __pycache__/
 
 # Repo tooling and collaboration files (not part of the pack)
 .github/
+.claude/
 CONTRIBUTING.md
 scripts/

@@ -1,6 +1,6 @@
 # 測試清單
 
-> Note / 注意：這是較舊的測試清單參考。最新給玩家與測試者看的清單與 bug 回報模板請看 [TESTING_GUIDE.md](TESTING_GUIDE.md)。
+> Note / 注意：這是較舊的測試清單參考。最新給玩家與測試者看的清單與 bug 回報模板請看 [TESTING_GUIDE.md](../../testing/TESTING_GUIDE.md)。
 
 ## 結構測試
 

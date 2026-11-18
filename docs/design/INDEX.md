@@ -9,7 +9,7 @@
 - `config/ftbquests/quests/` 底下的 active FTB Quests files
 - `kubejs/` 底下的 KubeJS files
 - packwiz metadata，例如 `pack.toml`、`index.toml`、`mods/*.pw.toml`
-- compatibility notes，例如 `COMPATIBILITY.md`
+- compatibility notes，例如 `docs/operations/COMPATIBILITY.md`
 
 設計文件應作為決策用的來源材料閱讀，而不是某個系統已安裝、已實作、已平衡，或已在遊戲內啟用的證據。它們不應覆蓋 release notes、packwiz metadata、active quest files、KubeJS files，或 compatibility documentation。
 
@@ -37,8 +37,8 @@ Phase 1 與 Phase 2 建立了初始 corpus 結構。Phase 3A-3F 完成第一輪�
 - mod add/remove decisions、候選分類與 scope review：`05_EGSF_Mod_Integration_Scope_Review.md`
 - 舊 RPG server inspiration，以及可重用的 progression / loot / armory 原則：`06_EGSF_RPG_Server_Archaeology.md`
 - v0.8.x 面向朋友體驗的 content preview decisions：`07_EGSF_Friends_Content_Preview.md`
-- 星界灌注、Astral-Witnessed 稱號，以及 Ad Astra 進度線上的武器紀念機制：`08_EGSF_Astral_Infusion_Design.md`。這份提案依賴的武器記憶系統、`#egsf:trackable_weapons` tag 與 Bossbane 稱號目前都尚未實作，材料來源 Celestisynth 也還沒加入模組包，安裝狀態以 `COMPATIBILITY.md` 與 packwiz metadata 為準。
-- Forbidden Debt 的世界反噬、七詛咒之戒的強制配戴與淨化任務線：`09_EGSF_Seven_Curses_Backlash_Design.md`。這份提案與星界灌注無關，Enigmatic Legacy 目前沒有加入模組包，安裝狀態以 `COMPATIBILITY.md` 與 packwiz metadata 為準。
+- 星界灌注、Astral-Witnessed 稱號，以及 Ad Astra 進度線上的武器紀念機制：`08_EGSF_Astral_Infusion_Design.md`。這份提案依賴的武器記憶系統、`#egsf:trackable_weapons` tag 與 Bossbane 稱號目前都尚未實作，材料來源 Celestisynth 也還沒加入模組包，安裝狀態以 `docs/operations/COMPATIBILITY.md` 與 packwiz metadata 為準。
+- Forbidden Debt 的世界反噬、七詛咒之戒的強制配戴與淨化任務線：`09_EGSF_Seven_Curses_Backlash_Design.md`。這份提案與星界灌注無關，Enigmatic Legacy 目前沒有加入模組包，安裝狀態以 `docs/operations/COMPATIBILITY.md` 與 packwiz metadata 為準。
 - 必須暫時停放的 lightweight life/RPG side-system ideas：`backlog/EGSF_Hypixel_Style_Life_RPG_Backlog.md`
 - 當前實作真相：使用 `docs/PROGRESSION_OVERVIEW.md`、`docs/releases/`、active FTB Quests files、KubeJS files、packwiz metadata，以及 `docs/design/` 以外的 compatibility docs。
 
@@ -52,7 +52,7 @@ Phase 1 與 Phase 2 建立了初始 corpus 結構。Phase 3A-3F 完成第一輪�
 
 以下檔案是早期 quest design drafts：
 
-- `QUEST_DESIGN.md`
+- `docs/archive/planning/QUEST_DESIGN.md`
 - `docs/design/questline.md`
 
 `docs/design/questline.md` 仍可僅作歷史參考。它可能描述較舊的 Chapter 0-7 planning，且不應覆蓋目前 Chapter 0-11 的 FTB Quests 實作。

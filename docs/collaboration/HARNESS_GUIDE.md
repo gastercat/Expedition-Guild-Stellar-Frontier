@@ -7,9 +7,9 @@ EG:SF Harness 是一組既有治理文件、implementation evidence、任務規�
 1. [`AGENT.md`](../../AGENT.md)：Repo red lines、語言規範、範圍與 Git 安全規則。
 2. [`SKILL.md`](../../SKILL.md)：強制工作流程、已驗證格式與 validation expectations。
 3. [`PROGRESS.md`](../../PROGRESS.md)：目前 phase、goal、已知狀態與 STOP POINT。
-4. [`COMPATIBILITY.md`](../../COMPATIBILITY.md)：相容性分類、installed／planned／deferred／historical 邊界。
+4. [`docs/operations/COMPATIBILITY.md`](../operations/COMPATIBILITY.md)：相容性分類、installed／planned／deferred／historical 邊界。
 5. 任務指定文件：本次 objective、authoritative sources、allowlist 與 stop conditions。
-6. 需要 runtime 驗證時，才閱讀 [`SERVER_TEST_PROTOCOL.md`](../../SERVER_TEST_PROTOCOL.md) 並依其保存 evidence。
+6. 需要 runtime 驗證時，才閱讀 [`docs/operations/SERVER_TEST_PROTOCOL.md`](../operations/SERVER_TEST_PROTOCOL.md) 並依其保存 evidence。
 
 本 Repo 實際存在的檔名是單數 `AGENT.md`。不得假設存在 `AGENTS.md`，也不得在未授權任務中處理 rename。
 
@@ -20,9 +20,9 @@ EG:SF Harness 是一組既有治理文件、implementation evidence、任務規�
 | `AGENT.md` | 安全治理、red lines、語言與 scope 規則。 | 不取代實際 metadata 或任務規格。 |
 | `SKILL.md` | 執行順序、已驗證格式、validation 與 publish 邊界。 | 不自動授權任何修改。 |
 | `PROGRESS.md` | 目前專案狀態、goal、blocked／deferred 與 STOP POINT。 | 不單獨證明 runtime 狀態或 installed inventory。 |
-| `COMPATIBILITY.md` | 相容性狀態與證據分類的 current guidance。 | 不取代 packwiz metadata。 |
+| `docs/operations/COMPATIBILITY.md` | 相容性狀態與證據分類的 current guidance。 | 不取代 packwiz metadata。 |
 | 任務指定文件 | 本次工作的 objective、scope、allowlist、forbidden 與完成條件。 | 不得自行擴張到相鄰問題。 |
-| `SERVER_TEST_PROTOCOL.md` | Active runtime 測試程序、證據欄位與結果判定。 | 閱讀程序本身不構成 runtime verification。 |
+| `docs/operations/SERVER_TEST_PROTOCOL.md` | Active runtime 測試程序、證據欄位與結果判定。 | 閱讀程序本身不構成 runtime verification。 |
 
 ## Authority model
 
@@ -39,8 +39,8 @@ EG:SF Harness 是一組既有治理文件、implementation evidence、任務規�
 - `AGENT.md`
 - `SKILL.md`
 - `PROGRESS.md`
-- `COMPATIBILITY.md`
-- `SERVER_TEST_PROTOCOL.md`
+- `docs/operations/COMPATIBILITY.md`
+- `docs/operations/SERVER_TEST_PROTOCOL.md`
 
 ### Release evidence
 

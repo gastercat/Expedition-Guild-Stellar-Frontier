@@ -52,7 +52,7 @@ GitHub Actions workflow [`.github/workflows/pack-ci.yml`](../../.github/workflow
 
 `.mrpack` artifact 在 PR 頁面的 Checks 分頁下載，GitHub 會把它包成 `.zip`，解壓縮後再匯入 Prism Launcher。Server log 也會上傳成 artifact，失敗時可以直接下載來看，兩者都保留 14 天。
 
-本機要重現 server smoke test 時，執行 `scripts/ci/server_smoke_test.sh`，並用環境變數 `JAVA` 指定 Java 17。CI 無法執行時，改由 Project Maintainer 依 [`SERVER_TEST_PROTOCOL.md`](../../SERVER_TEST_PROTOCOL.md) Stage 3 手動測試。
+本機要重現 server smoke test 時，執行 `scripts/ci/server_smoke_test.sh`，並用環境變數 `JAVA` 指定 Java 17。CI 無法執行時，改由 Project Maintainer 依 [`docs/operations/SERVER_TEST_PROTOCOL.md`](../operations/SERVER_TEST_PROTOCOL.md) Stage 3 手動測試。
 
 Server smoke test 能抓到 mod 載入失敗、缺少前置 mod 與 KubeJS 錯誤，但抓不到畫面相關的 crash，也無法驗證 quest 在遊戲裡的操作結果。FTB Quests 的設定錯誤只有在造成 server 無法啟動時才會讓測試失敗，因此 CI 通過只能回報 server 啟動 `PASS`，不得寫成 client runtime `PASS`。
 
@@ -71,7 +71,7 @@ Server smoke test 能抓到 mod 載入失敗、缺少前置 mod 與 KubeJS 錯�
 ## 發佈節奏
 
 - 日常的 PR 只在 Project Maintainer 這裡測試，不發給朋友。
-- 大版本（例如 v0.9.0）才打包成 GitHub Release，發佈前依 `SERVER_TEST_PROTOCOL.md` 完成整包測試，再交給朋友試玩。
+- 大版本（例如 v0.9.0）才打包成 GitHub Release，發佈前依 `docs/operations/SERVER_TEST_PROTOCOL.md` 完成整包測試，再交給朋友試玩。
 - 朋友測試使用 [`docs/testing/FRIENDS_TEST_GUIDE.zh-TW.md`](../testing/FRIENDS_TEST_GUIDE.zh-TW.md) 與既有的回饋格式。
 
 ## 與其他文件的關係
