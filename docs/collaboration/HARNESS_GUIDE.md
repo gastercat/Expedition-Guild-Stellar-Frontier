@@ -83,3 +83,4 @@ Design source 可以保存方向、候選與歷史脈絡，但不等於 current 
 - 預設採可回滾的 doc-only 或 isolated change。
 - Maintainer-controlled paths 只有在任務明確授權時才能修改。
 - 協作資料夾只負責導覽、模板與任務索引，不得宣告新的版本 baseline。
+- 任務分類（`STATIC`／`RUNTIME`／`RUNTIME_MODS`）、並行上限、交叉 Review 與 server smoke test 的位置，見 [協作工作流程](WORKFLOW.md)。
