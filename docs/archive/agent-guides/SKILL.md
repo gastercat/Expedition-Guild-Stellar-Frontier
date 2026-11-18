@@ -3,6 +3,8 @@
 > **歷史權威界線 — `HISTORICAL_AGENT_GUIDE`**
 >
 > 本文件是 2026-11-18 以前根目錄 `SKILL.md` 的原文，已由 [`AGENTS.md`](../../../AGENTS.md)、[`docs/collaboration/EXECUTION_GUIDE.md`](../../collaboration/EXECUTION_GUIDE.md) 與 [`docs/collaboration/VERIFIED_FORMATS.md`](../../collaboration/VERIFIED_FORMATS.md) 取代，只作為歷史紀錄保存，不是現行規則。內容中的版本、路徑、流程（例如「push 由使用者處理」「不得執行 packwiz refresh」）只適用於當時。
+>
+> 原文中的 Project Maintainer 本機路徑已依 Identity Boundary 遮蔽為 `<repo-root>`、`<prism-instances-dir>` 等佔位符。
 
 This skill guide defines the safe workflow for AI coding agents working on the Minecraft 1.20.1 Forge modpack project:
 
@@ -36,11 +38,11 @@ Agents must follow these principles:
 
 Repo:
 
-text /Users/gastercat/Expedition-Guild-Stellar-Frontier 
+text <repo-root> 
 
 Prism instance:
 
-text /Users/gastercat/Library/Application Support/PrismLauncher/instances/Expedition Guild Stellar Frontier-0.1.0/minecraft 
+text <prism-instances-dir>/Expedition Guild Stellar Frontier-0.1.0/minecraft 
 
 Important:
 
