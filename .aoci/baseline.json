@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-11-20T20:49:12Z",
-  "updated_at": "2026-11-20T21:35:21Z",
+  "updated_at": "2026-11-20T21:51:11Z",
   "files": {
     ".claude/skills/merge-prep/SKILL.md": {
       "role": "index",
@@ -53,9 +53,9 @@
     },
     "CHANGELOG.md": {
       "role": "index",
-      "sha256": "4dc085c478a3e735d5a05c95c52f391603fd179cfc40c4640befccfbc606cadc",
-      "size": 5910,
-      "normalized_sha256": "4dc085c478a3e735d5a05c95c52f391603fd179cfc40c4640befccfbc606cadc"
+      "sha256": "b354f00380ff9bc5d6c16639063555838e993355864136c7e95d3bed22631287",
+      "size": 6899,
+      "normalized_sha256": "b354f00380ff9bc5d6c16639063555838e993355864136c7e95d3bed22631287"
     },
     "CLAUDE.md": {
       "role": "index",
@@ -71,9 +71,9 @@
     },
     "PROGRESS.md": {
       "role": "index",
-      "sha256": "5f79a80f157971fd61adb5bb184132aecbb212597a7d7f5d839c5b90d5dc0dbc",
-      "size": 7104,
-      "normalized_sha256": "5f79a80f157971fd61adb5bb184132aecbb212597a7d7f5d839c5b90d5dc0dbc"
+      "sha256": "ff7d50639c0bf1e5978c7d1e32ed85760cd429ec1207563cf80b88e404dc16c6",
+      "size": 7777,
+      "normalized_sha256": "ff7d50639c0bf1e5978c7d1e32ed85760cd429ec1207563cf80b88e404dc16c6"
     },
     "README.md": {
       "role": "index",
@@ -83,9 +83,9 @@
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "a7cc3126849da143921ced8a6499546da6d3a2929392148656121a686a819126",
-      "size": 45961,
-      "normalized_sha256": "a7cc3126849da143921ced8a6499546da6d3a2929392148656121a686a819126"
+      "sha256": "5faea1f021e08f7d666300a445b7cbe30828f4e8b89236e8b90c2c2aafce699b",
+      "size": 45997,
+      "normalized_sha256": "5faea1f021e08f7d666300a445b7cbe30828f4e8b89236e8b90c2c2aafce699b"
     },
     "aoci.meta.txt": {
       "role": "index",

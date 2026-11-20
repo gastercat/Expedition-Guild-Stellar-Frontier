@@ -1,6 +1,6 @@
 # Progress
 
-最後同步：2026-11-18（`main` = `43be676`）
+最後同步：2026-11-21（`main` = `139f403`）
 
 ## 目前版本與階段
 
@@ -26,6 +26,11 @@
   - Claude Code skills：`/release` 與 `/merge-prep`，位於 `.claude/skills/`（PR #16）。
   - Agent 規則層調整：授權來源可以是 task file 或 Project Maintainer 在對話中的明確指示，紅線改為 5 條，Tag 與 GitHub Release 經指定版本與 commit 授權後可由 Agent 建立（PR #17）。
   - CI 的 server smoke test 同時檢查 KubeJS `startup.log` 與 `server.log`（PR #18）。
+- 2026-11-18～20 已 merge 的變更（PR #20–#24）：
+  - `/merge-prep` post 模式把「被較新 merge 取代而取消的 CI run」視為已涵蓋（PR #20）。
+  - AOCI 認知索引：骨架與 `AGENTS.md` 的 AOCI 區塊（PR #21），以及涵蓋全部 216 個受管理檔案的完整索引（PR #22）。AOCI 檔案都已列入 `.packwizignore`。
+  - 修正 README 的過時版本說明、release index 漏列的 v0.7.4／v0.7.5，以及永遠通過的 `scripts/check_duplicate_mods.py`（PR #23）。
+  - `eg_stages.js` 的狀態註解與現況對齊，只改註解（PR #24）。
 - Incident `EGSF-v0.8.1-Render-Native-Crash`：已由 Project Maintainer 於 2026-11-18 決定以 `CLOSED_UNRESOLVED` 關閉，詳見下方「Incident 紀錄」。
 - 目前沒有任何 gameplay、quest、KubeJS、mod、packwiz、export 或 release 實作獲得授權。
 
@@ -43,7 +48,7 @@
 ## 最後已知的良好狀態
 
 - `v0.8.1-friends-feedback-test` 的 RC smoke test 已通過。
-- Pack CI 在 `main` 上通過（2026-11-18，最新為 PR #18 merge 後的 `43be676`）。CI 通過只代表 dedicated server 啟動 `PASS`，不等於 client runtime `PASS`。
+- Pack CI 在 `main` 上通過（2026-11-20，最新為 PR #24 merge 後的 `139f403`）。CI 通過只代表 dedicated server 啟動 `PASS`，不等於 client runtime `PASS`。
 - 目前技術基線：
   - Minecraft `1.20.1`
   - Forge `47.4.10`
@@ -52,7 +57,7 @@
   - Ad Astra `1.20.1-1.15.20`
 - Chapter 0 公會 onboarding／遠征準備 polish 已發佈。
 - Chapter 1 Create 工程、Ad Astra 伏筆與職業 fantasy preview polish 已發佈。
-- `.packwizignore` 已排除 `docs/`、根目錄文件（含 `AGENTS.md`、`CLAUDE.md`）、Python cache、`.github/`、`.claude/` 與 `scripts/`。
+- `.packwizignore` 已排除 `docs/`、根目錄文件（含 `AGENTS.md`、`CLAUDE.md`）、Python cache、`.github/`、`.claude/`、`scripts/` 與 AOCI 索引檔（`aoci.txt`、`aoci.*.txt`、`.aoci/`、`.gitattributes`）。
 
 ## 目前目標
 
