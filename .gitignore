@@ -19,3 +19,6 @@ __pycache__/
 .mcp.json.backup.*
 .claude/settings.json
 .claude/settings.json.backup.*
+
+# Serena code-analysis tool state (machine-local; do not commit)
+.serena/
