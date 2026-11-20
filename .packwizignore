@@ -31,3 +31,6 @@ aoci.*.txt
 .aoci/
 .gitattributes
 .mcp.json
+
+# Serena code-analysis tool state (repo tooling, not part of the pack)
+.serena/
