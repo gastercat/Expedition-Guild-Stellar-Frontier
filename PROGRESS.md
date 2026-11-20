@@ -57,7 +57,7 @@
   - Ad Astra `1.20.1-1.15.20`
 - Chapter 0 公會 onboarding／遠征準備 polish 已發佈。
 - Chapter 1 Create 工程、Ad Astra 伏筆與職業 fantasy preview polish 已發佈。
-- `.packwizignore` 已排除 `docs/`、根目錄文件（含 `AGENTS.md`、`CLAUDE.md`）、Python cache、`.github/`、`.claude/`、`scripts/` 與 AOCI 索引檔（`aoci.txt`、`aoci.*.txt`、`.aoci/`、`.gitattributes`）。
+- `.packwizignore` 已排除 `docs/`、根目錄文件（含 `AGENTS.md`、`CLAUDE.md`）、Python cache、`.github/`、`.claude/`、`scripts/` 與 AOCI 相關檔案（`aoci.txt`、`aoci.*.txt`、`.aoci/`、`.gitattributes`、`.mcp.json`）。
 
 ## 目前目標
 
