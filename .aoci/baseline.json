@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-11-20T20:49:12Z",
-  "updated_at": "2026-11-20T21:29:48Z",
+  "updated_at": "2026-11-20T21:30:47Z",
   "files": {
     ".claude/skills/merge-prep/SKILL.md": {
       "role": "index",
@@ -83,9 +83,9 @@
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "bb6425cc6fca47b2e4e78f4cf1d3af1a5ccc3daa3d95065a6617000f127c14b5",
-      "size": 45888,
-      "normalized_sha256": "bb6425cc6fca47b2e4e78f4cf1d3af1a5ccc3daa3d95065a6617000f127c14b5"
+      "sha256": "b32e19a3fb93527869f29fea16f2dbf4e40dd386bd7f1b3fcfafd5a6471ce1b1",
+      "size": 45909,
+      "normalized_sha256": "b32e19a3fb93527869f29fea16f2dbf4e40dd386bd7f1b3fcfafd5a6471ce1b1"
     },
     "aoci.meta.txt": {
       "role": "index",
@@ -959,15 +959,15 @@
     },
     "index.toml": {
       "role": "index",
-      "sha256": "b77c0541bdb25db384d37443d0175674cc9c64f3ac1b3975110be8c7e5d48615",
+      "sha256": "525f24335797dc92352f0f2f3b722258e47f0ea49207db92842f30159508d6ae",
       "size": 9118,
-      "normalized_sha256": "b77c0541bdb25db384d37443d0175674cc9c64f3ac1b3975110be8c7e5d48615"
+      "normalized_sha256": "525f24335797dc92352f0f2f3b722258e47f0ea49207db92842f30159508d6ae"
     },
     "kubejs/server_scripts/eg_stages.js": {
       "role": "index",
-      "sha256": "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde",
-      "size": 2575,
-      "normalized_sha256": "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde"
+      "sha256": "d016397e59fc646550fce296aaa116e25ee342c3c600714a83759f3bde5065f1",
+      "size": 2990,
+      "normalized_sha256": "d016397e59fc646550fce296aaa116e25ee342c3c600714a83759f3bde5065f1"
     },
     "mods/ad-astra.pw.toml": {
       "role": "index",
@@ -1283,9 +1283,9 @@
     },
     "pack.toml": {
       "role": "index",
-      "sha256": "85984f2b5abce29693300d678a127e748aa5271eec8243a78297a220d0c912dc",
+      "sha256": "eaf1df21be1ce68ef12755048a0deecc53eb52f78630884be248cfbcaf508a9c",
       "size": 289,
-      "normalized_sha256": "85984f2b5abce29693300d678a127e748aa5271eec8243a78297a220d0c912dc"
+      "normalized_sha256": "eaf1df21be1ce68ef12755048a0deecc53eb52f78630884be248cfbcaf508a9c"
     },
     "scripts/check_duplicate_mods.py": {
       "role": "index",

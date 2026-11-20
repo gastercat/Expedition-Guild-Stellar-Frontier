@@ -231,7 +231,7 @@ FRIENDS_TEST_GUIDE.zh-TW.md[SQ4M]: F:2-4 player friends test guide for the v0.8.
 TESTING_GUIDE.md[SQ5S]: F:Tester guide: first health checks, quest, multiplayer and progression-break checklists, bug report template, useful logs | R:code:docs/operations/SERVER_TEST_PROTOCOL.md | A:Bug Report Template | S:-
 
 ===/<repository>/kubejs/server_scripts/===
-eg_stages.js[CB6T]: F:Passive KubeJS server script defining frozen EG_STAGES names for guild, chapter, class, gate and system stages, logging only a load line | R:code:config/ftbquests/quests/chapters/1.snbt,code:docs/collaboration/VERIFIED_FORMATS.md | A:EG_STAGES | S:Grants or checks nothing; quests use literal stage strings, so renames here never propagate; its header status notes are stale
+eg_stages.js[CB6T]: F:Passive KubeJS server script defining frozen EG_STAGES names for guild, chapter, class, gate and system stages, logging only a load line | R:code:config/ftbquests/quests/chapters/1.snbt,code:docs/collaboration/VERIFIED_FORMATS.md | A:EG_STAGES | S:Grants or checks nothing; quests use literal stage strings, so renames here never propagate; hybrid class and system stages are granted by no quest
 
 ===/<repository>/mods/===
 ad-astra.pw.toml[FE7T]: F:packwiz metadata for Ad Astra ad_astra-forge-1.20.1-1.15.20.jar from Modrinth, both sides | R:code:mods/botarium.pw.toml,code:mods/resourceful-lib.pw.toml,code:mods/resourceful-config.pw.toml,code:mods/cloth-config.pw.toml | A:3ufwT9JF | S:Version changes are RUNTIME_MODS; no Create: Ad Astra compat mod by design
