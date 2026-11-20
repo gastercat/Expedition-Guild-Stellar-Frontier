@@ -1,0 +1,1395 @@
+{
+  "version": 1,
+  "created_at": "2026-11-20T20:49:12Z",
+  "updated_at": "2026-11-20T20:49:12Z",
+  "files": {
+    ".claude/skills/merge-prep/SKILL.md": {
+      "role": "index",
+      "sha256": "5c2d1b354baf2647a8dabe66a0cdefeb3d2dc72a529673e43d35dad305559148",
+      "size": 6297,
+      "normalized_sha256": "5c2d1b354baf2647a8dabe66a0cdefeb3d2dc72a529673e43d35dad305559148"
+    },
+    ".claude/skills/release/SKILL.md": {
+      "role": "index",
+      "sha256": "8b91814484c485c42cb7407a99f9870c900e868f8fa0eaf6cbba892b5cf07263",
+      "size": 9726,
+      "normalized_sha256": "8b91814484c485c42cb7407a99f9870c900e868f8fa0eaf6cbba892b5cf07263"
+    },
+    ".gitattributes": {
+      "role": "index",
+      "sha256": "21fa16a2122e2b0360b47502c577428b645437e08e9e87ffba661f84853cb476",
+      "size": 291,
+      "normalized_sha256": "21fa16a2122e2b0360b47502c577428b645437e08e9e87ffba661f84853cb476"
+    },
+    ".github/PULL_REQUEST_TEMPLATE.md": {
+      "role": "index",
+      "sha256": "c21fd397b7fa9a3af709289e13eaa1f896bb8283ea039582773ca6617d79543a",
+      "size": 1761,
+      "normalized_sha256": "c21fd397b7fa9a3af709289e13eaa1f896bb8283ea039582773ca6617d79543a"
+    },
+    ".github/workflows/pack-ci.yml": {
+      "role": "index",
+      "sha256": "9d753933cf6ef7d3364ae448876426f85c5c197240adebddca54ee8eef147c13",
+      "size": 3347,
+      "normalized_sha256": "9d753933cf6ef7d3364ae448876426f85c5c197240adebddca54ee8eef147c13"
+    },
+    ".gitignore": {
+      "role": "index",
+      "sha256": "34932d78ca377c3c547b1140ceab397699cee970ab5202eb5880298c1c3fbc6e",
+      "size": 292,
+      "normalized_sha256": "34932d78ca377c3c547b1140ceab397699cee970ab5202eb5880298c1c3fbc6e"
+    },
+    ".packwizignore": {
+      "role": "index",
+      "sha256": "2d10544ba639d991a233e3ee7c513c77cbdc420888ceb19c9a944cabdb8d5bc1",
+      "size": 387,
+      "normalized_sha256": "2d10544ba639d991a233e3ee7c513c77cbdc420888ceb19c9a944cabdb8d5bc1"
+    },
+    "AGENTS.md": {
+      "role": "index",
+      "sha256": "af3e1581e79057ad7e38b0cd188a79e361aeee2202357bc3e202605f369eec99",
+      "size": 24978,
+      "normalized_sha256": "af3e1581e79057ad7e38b0cd188a79e361aeee2202357bc3e202605f369eec99"
+    },
+    "CHANGELOG.md": {
+      "role": "index",
+      "sha256": "4dc085c478a3e735d5a05c95c52f391603fd179cfc40c4640befccfbc606cadc",
+      "size": 5910,
+      "normalized_sha256": "4dc085c478a3e735d5a05c95c52f391603fd179cfc40c4640befccfbc606cadc"
+    },
+    "CLAUDE.md": {
+      "role": "index",
+      "sha256": "ef7487f3098bf0fabea0017f7f41ff362a79030a205da94699c79dd67c650e41",
+      "size": 1374,
+      "normalized_sha256": "ef7487f3098bf0fabea0017f7f41ff362a79030a205da94699c79dd67c650e41"
+    },
+    "CONTRIBUTING.md": {
+      "role": "index",
+      "sha256": "9616d62a9f471f5e9c8ccbe500c747eee4e51d90c02b52e824eb3cf1daf96ce7",
+      "size": 1975,
+      "normalized_sha256": "9616d62a9f471f5e9c8ccbe500c747eee4e51d90c02b52e824eb3cf1daf96ce7"
+    },
+    "PROGRESS.md": {
+      "role": "index",
+      "sha256": "5f79a80f157971fd61adb5bb184132aecbb212597a7d7f5d839c5b90d5dc0dbc",
+      "size": 7104,
+      "normalized_sha256": "5f79a80f157971fd61adb5bb184132aecbb212597a7d7f5d839c5b90d5dc0dbc"
+    },
+    "README.md": {
+      "role": "index",
+      "sha256": "5a7e676c2540c72f59d8bfc8a8f69ee8fc7f9745d1c92eb0a337df41c0be0770",
+      "size": 7824,
+      "normalized_sha256": "5a7e676c2540c72f59d8bfc8a8f69ee8fc7f9745d1c92eb0a337df41c0be0770"
+    },
+    "aoci.code.txt": {
+      "role": "index",
+      "sha256": "12cbc237b863041b3ab7b6c6330091964cb014a20e624ec1f88de6056aed56c2",
+      "size": 21,
+      "normalized_sha256": "12cbc237b863041b3ab7b6c6330091964cb014a20e624ec1f88de6056aed56c2"
+    },
+    "aoci.meta.txt": {
+      "role": "index",
+      "sha256": "4e847b2679814f2d38ff8f9c44b03e026619f84d724be83634539eb369fe0199",
+      "size": 2534,
+      "normalized_sha256": "4e847b2679814f2d38ff8f9c44b03e026619f84d724be83634539eb369fe0199"
+    },
+    "aoci.txt": {
+      "role": "index",
+      "sha256": "bf0033b83cf6a6b5a1bedc6a85a51b534f7e93526db637f57c3723c2287508a1",
+      "size": 322,
+      "normalized_sha256": "bf0033b83cf6a6b5a1bedc6a85a51b534f7e93526db637f57c3723c2287508a1"
+    },
+    "config/ftbquests/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "config/ftbquests/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "e322476487279840e957e00f2a0413c4f3d34c122d42ccb3f47130afdf3329c6",
+      "size": 7318,
+      "normalized_sha256": "e322476487279840e957e00f2a0413c4f3d34c122d42ccb3f47130afdf3329c6"
+    },
+    "config/ftbquests/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "d254d374d9e96ae53e8723265c13ccab36bd8639a959327c639b3cebb7698d72",
+      "size": 10824,
+      "normalized_sha256": "d254d374d9e96ae53e8723265c13ccab36bd8639a959327c639b3cebb7698d72"
+    },
+    "config/ftbquests/quests/chapters/10.snbt": {
+      "role": "index",
+      "sha256": "4c5384354f65d310b4a3d8691259467463ea09a9c33e6d0f3f732b88b5724cca",
+      "size": 4904,
+      "normalized_sha256": "4c5384354f65d310b4a3d8691259467463ea09a9c33e6d0f3f732b88b5724cca"
+    },
+    "config/ftbquests/quests/chapters/11.snbt": {
+      "role": "index",
+      "sha256": "8b3ce6260387f1b44c6d7977bdc01fb16a8c550cc46787ac07288e75a0d8fb20",
+      "size": 5323,
+      "normalized_sha256": "8b3ce6260387f1b44c6d7977bdc01fb16a8c550cc46787ac07288e75a0d8fb20"
+    },
+    "config/ftbquests/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "bac937ebfbf22cad0a8a2f27126523e69b50be9777e9d3435bcf0ed4e45a0003",
+      "size": 8830,
+      "normalized_sha256": "bac937ebfbf22cad0a8a2f27126523e69b50be9777e9d3435bcf0ed4e45a0003"
+    },
+    "config/ftbquests/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "7dab776b1e763fe671b966ed574161c2f5449e74b70c9f754260a2439658caae",
+      "size": 5659,
+      "normalized_sha256": "7dab776b1e763fe671b966ed574161c2f5449e74b70c9f754260a2439658caae"
+    },
+    "config/ftbquests/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "47ed1f9943b91d99ec112d3f91e0555d863d429f223a7e48a3cbdd5c9346007c",
+      "size": 7211,
+      "normalized_sha256": "47ed1f9943b91d99ec112d3f91e0555d863d429f223a7e48a3cbdd5c9346007c"
+    },
+    "config/ftbquests/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "73c82b89a08b910d3d32aa600982e93f248c53486eaa220989c6a27d59baaf4c",
+      "size": 6907,
+      "normalized_sha256": "73c82b89a08b910d3d32aa600982e93f248c53486eaa220989c6a27d59baaf4c"
+    },
+    "config/ftbquests/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "8e86ecbc98725fd2ac4d0c9296e796afb05d855d298f373d47a6381d8e382579",
+      "size": 7394,
+      "normalized_sha256": "8e86ecbc98725fd2ac4d0c9296e796afb05d855d298f373d47a6381d8e382579"
+    },
+    "config/ftbquests/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "48abb5687d9ba2b010e6ef11414302a79958767465e7a56e414bade6409e7614",
+      "size": 7712,
+      "normalized_sha256": "48abb5687d9ba2b010e6ef11414302a79958767465e7a56e414bade6409e7614"
+    },
+    "config/ftbquests/quests/chapters/8.snbt": {
+      "role": "index",
+      "sha256": "1e01460ee04d84dc933efc7b5ecdf94e65042a19b08d30dd27be1a6aa8e6cbd4",
+      "size": 6038,
+      "normalized_sha256": "1e01460ee04d84dc933efc7b5ecdf94e65042a19b08d30dd27be1a6aa8e6cbd4"
+    },
+    "config/ftbquests/quests/chapters/9.snbt": {
+      "role": "index",
+      "sha256": "3544c608f5caa7357b7c53ac58a876ee3fbfd6a56a1d6143f62b78ecbd31e8ba",
+      "size": 5856,
+      "normalized_sha256": "3544c608f5caa7357b7c53ac58a876ee3fbfd6a56a1d6143f62b78ecbd31e8ba"
+    },
+    "config/ftbquests/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/PROGRESSION_OVERVIEW.md": {
+      "role": "index",
+      "sha256": "775a2ddb580b4d3bfa55f3a9b35c885a5fa64bc66fed645d6f0ed5d59043feb1",
+      "size": 7619,
+      "normalized_sha256": "775a2ddb580b4d3bfa55f3a9b35c885a5fa64bc66fed645d6f0ed5d59043feb1"
+    },
+    "docs/ROADMAP.md": {
+      "role": "index",
+      "sha256": "cd4c725efe1c8c81de7713c94fedff3b7c5c1ba4a03beb3c0d2076ce6eafcaa7",
+      "size": 4898,
+      "normalized_sha256": "cd4c725efe1c8c81de7713c94fedff3b7c5c1ba4a03beb3c0d2076ce6eafcaa7"
+    },
+    "docs/archive/agent-guides/AGENT.md": {
+      "role": "index",
+      "sha256": "4464a29230fca18c9f112e48110d91fa729c54988c060432748329b317782e27",
+      "size": 6918,
+      "normalized_sha256": "4464a29230fca18c9f112e48110d91fa729c54988c060432748329b317782e27"
+    },
+    "docs/archive/agent-guides/SKILL.md": {
+      "role": "index",
+      "sha256": "3376916b6f1c8f4c04a73daf191aaacc70755a69243e65bcc6dd69c3bdfceab4",
+      "size": 14675,
+      "normalized_sha256": "3376916b6f1c8f4c04a73daf191aaacc70755a69243e65bcc6dd69c3bdfceab4"
+    },
+    "docs/archive/phase-records/PHASE_STATUS.md": {
+      "role": "index",
+      "sha256": "e8d0fc326104e5cf5ea39ae0d2acd7c5b676de6aeb09e61b79131c0c7739a6d8",
+      "size": 6424,
+      "normalized_sha256": "e8d0fc326104e5cf5ea39ae0d2acd7c5b676de6aeb09e61b79131c0c7739a6d8"
+    },
+    "docs/archive/planning/ExpeditionGuild.md": {
+      "role": "index",
+      "sha256": "27945127726dec84ace98f2528dc20c9f7a2672888de1ccab618a46d0a4c8bb4",
+      "size": 605,
+      "normalized_sha256": "27945127726dec84ace98f2528dc20c9f7a2672888de1ccab618a46d0a4c8bb4"
+    },
+    "docs/archive/planning/FEATURE_PREVIEW.zh-TW.md": {
+      "role": "index",
+      "sha256": "ef36f305ae34f66ec43ee5d672998ec2d70086a1fc344739632b5f40e86fa436",
+      "size": 4152,
+      "normalized_sha256": "ef36f305ae34f66ec43ee5d672998ec2d70086a1fc344739632b5f40e86fa436"
+    },
+    "docs/archive/planning/MODLIST.md": {
+      "role": "index",
+      "sha256": "bfbf94c50eef4eaa123a40dd5b9e67a433b52f36c204ca5ebe75c176f236a61d",
+      "size": 15617,
+      "normalized_sha256": "bfbf94c50eef4eaa123a40dd5b9e67a433b52f36c204ca5ebe75c176f236a61d"
+    },
+    "docs/archive/planning/QUEST_DESIGN.md": {
+      "role": "index",
+      "sha256": "2c958b0abde8dda7a8e25db548a06294933c4bf636e44cf81723dbc2878be6d1",
+      "size": 11262,
+      "normalized_sha256": "2c958b0abde8dda7a8e25db548a06294933c4bf636e44cf81723dbc2878be6d1"
+    },
+    "docs/archive/planning/player_roles.md": {
+      "role": "index",
+      "sha256": "a64c0ba291c0e42013b7e56a836875c3c4f7607a68de71a08e774c713c188d34",
+      "size": 1344,
+      "normalized_sha256": "a64c0ba291c0e42013b7e56a836875c3c4f7607a68de71a08e774c713c188d34"
+    },
+    "docs/archive/planning/progression_map.md": {
+      "role": "index",
+      "sha256": "92bfdbd8c3dbcce9d1efa07f78bd8cc774c3467faa2db2fca7f24387c1349e3c",
+      "size": 1367,
+      "normalized_sha256": "92bfdbd8c3dbcce9d1efa07f78bd8cc774c3467faa2db2fca7f24387c1349e3c"
+    },
+    "docs/archive/planning/v0.8.0-friends-content-preview.md": {
+      "role": "index",
+      "sha256": "253aaf2f0ea4fb82d605b0f6a1ca62ca1e9be489a08aa9023480fef1c4f1e733",
+      "size": 10716,
+      "normalized_sha256": "253aaf2f0ea4fb82d605b0f6a1ca62ca1e9be489a08aa9023480fef1c4f1e733"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4",
+      "size": 351,
+      "normalized_sha256": "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98",
+      "size": 348,
+      "normalized_sha256": "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db",
+      "size": 354,
+      "normalized_sha256": "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f",
+      "size": 374,
+      "normalized_sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69",
+      "size": 362,
+      "normalized_sha256": "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b",
+      "size": 362,
+      "normalized_sha256": "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b",
+      "size": 360,
+      "normalized_sha256": "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9",
+      "size": 348,
+      "normalized_sha256": "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
+    },
+    "docs/archive/quest-backups/phase2b-initial-skeleton/minecraft/config/ftbquests/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4",
+      "size": 351,
+      "normalized_sha256": "e10b4834d5e63c29fca33c834acd0e1173cce1229f87c1355e44e29f5acaaec4"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98",
+      "size": 348,
+      "normalized_sha256": "9097bc120e4da842fe4b83c1a36ec4ec19853c7e1f749b8ee1b2881369b5df98"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db",
+      "size": 354,
+      "normalized_sha256": "fda7615768edd4ef885208927a3eeb52c8da3e9dca722a997e71f7433cfb44db"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f",
+      "size": 374,
+      "normalized_sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69",
+      "size": 362,
+      "normalized_sha256": "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b",
+      "size": 362,
+      "normalized_sha256": "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b",
+      "size": 360,
+      "normalized_sha256": "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9",
+      "size": 348,
+      "normalized_sha256": "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
+    },
+    "docs/archive/quest-backups/phase2d-before-ch0-ch2-edit/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "0ed9d7f48bae70e72ab42a74a8edd4ace8251cc82fef369e572f5f1d73eeac4b",
+      "size": 2287,
+      "normalized_sha256": "0ed9d7f48bae70e72ab42a74a8edd4ace8251cc82fef369e572f5f1d73eeac4b"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "b6fed1002a5b829e83d9d6ed9094cf0d97225f129d551de530b84b2d4a039261",
+      "size": 2899,
+      "normalized_sha256": "b6fed1002a5b829e83d9d6ed9094cf0d97225f129d551de530b84b2d4a039261"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "49836a2f5f68cdb3bb1dc6311beccbb7a2d711c7b00be0fc6571219f53d5f40d",
+      "size": 3292,
+      "normalized_sha256": "49836a2f5f68cdb3bb1dc6311beccbb7a2d711c7b00be0fc6571219f53d5f40d"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f",
+      "size": 374,
+      "normalized_sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69",
+      "size": 362,
+      "normalized_sha256": "c6b1e8a32f34b173c886d59896370588ba5ab3cc07bc91d326e772dabc9ada69"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b",
+      "size": 362,
+      "normalized_sha256": "b922b661fa7c0d114aaea9e4acc9d5368f8d8b15722e674fa02077e30581b74b"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b",
+      "size": 360,
+      "normalized_sha256": "3ce1175ea2a34369f63de8c01c331b8224c55a531f156e4c4d80911ef2ef727b"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9",
+      "size": 348,
+      "normalized_sha256": "df7834badd6b021da4c240041050639b688dbc64180084461c9a4e219b2226a9"
+    },
+    "docs/archive/quest-backups/phase2d-before-zh-tw-localization/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "1e9c715ba65febf1de5aa1df47bf194638be4c2ff4337908901a3eb8fcaccaa5",
+      "size": 2273,
+      "normalized_sha256": "1e9c715ba65febf1de5aa1df47bf194638be4c2ff4337908901a3eb8fcaccaa5"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "e05f35cbbcdb884141cacbedb8cb69ba521f4a40ac0aef2e89753245adcc2058",
+      "size": 2873,
+      "normalized_sha256": "e05f35cbbcdb884141cacbedb8cb69ba521f4a40ac0aef2e89753245adcc2058"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "3e030e24555b15ee7faf7e4b6de8c85d90cb5d2b999a7c4d0250d2feac8e2211",
+      "size": 3283,
+      "normalized_sha256": "3e030e24555b15ee7faf7e4b6de8c85d90cb5d2b999a7c4d0250d2feac8e2211"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f",
+      "size": 374,
+      "normalized_sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c",
+      "size": 356,
+      "normalized_sha256": "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4",
+      "size": 356,
+      "normalized_sha256": "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9",
+      "size": 362,
+      "normalized_sha256": "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953",
+      "size": 356,
+      "normalized_sha256": "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
+    },
+    "docs/archive/quest-backups/phase2e-before-ch0-ch2-polish/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35",
+      "size": 2416,
+      "normalized_sha256": "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639",
+      "size": 2994,
+      "normalized_sha256": "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b",
+      "size": 3401,
+      "normalized_sha256": "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f",
+      "size": 374,
+      "normalized_sha256": "63923fca9b76c19aab203a721215db0bd0e368477a88532b7ca405df926e0b2f"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c",
+      "size": 356,
+      "normalized_sha256": "515d45b13a067dacfb75d4e5b0baf34365c5db4df78bdcc9d9de2887124c8b2c"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4",
+      "size": 356,
+      "normalized_sha256": "b5e8b0d096ec92b09a72e27db678784ddad34fa6e935e21f423d6b39458d15b4"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9",
+      "size": 362,
+      "normalized_sha256": "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953",
+      "size": 356,
+      "normalized_sha256": "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
+    },
+    "docs/archive/quest-backups/phase2f-before-ch3-ch5-edit/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35",
+      "size": 2416,
+      "normalized_sha256": "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639",
+      "size": 2994,
+      "normalized_sha256": "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b",
+      "size": 3401,
+      "normalized_sha256": "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "cec55983e954438a599c0b6fbac6a146aaba21706d9b33a9206782e76cc56979",
+      "size": 2745,
+      "normalized_sha256": "cec55983e954438a599c0b6fbac6a146aaba21706d9b33a9206782e76cc56979"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "50e00b22bdefb42469a822e9e7c891bc9c0de6bd480f88cd9d3ef0682fcad395",
+      "size": 2552,
+      "normalized_sha256": "50e00b22bdefb42469a822e9e7c891bc9c0de6bd480f88cd9d3ef0682fcad395"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "40306a7513b9775a7926c43b68a7fb279bda15a5a5c5b1d982594b9cb31ade0f",
+      "size": 2542,
+      "normalized_sha256": "40306a7513b9775a7926c43b68a7fb279bda15a5a5c5b1d982594b9cb31ade0f"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9",
+      "size": 362,
+      "normalized_sha256": "e28608161c1b130dca09644983c12ef20868f32cef849a0876ab87abf0cbc4a9"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953",
+      "size": 356,
+      "normalized_sha256": "7cfbd2a511ba729ba2a8e9635671123c426169d41602bbdcdf4b6fea218cc953"
+    },
+    "docs/archive/quest-backups/phase2g-before-ch6-ch7-edit/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapter_groups.snbt": {
+      "role": "index",
+      "sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78",
+      "size": 25,
+      "normalized_sha256": "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/0.snbt": {
+      "role": "index",
+      "sha256": "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35",
+      "size": 2416,
+      "normalized_sha256": "cbb7c7a6745223aa445be1526fd051ef6382b850bc751ba38e9d97f09e881e35"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/1.snbt": {
+      "role": "index",
+      "sha256": "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639",
+      "size": 2994,
+      "normalized_sha256": "93ed80c184a6e0b80e3b85fdf349fea89b140054f72329aeee47eca1754ad639"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/2.snbt": {
+      "role": "index",
+      "sha256": "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b",
+      "size": 3401,
+      "normalized_sha256": "f311bb9f707b39128ff28c32ccd933934ecac65aed0c61eb80f1632ddadb868b"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/3.snbt": {
+      "role": "index",
+      "sha256": "cec55983e954438a599c0b6fbac6a146aaba21706d9b33a9206782e76cc56979",
+      "size": 2745,
+      "normalized_sha256": "cec55983e954438a599c0b6fbac6a146aaba21706d9b33a9206782e76cc56979"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/4.snbt": {
+      "role": "index",
+      "sha256": "50e00b22bdefb42469a822e9e7c891bc9c0de6bd480f88cd9d3ef0682fcad395",
+      "size": 2552,
+      "normalized_sha256": "50e00b22bdefb42469a822e9e7c891bc9c0de6bd480f88cd9d3ef0682fcad395"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/5.snbt": {
+      "role": "index",
+      "sha256": "40306a7513b9775a7926c43b68a7fb279bda15a5a5c5b1d982594b9cb31ade0f",
+      "size": 2542,
+      "normalized_sha256": "40306a7513b9775a7926c43b68a7fb279bda15a5a5c5b1d982594b9cb31ade0f"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/6.snbt": {
+      "role": "index",
+      "sha256": "ccaeb73de63c54ba9fd57fef6d2b52aafda33660f44ccfbd9b6e8989c553ca2b",
+      "size": 3050,
+      "normalized_sha256": "ccaeb73de63c54ba9fd57fef6d2b52aafda33660f44ccfbd9b6e8989c553ca2b"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/chapters/7.snbt": {
+      "role": "index",
+      "sha256": "7981342f29cb3e0ac66b58bc23e22af6b1bcf60c6a390e5ff426645b1dec2a01",
+      "size": 2752,
+      "normalized_sha256": "7981342f29cb3e0ac66b58bc23e22af6b1bcf60c6a390e5ff426645b1dec2a01"
+    },
+    "docs/archive/quest-backups/v0.4.0-alpha-pretest-before-side-path-skeleton/quests/data.snbt": {
+      "role": "index",
+      "sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa",
+      "size": 506,
+      "normalized_sha256": "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
+    },
+    "docs/archive/reference/legacy-oddmodlist/INTEGRATION_NOTES.md": {
+      "role": "index",
+      "sha256": "7eb8c0db73f3b102e667a94e8a642e41d559fe6af5b38307d31fc146765ef9fb",
+      "size": 10483,
+      "normalized_sha256": "7eb8c0db73f3b102e667a94e8a642e41d559fe6af5b38307d31fc146765ef9fb"
+    },
+    "docs/archive/test-records/EXPLORATION_TEST_NOTES.md": {
+      "role": "index",
+      "sha256": "1b282b31603dcd7c3a9023aac3645177931b32878eb504e12807766e4abd5379",
+      "size": 2126,
+      "normalized_sha256": "1b282b31603dcd7c3a9023aac3645177931b32878eb504e12807766e4abd5379"
+    },
+    "docs/archive/test-records/MULTIPLAYER_TEST_NOTES.md": {
+      "role": "index",
+      "sha256": "2297b9b9762b982ae8cd39d538ca538a5476ba320cfb113c6db89d4b6116e2d5",
+      "size": 2533,
+      "normalized_sha256": "2297b9b9762b982ae8cd39d538ca538a5476ba320cfb113c6db89d4b6116e2d5"
+    },
+    "docs/archive/test-records/QUEST_TEST_NOTES.md": {
+      "role": "index",
+      "sha256": "7fbdc2ee21989941ddce8dc441189908d9a255bb0c9828251b560b6e06d4fedb",
+      "size": 1917,
+      "normalized_sha256": "7fbdc2ee21989941ddce8dc441189908d9a255bb0c9828251b560b6e06d4fedb"
+    },
+    "docs/archive/test-records/RUNTIME_TEST_PLAN.md": {
+      "role": "index",
+      "sha256": "d30c5a38451ee1d7261fcb0d9e8e317639ebb7e5b864be85416e7d1f62303e72",
+      "size": 6020,
+      "normalized_sha256": "d30c5a38451ee1d7261fcb0d9e8e317639ebb7e5b864be85416e7d1f62303e72"
+    },
+    "docs/archive/test-records/ad_astra_compatibility_notes.md": {
+      "role": "index",
+      "sha256": "5fdfdccffd31e76cf78f748c23ee01be14a736822421e2bc1d87dedb86ad255c",
+      "size": 4216,
+      "normalized_sha256": "5fdfdccffd31e76cf78f748c23ee01be14a736822421e2bc1d87dedb86ad255c"
+    },
+    "docs/archive/test-records/test-reports/v0.2.0-alpha-pretest.md": {
+      "role": "index",
+      "sha256": "fa06119ee6ec0eec3e2c683b8c10c45fe83591869586c16ddf11913cf1771d06",
+      "size": 689,
+      "normalized_sha256": "fa06119ee6ec0eec3e2c683b8c10c45fe83591869586c16ddf11913cf1771d06"
+    },
+    "docs/archive/test-records/test-reports/v0.4.0-alpha-pretest-quest-skeleton.md": {
+      "role": "index",
+      "sha256": "37d654a5a68331460047a3c1a0dc923b88417a6f1290f779bfa60c6a93a3ed20",
+      "size": 943,
+      "normalized_sha256": "37d654a5a68331460047a3c1a0dc923b88417a6f1290f779bfa60c6a93a3ed20"
+    },
+    "docs/archive/test-records/testing_checklist.md": {
+      "role": "index",
+      "sha256": "5eb7c4c90373095411e9e6c5e87d2b88978c778c934ba13017fd7578a0260298",
+      "size": 1489,
+      "normalized_sha256": "5eb7c4c90373095411e9e6c5e87d2b88978c778c934ba13017fd7578a0260298"
+    },
+    "docs/collaboration/EXECUTION_GUIDE.md": {
+      "role": "index",
+      "sha256": "18f1e3282dbf4a861f6ff192b78b8b1165345aaea857200490b34d9578906df0",
+      "size": 5973,
+      "normalized_sha256": "18f1e3282dbf4a861f6ff192b78b8b1165345aaea857200490b34d9578906df0"
+    },
+    "docs/collaboration/HARNESS_GUIDE.md": {
+      "role": "index",
+      "sha256": "eca4656c450e52ca7ce5d472e58e0971c9cf1cb3a978a3524b19f17f154c447c",
+      "size": 4234,
+      "normalized_sha256": "eca4656c450e52ca7ce5d472e58e0971c9cf1cb3a978a3524b19f17f154c447c"
+    },
+    "docs/collaboration/PROMPT_TEMPLATES.md": {
+      "role": "index",
+      "sha256": "f4457f285f2f6fb5ac1607323e8189a72a2014afdd6acf7d4c74bd713de2e5d7",
+      "size": 3891,
+      "normalized_sha256": "f4457f285f2f6fb5ac1607323e8189a72a2014afdd6acf7d4c74bd713de2e5d7"
+    },
+    "docs/collaboration/README.md": {
+      "role": "index",
+      "sha256": "f05abf6a276817406fc3b2499ee97c838ece0ec51a23c9882a225c75e609f3f5",
+      "size": 2916,
+      "normalized_sha256": "f05abf6a276817406fc3b2499ee97c838ece0ec51a23c9882a225c75e609f3f5"
+    },
+    "docs/collaboration/REPORT_FORMATS.md": {
+      "role": "index",
+      "sha256": "347271976b3188816162a278274b4aa140d87dba9629c015a99d4b04bca85ec8",
+      "size": 2226,
+      "normalized_sha256": "347271976b3188816162a278274b4aa140d87dba9629c015a99d4b04bca85ec8"
+    },
+    "docs/collaboration/VERIFIED_FORMATS.md": {
+      "role": "index",
+      "sha256": "a52e5e2ba97cdf0db627cc411f79469235235b7b6952357e9a18196ef1d7cb9e",
+      "size": 2198,
+      "normalized_sha256": "a52e5e2ba97cdf0db627cc411f79469235235b7b6952357e9a18196ef1d7cb9e"
+    },
+    "docs/collaboration/WORKFLOW.md": {
+      "role": "index",
+      "sha256": "ea04bccd273a7ef697b439c360a8ab4a4f6262f43a5163917f9635c5e3b198a6",
+      "size": 7241,
+      "normalized_sha256": "ea04bccd273a7ef697b439c360a8ab4a4f6262f43a5163917f9635c5e3b198a6"
+    },
+    "docs/collaboration/tasks/001_friends_preview_onboarding_review.md": {
+      "role": "index",
+      "sha256": "6bfb88e49d182a50234a059f87312815a9e24e5c0c050f33af0860f4e7795aa4",
+      "size": 2469,
+      "normalized_sha256": "6bfb88e49d182a50234a059f87312815a9e24e5c0c050f33af0860f4e7795aa4"
+    },
+    "docs/collaboration/tasks/README.md": {
+      "role": "index",
+      "sha256": "5f41bc0468945ce6319e531be4007d42cb85d5d9ae3c730fa01855841d826b54",
+      "size": 1614,
+      "normalized_sha256": "5f41bc0468945ce6319e531be4007d42cb85d5d9ae3c730fa01855841d826b54"
+    },
+    "docs/design/01_EGSF_Genesis_Design.md": {
+      "role": "index",
+      "sha256": "86f871e8d7a1ad855384985b4b3a220e5a26be16863c0e637da7c0c5da6987ff",
+      "size": 6637,
+      "normalized_sha256": "86f871e8d7a1ad855384985b4b3a220e5a26be16863c0e637da7c0c5da6987ff"
+    },
+    "docs/design/02_EGSF_Direction_Reframe_Player_Feel.md": {
+      "role": "index",
+      "sha256": "8b2188e1203c8069e2af48463b51c41125d7c2548ad3003584cf418e5ded8841",
+      "size": 5805,
+      "normalized_sha256": "8b2188e1203c8069e2af48463b51c41125d7c2548ad3003584cf418e5ded8841"
+    },
+    "docs/design/03_EGSF_Class_Progression_Calamity_Layer.md": {
+      "role": "index",
+      "sha256": "da5c2ca91345d3d1dc19eb4b2badf32713333b9bb7a64f1839fb88a95bc2a78d",
+      "size": 9274,
+      "normalized_sha256": "da5c2ca91345d3d1dc19eb4b2badf32713333b9bb7a64f1839fb88a95bc2a78d"
+    },
+    "docs/design/04_EGSF_System_Integration.md": {
+      "role": "index",
+      "sha256": "425f9a875248b700cd177c7b65bb4aa9e60950fa5109593154d2595d1902d8c6",
+      "size": 9461,
+      "normalized_sha256": "425f9a875248b700cd177c7b65bb4aa9e60950fa5109593154d2595d1902d8c6"
+    },
+    "docs/design/05_EGSF_Mod_Integration_Scope_Review.md": {
+      "role": "index",
+      "sha256": "66a738fcf8999ee8790ae6ad35a4324283f71e1ebfe1633342e767110cff22a2",
+      "size": 8781,
+      "normalized_sha256": "66a738fcf8999ee8790ae6ad35a4324283f71e1ebfe1633342e767110cff22a2"
+    },
+    "docs/design/06_EGSF_RPG_Server_Archaeology.md": {
+      "role": "index",
+      "sha256": "3bc6a9a65317ec0119a73a132b183838ceb8695f94bd9a3bfc5a34ea709547cc",
+      "size": 8109,
+      "normalized_sha256": "3bc6a9a65317ec0119a73a132b183838ceb8695f94bd9a3bfc5a34ea709547cc"
+    },
+    "docs/design/07_EGSF_Friends_Content_Preview.md": {
+      "role": "index",
+      "sha256": "cccf0284c92ce78521156d299fa047acdff18ae1d7e4bde76ee09fb97da67b3e",
+      "size": 6875,
+      "normalized_sha256": "cccf0284c92ce78521156d299fa047acdff18ae1d7e4bde76ee09fb97da67b3e"
+    },
+    "docs/design/08_EGSF_Astral_Infusion_Design.md": {
+      "role": "index",
+      "sha256": "45db1b3e185a42c6b960ad4d97526fae54e68fcf44cc24e60dcf2dc879cdd1c2",
+      "size": 15676,
+      "normalized_sha256": "45db1b3e185a42c6b960ad4d97526fae54e68fcf44cc24e60dcf2dc879cdd1c2"
+    },
+    "docs/design/09_EGSF_Seven_Curses_Backlash_Design.md": {
+      "role": "index",
+      "sha256": "bfa60c11c18754fe239c532c10b4199ee4d82aa901fb29a2f5b6c00fd0c53087",
+      "size": 15374,
+      "normalized_sha256": "bfa60c11c18754fe239c532c10b4199ee4d82aa901fb29a2f5b6c00fd0c53087"
+    },
+    "docs/design/INDEX.md": {
+      "role": "index",
+      "sha256": "1e4e556480041d0797ee5dc614f9fa7db6e58e3d8cf4b0b2fc29ece2c677d034",
+      "size": 5830,
+      "normalized_sha256": "1e4e556480041d0797ee5dc614f9fa7db6e58e3d8cf4b0b2fc29ece2c677d034"
+    },
+    "docs/design/TRANSLATION_GLOSSARY.zh-TW.md": {
+      "role": "index",
+      "sha256": "563485ae6a9068d597985822c258ec923ffb4202c20b2aad336b997c044d20d8",
+      "size": 5406,
+      "normalized_sha256": "563485ae6a9068d597985822c258ec923ffb4202c20b2aad336b997c044d20d8"
+    },
+    "docs/design/backlog/EGSF_Hypixel_Style_Life_RPG_Backlog.md": {
+      "role": "index",
+      "sha256": "2920c7e4eb2a479b16bf6cfa67a72848b4d9d9fa177c7b93ca22e1448bd03e34",
+      "size": 5398,
+      "normalized_sha256": "2920c7e4eb2a479b16bf6cfa67a72848b4d9d9fa177c7b93ca22e1448bd03e34"
+    },
+    "docs/design/questline.md": {
+      "role": "index",
+      "sha256": "f298cafcf411d9745acc4d921bd55d40a881e59d66dbeeb44f319ad43459a53b",
+      "size": 5715,
+      "normalized_sha256": "f298cafcf411d9745acc4d921bd55d40a881e59d66dbeeb44f319ad43459a53b"
+    },
+    "docs/operations/COMPATIBILITY.md": {
+      "role": "index",
+      "sha256": "2760f010f66805ba2faa8eaf00e12de7ecc5d18ac1def684a70f736afea5a05d",
+      "size": 8801,
+      "normalized_sha256": "2760f010f66805ba2faa8eaf00e12de7ecc5d18ac1def684a70f736afea5a05d"
+    },
+    "docs/operations/PROJECT_STRUCTURE.md": {
+      "role": "index",
+      "sha256": "a28f00ee0cf9dadb1e04350227bafd2afe0ec32231258cb33ace85a2275c069e",
+      "size": 7750,
+      "normalized_sha256": "a28f00ee0cf9dadb1e04350227bafd2afe0ec32231258cb33ace85a2275c069e"
+    },
+    "docs/operations/SERVER_TEST_PROTOCOL.md": {
+      "role": "index",
+      "sha256": "5ec7d26c41b00ef55ec8e8a5c3b9e28a01728d89c9a35dc5d8b8eed8a4f6bd60",
+      "size": 6210,
+      "normalized_sha256": "5ec7d26c41b00ef55ec8e8a5c3b9e28a01728d89c9a35dc5d8b8eed8a4f6bd60"
+    },
+    "docs/player/PLAYER_GUIDE.md": {
+      "role": "index",
+      "sha256": "010b8ad460a2a2ee97fe1125b000416bcca23c430675ab89caadd2737dfed48b",
+      "size": 4884,
+      "normalized_sha256": "010b8ad460a2a2ee97fe1125b000416bcca23c430675ab89caadd2737dfed48b"
+    },
+    "docs/releases/INDEX.md": {
+      "role": "index",
+      "sha256": "de96d55aedb5f87fca2b796a62b6034e8c7daccb0438d938865666b543e63d31",
+      "size": 1430,
+      "normalized_sha256": "de96d55aedb5f87fca2b796a62b6034e8c7daccb0438d938865666b543e63d31"
+    },
+    "docs/releases/v0.1.0-alpha.md": {
+      "role": "index",
+      "sha256": "551cdbc9dad7f658ee60a0a5234ce2f5b4c25ec88ce748a784e1e4ac5aa87073",
+      "size": 1458,
+      "normalized_sha256": "551cdbc9dad7f658ee60a0a5234ce2f5b4c25ec88ce748a784e1e4ac5aa87073"
+    },
+    "docs/releases/v0.6.0-alpha.md": {
+      "role": "index",
+      "sha256": "b589e8d080236c215934ae9bb2310e500f5064622aaf748448fcd6ff78bb2934",
+      "size": 4032,
+      "normalized_sha256": "b589e8d080236c215934ae9bb2310e500f5064622aaf748448fcd6ff78bb2934"
+    },
+    "docs/releases/v0.7.0-alpha.md": {
+      "role": "index",
+      "sha256": "dbb3fafafe7e82031c2e571ad38517dfc1a64c496f9c01e4ef2276b954795bc4",
+      "size": 4962,
+      "normalized_sha256": "dbb3fafafe7e82031c2e571ad38517dfc1a64c496f9c01e4ef2276b954795bc4"
+    },
+    "docs/releases/v0.7.1-alpha.md": {
+      "role": "index",
+      "sha256": "ea8dc91be5930d808766f4ee437d31a3648d7d092747eb046cf61977e59149ca",
+      "size": 3575,
+      "normalized_sha256": "ea8dc91be5930d808766f4ee437d31a3648d7d092747eb046cf61977e59149ca"
+    },
+    "docs/releases/v0.7.2-alpha.md": {
+      "role": "index",
+      "sha256": "c273a28adf20ac3bfd09a741ff690bed15cf7f80a74de7c5bb4d1b351918c5cd",
+      "size": 3925,
+      "normalized_sha256": "c273a28adf20ac3bfd09a741ff690bed15cf7f80a74de7c5bb4d1b351918c5cd"
+    },
+    "docs/releases/v0.7.3-alpha.md": {
+      "role": "index",
+      "sha256": "33f6f3de3b87bdafa0003248965fac2a1eb06a7042be7a206143bd536da3f6be",
+      "size": 645,
+      "normalized_sha256": "33f6f3de3b87bdafa0003248965fac2a1eb06a7042be7a206143bd536da3f6be"
+    },
+    "docs/releases/v0.7.4-alpha.md": {
+      "role": "index",
+      "sha256": "e19359a8132114bf06c1aafd7df3ca93d13ff48bedbbca27487bb6801112fbe9",
+      "size": 4500,
+      "normalized_sha256": "e19359a8132114bf06c1aafd7df3ca93d13ff48bedbbca27487bb6801112fbe9"
+    },
+    "docs/releases/v0.7.5-alpha.md": {
+      "role": "index",
+      "sha256": "073740f5e69bed31c2c06f31c68b9111b2db6340d859426f40dea6874fd9cc1f",
+      "size": 3220,
+      "normalized_sha256": "073740f5e69bed31c2c06f31c68b9111b2db6340d859426f40dea6874fd9cc1f"
+    },
+    "docs/releases/v0.8.1-friends-feedback-test.md": {
+      "role": "index",
+      "sha256": "0d98fc019d7c14547d691c2090c8fae97933bb9ee4b387d7ad35bad7ae115e0e",
+      "size": 2337,
+      "normalized_sha256": "0d98fc019d7c14547d691c2090c8fae97933bb9ee4b387d7ad35bad7ae115e0e"
+    },
+    "docs/testing/FRIENDS_TEST_GUIDE.zh-TW.md": {
+      "role": "index",
+      "sha256": "e06f40985b9f99d5a3888c7e56571ab0d9c3d75e39d38bd541e1e7ad1fdd015b",
+      "size": 8481,
+      "normalized_sha256": "e06f40985b9f99d5a3888c7e56571ab0d9c3d75e39d38bd541e1e7ad1fdd015b"
+    },
+    "docs/testing/TESTING_GUIDE.md": {
+      "role": "index",
+      "sha256": "5f68963317d24a5270bab79cb77d12a045fa86931c49cfd63da26c7a025d539c",
+      "size": 5849,
+      "normalized_sha256": "5f68963317d24a5270bab79cb77d12a045fa86931c49cfd63da26c7a025d539c"
+    },
+    "index.toml": {
+      "role": "index",
+      "sha256": "b77c0541bdb25db384d37443d0175674cc9c64f3ac1b3975110be8c7e5d48615",
+      "size": 9118,
+      "normalized_sha256": "b77c0541bdb25db384d37443d0175674cc9c64f3ac1b3975110be8c7e5d48615"
+    },
+    "kubejs/server_scripts/eg_stages.js": {
+      "role": "index",
+      "sha256": "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde",
+      "size": 2575,
+      "normalized_sha256": "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde"
+    },
+    "mods/ad-astra.pw.toml": {
+      "role": "index",
+      "sha256": "d7a30358cb8314c296fec14e4ea74b8301edf093d6054dafac121e8fe9ac434f",
+      "size": 420,
+      "normalized_sha256": "d7a30358cb8314c296fec14e4ea74b8301edf093d6054dafac121e8fe9ac434f"
+    },
+    "mods/appleskin.pw.toml": {
+      "role": "index",
+      "sha256": "8d0321177fed4a0b48554c40158b43db62f6cdaa768f584ef6a11575dfaa6223",
+      "size": 261,
+      "normalized_sha256": "8d0321177fed4a0b48554c40158b43db62f6cdaa768f584ef6a11575dfaa6223"
+    },
+    "mods/architectury-api.pw.toml": {
+      "role": "index",
+      "sha256": "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8",
+      "size": 263,
+      "normalized_sha256": "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8"
+    },
+    "mods/artifacts.pw.toml": {
+      "role": "index",
+      "sha256": "2de33e7d757cfa1108b05247cb59f6db2f08000af824da328322d78cdb7c4c4d",
+      "size": 407,
+      "normalized_sha256": "2de33e7d757cfa1108b05247cb59f6db2f08000af824da328322d78cdb7c4c4d"
+    },
+    "mods/balm.pw.toml": {
+      "role": "index",
+      "sha256": "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a",
+      "size": 254,
+      "normalized_sha256": "fe46309d954710019e07813bcdc6db2c775b07795f3628cb559610adcb129a9a"
+    },
+    "mods/bookshelf.pw.toml": {
+      "role": "index",
+      "sha256": "49f9d94df22724949d2ce1ae70b73461dfe7d92ce6ad6ceae9739cef0b34a089",
+      "size": 261,
+      "normalized_sha256": "49f9d94df22724949d2ce1ae70b73461dfe7d92ce6ad6ceae9739cef0b34a089"
+    },
+    "mods/botarium.pw.toml": {
+      "role": "index",
+      "sha256": "440a806e54d48cd4c5ef447ff8f1a6cd9a99d53d02ab90d50204be9b31c2f30d",
+      "size": 416,
+      "normalized_sha256": "440a806e54d48cd4c5ef447ff8f1a6cd9a99d53d02ab90d50204be9b31c2f30d"
+    },
+    "mods/caelus.pw.toml": {
+      "role": "index",
+      "sha256": "8a8ea0af79b88d9c192d208aa5be4bacd934e2b92d4721566e2e796eb9761e10",
+      "size": 416,
+      "normalized_sha256": "8a8ea0af79b88d9c192d208aa5be4bacd934e2b92d4721566e2e796eb9761e10"
+    },
+    "mods/cloth-config.pw.toml": {
+      "role": "index",
+      "sha256": "e3dd03e7fec88831974857e2cdded54dd5c5bdcaa3f6d6248c2800e82db4dd41",
+      "size": 424,
+      "normalized_sha256": "e3dd03e7fec88831974857e2cdded54dd5c5bdcaa3f6d6248c2800e82db4dd41"
+    },
+    "mods/clumps.pw.toml": {
+      "role": "index",
+      "sha256": "903352ffbd84d4b95fed905893f4715d9c3f88ec9fff6fb06f6e359e0b839dc3",
+      "size": 416,
+      "normalized_sha256": "903352ffbd84d4b95fed905893f4715d9c3f88ec9fff6fb06f6e359e0b839dc3"
+    },
+    "mods/create.pw.toml": {
+      "role": "index",
+      "sha256": "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c",
+      "size": 398,
+      "normalized_sha256": "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
+    },
+    "mods/curios.pw.toml": {
+      "role": "index",
+      "sha256": "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2",
+      "size": 418,
+      "normalized_sha256": "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
+    },
+    "mods/dungeoncrawl.pw.toml": {
+      "role": "index",
+      "sha256": "c06061257b39a438aaa6205493090ac772564bc2d53d2c34a664de117fe6f4c0",
+      "size": 425,
+      "normalized_sha256": "c06061257b39a438aaa6205493090ac772564bc2d53d2c34a664de117fe6f4c0"
+    },
+    "mods/embeddium.pw.toml": {
+      "role": "index",
+      "sha256": "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e",
+      "size": 417,
+      "normalized_sha256": "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
+    },
+    "mods/entityculling.pw.toml": {
+      "role": "index",
+      "sha256": "c9081708402e1fd5e5936c3119a43717c0fd51185f940faa79dbbd8670d55a40",
+      "size": 440,
+      "normalized_sha256": "c9081708402e1fd5e5936c3119a43717c0fd51185f940faa79dbbd8670d55a40"
+    },
+    "mods/farmers-delight.pw.toml": {
+      "role": "index",
+      "sha256": "d478b8c5149f9c37bc0072d0608e2fbc6ff38cd3d15420f99c8a7ed2a55c8f0e",
+      "size": 424,
+      "normalized_sha256": "d478b8c5149f9c37bc0072d0608e2fbc6ff38cd3d15420f99c8a7ed2a55c8f0e"
+    },
+    "mods/ferrite-core.pw.toml": {
+      "role": "index",
+      "sha256": "902bac905b93271f02bd0951a22bac06a3da24f5c237fcaeb469e14a7679e508",
+      "size": 411,
+      "normalized_sha256": "902bac905b93271f02bd0951a22bac06a3da24f5c237fcaeb469e14a7679e508"
+    },
+    "mods/ftb-chunks-forge.pw.toml": {
+      "role": "index",
+      "sha256": "6c6893267694003c8fc8a2c1a89e961d28add27991a26b60abedda1eafb0eb57",
+      "size": 268,
+      "normalized_sha256": "6c6893267694003c8fc8a2c1a89e961d28add27991a26b60abedda1eafb0eb57"
+    },
+    "mods/ftb-library-forge.pw.toml": {
+      "role": "index",
+      "sha256": "9db3089b9504be94818135f452daa1f2abbcb478d31abba2b19833902ea5daa5",
+      "size": 271,
+      "normalized_sha256": "9db3089b9504be94818135f452daa1f2abbcb478d31abba2b19833902ea5daa5"
+    },
+    "mods/ftb-quests-forge.pw.toml": {
+      "role": "index",
+      "sha256": "7b2cc450f553b82439ae9422b8c2b4406dae1af3c48f7ce791a3576acff1d122",
+      "size": 269,
+      "normalized_sha256": "7b2cc450f553b82439ae9422b8c2b4406dae1af3c48f7ce791a3576acff1d122"
+    },
+    "mods/ftb-teams-forge.pw.toml": {
+      "role": "index",
+      "sha256": "efda76423b21f9bfab4ad8d0411f0b06a199ab7e3e12ca16dc0586c1828b8f07",
+      "size": 266,
+      "normalized_sha256": "efda76423b21f9bfab4ad8d0411f0b06a199ab7e3e12ca16dc0586c1828b8f07"
+    },
+    "mods/game-stages.pw.toml": {
+      "role": "index",
+      "sha256": "5a9ee402a1db67f84efd6f1b5665ece795c1d2b5d477152f2d5853319c1ed590",
+      "size": 263,
+      "normalized_sha256": "5a9ee402a1db67f84efd6f1b5665ece795c1d2b5d477152f2d5853319c1ed590"
+    },
+    "mods/geckolib.pw.toml": {
+      "role": "index",
+      "sha256": "7ffae05c3b8101588b231db8116c34b36a77a0c6e6d7e6af867ae1c5b47e4d10",
+      "size": 416,
+      "normalized_sha256": "7ffae05c3b8101588b231db8116c34b36a77a0c6e6d7e6af867ae1c5b47e4d10"
+    },
+    "mods/item-filters.pw.toml": {
+      "role": "index",
+      "sha256": "ff92eddb2bf6f1afe9fa7fc73d63ea9419e0cff77fbd4fd2936b51525fe9340c",
+      "size": 270,
+      "normalized_sha256": "ff92eddb2bf6f1afe9fa7fc73d63ea9419e0cff77fbd4fd2936b51525fe9340c"
+    },
+    "mods/jade.pw.toml": {
+      "role": "index",
+      "sha256": "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6",
+      "size": 256,
+      "normalized_sha256": "8f359d190506a6f824763b8e7c390d9e22204ef11e3ffa5ef980000d17e2c2b6"
+    },
+    "mods/jei.pw.toml": {
+      "role": "index",
+      "sha256": "db5b0e49607113eb8740838753460e6d2f8c718828fcc52b9fefd13adc4e4cae",
+      "size": 433,
+      "normalized_sha256": "db5b0e49607113eb8740838753460e6d2f8c718828fcc52b9fefd13adc4e4cae"
+    },
+    "mods/kubejs.pw.toml": {
+      "role": "index",
+      "sha256": "ed086cdfde6ba4bb175468a76f3df3b9517aea3fe95b09bed0f1fa70f7caeb6a",
+      "size": 258,
+      "normalized_sha256": "ed086cdfde6ba4bb175468a76f3df3b9517aea3fe95b09bed0f1fa70f7caeb6a"
+    },
+    "mods/lootr.pw.toml": {
+      "role": "index",
+      "sha256": "e8b4876d403b4f4daab64bad9704a5b271a33031d1ff8d19d23ebd1e3b8dd39a",
+      "size": 272,
+      "normalized_sha256": "e8b4876d403b4f4daab64bad9704a5b271a33031d1ff8d19d23ebd1e3b8dd39a"
+    },
+    "mods/macaws-bridges.pw.toml": {
+      "role": "index",
+      "sha256": "0261f8fb3b0880b572044ff084edceecd2c91f39ee71c477198313ac2a253f4d",
+      "size": 431,
+      "normalized_sha256": "0261f8fb3b0880b572044ff084edceecd2c91f39ee71c477198313ac2a253f4d"
+    },
+    "mods/macaws-doors.pw.toml": {
+      "role": "index",
+      "sha256": "4284966610d17ac7b865da1fad6738b9e24704e817a6cc6650d423db285e6e5a",
+      "size": 425,
+      "normalized_sha256": "4284966610d17ac7b865da1fad6738b9e24704e817a6cc6650d423db285e6e5a"
+    },
+    "mods/macaws-fences-and-walls.pw.toml": {
+      "role": "index",
+      "sha256": "f009a177c97f9d189e9131704095060364b8201c83bd9118d89a11d25a6d2655",
+      "size": 444,
+      "normalized_sha256": "f009a177c97f9d189e9131704095060364b8201c83bd9118d89a11d25a6d2655"
+    },
+    "mods/macaws-furniture.pw.toml": {
+      "role": "index",
+      "sha256": "976e9c737f3dd39812d87bc8dd8082197a77aeb5e08f5082d22643ac36f46a4f",
+      "size": 437,
+      "normalized_sha256": "976e9c737f3dd39812d87bc8dd8082197a77aeb5e08f5082d22643ac36f46a4f"
+    },
+    "mods/macaws-lights-and-lamps.pw.toml": {
+      "role": "index",
+      "sha256": "44fccb986223e1c667e26127337c41e651c90b6583316d9f0f83201f668a8d23",
+      "size": 438,
+      "normalized_sha256": "44fccb986223e1c667e26127337c41e651c90b6583316d9f0f83201f668a8d23"
+    },
+    "mods/macaws-paths-and-pavings.pw.toml": {
+      "role": "index",
+      "sha256": "bd555889b27b5518a595b27838464e1af089c282873fde02ea50c75394edb25f",
+      "size": 443,
+      "normalized_sha256": "bd555889b27b5518a595b27838464e1af089c282873fde02ea50c75394edb25f"
+    },
+    "mods/macaws-roofs.pw.toml": {
+      "role": "index",
+      "sha256": "1191b45155fb0f23f5a3fe4b9170b73f52a1c9599de504fe922e4ea7e7e3c95f",
+      "size": 425,
+      "normalized_sha256": "1191b45155fb0f23f5a3fe4b9170b73f52a1c9599de504fe922e4ea7e7e3c95f"
+    },
+    "mods/macaws-trapdoors.pw.toml": {
+      "role": "index",
+      "sha256": "8728882e97cd2c7ff8746d95598be7f15fcb392dc9a146319504e0119f052a8e",
+      "size": 437,
+      "normalized_sha256": "8728882e97cd2c7ff8746d95598be7f15fcb392dc9a146319504e0119f052a8e"
+    },
+    "mods/macaws-windows.pw.toml": {
+      "role": "index",
+      "sha256": "eb6a1c1455632c6ea1ab12259d7082a19400be018eae95e44150a9f8fed330eb",
+      "size": 437,
+      "normalized_sha256": "eb6a1c1455632c6ea1ab12259d7082a19400be018eae95e44150a9f8fed330eb"
+    },
+    "mods/modernfix.pw.toml": {
+      "role": "index",
+      "sha256": "fc70f2509f3a5d82504637fe781c30d10de0dec31e73a2a0245cf90532879969",
+      "size": 429,
+      "normalized_sha256": "fc70f2509f3a5d82504637fe781c30d10de0dec31e73a2a0245cf90532879969"
+    },
+    "mods/patchouli.pw.toml": {
+      "role": "index",
+      "sha256": "2242b76f7c4ee6d7f396a2d1380bee615d78408d00bff5cca38e4df777b18dc5",
+      "size": 413,
+      "normalized_sha256": "2242b76f7c4ee6d7f396a2d1380bee615d78408d00bff5cca38e4df777b18dc5"
+    },
+    "mods/resourceful-config.pw.toml": {
+      "role": "index",
+      "sha256": "b85e8417e797be3fdae046c487eeda8f54cdc88f3f20e462e0e229f8dd734214",
+      "size": 444,
+      "normalized_sha256": "b85e8417e797be3fdae046c487eeda8f54cdc88f3f20e462e0e229f8dd734214"
+    },
+    "mods/resourceful-lib.pw.toml": {
+      "role": "index",
+      "sha256": "5c07edd0c8fe82e85efd6c027476ba54cf98291526803b74614c3436292e4ab6",
+      "size": 437,
+      "normalized_sha256": "5c07edd0c8fe82e85efd6c027476ba54cf98291526803b74614c3436292e4ab6"
+    },
+    "mods/rhino.pw.toml": {
+      "role": "index",
+      "sha256": "ca4411ac6d8a9a892948bb63cd0ba52ae5523ca5e257632d6ae8c933b660c5ee",
+      "size": 256,
+      "normalized_sha256": "ca4411ac6d8a9a892948bb63cd0ba52ae5523ca5e257632d6ae8c933b660c5ee"
+    },
+    "mods/simple-voice-chat.pw.toml": {
+      "role": "index",
+      "sha256": "da0719fb7c5c7d11b011f49b87313fcaf48d0c86826a6973ebde66018d8b7eab",
+      "size": 429,
+      "normalized_sha256": "da0719fb7c5c7d11b011f49b87313fcaf48d0c86826a6973ebde66018d8b7eab"
+    },
+    "mods/simply-swords.pw.toml": {
+      "role": "index",
+      "sha256": "60fffd9990be454a9dffb87a2804f654e6deb21b2ee63924ef4a84d443612352",
+      "size": 284,
+      "normalized_sha256": "60fffd9990be454a9dffb87a2804f654e6deb21b2ee63924ef4a84d443612352"
+    },
+    "mods/sophisticated-backpacks.pw.toml": {
+      "role": "index",
+      "sha256": "6bbd8a47475b37a85c13b60e7025ffe225834d4f6e6669df7d4d8f46c738bee2",
+      "size": 461,
+      "normalized_sha256": "6bbd8a47475b37a85c13b60e7025ffe225834d4f6e6669df7d4d8f46c738bee2"
+    },
+    "mods/sophisticated-core.pw.toml": {
+      "role": "index",
+      "sha256": "1475a50d80b62a60ab6b79405c5b677662d740db937506a3502d4253240d7376",
+      "size": 444,
+      "normalized_sha256": "1475a50d80b62a60ab6b79405c5b677662d740db937506a3502d4253240d7376"
+    },
+    "mods/sophisticated-storage.pw.toml": {
+      "role": "index",
+      "sha256": "e58849663e4e64cc144649a91ba67bed09ae7279eb808c069da7e509bb115758",
+      "size": 453,
+      "normalized_sha256": "e58849663e4e64cc144649a91ba67bed09ae7279eb808c069da7e509bb115758"
+    },
+    "mods/terramity.pw.toml": {
+      "role": "index",
+      "sha256": "06c36396febd12e1bc59a2d8bdfd48377a1081941160d2d968d2e307d2774658",
+      "size": 419,
+      "normalized_sha256": "06c36396febd12e1bc59a2d8bdfd48377a1081941160d2d968d2e307d2774658"
+    },
+    "mods/the-twilight-forest.pw.toml": {
+      "role": "index",
+      "sha256": "d1f859de9867b7433305aef1631aa22a436a4c3924474a21c0a22ab5f2093c04",
+      "size": 281,
+      "normalized_sha256": "d1f859de9867b7433305aef1631aa22a436a4c3924474a21c0a22ab5f2093c04"
+    },
+    "mods/waystones.pw.toml": {
+      "role": "index",
+      "sha256": "5ab6f2a4a50bd53506496d3da0c2c09d5a3ca363c3ebc7ca8641ecd3f7104365",
+      "size": 261,
+      "normalized_sha256": "5ab6f2a4a50bd53506496d3da0c2c09d5a3ca363c3ebc7ca8641ecd3f7104365"
+    },
+    "mods/xaeros-minimap.pw.toml": {
+      "role": "index",
+      "sha256": "bf8edb8df8ec3804522e688c8ffbc351559821488d7faef2b7e90b13cee0109b",
+      "size": 270,
+      "normalized_sha256": "bf8edb8df8ec3804522e688c8ffbc351559821488d7faef2b7e90b13cee0109b"
+    },
+    "mods/xaeros-world-map.pw.toml": {
+      "role": "index",
+      "sha256": "a6c4f857d620b6cefac579b443435020801befa64a7e6a356a8cf9520572f986",
+      "size": 273,
+      "normalized_sha256": "a6c4f857d620b6cefac579b443435020801befa64a7e6a356a8cf9520572f986"
+    },
+    "pack.toml": {
+      "role": "index",
+      "sha256": "85984f2b5abce29693300d678a127e748aa5271eec8243a78297a220d0c912dc",
+      "size": 289,
+      "normalized_sha256": "85984f2b5abce29693300d678a127e748aa5271eec8243a78297a220d0c912dc"
+    },
+    "scripts/check_duplicate_mods.py": {
+      "role": "index",
+      "sha256": "bc793afc11e1b713bf9bebb4ec8bf62e7b4c670ba5ebaf531b8be4ba389f0c8b",
+      "size": 2935,
+      "normalized_sha256": "bc793afc11e1b713bf9bebb4ec8bf62e7b4c670ba5ebaf531b8be4ba389f0c8b"
+    },
+    "scripts/check_md_links.py": {
+      "role": "index",
+      "sha256": "6baece3a30bc8cfaf3873228a22374e5f36fe13efd0c2cb7746d5b15f6b9703b",
+      "size": 2116,
+      "normalized_sha256": "6baece3a30bc8cfaf3873228a22374e5f36fe13efd0c2cb7746d5b15f6b9703b"
+    },
+    "scripts/ci/server_smoke_test.sh": {
+      "role": "observe",
+      "sha256": "375e5cc6fa443951984be38f3c543fb87da843e5c20f7bc88e9f035e50f6241c",
+      "size": 6599,
+      "normalized_sha256": "375e5cc6fa443951984be38f3c543fb87da843e5c20f7bc88e9f035e50f6241c"
+    },
+    "scripts/legacy/add_phase1_ad_astra_mods.sh": {
+      "role": "index",
+      "sha256": "b2d6e727e47e2691813b60fb6e502b8d5cdcb2ad4aab59d8f74e3d75272b1417",
+      "size": 917,
+      "normalized_sha256": "b2d6e727e47e2691813b60fb6e502b8d5cdcb2ad4aab59d8f74e3d75272b1417"
+    },
+    "scripts/legacy/add_phase1_core_mods.sh": {
+      "role": "index",
+      "sha256": "b5d2853ddf655b7588f84ea14554b217f84d16cd246ecc82a63351fb14ff7337",
+      "size": 777,
+      "normalized_sha256": "b5d2853ddf655b7588f84ea14554b217f84d16cd246ecc82a63351fb14ff7337"
+    },
+    "scripts/validate_pack_structure.py": {
+      "role": "index",
+      "sha256": "31780cd58f49ca2a71c36d76c2118e1ec68c9cdc68cf727cbf74206928ed9745",
+      "size": 1310,
+      "normalized_sha256": "31780cd58f49ca2a71c36d76c2118e1ec68c9cdc68cf727cbf74206928ed9745"
+    }
+  },
+  "managed_scope": {
+    "version": "managed-scope-baseline/v1",
+    "policy_identity": "e0f548d87fe5462c412a1c54409871a60ddf2ae5c30609258ff8739fdfcc8e76",
+    "observe_change_policy": "review_required",
+    "budget_policy_identity": "15e9b37a6c57e9bf03c9df3d0d049eb5b9a7f5540f9d34960408114e2538a32d",
+    "budget_policy": {
+      "version": "cognition-budget-policy/v1",
+      "mode": "enforce",
+      "whole_index": {
+        "target_tokens": 200000,
+        "warning_tokens": 300000,
+        "max_tokens": 400000
+      },
+      "r": [
+        {
+          "min_c": 1,
+          "max_c": 4,
+          "target_tokens": 25,
+          "max_tokens": 50
+        },
+        {
+          "min_c": 5,
+          "max_c": 7,
+          "target_tokens": 45,
+          "max_tokens": 90
+        },
+        {
+          "min_c": 8,
+          "max_c": 8,
+          "target_tokens": 70,
+          "max_tokens": 140
+        },
+        {
+          "min_c": 9,
+          "max_c": 9,
+          "target_tokens": 90,
+          "max_tokens": 180
+        }
+      ],
+      "s": [
+        {
+          "min_c": 1,
+          "max_c": 4,
+          "target_tokens": 20,
+          "max_tokens": 40
+        },
+        {
+          "min_c": 5,
+          "max_c": 7,
+          "target_tokens": 40,
+          "max_tokens": 80
+        },
+        {
+          "min_c": 8,
+          "max_c": 8,
+          "target_tokens": 70,
+          "max_tokens": 140
+        },
+        {
+          "min_c": 9,
+          "max_c": 9,
+          "target_tokens": 100,
+          "max_tokens": 200
+        }
+      ]
+    },
+    "apply_authorization_mode": "auto"
+  }
+}
