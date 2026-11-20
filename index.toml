@@ -58,7 +58,7 @@ hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
 
 [[files]]
 file = "kubejs/server_scripts/eg_stages.js"
-hash = "40d0ba3cf710a090c0e820dc3278bead4935577526b1f1d29fa456fb91e9fcde"
+hash = "ab1779eb30eeb75612f67df137cd755908661dddac9f78e37451e3c89bba57b4"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
