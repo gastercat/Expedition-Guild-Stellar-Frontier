@@ -10,8 +10,10 @@
 // - FTB Quests command rewards in config/ftbquests/quests/chapters/ grant the guild,
 //   chapter, class, and gate stages. Quest files write the stage ids as literal
 //   strings and do not read EG_STAGES, so renaming a value here changes nothing in game.
-// - Class mutual exclusion is done by the Chapter 1 class quest rewards, which remove
-//   the other two class stages before adding their own. This file does not enforce it.
+// - Class mutual exclusion comes from the Chapter 1 class quests: each one also has
+//   rewards that remove the other two class stages. Those rewards are claimed one by
+//   one (auto: "disabled"), so exclusion holds only once a player claims all of them.
+//   This file does not enforce it.
 // - The hybrid class and system stages below are names only; no quest grants them yet.
 // - Equipment locks, Boss Gate checks, siege triggers, and damage changes are not implemented here.
 //
