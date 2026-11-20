@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""檢查 mods/ 內未來放入的 jar 是否有重複或明顯 loader 錯誤。"""
+"""檢查 mods/ 的 mod 是否有重複或明顯 loader 錯誤。
+
+檢查對象是每個 mods/*.pw.toml 的 `filename`（packwiz 下載後的 jar 名稱），
+以及任何直接放在 mods/ 的 jar。
+"""
 
 from pathlib import Path
 import re
 import sys
+import tomllib
 
 ROOT = Path(__file__).resolve().parents[1]
 MODS_DIR = ROOT / "mods"
@@ -23,17 +28,14 @@ KNOWN_MODS = {
     "resourceful_lib": ["resourceful-lib", "resourceful_lib"],
 }
 
+# Create 6 與 Twilight Forest 已在 v0.8.x 加入，不再列為禁止線索。
 FORBIDDEN_HINTS = [
     "fabric",
     "quilt",
-    "create-6",
-    "create6",
     "appliedenergistics2",
     "ae2",
     "minecolonies",
     "cataclysm",
-    "twilightforest",
-    "twilight-forest",
     "blue-skies",
     "blueskies",
 ]
@@ -64,33 +66,52 @@ def pass_(message: str) -> None:
     print(f"[PASS] {message}")
 
 
+def collect_jar_names(errors: list[str]) -> list[tuple[str, str]]:
+    """回傳 (jar 名稱, 來源檔案) 清單。"""
+    names = []
+    for meta in sorted(MODS_DIR.glob("*.pw.toml")):
+        try:
+            data = tomllib.loads(meta.read_text(encoding="utf-8"))
+        except tomllib.TOMLDecodeError as exc:
+            errors.append(f"{meta.name} 無法解析：{exc}")
+            continue
+        filename = data.get("filename")
+        if not isinstance(filename, str) or not filename:
+            errors.append(f"{meta.name} 缺少 filename 欄位")
+            continue
+        names.append((filename, meta.name))
+    for jar in sorted(MODS_DIR.glob("*.jar")):
+        names.append((jar.name, jar.name))
+    return names
+
+
 def main() -> int:
     if not MODS_DIR.exists():
         fail(f"找不到 mods 資料夾：{MODS_DIR}")
         return 1
 
-    jars = sorted(MODS_DIR.glob("*.jar"))
-    if not jars:
-        pass_("mods/ 目前沒有 jar；符合『先不下載模組』的專案狀態")
-        return 0
-
     errors = []
     warnings = []
     grouped = {}
 
-    for jar in jars:
-        lower = jar.name.lower()
-        grouped.setdefault(canonical_name(jar.name), []).append(jar.name)
+    entries = collect_jar_names(errors)
+    if not entries and not errors:
+        fail("mods/ 沒有任何 .pw.toml 或 jar")
+        return 1
+
+    for name, source in entries:
+        lower = name.lower()
+        grouped.setdefault(canonical_name(name), []).append(f"{name}（{source}）")
 
         for hint in FORBIDDEN_HINTS:
             if hint in lower:
-                errors.append(f"{jar.name} 含有第一版不允許或錯誤 loader 線索：{hint}")
+                errors.append(f"{name}（{source}）含有不允許或錯誤 loader 線索：{hint}")
 
         if "1.20.1" not in lower:
-            warnings.append(f"{jar.name} 檔名未標示 1.20.1，需人工確認版本")
+            warnings.append(f"{name}（{source}）檔名未標示 1.20.1，需人工確認版本")
 
         if "forge" not in lower:
-            warnings.append(f"{jar.name} 檔名未標示 Forge，需人工確認 loader")
+            warnings.append(f"{name}（{source}）檔名未標示 Forge，需人工確認 loader")
 
     for canonical, names in grouped.items():
         if canonical and len(names) > 1:
@@ -104,7 +125,7 @@ def main() -> int:
             fail(error)
         return 1
 
-    pass_("mods/ jar 檔未發現重複或明顯違規線索")
+    pass_(f"{len(entries)} 個 mod 未發現重複或明顯違規線索")
     return 0
 
 

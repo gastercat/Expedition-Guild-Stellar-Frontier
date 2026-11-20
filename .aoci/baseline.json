@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-11-20T20:49:12Z",
-  "updated_at": "2026-11-20T21:20:14Z",
+  "updated_at": "2026-11-20T21:29:48Z",
   "files": {
     ".claude/skills/merge-prep/SKILL.md": {
       "role": "index",
@@ -77,15 +77,15 @@
     },
     "README.md": {
       "role": "index",
-      "sha256": "5a7e676c2540c72f59d8bfc8a8f69ee8fc7f9745d1c92eb0a337df41c0be0770",
-      "size": 7824,
-      "normalized_sha256": "5a7e676c2540c72f59d8bfc8a8f69ee8fc7f9745d1c92eb0a337df41c0be0770"
+      "sha256": "c4042ad12a76e8272c4790889f671ea64bdf46f16b61ce9290074c869499f52a",
+      "size": 7686,
+      "normalized_sha256": "c4042ad12a76e8272c4790889f671ea64bdf46f16b61ce9290074c869499f52a"
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "f374ca5e38f704a032e6394abebf784c08f47a2133591be6c1b85ccf2bb891fd",
-      "size": 45907,
-      "normalized_sha256": "f374ca5e38f704a032e6394abebf784c08f47a2133591be6c1b85ccf2bb891fd"
+      "sha256": "bb6425cc6fca47b2e4e78f4cf1d3af1a5ccc3daa3d95065a6617000f127c14b5",
+      "size": 45888,
+      "normalized_sha256": "bb6425cc6fca47b2e4e78f4cf1d3af1a5ccc3daa3d95065a6617000f127c14b5"
     },
     "aoci.meta.txt": {
       "role": "index",
@@ -887,9 +887,9 @@
     },
     "docs/releases/INDEX.md": {
       "role": "index",
-      "sha256": "de96d55aedb5f87fca2b796a62b6034e8c7daccb0438d938865666b543e63d31",
-      "size": 1430,
-      "normalized_sha256": "de96d55aedb5f87fca2b796a62b6034e8c7daccb0438d938865666b543e63d31"
+      "sha256": "5d145db8cc338d0e231f82f93e29d0216d686db9dd888058cdd53eada5e998eb",
+      "size": 1776,
+      "normalized_sha256": "5d145db8cc338d0e231f82f93e29d0216d686db9dd888058cdd53eada5e998eb"
     },
     "docs/releases/v0.1.0-alpha.md": {
       "role": "index",
@@ -1289,9 +1289,9 @@
     },
     "scripts/check_duplicate_mods.py": {
       "role": "index",
-      "sha256": "bc793afc11e1b713bf9bebb4ec8bf62e7b4c670ba5ebaf531b8be4ba389f0c8b",
-      "size": 2935,
-      "normalized_sha256": "bc793afc11e1b713bf9bebb4ec8bf62e7b4c670ba5ebaf531b8be4ba389f0c8b"
+      "sha256": "a91ed7d74421923e103cc5fa3dae33933bf9ae3b5918b6db95a4adf7120d2a92",
+      "size": 3841,
+      "normalized_sha256": "a91ed7d74421923e103cc5fa3dae33933bf9ae3b5918b6db95a4adf7120d2a92"
     },
     "scripts/check_md_links.py": {
       "role": "index",

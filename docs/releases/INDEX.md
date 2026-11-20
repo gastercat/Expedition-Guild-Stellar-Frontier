@@ -5,6 +5,8 @@ Full release notes are listed newest to oldest.
 | Version | Notes | Summary |
 |---|---|---|
 | v0.8.1 Friends Feedback Test | [v0.8.1-friends-feedback-test.md](v0.8.1-friends-feedback-test.md) | GitHub pre-release for Chapter 0 guild onboarding, Chapter 1 Create / Ad Astra / class preview polish, and low-risk early reward tuning. |
+| v0.7.5-alpha | [v0.7.5-alpha.md](v0.7.5-alpha.md) | Chapter 7 astral license preapproval MVP gate using guild paperwork, supplies, launch site, and Create material tasks. |
+| v0.7.4-alpha | [v0.7.4-alpha.md](v0.7.4-alpha.md) | Chapter 6 mid gear certification MVP gate using gear submissions and a small combat check; no real equipment lock. |
 | v0.7.3-alpha | [v0.7.3-alpha.md](v0.7.3-alpha.md) | Chapter 5 calamity foreshadowing MVP gate using item and kill tasks; no real Guild Threat or disaster system. |
 | v0.7.2-alpha | [v0.7.2-alpha.md](v0.7.2-alpha.md) | Chapter 4 first defense MVP gate using supply and vanilla mob kill tasks. |
 | v0.7.1-alpha | [v0.7.1-alpha.md](v0.7.1-alpha.md) | Chapter 3 first hunt Blaze kill task and GameStages reward validation. |

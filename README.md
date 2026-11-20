@@ -26,7 +26,7 @@ Latest visible release tag / notes in this repo: `v0.8.1-friends-feedback-test`.
 
 Current development state: v0.8.1 Friends Feedback Test pre-release; waiting for friends feedback on early quest feel, reward feel, and Create / Ad Astra preview clarity.
 
-`pack.toml` 仍標示 pack version `0.1.0`，而 GitHub pre-release / release notes 已整理到 `v0.8.1-friends-feedback-test`。因此請以 release notes 與 changelog 作為目前開發脈絡，以 pack metadata 版本作為尚未同步的打包資訊看待。
+`pack.toml` 的 pack version 已對齊為 `0.8.1`（PR #8），與 GitHub pre-release `v0.8.1-friends-feedback-test` 一致。
 
 ## 已有主軸
 
