@@ -12,6 +12,11 @@ This changelog is a short project overview. Full release notes are organized in 
 - 新增 Claude Code skills：`/release`（版本發佈流程）與 `/merge-prep`（merge 前檢查與 merge 後同步）（PR #16）。
 - Agent 規則層調整：必讀文件減為 `AGENTS.md` 與 `PROGRESS.md`；對話中的明確指示可作為授權來源；紅線改為 5 條；Tag 與 GitHub Release 經指定版本與 commit 授權後可由 Agent 建立；交叉 Review 只對 `RUNTIME` 類任務強制（PR #17）。
 - CI 的 server smoke test 新增 KubeJS `startup.log` 檢查，startup scripts（例如自訂物品）的錯誤會讓 CI 失敗（PR #18）。
+- `/merge-prep` 的 post 模式：`main` 上被 `cancel-in-progress` 取消的 CI run，只要之後的 merge commit run 成功就視為通過（PR #20）。
+- 導入 AOCI-CODE 索引骨架：`aoci.txt`、`aoci.*.txt`、`.aoci/` 與 `AGENTS.md` 的 AOCI 區塊，`.gitattributes` 強制 LF 以維持 byte-exact baseline；AOCI 檔案已列入 `.packwizignore`，不進 pack（PR #21）。
+- 完成 AOCI 認知索引：216 個受管理檔案都有 Entry，governance aligned；Agent 開工時可用 `aoci_overview` 取得整個 Repo 的結構化認知（PR #22）。
+- README 移除 `pack.toml` 仍為 `0.1.0` 的過時說明；release index 補上 v0.7.4 與 v0.7.5；`scripts/check_duplicate_mods.py` 改為讀取 `mods/*.pw.toml` 的 `filename`，原本只檢查 `mods/*.jar` 而永遠通過；同時移除已正式加入的 Create 6 與 Twilight Forest 的禁止線索（PR #23）。
+- `kubejs/server_scripts/eg_stages.js` 的過時狀態註解改為與現況一致，只改註解、遊戲行為不變；交叉 Review 後修正職業互斥的描述（PR #24）。
 - Documentation pass for README, compatibility strategy, release note organization, and project structure.
 - Added clearer distinction between implemented systems, installed foundations, planned systems, and deferred content.
 - Moved root release notes into `docs/releases/`.
