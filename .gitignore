@@ -22,3 +22,6 @@ __pycache__/
 
 # Serena code-analysis tool state (machine-local; do not commit)
 .serena/
+
+# Claude Code session handoff docs (machine-local; do not commit)
+.claude/handoffs/
