@@ -4,8 +4,10 @@
 
 | ID | 任務 | Mode | Status | Report format |
 | --- | --- | --- | --- | --- |
-| 001 | [Friends Preview Onboarding Review](001_friends_preview_onboarding_review.md) | `READ_ONLY` | `OPEN` | [Observation report](../REPORT_FORMATS.md#observation-report) |
+| 001 | [Friends Preview Onboarding Review](001_friends_preview_onboarding_review.md) | `READ_ONLY` | `CLOSED` | [Observation report](../REPORT_FORMATS.md#observation-report) |
 | 002 | Friends Preview Runtime Observation | `READ_ONLY` | `PLANNED` | [Observation report](../REPORT_FORMATS.md#observation-report) |
+
+Task 001 已由 Project Maintainer 於 2026-11-22 關閉，不可再領取。
 
 Task 002 目前僅為 `PLANNED` 索引，不可領取，不授權啟動或執行 runtime test，且沒有對應 task file。
 
