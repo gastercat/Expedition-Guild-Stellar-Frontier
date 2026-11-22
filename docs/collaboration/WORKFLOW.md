@@ -56,6 +56,12 @@ GitHub Actions workflow [`.github/workflows/pack-ci.yml`](../../.github/workflow
 
 Server smoke test 能抓到 mod 載入失敗、缺少前置 mod，以及 KubeJS startup scripts（例如自訂物品的註冊）與 server scripts 的錯誤，但抓不到 client scripts 的錯誤與畫面相關的 crash，也無法驗證 quest 在遊戲裡的操作結果。FTB Quests 的設定錯誤只有在造成 server 無法啟動時才會讓測試失敗，因此 CI 通過只能回報 server 啟動 `PASS`，不得寫成 client runtime `PASS`。
 
+## Merge 後的同步提醒
+
+GitHub Actions workflow [`.github/workflows/merge-sync-reminder.yml`](../../.github/workflows/merge-sync-reminder.yml) 會在每次 PR merge 進 `main` 後，把該 PR 加進標籤為 `merge-sync` 的 open Issue（沒有就建立一個）。Project Maintainer 準備好時執行一次 `/merge-prep post`，把清單上的 PR 一起同步到 `PROGRESS.md` 與 `CHANGELOG.md`；sync PR 的描述寫 `Closes #<Issue 編號>`，merge 後 Issue 自動關閉，下一次 merge 再開新的 Issue。
+
+這個 workflow 只維護 Issue，不修改檔案、不開 PR，也不執行 `/merge-prep`。Head branch 為 `claude/sync-after-*`（sync PR）或 `claude/release-v*`（`/release` 的 prep 與 closeout PR）的 PR 本身已處理同步，不會列入清單。Issue 是提醒，不代表已經同步。
+
 ## PR 的 runtime 測試清單
 
 `RUNTIME` 與 `RUNTIME_MODS` 類 PR 必須附上 runtime 測試清單，讓 Project Maintainer 進遊戲後不用自己摸索要測什麼。每一項寫明操作與預期結果，例如：

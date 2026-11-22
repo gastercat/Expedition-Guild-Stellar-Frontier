@@ -1,0 +1,81 @@
+name: Merge sync reminder
+
+# After each PR merge into main, add the PR to one open Issue labeled
+# `merge-sync`. The Project Maintainer later runs `/merge-prep post` once for
+# every PR listed there; the sync PR closes the Issue with `Closes #<n>`.
+# This workflow only writes the Issue. It never edits files, opens PRs or
+# runs /merge-prep.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+concurrency:
+  # Queue runs instead of cancelling them, so quick merges are all recorded.
+  group: merge-sync-reminder
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    name: Record merged PR for /merge-prep post
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Add the merged PR to the merge-sync Issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+
+          pr_json=$(gh api "repos/$GH_REPO/commits/$SHA/pulls" \
+            --jq '[.[] | select(.merged_at != null)][0] // empty')
+          if [ -z "$pr_json" ]; then
+            echo "No merged PR for $SHA (direct push?); nothing to record."
+            exit 0
+          fi
+
+          number=$(jq -r .number <<<"$pr_json")
+          title=$(jq -r .title <<<"$pr_json")
+          head_ref=$(jq -r .head.ref <<<"$pr_json")
+
+          # Skip PRs that already sync PROGRESS/CHANGELOG themselves, judged
+          # by branch name only (the names /merge-prep and /release suggest).
+          # `claude/release-v*` keeps the leading `v` of the tag, so a branch
+          # such as `claude/release-merge-prep-skills` is still listed.
+          case "$head_ref" in
+            claude/sync-after-*|claude/release-v*)
+              echo "PR #$number ($head_ref) is a sync or release PR; not listed."
+              exit 0
+              ;;
+          esac
+
+          gh label create merge-sync --color FBCA04 \
+            --description "Merged PRs waiting for /merge-prep post" --force >/dev/null
+
+          line="- [ ] #$number $title"
+          issue=$(gh issue list --label merge-sync --state open \
+            --json number --jq '.[0].number // empty')
+
+          if [ -z "$issue" ]; then
+            body=$(printf '%s\n\n%s\n\n%s\n' \
+              '以下 PR 已 merge 進 `main`，尚未同步 `PROGRESS.md`／`CHANGELOG.md`。Project Maintainer 準備好時執行 `/merge-prep post <PR...>` 一次處理，sync PR 的描述寫 `Closes #<本 Issue>`，merge 後本 Issue 自動關閉。' \
+              '本 Issue 由 `.github/workflows/merge-sync-reminder.yml` 自動維護，只是提醒，不代表已同步。' \
+              "$line")
+            gh issue create --title "待同步：/merge-prep post" --label merge-sync --body "$body"
+            exit 0
+          fi
+
+          current=$(gh issue view "$issue" --json body --jq .body)
+          if grep -qE "^- \[[ x]\] #$number( |\$)" <<<"$current"; then
+            echo "PR #$number is already listed in Issue #$issue."
+            exit 0
+          fi
+          gh issue edit "$issue" --body "$current
+          $line"
