@@ -1,7 +1,7 @@
 ---
 name: merge-prep
 description: EG:SF 的 Pull Request merge 前檢查與 merge 後同步。`/merge-prep <PR>` 檢查 CI、衝突、任務分類、allowlist、runtime 測試結果與交叉 Review，給出能不能 merge 的結論；`/merge-prep post <PR...>` 在 merge 後確認 main 的 CI，並把 PROGRESS／CHANGELOG 的同步整理成一個 PR。只在 Project Maintainer 手動呼叫時使用，永遠不 merge。
-argument-hint: <PR 編號> | post <PR 編號...>
+argument-hint: <PR 編號> | post [PR 編號...]
 disable-model-invocation: true
 ---
 
@@ -74,7 +74,7 @@ disable-model-invocation: true
 
 ## 模式二：`/merge-prep post <PR...>`（merge 後）
 
-可以一次帶入多個已 merge 的 PR，合併成一次同步。
+可以一次帶入多個已 merge 的 PR，合併成一次同步。沒有帶入 PR 編號時，讀取標籤為 `merge-sync` 的 open Issue（由 [`merge-sync-reminder.yml`](../../../.github/workflows/merge-sync-reminder.yml) 在每次 merge 後自動維護），以其中列出的 PR 為清單；找不到這個 Issue 時回報「沒有待同步的 PR」並結束。
 
 ### 1. 確認 merge 結果
 
@@ -90,7 +90,7 @@ disable-model-invocation: true
 
 ### 3. 開 sync PR
 
-在新 branch（例如 `claude/sync-after-pr-<n>`）上修改、執行 `scripts/` 的三個檢查，commit、push，開 draft PR，任務分類為 `STATIC`，描述列出涵蓋的 PR 編號。
+在新 branch（例如 `claude/sync-after-pr-<n>`）上修改、執行 `scripts/` 的三個檢查，commit、push，開 draft PR，任務分類為 `STATIC`，描述列出涵蓋的 PR 編號。清單來自 `merge-sync` Issue 時，描述加上 `Closes #<Issue 編號>`，讓 Issue 在 sync PR merge 後自動關閉；只同步了其中一部分 PR 時不要寫 `Closes`，改在回報中列出還沒同步的 PR。
 
 ### 4. 收尾提醒
 

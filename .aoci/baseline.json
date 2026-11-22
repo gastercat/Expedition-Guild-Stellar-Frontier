@@ -1,13 +1,13 @@
 {
   "version": 1,
   "created_at": "2026-11-20T20:49:12Z",
-  "updated_at": "2026-11-22T08:20:25Z",
+  "updated_at": "2026-11-22T08:36:48Z",
   "files": {
     ".claude/skills/merge-prep/SKILL.md": {
       "role": "index",
-      "sha256": "5c2d1b354baf2647a8dabe66a0cdefeb3d2dc72a529673e43d35dad305559148",
-      "size": 6297,
-      "normalized_sha256": "5c2d1b354baf2647a8dabe66a0cdefeb3d2dc72a529673e43d35dad305559148"
+      "sha256": "94bb7f55b2ee51ff9f72e98777cbefe7df48b5df973edc852d3ed5f4802900a7",
+      "size": 6817,
+      "normalized_sha256": "94bb7f55b2ee51ff9f72e98777cbefe7df48b5df973edc852d3ed5f4802900a7"
     },
     ".claude/skills/release/SKILL.md": {
       "role": "index",
@@ -26,6 +26,12 @@
       "sha256": "c21fd397b7fa9a3af709289e13eaa1f896bb8283ea039582773ca6617d79543a",
       "size": 1761,
       "normalized_sha256": "c21fd397b7fa9a3af709289e13eaa1f896bb8283ea039582773ca6617d79543a"
+    },
+    ".github/workflows/merge-sync-reminder.yml": {
+      "role": "index",
+      "sha256": "bea46edec1c5b782e4de3392992aae7f1b5cbb4f9655bd68ff849f04128d6e32",
+      "size": 3127,
+      "normalized_sha256": "bea46edec1c5b782e4de3392992aae7f1b5cbb4f9655bd68ff849f04128d6e32"
     },
     ".github/workflows/pack-ci.yml": {
       "role": "index",
@@ -83,9 +89,9 @@
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "c300a028937a889770007641902931e869b573210a79038c071fb20ab968ae1c",
-      "size": 46203,
-      "normalized_sha256": "c300a028937a889770007641902931e869b573210a79038c071fb20ab968ae1c"
+      "sha256": "51963b9ae9384da740db9d269c840d04312d631700d11be78feff18ca1dfddce",
+      "size": 46811,
+      "normalized_sha256": "51963b9ae9384da740db9d269c840d04312d631700d11be78feff18ca1dfddce"
     },
     "aoci.meta.txt": {
       "role": "index",
@@ -767,9 +773,9 @@
     },
     "docs/collaboration/WORKFLOW.md": {
       "role": "index",
-      "sha256": "ea04bccd273a7ef697b439c360a8ab4a4f6262f43a5163917f9635c5e3b198a6",
-      "size": 7241,
-      "normalized_sha256": "ea04bccd273a7ef697b439c360a8ab4a4f6262f43a5163917f9635c5e3b198a6"
+      "sha256": "70876704025bc3e36d70132ff86d30dd699a226b958d2c84a8a54ec3fef83267",
+      "size": 8067,
+      "normalized_sha256": "70876704025bc3e36d70132ff86d30dd699a226b958d2c84a8a54ec3fef83267"
     },
     "docs/collaboration/tasks/001_friends_preview_onboarding_review.md": {
       "role": "index",
