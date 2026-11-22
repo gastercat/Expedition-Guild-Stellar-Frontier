@@ -1,7 +1,7 @@
 # 001｜Friends Preview Onboarding Review
 
 - Mode：`READ_ONLY`
-- Status：`OPEN`
+- Status：`CLOSED`（Project Maintainer 於 2026-11-22 關閉）
 - Owner／final authority：Project Maintainer
 - Deliverable：5 至 10 個具體 observation reports
 
