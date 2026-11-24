@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-11-20T20:49:12Z",
-  "updated_at": "2026-11-22T08:36:48Z",
+  "updated_at": "2026-11-24T15:33:41Z",
   "files": {
     ".claude/skills/merge-prep/SKILL.md": {
       "role": "index",
@@ -89,9 +89,9 @@
     },
     "aoci.code.txt": {
       "role": "index",
-      "sha256": "51963b9ae9384da740db9d269c840d04312d631700d11be78feff18ca1dfddce",
-      "size": 46811,
-      "normalized_sha256": "51963b9ae9384da740db9d269c840d04312d631700d11be78feff18ca1dfddce"
+      "sha256": "a74fa1b5e23ee86b3f0be5b02135b7ccb24de4ecdbca5c93033772322d9f2c47",
+      "size": 47154,
+      "normalized_sha256": "a74fa1b5e23ee86b3f0be5b02135b7ccb24de4ecdbca5c93033772322d9f2c47"
     },
     "aoci.meta.txt": {
       "role": "index",
@@ -866,6 +866,12 @@
       "sha256": "f298cafcf411d9745acc4d921bd55d40a881e59d66dbeeb44f319ad43459a53b",
       "size": 5715,
       "normalized_sha256": "f298cafcf411d9745acc4d921bd55d40a881e59d66dbeeb44f319ad43459a53b"
+    },
+    "docs/diagrams/egsf-structure.archify.json": {
+      "role": "index",
+      "sha256": "bf3488d0d6b9a75f0a75acbeebf28411afd8018d31a5f1b95485a83db18306a1",
+      "size": 12776,
+      "normalized_sha256": "bf3488d0d6b9a75f0a75acbeebf28411afd8018d31a5f1b95485a83db18306a1"
     },
     "docs/operations/COMPATIBILITY.md": {
       "role": "index",
