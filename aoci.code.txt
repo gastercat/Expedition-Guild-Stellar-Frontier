@@ -296,3 +296,6 @@ validate_pack_structure.py[XQ5T]: F:CI check that required root docs, operations
 ===/<repository>/scripts/legacy/===
 add_phase1_ad_astra_mods.sh[XV2T]: F:Historical helper that packwiz-adds Ad Astra, its libraries and Create: Ad Astra Compatibility, then refreshes | R:- | A:- | S:Running it changes mod metadata; do not run
 add_phase1_core_mods.sh[XV2T]: F:Historical helper that packwiz-adds Phase 1 JEI, performance mods and Create | R:- | A:- | S:Running it changes mod metadata; do not run
+
+===/<repository>/docs/diagrams/===
+egsf-structure.archify.json[SG3L]: F:Archify tree-diagram source mapping the repo: packwiz core, quest chapters, KubeJS, 52 mods grouped by purpose, governance, CI and docs | R:code:pack.toml,code:.packwizignore,code:docs/operations/PROJECT_STRUCTURE.md | A:- | S:Mod groups are editorial, not real folders

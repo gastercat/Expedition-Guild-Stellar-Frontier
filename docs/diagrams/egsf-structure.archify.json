@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "diagram_type": "tree",
+  "meta": {
+    "title": "EGSF 模組包結構",
+    "locale": "zh-TW",
+    "output": "egsf-structure.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/gastercat/Expedition-Guild-Stellar-Frontier.git",
+      "revision": "7fed73970455b714423cbed0a84befe6c2ef6a26"
+    }
+  },
+  "layout": {
+    "direction": "right"
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Expedition Guild Stellar Frontier",
+      "sublabel": "v0.8.1・MC 1.20.1・Forge 47.4.10",
+      "sources": [
+        {
+          "path": "pack.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "packcore",
+      "label": "打包核心",
+      "parent": "root",
+      "sublabel": "packwiz 元資料，權威高於所有文件",
+      "sources": [
+        {
+          "path": "pack.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "packtoml",
+      "label": "pack.toml",
+      "parent": "packcore",
+      "sublabel": "版本與載入器",
+      "sources": [
+        {
+          "path": "pack.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "indextoml",
+      "label": "index.toml",
+      "parent": "packcore",
+      "sublabel": "每個打包檔的 sha256",
+      "sources": [
+        {
+          "path": "index.toml",
+          "line": 1,
+          "end_line": 321
+        }
+      ]
+    },
+    {
+      "id": "pwignore",
+      "label": ".packwizignore",
+      "parent": "packcore",
+      "sublabel": "排除文件、腳本與 AOCI",
+      "sources": [
+        {
+          "path": ".packwizignore",
+          "line": 1,
+          "end_line": 36
+        }
+      ]
+    },
+    {
+      "id": "quests",
+      "label": "config/ftbquests",
+      "parent": "root",
+      "sublabel": "FTB Quests 主線 Ch0–11",
+      "sources": [
+        {
+          "path": "config/ftbquests/quests/data.snbt",
+          "line": 1,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "id": "qdata",
+      "label": "data.snbt",
+      "parent": "quests",
+      "sublabel": "線性進度・手動領獎",
+      "sources": [
+        {
+          "path": "config/ftbquests/quests/data.snbt",
+          "line": 1,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "id": "q_intro",
+      "label": "Ch0–2 入門",
+      "parent": "quests",
+      "sublabel": "公會報到・三職業訓練・Create 起步",
+      "sources": [
+        {
+          "path": "config/ftbquests/quests/chapters/0.snbt",
+          "line": 1,
+          "end_line": 273
+        }
+      ]
+    },
+    {
+      "id": "q_hunt",
+      "label": "Ch3–6 狩獵與防衛",
+      "parent": "quests",
+      "sublabel": "首獵 Blaze・圍城演習・中階裝備",
+      "sources": [
+        {
+          "path": "config/ftbquests/quests/chapters/3.snbt",
+          "line": 1,
+          "end_line": 215
+        }
+      ]
+    },
+    {
+      "id": "q_astral",
+      "label": "Ch7–8 星際遠征",
+      "parent": "quests",
+      "sublabel": "發射準備・月球與火星前哨",
+      "sources": [
+        {
+          "path": "config/ftbquests/quests/chapters/7.snbt",
+          "line": 1,
+          "end_line": 291
+        }
+      ]
+    },
+    {
+      "id": "q_late",
+      "label": "Ch9–11 後期（占位）",
+      "parent": "quests",
+      "sublabel": "跨職業融合・終局災厄・後日挑戰",
+      "sources": [
+        {
+          "path": "config/ftbquests/quests/chapters/9.snbt",
+          "line": 1,
+          "end_line": 210
+        },
+        {
+          "path": "config/ftbquests/quests/chapters/11.snbt",
+          "line": 1,
+          "end_line": 177
+        }
+      ]
+    },
+    {
+      "id": "kubejs",
+      "label": "kubejs/eg_stages.js",
+      "parent": "root",
+      "sublabel": "GameStages 名稱表（被動腳本）",
+      "sources": [
+        {
+          "path": "kubejs/server_scripts/eg_stages.js",
+          "line": 1,
+          "end_line": 78
+        }
+      ]
+    },
+    {
+      "id": "mods",
+      "label": "mods/（52 個）",
+      "parent": "root",
+      "sublabel": "*.pw.toml 下載元資料",
+      "sources": [
+        {
+          "path": "docs/operations/COMPATIBILITY.md",
+          "line": 1,
+          "end_line": 192
+        }
+      ]
+    },
+    {
+      "id": "m_quest",
+      "label": "任務與進度（6）",
+      "parent": "mods",
+      "sublabel": "FTB Quests/Teams/Chunks・Game Stages・KubeJS",
+      "sources": [
+        {
+          "path": "mods/ftb-quests-forge.pw.toml",
+          "line": 1,
+          "end_line": 13
+        },
+        {
+          "path": "mods/game-stages.pw.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "m_tech",
+      "label": "科技與太空（2）",
+      "parent": "mods",
+      "sublabel": "Create・Ad Astra",
+      "sources": [
+        {
+          "path": "mods/create.pw.toml",
+          "line": 1,
+          "end_line": 13
+        },
+        {
+          "path": "mods/ad-astra.pw.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "m_combat",
+      "label": "戰鬥與冒險（6）",
+      "parent": "mods",
+      "sublabel": "Simply Swords・Artifacts・Twilight Forest 等",
+      "sources": [
+        {
+          "path": "mods/simply-swords.pw.toml",
+          "line": 1,
+          "end_line": 13
+        },
+        {
+          "path": "mods/the-twilight-forest.pw.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "m_life",
+      "label": "生活與建築（12）",
+      "parent": "mods",
+      "sublabel": "Macaw's ×9・Farmer's Delight・Sophisticated",
+      "sources": [
+        {
+          "path": "mods/macaws-roofs.pw.toml",
+          "line": 1,
+          "end_line": 13
+        },
+        {
+          "path": "mods/sophisticated-storage.pw.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "m_ui",
+      "label": "介面與工具（7）",
+      "parent": "mods",
+      "sublabel": "JEI・Jade・Xaero・Waystones・語音",
+      "sources": [
+        {
+          "path": "mods/jei.pw.toml",
+          "line": 1,
+          "end_line": 13
+        },
+        {
+          "path": "mods/waystones.pw.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "m_perf",
+      "label": "效能（5）",
+      "parent": "mods",
+      "sublabel": "Embeddium・ModernFix・FerriteCore 等",
+      "sources": [
+        {
+          "path": "mods/embeddium.pw.toml",
+          "line": 1,
+          "end_line": 13
+        },
+        {
+          "path": "mods/modernfix.pw.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "m_lib",
+      "label": "函式庫（14）",
+      "parent": "mods",
+      "sublabel": "Architectury・Curios・Geckolib 等",
+      "sources": [
+        {
+          "path": "mods/architectury-api.pw.toml",
+          "line": 1,
+          "end_line": 13
+        },
+        {
+          "path": "mods/curios.pw.toml",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "gov",
+      "label": "治理入口",
+      "parent": "root",
+      "sublabel": "Agent 規則與目前狀態",
+      "sources": [
+        {
+          "path": "AGENTS.md",
+          "line": 1,
+          "end_line": 223
+        }
+      ]
+    },
+    {
+      "id": "agentsmd",
+      "label": "AGENTS.md・CLAUDE.md",
+      "parent": "gov",
+      "sublabel": "授權・紅線・允許清單",
+      "sources": [
+        {
+          "path": "AGENTS.md",
+          "line": 1,
+          "end_line": 223
+        },
+        {
+          "path": "CLAUDE.md",
+          "line": 1,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "progressmd",
+      "label": "PROGRESS.md",
+      "parent": "gov",
+      "sublabel": "權威目前狀態・STOP POINT",
+      "sources": [
+        {
+          "path": "PROGRESS.md",
+          "line": 1,
+          "end_line": 109
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "label": ".claude/skills",
+      "parent": "gov",
+      "sublabel": "/release・/merge-prep",
+      "sources": [
+        {
+          "path": ".claude/skills/release/SKILL.md",
+          "line": 1,
+          "end_line": 160
+        },
+        {
+          "path": ".claude/skills/merge-prep/SKILL.md",
+          "line": 1,
+          "end_line": 98
+        }
+      ]
+    },
+    {
+      "id": "aoci",
+      "label": "AOCI 索引",
+      "parent": "gov",
+      "sublabel": "aoci.txt・每檔 F/R/A/S",
+      "sources": [
+        {
+          "path": "aoci.txt",
+          "line": 1,
+          "end_line": 7
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "label": "CI 與檢查腳本",
+      "parent": "root",
+      "sublabel": ".github・scripts/",
+      "sources": [
+        {
+          "path": ".github/workflows/pack-ci.yml",
+          "line": 1,
+          "end_line": 119
+        }
+      ]
+    },
+    {
+      "id": "packci",
+      "label": "pack-ci.yml",
+      "parent": "ci",
+      "sublabel": "索引新鮮度・匯出 .mrpack・伺服器 smoke",
+      "sources": [
+        {
+          "path": ".github/workflows/pack-ci.yml",
+          "line": 1,
+          "end_line": 119
+        }
+      ]
+    },
+    {
+      "id": "mergesync",
+      "label": "merge-sync-reminder.yml",
+      "parent": "ci",
+      "sublabel": "合併後提醒同步",
+      "sources": [
+        {
+          "path": ".github/workflows/merge-sync-reminder.yml",
+          "line": 1,
+          "end_line": 81
+        }
+      ]
+    },
+    {
+      "id": "scripts",
+      "label": "scripts/",
+      "parent": "ci",
+      "sublabel": "重複模組・連結・結構檢查",
+      "sources": [
+        {
+          "path": "scripts/check_duplicate_mods.py",
+          "line": 1,
+          "end_line": 133
+        }
+      ]
+    },
+    {
+      "id": "docs",
+      "label": "docs/",
+      "parent": "root",
+      "sublabel": "不進 .mrpack 的文件",
+      "sources": [
+        {
+          "path": "docs/operations/PROJECT_STRUCTURE.md",
+          "line": 1,
+          "end_line": 90
+        }
+      ]
+    },
+    {
+      "id": "d_collab",
+      "label": "collaboration/",
+      "parent": "docs",
+      "sublabel": "流程・權威模型・已驗證語法",
+      "sources": [
+        {
+          "path": "docs/collaboration/README.md",
+          "line": 1,
+          "end_line": 39
+        }
+      ]
+    },
+    {
+      "id": "d_design",
+      "label": "design/",
+      "parent": "docs",
+      "sublabel": "設計來源 01–09",
+      "sources": [
+        {
+          "path": "docs/design/INDEX.md",
+          "line": 1,
+          "end_line": 60
+        }
+      ]
+    },
+    {
+      "id": "d_ops",
+      "label": "operations/",
+      "parent": "docs",
+      "sublabel": "相容性・伺服器測試協定",
+      "sources": [
+        {
+          "path": "docs/operations/COMPATIBILITY.md",
+          "line": 1,
+          "end_line": 192
+        }
+      ]
+    },
+    {
+      "id": "d_rel",
+      "label": "releases/",
+      "parent": "docs",
+      "sublabel": "v0.1.0-alpha → v0.8.1",
+      "sources": [
+        {
+          "path": "docs/releases/INDEX.md",
+          "line": 1,
+          "end_line": 17
+        }
+      ]
+    },
+    {
+      "id": "d_test",
+      "label": "testing/・player/",
+      "parent": "docs",
+      "sublabel": "測試指南・玩家指南",
+      "sources": [
+        {
+          "path": "docs/testing/TESTING_GUIDE.md",
+          "line": 1,
+          "end_line": 138
+        },
+        {
+          "path": "docs/player/PLAYER_GUIDE.md",
+          "line": 1,
+          "end_line": 87
+        }
+      ]
+    },
+    {
+      "id": "d_archive",
+      "label": "archive/",
+      "parent": "docs",
+      "sublabel": "歷史紀錄與任務備份（唯讀）",
+      "sources": [
+        {
+          "path": "docs/operations/PROJECT_STRUCTURE.md",
+          "line": 1,
+          "end_line": 90
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "會打包進 .mrpack",
+      "items": [
+        "pack.toml・index.toml",
+        "config/ftbquests・kubejs",
+        "mods/*.pw.toml"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "只在 repo 裡",
+      "items": [
+        "docs/・scripts/・.github/",
+        "AGENTS.md・PROGRESS.md・AOCI",
+        "由 .packwizignore 排除"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "怎麼讀這張圖",
+      "items": [
+        "連線表示包含，不是呼叫",
+        "mods/ 底下的分類是依用途分組，不是實際資料夾",
+        "Ch9–11 目前多為占位任務"
+      ]
+    }
+  ]
+}
