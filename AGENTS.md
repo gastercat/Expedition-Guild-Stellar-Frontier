@@ -68,7 +68,9 @@ Project Maintainer 於 YYYY-MM-DD 在對話中明確指示：<指示內容摘要
 ## Git 與 Pull Request
 
 - 一張任務對應一條 branch；只在該 branch 上 commit 與 push。
-- 完成後開 draft Pull Request，依 [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) 填寫，等待 Project Maintainer Review。
+- 完成後開 Pull Request，依 [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) 填寫，等待 Project Maintainer Review：
+  - Agent 手動開 PR 時一律開 draft。
+  - Project Maintainer 輸入 `/ship` 時，由 `/ship` 開一般 PR，不受 draft 限制；`/ship` 不得 merge，merge 仍由 Project Maintainer 決定。
 - Commit 範圍只包含本次任務與驗證過的變更。
 - 唯讀任務（`READ_ONLY`）不得 commit、push 或開 Pull Request。
 
