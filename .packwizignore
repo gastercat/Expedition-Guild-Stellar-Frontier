@@ -25,10 +25,7 @@ __pycache__/
 CONTRIBUTING.md
 scripts/
 
-# AOCI cognition index (repo tooling, not part of the pack)
-aoci.txt
-aoci.*.txt
-.aoci/
+# Repo tooling (not part of the pack)
 .gitattributes
 .mcp.json
 

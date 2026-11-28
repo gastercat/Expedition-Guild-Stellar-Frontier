@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 # /release
 
-協助 Project Maintainer 發佈 EG:SF 的新版本。規則以 [`AGENTS.md`](../../../AGENTS.md)、[`docs/collaboration/WORKFLOW.md`](../../../docs/collaboration/WORKFLOW.md) 與 [`docs/operations/SERVER_TEST_PROTOCOL.md`](../../../docs/operations/SERVER_TEST_PROTOCOL.md) 為準；本 skill 只寫操作步驟。
+協助 Project Maintainer 發佈 EG:SF 的新版本。規則以 [`AGENTS.md`](../../../AGENTS.md) 與 [`docs/operations/SERVER_TEST_PROTOCOL.md`](../../../docs/operations/SERVER_TEST_PROTOCOL.md) 為準；本 skill 只寫操作步驟。
 
 ## 權限邊界
 
@@ -19,7 +19,7 @@ Project Maintainer 手動呼叫本 skill，即授權本次發佈的下列寫入�
 
 建立 tag 與 GitHub Release 需要另外的授權：依 `AGENTS.md` 的「Tag 與 GitHub Release」，Project Maintainer 必須指定版本與完整 commit，也就是 `/release <tag> publish <full-sha>`。單純呼叫 `/release <tag>` 不包含這項授權。
 
-本 skill **不授權**：merge 任何 PR、修改 `mods/**`、`config/**`、`kubejs/**`、`index.toml`，或替 Project Maintainer 填寫 runtime 測試結果。
+本 skill **不授權**：未經 Project Maintainer 在對話中同意就 merge PR、修改 `mods/**`、`config/**`、`kubejs/**`、`index.toml`，或替 Project Maintainer 填寫 runtime 測試結果。
 
 ## 發佈流程總覽
 
@@ -47,7 +47,7 @@ Project Maintainer 手動呼叫本 skill，即授權本次發佈的下列寫入�
 
 1. `main` 最新 commit 的 Pack CI 兩個 job 都是 success。
 2. 列出所有指向 `main` 的 open PR，請 Project Maintainer 決定要等它們 merge，還是不納入本版。
-3. 讀 `PROGRESS.md`：有沒有未關閉的 incident、STOP POINT 是否允許發佈。不允許時停止，請 Project Maintainer 先更新授權。
+3. 讀 `PROGRESS.md`：有沒有未處理的已知問題。有的話先向 Project Maintainer 確認是否仍要發佈。
 4. 找出上一個 release：以 `docs/releases/INDEX.md` 第一列與 GitHub 最新 release 互相確認。兩者不一致時停止並回報。
 
 ### 1-3 整理變更內容
@@ -87,9 +87,9 @@ git diff --stat <prev>..origin/main -- config/ kubejs/
 
    - Release Artifact 的 Commit 與 Asset size 寫 `TBD（closeout 時填入）`。
    - Runtime Test Result 寫 `UNVERIFIED（等待 Project Maintainer 依 SERVER_TEST_PROTOCOL.md 測試）`，不得預先寫 `PASS`。
-   - Not Included 參考 `PROGRESS.md` 的 Blocked Items。
+   - Not Included 參考 `PROGRESS.md` 的「尚未實作」。
    - 依 `AGENTS.md` 語言規範，新撰寫的 release notes 使用繁體中文。
-4. 執行 `scripts/` 的三個檢查，commit、push，開 draft PR，任務分類為 `STATIC`。PR 描述附上「步驟 2–4 的操作清單」（見下方），方便 Project Maintainer 照做。
+4. 執行 `scripts/` 的三個檢查，commit、push，開 draft PR。PR 描述附上「步驟 2–4 的操作清單」（見下方），方便 Project Maintainer 照做。
 
 ### 給 Project Maintainer 的步驟 2–4 操作清單
 
@@ -152,8 +152,8 @@ Project Maintainer 用這個指令授權 Agent 對指定 commit 建立 tag 與 G
 
 1. `docs/releases/<tag>.md`：填入 Commit（short SHA）、Asset 名稱與大小、Release type，把 Runtime Test Result 換成 Project Maintainer 提供的結果與範圍，用 `PASS`／`PARTIAL`／`UNVERIFIED` 如實標記。
 2. `docs/releases/INDEX.md`：在表格最上方加入新的一列。
-3. `PROGRESS.md`：更新「目前版本與階段」與「目前狀態」中的事實（目前 release、release 狀態、asset）。「目前目標」「下一步允許的任務」「STOP POINT」涉及授權範圍，只能依 Project Maintainer 的指示修改；沒有指示時維持原樣，並在 PR 中列出建議。
-4. 執行 `scripts/` 的三個檢查，commit、push，開 draft PR，任務分類為 `STATIC`。
+3. `PROGRESS.md`：更新「目前版本」（目前 release、release 狀態、commit）。「目前目標」只依 Project Maintainer 的指示修改；沒有指示時維持原樣，並在 PR 中列出建議。
+4. 執行 `scripts/` 的三個檢查，commit、push，開 draft PR。
 
 ## 回報
 

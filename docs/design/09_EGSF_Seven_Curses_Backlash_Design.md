@@ -9,7 +9,7 @@ Do Not Use For: 當前實作真相、已核准的 mod 清單、已確認的平�
 > Note:
 > 這是一份設計來源文件，內容是提案，沒有任何決策已拍板，也不代表已核准實作。
 > Enigmatic Legacy 目前沒有安裝在本模組包，本檔所有可行性判斷都是 static evidence（讀取 jar 內的 `mods.toml`、`LICENSE.md` 與參考實例的 config 檔），沒有任何一項經過 runtime 驗證。
-> 加入 Enigmatic Legacy 屬於 `RUNTIME_MODS` 任務，必須另外取得授權（task file 或 Project Maintainer 的明確指示，見 [`AGENTS.md`](../../AGENTS.md) 的「授權」一節），本檔不授權任何 mod、KubeJS、config 或 quest 變更。
+> 加入 Enigmatic Legacy 必須另外取得 Project Maintainer 的指示（見 [`AGENTS.md`](../../AGENTS.md) 的「授權」一節），本檔不授權任何 mod、KubeJS、config 或 quest 變更。
 > 若要確認當前實作狀態，請檢查 docs/PROGRESSION_OVERVIEW.md、docs/releases/、active FTB Quests files、KubeJS，以及 packwiz metadata。
 
 ## 0. 摘要
@@ -24,7 +24,7 @@ Do Not Use For: 當前實作真相、已核准的 mod 清單、已確認的平�
 
 - 本檔只討論七詛咒之戒這一件道具，以及把它當作反噬懲罰的框架，不評估 Enigmatic Legacy 的其他遺物要不要開放。
 - 本檔不設計 Forbidden Debt 的完整數值系統，只提出「Debt 累積到某個門檻時觸發詛咒」這一種後果的形狀。
-- 本檔不是實作計畫，要進實作必須先完成第 9 節的決策，再依 `docs/collaboration/WORKFLOW.md` 另外開立 `RUNTIME_MODS` 與 `RUNTIME` 任務。
+- 本檔不是實作計畫，要進實作必須先完成第 9 節的決策，再由 Project Maintainer 另外指示實作範圍。
 - 對應到 03 號文件的 Guild Tier 骨架，反噬只會出現在 Tier 6（endgame calamity / postgame archive / godforging），因為觸發它的禁忌力量本來就只屬於後期或 endgame。
 
 ## 2. 戒指本身的行為（static evidence）
@@ -71,7 +71,7 @@ config 裡另外還有 `CursedRingKnockbackDebuff`（擊退加重，預設 200%�
 
 ### 2.4 依賴
 
-jar 的 `mods.toml` 列出四個必要依賴：Forge、Curios、Patchouli 與 Caelus。本模組包的 `mods/` 裡已經有 `curios.pw.toml`、`patchouli.pw.toml` 與 `caelus.pw.toml`，所以依賴本身看起來不需要再加 mod，但版本範圍是否相容仍要在 `RUNTIME_MODS` 任務裡用 `packwiz` 與 server smoke test 確認。
+jar 的 `mods.toml` 列出四個必要依賴：Forge、Curios、Patchouli 與 Caelus。本模組包的 `mods/` 裡已經有 `curios.pw.toml`、`patchouli.pw.toml` 與 `caelus.pw.toml`，所以依賴本身看起來不需要再加 mod，但版本範圍是否相容仍要在加入時用 `packwiz` 與 server smoke test 確認。
 
 ## 3. 設計張力
 
@@ -140,7 +140,6 @@ Enigmatic Legacy 一般不允許玩家自己取下戒指（本檔根據對這個
 - 機制衝突：獨特遺物要求 99.5% 的配戴時間，強制套上又淨化卸下的玩家永遠達不到，這部分祝福在反噬框架下等於失效，要決定是否接受。
 - 懲罰感：傷害加倍搭配靈魂撕裂可能讓一次死亡就造成永久損失，`MaxSoulCrystalLoss` 若設為 10 甚至會導致永久死亡，朋友測試的體驗很容易變成挫折。
 - 多人公平性：EG:SF 以公會合作為主，一名玩家被反噬時，其他隊友要不要分擔代價，會影響團隊氣氛。
-- 任務分類：加入 mod 是 `RUNTIME_MODS`，同時間只能開 1 條，會與其他 mod 變更排隊，加上 KubeJS 與 quest 又是另外的 `RUNTIME` 任務。
 
 ## 8. MVP 邊界
 

@@ -4,6 +4,7 @@ This changelog is a short project overview. Full release notes are organized in 
 
 ## Unreleased
 
+- 精簡治理層：移除 AOCI 認知索引、`docs/collaboration/` 的流程文件（保留 `VERIFIED_FORMATS.md`）、task files、`/merge-prep` skill、merge-sync reminder workflow、`docs/archive/quest-backups/` 與 `docs/archive/agent-guides/`；重寫 `AGENTS.md`、`PROGRESS.md`、PR template 與 `docs/operations/PROJECT_STRUCTURE.md`。CI 通過且 Project Maintainer 在對話中同意時，Agent 可以代為 merge PR。
 - 新增 Pack CI：packwiz index 檢查、`scripts/` 驗證、`.mrpack` export 與 dedicated server smoke test；每個 PR 都能下載 `.mrpack` artifact 測試（PR #10）。
 - 新增設計提案 `08` Astral Infusion 與 `09` Seven Curses Backlash，皆為 proposed draft，未核准實作（PR #11、#12）。
 - `PROGRESS.md` 同步到目前狀態並改為繁中；Render Native Crash incident 以 `CLOSED_UNRESOLVED` 關閉，保留原始歷史（PR #13）。

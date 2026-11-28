@@ -70,7 +70,7 @@
       "id": "pwignore",
       "label": ".packwizignore",
       "parent": "packcore",
-      "sublabel": "排除文件、腳本與 AOCI",
+      "sublabel": "排除文件與腳本",
       "sources": [
         {
           "path": ".packwizignore",
@@ -323,7 +323,7 @@
         {
           "path": "AGENTS.md",
           "line": 1,
-          "end_line": 223
+          "end_line": 70
         }
       ]
     },
@@ -336,12 +336,12 @@
         {
           "path": "AGENTS.md",
           "line": 1,
-          "end_line": 223
+          "end_line": 70
         },
         {
           "path": "CLAUDE.md",
           "line": 1,
-          "end_line": 13
+          "end_line": 6
         }
       ]
     },
@@ -349,12 +349,12 @@
       "id": "progressmd",
       "label": "PROGRESS.md",
       "parent": "gov",
-      "sublabel": "權威目前狀態・STOP POINT",
+      "sublabel": "目前版本與目標",
       "sources": [
         {
           "path": "PROGRESS.md",
           "line": 1,
-          "end_line": 109
+          "end_line": 27
         }
       ]
     },
@@ -362,30 +362,12 @@
       "id": "skills",
       "label": ".claude/skills",
       "parent": "gov",
-      "sublabel": "/release・/merge-prep",
+      "sublabel": "/release",
       "sources": [
         {
           "path": ".claude/skills/release/SKILL.md",
           "line": 1,
           "end_line": 160
-        },
-        {
-          "path": ".claude/skills/merge-prep/SKILL.md",
-          "line": 1,
-          "end_line": 98
-        }
-      ]
-    },
-    {
-      "id": "aoci",
-      "label": "AOCI 索引",
-      "parent": "gov",
-      "sublabel": "aoci.txt・每檔 F/R/A/S",
-      "sources": [
-        {
-          "path": "aoci.txt",
-          "line": 1,
-          "end_line": 7
         }
       ]
     },
@@ -416,19 +398,6 @@
       ]
     },
     {
-      "id": "mergesync",
-      "label": "merge-sync-reminder.yml",
-      "parent": "ci",
-      "sublabel": "合併後提醒同步",
-      "sources": [
-        {
-          "path": ".github/workflows/merge-sync-reminder.yml",
-          "line": 1,
-          "end_line": 81
-        }
-      ]
-    },
-    {
       "id": "scripts",
       "label": "scripts/",
       "parent": "ci",
@@ -450,7 +419,7 @@
         {
           "path": "docs/operations/PROJECT_STRUCTURE.md",
           "line": 1,
-          "end_line": 90
+          "end_line": 31
         }
       ]
     },
@@ -458,12 +427,12 @@
       "id": "d_collab",
       "label": "collaboration/",
       "parent": "docs",
-      "sublabel": "流程・權威模型・已驗證語法",
+      "sublabel": "已驗證語法",
       "sources": [
         {
-          "path": "docs/collaboration/README.md",
+          "path": "docs/collaboration/VERIFIED_FORMATS.md",
           "line": 1,
-          "end_line": 39
+          "end_line": 61
         }
       ]
     },
@@ -528,12 +497,12 @@
       "id": "d_archive",
       "label": "archive/",
       "parent": "docs",
-      "sublabel": "歷史紀錄與任務備份（唯讀）",
+      "sublabel": "歷史紀錄（唯讀）",
       "sources": [
         {
           "path": "docs/operations/PROJECT_STRUCTURE.md",
           "line": 1,
-          "end_line": 90
+          "end_line": 31
         }
       ]
     }
@@ -553,7 +522,7 @@
       "title": "只在 repo 裡",
       "items": [
         "docs/・scripts/・.github/",
-        "AGENTS.md・PROGRESS.md・AOCI",
+        "AGENTS.md・PROGRESS.md",
         "由 .packwizignore 排除"
       ]
     },
