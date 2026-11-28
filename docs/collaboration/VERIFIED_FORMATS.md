@@ -59,3 +59,20 @@ rewards: [{
 | v0.7.3-alpha | 5 | rotten_flesh／bone／spider_eye／paper 樣本 + zombie／skeleton／spider kill tasks → `eg.chapter.5.calamity_foreshadowing` → `eg.gate.calamity_reported` |
 
 這些都是 FTB Quests 任務層的 MVP gate，不是 wave、raid、Guild Threat、Dragon Disaster 或裝備鎖系統。各版本的完整說明見 [`docs/releases/`](../releases/INDEX.md)。
+
+## KubeJS 呼叫原版方法的陷阱
+
+遊戲內已確認（2026-11-29，kubejs-forge-2001.6.5、rhino-forge-2001.2.3）：
+
+- **Server script**（例如 `PlayerEvents`、`GameStageEvents` 的 handler）：Mojang 名稱可以用（`player.getMaxHealth()` 正常），SRG 名稱反而找不到（`m_21233_` 丟出 `Cannot find function`）。
+- **Startup script 的 `ForgeEvents.onEvent`**：`DamageSource` 的 `getMsgId()` 和 SRG 名稱 `m_19385_` 都找不到。`String(source)`（`toString()`）可以用，輸出格式是 `DamageSource (<msgId>)`，例如 `DamageSource (inWall)`；目前從這個字串讀出傷害類型。
+- 在 Forge event listener 裡沒有被攔下的例外，會讓 server 直接 crash；KubeJS 自己的事件只會寫 log。
+- Rhino：在重複呼叫的箭頭函式裡，`try` 區塊中宣告的 `const` 會丟出 `redeclaration of var`。把邏輯放進一般函式，`try/catch` 只包住呼叫。
+- 用 `server.runCommandSilent('attribute ... modifier add ...')` 加屬性，遊戲裡沒有任何效果（玩家資料裡沒有 modifier）。改用 KubeJS 的 `player.modifyAttribute(attributeId, id, amount, operation)`／`player.removeAttribute(attributeId, id)`；`operation` 用小寫的 enum 名稱：`addition`、`multiply_base`、`multiply_total`。
+
+規則：
+
+- 優先使用 KubeJS 自己的方法（`stages`、`getProfile()`、`getServer()`、`isPlayer()`、`modifyAttribute`）。
+- Forge 類別（例如 `LivingHurtEvent`）沒有混淆，方法名稱照原樣用。
+- Forge event handler 一律包 `try/catch`，出錯時只寫 log。
+- SRG 名稱可以用 Prism 的 `client-1.20.1-*-mappings.txt`（Mojang → 混淆）對照 `mcp_config-1.20.1-*-mappings-merged.txt`（混淆 → SRG）查到。

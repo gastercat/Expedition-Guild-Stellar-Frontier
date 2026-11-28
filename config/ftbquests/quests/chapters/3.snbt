@@ -7,7 +7,7 @@
 	order_index: 3
 	quest_links: [ ]
 	quests: [{
-		description: ["公會公告：第一討伐令是 Boss Gate 的任務層占位。本章只做三職業作戰演習與補給確認；KubeJS Boss Gate、GameStages 階段鎖、Boss 擊殺偵測、真正第一 Boss 與武器進化掉落尚未實作。"]
+		description: ["公會公告：第一討伐令的目標是暮色森林的 Naga。完成作戰演習與補給確認後，公會會發給傳送門用的鑽石。Naga 守在暮色森林中被樹籬圍起的庭院裡，建議全隊一起出發。"]
 		icon: "minecraft:paper"
 		id: "3A00000000000001"
 		rewards: [{
@@ -26,7 +26,7 @@
 		y: 0.0d
 	}, {
 		dependencies: ["3A00000000000001"]
-		description: ["Vanguard 演習：前鋒負責近身承壓、破盾與保護後排。這只是作戰演習，不是正式技能，也不代表 Boss Gate 已經開放。"]
+		description: ["Vanguard 演習：Naga 會衝撞並纏繞目標，前鋒要頂在前面吸引牠的注意，讓 Gunner 從側面輸出。"]
 		icon: "minecraft:shield"
 		id: "3A00000000000004"
 		rewards: [{
@@ -51,7 +51,7 @@
 		y: -1.2d
 	}, {
 		dependencies: ["3A00000000000001"]
-		description: ["Gunner 演習：銃士線尚未有槍械模組，本輪暫用弓箭作遠程壓制占位。重點是安全距離、彈藥管理與支援前鋒。"]
+		description: ["Gunner 演習：Naga 移動很快、身體很長，保持距離並帶足箭矢，從前鋒的側面輸出。"]
 		icon: "minecraft:bow"
 		id: "3A00000000000008"
 		rewards: [{
@@ -80,43 +80,6 @@
 		title: "Gunner：遠程壓制演習"
 		x: 1.5d
 		y: 0.0d
-	}, {
-		dependencies: ["3A00000000000001"]
-		description: ["Arcanist 占位：魔法模組尚未進場。本次先做異常紀錄、控場標記與護盾解除的任務層占位，保留未來奧術支援位置。"]
-		icon: "minecraft:item_frame"
-		id: "3A0000000000000D"
-		rewards: [{
-			count: 4
-			id: "3A0000000000000E"
-			item: "minecraft:paper"
-			type: "item"
-		}, {
-			count: 1
-			id: "3A0000000000000F"
-			item: "minecraft:item_frame"
-			type: "item"
-		}]
-		tasks: [{
-			count: 4
-			id: "3A00000000000010"
-			item: "minecraft:paper"
-			title: "準備異常紀錄紙"
-			type: "item"
-		}, {
-			id: "3A00000000000011"
-			item: "minecraft:item_frame"
-			title: "準備控場標記框"
-			type: "item"
-		}, {
-			count: 8
-			id: "3A00000000000012"
-			item: "minecraft:torch"
-			title: "準備觀測照明"
-			type: "item"
-		}]
-		title: "Arcanist：異常觀測 / 控場占位"
-		x: 1.5d
-		y: 1.2d
 	}, {
 		dependencies: ["3A00000000000001"]
 		description: ["工程部演習：討伐不是只靠輸出，也需要補給箱、照明、返航點與撤退路線。這是討伐前後勤補給演習，不是自動化產線驗收。"]
@@ -166,10 +129,24 @@
 		x: 3.0d
 		y: 0.0d
 	}, {
-		dependencies: ["3A00000000000004", "3A00000000000008", "3A0000000000000D", "6482124F53E14EF8"]
-		description: ["第一討伐令：預備核准。三職業演習與工程補給確認完成。這只是任務層占位；真正 Gate 會等 KubeJS、GameStages 與 Boss 模組後實作。討伐部門聲望 +1 目前只是文字占位。"]
+		dependencies: ["3A00000000000004", "3A00000000000008"]
+		dependency_requirement: "one_completed"
+		description: ["隊伍中至少完成一項職業演習即可。"]
+		icon: "minecraft:target"
+		id: "EE00000000000301"
+		tasks: [{
+			id: "EE00000000000302"
+			title: "確認作戰演習"
+			type: "checkmark"
+		}]
+		title: "作戰演習完成"
+		x: 3.0d
+		y: -0.6d
+	}, {
+		dependencies: ["EE00000000000301", "6482124F53E14EF8"]
+		description: ["第一討伐令：預備核准。公會發給一顆鑽石：在 2×2 的水池四周種滿花，把鑽石丟進水裡，就會開啟通往暮色森林的傳送門。"]
 		icon: "minecraft:item_frame"
-		id: "313FC74C6A35EF4A"
+		id: "EE00000000000306"
 		rewards: [{
 			count: 1
 			id: "3A00000000000019"
@@ -180,9 +157,14 @@
 			id: "3A0000000000001A"
 			item: "minecraft:emerald"
 			type: "item"
+		}, {
+			count: 1
+			id: "EE00000000000303"
+			item: "minecraft:diamond"
+			type: "item"
 		}]
 		tasks: [{
-			id: "78F5F5D4A6BDB23A"
+			id: "EE00000000000307"
 			title: "取得第一討伐令預備核准"
 			type: "checkmark"
 		}]
@@ -190,24 +172,34 @@
 		x: 4.5d
 		y: 0.0d
 	}, {
-		dependencies: ["313FC74C6A35EF4A"]
-		description: ["公會第一討伐令 MVP：擊殺一隻 Blaze 作為第一討伐目標。這是 FTB Quests kill task 驗證與公會任務完成 gate，不代表完整 Boss 系統、Boss chain、Guild Threat 或武器進化掉落已實作。"]
-		icon: "minecraft:blaze_rod"
+		dependencies: ["EE00000000000306"]
+		description: ["第一討伐令：在暮色森林擊敗 Naga。隊伍中任何一人完成擊殺，全隊都算完成。"]
+		icon: "twilightforest:naga_scale"
 		id: "3C00000000000001"
 		rewards: [{
+			count: 3
+			id: "EE00000000000304"
+			item: "minecraft:emerald"
+			type: "item"
+		}, {
+			count: 2
+			id: "EE00000000000305"
+			item: "minecraft:golden_apple"
+			type: "item"
+		}, {
 			auto: "disabled"
 			command: "gamestage add @s eg.chapter.3.first_hunt"
 			id: "3C00000000000003"
 			type: "command"
 		}]
 		tasks: [{
-			entity: "minecraft:blaze"
+			entity: "twilightforest:naga"
 			id: "3C00000000000002"
-			title: "擊殺第一討伐目標：Blaze"
+			title: "擊敗第一討伐目標：Naga"
 			type: "kill"
 			value: 1L
 		}]
-		title: "公會：第一討伐目標完成確認"
+		title: "第一討伐令：Naga"
 		x: 6.0d
 		y: 0.0d
 	}]

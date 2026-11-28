@@ -7,7 +7,7 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
-		description: ["公會公告：本章建立公會本部最低運作標準，並進行 Vanguard、Gunner、Arcanist 三線試訓。工程部與星界局也會先做報到預告；正式 Create 後勤在第 2 章開始，正式星界執照在第 7 章開始。這些是認證占位與部門試用，正式職業技能、GameStages、裝備鎖與轉職系統尚未實作。"]
+		description: ["公會公告：本章建立公會本部最低運作標準，並登記 Vanguard 或 Gunner 職業。工程部與星界局也會先做報到預告；正式 Create 後勤在第 2 章開始，正式星界執照在第 7 章開始。選定職業後會立即取得被動加成與起始裝備；正式職業技能與轉職系統尚未實作。"]
 		icon: "minecraft:white_banner"
 		id: "1A00000000000001"
 		rewards: [{
@@ -174,23 +174,16 @@
 		y: -0.6d
 	}, {
 		dependencies: ["1A00000000000001"]
-		description: ["Vanguard 前鋒試訓：確認有人能站在隊伍最前方承擔近身風險、保護後排並守住撤退路線。這不是 Better Combat 或正式轉職，只是公會臨時認證占位。"]
+		description: ["Vanguard 前鋒：站在隊伍最前方承擔近身風險、保護後排。領取獎勵即登記為 Vanguard，取得血量、護甲與擊退抗性加成，以及長劍與胸甲。每位玩家只能登記一個職業，之後領取另一個職業的獎勵會改登記。"]
 		icon: "minecraft:shield"
 		id: "1A00000000000006"
 		rewards: [{
-			count: 2
 			id: "1A00000000000007"
-			item: "minecraft:iron_ingot"
+			item: "simplyswords:iron_longsword"
 			type: "item"
 		}, {
-			count: 2
 			id: "1A00000000000008"
-			item: "minecraft:leather"
-			type: "item"
-		}, {
-			count: 4
-			id: "1D00000000000006"
-			item: "minecraft:iron_nugget"
+			item: "minecraft:iron_chestplate"
 			type: "item"
 		}, {
 			auto: "disabled"
@@ -214,33 +207,22 @@
 			title: "提交前線護衛盾牌"
 			type: "item"
 		}]
-		title: "Vanguard 前線護衛檢查"
+		title: "職業登記：Vanguard"
 		x: 3.0d
 		y: 1.2d
 	}, {
 		dependencies: ["1A00000000000001"]
-		description: ["Gunner 銃士線尚未加入正式槍械模組。本次先用弓、箭與弦作臨時遠程職責，確認隊伍有人擔任火力觀測、彈藥管理與安全距離支援；TaCZ 尚未實作。"]
+		description: ["Gunner 銃士：保持安全距離，用弓弩壓制與支援前鋒。領取獎勵即登記為 Gunner，取得箭矢傷害與移動速度加成，以及十字弓與箭矢。每位玩家只能登記一個職業，之後領取另一個職業的獎勵會改登記。"]
 		icon: "minecraft:bow"
 		id: "1A0000000000000A"
 		rewards: [{
-			count: 16
 			id: "1A0000000000000B"
-			item: "minecraft:arrow"
+			item: "minecraft:crossbow"
 			type: "item"
 		}, {
-			count: 2
+			count: 32
 			id: "1A0000000000000C"
-			item: "minecraft:string"
-			type: "item"
-		}, {
-			count: 2
-			id: "1D00000000000007"
-			item: "minecraft:paper"
-			type: "item"
-		}, {
-			count: 2
-			id: "1D00000000000008"
-			item: "minecraft:coal"
+			item: "minecraft:arrow"
 			type: "item"
 		}, {
 			auto: "disabled"
@@ -270,66 +252,9 @@
 			title: "準備遠程彈藥補給"
 			type: "item"
 		}]
-		title: "Gunner 火力觀測檢查"
+		title: "職業登記：Gunner"
 		x: 3.0d
 		y: 2.4d
-	}, {
-		dependencies: ["1A00000000000001"]
-		description: ["Arcanist 奧術線尚未加入正式魔法模組。本次先建立異常觀測、符文研究與星界現象紀錄占位，讓隊伍保留未來控場、護盾解除與支援法術的位置；Iron's Spells 尚未實作。"]
-		icon: "minecraft:book"
-		id: "1A0000000000000F"
-		rewards: [{
-			count: 4
-			id: "1A00000000000010"
-			item: "minecraft:paper"
-			type: "item"
-		}, {
-			count: 1
-			id: "1A00000000000011"
-			item: "minecraft:redstone"
-			type: "item"
-		}, {
-			count: 1
-			id: "1D00000000000009"
-			item: "minecraft:item_frame"
-			type: "item"
-		}, {
-			auto: "disabled"
-			command: "gamestage remove @s eg.class.vanguard"
-			id: "1C00000000000007"
-			type: "command"
-		}, {
-			auto: "disabled"
-			command: "gamestage remove @s eg.class.gunner"
-			id: "1C00000000000008"
-			type: "command"
-		}, {
-			auto: "disabled"
-			command: "gamestage add @s eg.class.arcanist"
-			id: "1C00000000000009"
-			type: "command"
-		}]
-		tasks: [{
-			count: 4
-			id: "1A00000000000012"
-			item: "minecraft:paper"
-			title: "準備異常觀測紙張"
-			type: "item"
-		}, {
-			id: "1A00000000000013"
-			item: "minecraft:book"
-			title: "準備符文研究書冊"
-			type: "item"
-		}, {
-			count: 4
-			id: "1A00000000000014"
-			item: "minecraft:glass"
-			title: "準備星界觀測玻璃"
-			type: "item"
-		}]
-		title: "Arcanist 異常觀測檢查"
-		x: 3.0d
-		y: 3.6d
 	}, {
 		dependencies: ["31550D7DB56FA83C"]
 		description: ["補給官試用：把食物、照明、燃料與公共箱集中管理。多人遠征的第一個瓶頸通常不是戰鬥，而是出發前沒人整理補給。"]
@@ -369,8 +294,22 @@
 		x: 6.0d
 		y: 2.4d
 	}, {
-		dependencies: ["63D58DCC408EB890", "1A00000000000006", "1A0000000000000A", "1A0000000000000F", "1A00000000000015"]
-		description: ["E 級本部運作許可：集合點、公共物資、返航點、三職業試訓與補給檢查完成。公會聲望 +1 目前只是任務文字占位，尚未連接完整聲望商店。"]
+		dependencies: ["1A00000000000006", "1A0000000000000A"]
+		dependency_requirement: "one_completed"
+		description: ["公會名冊：隊伍中至少有人完成 Vanguard 或 Gunner 登記即可。每位玩家仍要自己領取一個職業獎勵。"]
+		icon: "minecraft:writable_book"
+		id: "EE00000000000101"
+		tasks: [{
+			id: "EE00000000000102"
+			title: "確認職業登記"
+			type: "checkmark"
+		}]
+		title: "職業登記完成"
+		x: 4.5d
+		y: 1.8d
+	}, {
+		dependencies: ["63D58DCC408EB890", "EE00000000000101", "1A00000000000015"]
+		description: ["E 級本部運作許可：集合點、公共物資、返航點、職業登記與補給檢查完成。公會聲望 +1 目前只是任務文字占位，尚未連接完整聲望商店。"]
 		icon: "minecraft:item_frame"
 		id: "1A0000000000001B"
 		rewards: [{
@@ -398,5 +337,5 @@
 		x: 9.0d
 		y: 1.2d
 	}]
-	title: "第 1 章：三職業訓練場"
+	title: "第 1 章：職業訓練場"
 }

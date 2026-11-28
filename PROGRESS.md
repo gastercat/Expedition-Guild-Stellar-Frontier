@@ -11,13 +11,15 @@
 ## 目前目標
 
 - 收集 v0.8.1 的朋友回饋：早期任務與獎勵手感、Create 與 Ad Astra 的伏筆是否清楚。目前還沒有任何回饋紀錄。
-- 治理層已精簡（AOCI、協作流程文件、`/merge-prep` 已移除），之後把重心放回遊戲內容。
+- Ch0–3 垂直切片：一群朋友在一個晚上從出生點玩到擊敗 Naga。等 Yoi 與朋友實際遊玩確認，尤其是 Naga 會不會閃退。
+- 下一步：改寫任務書文案（不再像規格書），之後另開 PR 讓 Gunner 改用 TaCZ。
 
 ## 尚未實作
 
 以下系統只存在於設計文件，遊戲中還沒有：
 
-- 職業差異：三職業目前只是 GameStage 標籤，沒有任何東西讀取這些 stage。
+- Arcanist：暫時移出，等加入法術 mod 再回來。Vanguard／Gunner 目前只有起始裝備與被動加成，還沒有技能。
+- Ch4–11：只有任務層骨架，章節標題標示【預告】。
 - 真正的 Boss 戰、Guild Threat、Dragon Disaster、wave／raid 系統。
 - 職業技能、裝備鎖、職業融合。
 - 設計提案 `08`（Astral Infusion）與 `09`（Seven Curses Backlash）。
