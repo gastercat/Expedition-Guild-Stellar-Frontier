@@ -7,7 +7,7 @@
 	order_index: 2
 	quest_links: [ ]
 	quests: [{
-		description: ["公會公告：本章為第一討伐令建立後勤、裝備、補給與偵查基準。完成後，第 3 章會帶隊伍進入暮色森林討伐 Naga。"]
+		description: ["討伐部說這次的目標在暮色森林。出發之前，工程、鍛造、炊事與探險四個部門都要點頭才行。"]
 		icon: "minecraft:white_banner"
 		id: "2A00000000000001"
 		rewards: [{
@@ -18,15 +18,15 @@
 		}]
 		tasks: [{
 			id: "2A00000000000003"
-			title: "閱讀第一討伐令預備公告"
+			title: "讀完公告"
 			type: "checkmark"
 		}]
-		title: "公會公告：Boss 前準備"
+		title: "公告：討伐前準備"
 		x: 0.0d
 		y: 0.0d
 	}, {
 		dependencies: ["2A00000000000001"]
-		description: ["工程部任務：採集安山岩作為 Create 基礎材料。第一個 Boss 尚未開放，但後勤線必須先能穩定製作機械零件。"]
+		description: ["Create 的機器幾乎都從安山岩開始。去挖一些回來，工程部長會很開心。"]
 		icon: "minecraft:andesite"
 		id: "5E94984E5468131F"
 		rewards: [{
@@ -39,15 +39,15 @@
 			count: 16
 			id: "5E1A42C76FEE32D0"
 			item: "minecraft:andesite"
-			title: "採集工程用安山岩"
+			title: "挖 16 塊安山岩"
 			type: "item"
 		}]
-		title: "工程部：基礎石材"
+		title: "工程部：安山岩"
 		x: 1.5d
 		y: 0.0d
 	}, {
 		dependencies: ["5E94984E5468131F"]
-		description: ["工程部任務：製作安山岩合金。這是公會制式機械零件的第一批材料，不是單人臨時工具。"]
+		description: ["安山岩加上一點鐵，就是公會機械零件的標準材料。先做幾塊，之後會用到停不下來。"]
 		icon: "create:andesite_alloy"
 		id: "2F4F2E4E3614983D"
 		rewards: [{
@@ -65,15 +65,15 @@
 			count: 4
 			id: "178399D52B019774"
 			item: "create:andesite_alloy"
-			title: "製作制式安山合金"
+			title: "做出安山合金"
 			type: "item"
 		}]
-		title: "工程部：制式合金"
+		title: "工程部：安山合金"
 		x: 3.0d
 		y: 0.0d
 	}, {
 		dependencies: ["2F4F2E4E3614983D"]
-		description: ["工程部任務：傳動軸負責把動力送到加工點。Boss 前準備不只看武器，也看後勤能不能穩定運作。"]
+		description: ["工程部長說，打 Boss 靠的不只是劍，還有後面那條會轉的軸。先做幾根傳動軸，把動力接到加工點。"]
 		icon: "create:shaft"
 		id: "4EA9AA54192E7B15"
 		rewards: [{
@@ -86,7 +86,7 @@
 			count: 8
 			id: "4DE8BC9742B8A725"
 			item: "create:shaft"
-			title: "製作動力傳動軸"
+			title: "做出傳動軸"
 			type: "item"
 		}]
 		title: "工程部：傳動軸"
@@ -94,7 +94,7 @@
 		y: -0.8d
 	}, {
 		dependencies: ["2F4F2E4E3614983D"]
-		description: ["工程部任務：齒輪用來連接設備並調整方向。每一段傳動都應能讓其他隊友看懂與維修。"]
+		description: ["齒輪負責轉彎和接線。配置得整齊一點，下一個來修機器的隊友才看得懂。"]
 		icon: "create:cogwheel"
 		id: "0E91F6BECD98D446"
 		rewards: [{
@@ -107,15 +107,15 @@
 			count: 4
 			id: "329A2E106F020514"
 			item: "create:cogwheel"
-			title: "製作基礎齒輪"
+			title: "做出齒輪"
 			type: "item"
 		}]
-		title: "工程部：齒輪傳動"
+		title: "工程部：齒輪"
 		x: 4.5d
 		y: 0.8d
 	}, {
 		dependencies: ["4EA9AA54192E7B15", "0E91F6BECD98D446"]
-		description: ["工程部任務：建造第一個後勤動力源。水車不是終點，而是公會加工線開始運轉的最低標準。"]
+		description: ["公會的第一個動力來源。放在流動的水邊，看它開始轉，工業就從這裡開始。"]
 		icon: "create:water_wheel"
 		id: "71B69344193F12C8"
 		rewards: [{
@@ -127,15 +127,15 @@
 		tasks: [{
 			id: "01FC52954BD28F0D"
 			item: "create:water_wheel"
-			title: "建造後勤水車"
+			title: "蓋一座水車"
 			type: "item"
 		}]
-		title: "工程部：後勤動力源"
+		title: "工程部：水車"
 		x: 6.0d
 		y: 0.0d
 	}, {
 		dependencies: ["71B69344193F12C8"]
-		description: ["工程部任務：機械壓力機讓公會能穩定加工金屬板。接上水車與傳動軸後，再把它納入公共工坊。"]
+		description: ["接上水車和傳動軸，機械壓力機就能把金屬壓成板子。把它放進公共工坊，大家都用得到。"]
 		icon: "create:mechanical_press"
 		id: "6CE0EF601D8C7E3D"
 		rewards: [{
@@ -147,15 +147,15 @@
 		tasks: [{
 			id: "51028098F0667F6E"
 			item: "create:mechanical_press"
-			title: "建造公會壓力機"
+			title: "蓋一台壓力機"
 			type: "item"
 		}]
-		title: "工程部：加工能力啟動"
+		title: "工程部：壓力機"
 		x: 7.5d
 		y: 0.0d
 	}, {
 		dependencies: ["6CE0EF601D8C7E3D"]
-		description: ["工程部任務：壓出第一片鐵板，確認旋轉力、傳動與加工流程已串起來。這是第一階段加工線驗收的前置。"]
+		description: ["把鐵錠放進壓力機下面，壓出公會的第一片鐵板。壓出來了，就代表水車、傳動和加工都串起來了。"]
 		icon: "create:iron_sheet"
 		id: "53EDAF1D0D56C217"
 		rewards: [{
@@ -177,15 +177,15 @@
 		tasks: [{
 			id: "76CF00D27B784266"
 			item: "create:iron_sheet"
-			title: "壓製第一片公會鐵板"
+			title: "壓出一片鐵板"
 			type: "item"
 		}]
-		title: "工程部：鐵板試產"
+		title: "工程部：第一片鐵板"
 		x: 9.0d
 		y: 0.0d
 	}, {
 		dependencies: ["53EDAF1D0D56C217"]
-		description: ["加工線驗收：公會已能用 Create 完成基礎金屬加工。這只是 Boss 前後勤標準，不代表工業線已完成。"]
+		description: ["公會已經能用 Create 自己加工金屬了。離真正的工廠還很遠，但至少不用再徒手敲鐵板。"]
 		icon: "create:iron_sheet"
 		id: "2A00000000000008"
 		rewards: [{
@@ -201,15 +201,15 @@
 		}]
 		tasks: [{
 			id: "2A0000000000000B"
-			title: "完成第一階段加工線驗收"
+			title: "通過加工線驗收"
 			type: "checkmark"
 		}]
-		title: "工程部：加工線驗收"
+		title: "加工線驗收"
 		x: 10.5d
 		y: 0.0d
 	}, {
 		dependencies: ["2A00000000000001"]
-		description: ["鍛造部任務：準備第一個討伐令前的基礎防具與箭矢。這不是高階裝備線，只是讓隊伍有最低安全標準。"]
+		description: ["上戰場之前，至少要有一面盾牌和一袋箭。鍛造部不保證你活著回來，只保證你不是空手去。"]
 		icon: "minecraft:shield"
 		id: "2A0000000000000C"
 		rewards: [{
@@ -231,21 +231,21 @@
 		tasks: [{
 			id: "2A00000000000010"
 			item: "minecraft:shield"
-			title: "準備基礎盾牌"
+			title: "準備盾牌"
 			type: "item"
 		}, {
 			count: 16
 			id: "2A00000000000011"
 			item: "minecraft:arrow"
-			title: "準備基礎箭矢"
+			title: "準備箭矢"
 			type: "item"
 		}]
-		title: "鍛造部：基礎裝備"
+		title: "鍛造部：基本裝備"
 		x: 4.5d
 		y: 2.0d
 	}, {
 		dependencies: ["2A00000000000001"]
-		description: ["炊事部任務：討伐前先準備食物、燃料與照明。隊伍不應在戰鬥前才發現火把或食物不足。"]
+		description: ["別等到打 Boss 打到一半才發現肚子餓。麵包、燃料和火把，炊事部都要先看過。"]
 		icon: "minecraft:cooked_beef"
 		id: "2A00000000000012"
 		rewards: [{
@@ -263,27 +263,27 @@
 			count: 6
 			id: "2A00000000000015"
 			item: "minecraft:bread"
-			title: "準備遠征麵包"
+			title: "準備麵包"
 			type: "item"
 		}, {
 			count: 4
 			id: "2A00000000000016"
 			item: "minecraft:coal"
-			title: "準備炊事燃料"
+			title: "準備燃料"
 			type: "item"
 		}, {
 			count: 16
 			id: "2A00000000000017"
 			item: "minecraft:torch"
-			title: "準備照明補給"
+			title: "準備火把"
 			type: "item"
 		}]
-		title: "炊事部：遠征食物"
+		title: "炊事部：遠征便當"
 		x: 4.5d
 		y: 3.2d
 	}, {
 		dependencies: ["2A00000000000001"]
-		description: ["探險部任務：準備偵查紀錄與照明。第一個 Boss Gate 尚未開放，但公會仍需要路線、危險點與返航紀錄。"]
+		description: ["探險部要的是路線圖和紀錄紙。路走過一次要記下來，下一個人才不會掉進同一個洞。"]
 		icon: "minecraft:paper"
 		id: "2A00000000000018"
 		rewards: [{
@@ -301,20 +301,20 @@
 			count: 4
 			id: "2A0000000000001B"
 			item: "minecraft:paper"
-			title: "準備偵查紀錄紙"
+			title: "準備紀錄紙"
 			type: "item"
 		}, {
 			id: "2A0000000000001C"
 			item: "minecraft:filled_map"
-			title: "準備路線地圖"
+			title: "準備一張地圖"
 			type: "item"
 		}]
-		title: "探險部：偵查物資"
+		title: "探險部：偵查紀錄"
 		x: 4.5d
 		y: 4.4d
 	}, {
 		dependencies: ["2A00000000000008", "2A0000000000000C", "2A00000000000012", "2A00000000000018"]
-		description: ["第一討伐令預備完成：工程、鍛造、炊事與偵查基準已達標。下一站是暮色森林。"]
+		description: ["工程、鍛造、炊事、探險都簽名了。討伐部收下了你們的申請，下一站是暮色森林。"]
 		icon: "minecraft:item_frame"
 		id: "2A0000000000001D"
 		rewards: [{
@@ -340,12 +340,12 @@
 		}]
 		tasks: [{
 			id: "2A00000000000020"
-			title: "完成第一討伐令預備"
+			title: "送出討伐申請"
 			type: "checkmark"
 		}]
-		title: "公會：第一討伐令預備完成"
+		title: "四個部門都點頭了"
 		x: 12.0d
 		y: 1.6d
 	}]
-	title: "第 2 章：第一個 Boss 前準備"
+	title: "第 2 章：討伐前準備"
 }

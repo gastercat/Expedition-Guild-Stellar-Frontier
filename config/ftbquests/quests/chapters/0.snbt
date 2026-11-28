@@ -7,7 +7,7 @@
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
-		description: ["歡迎來到 Expedition Guild。這裡不是單人新手村，而是公會遠征隊的出勤櫃台。先完成入職點名、工具確認與補給領取，再出發建立第一個集合點。"]
+		description: ["歡迎入會。這裡沒有人會幫你蓋房子，但會有一群隊友陪你一起犯錯。先點個名，領了補給就出發。"]
 		icon: "minecraft:compass"
 		id: "5323818AFD57B584"
 		rewards: [{
@@ -18,15 +18,15 @@
 		}]
 		tasks: [{
 			id: "05545E3497CBD54C"
-			title: "打開任務書"
+			title: "翻開任務書"
 			type: "checkmark"
 		}]
-		title: "公會入職點名"
+		title: "報到：遠征公會"
 		x: 0.0d
 		y: 0.0d
 	}, {
 		dependencies: ["5323818AFD57B584"]
-		description: ["開啟 JEI，連上公會配方資料庫。先搜尋 Create、Ad Astra 與 Macaw's Furniture，確認工程、星界與建築材料路線；遇到陌生物品時，先查資料庫再回報。"]
+		description: ["看到不認識的東西，先別問隊友，問 JEI。試著搜一下 Create、Ad Astra 和 Macaw's 家具，之後會常用到。"]
 		icon: "minecraft:book"
 		id: "4C2B2C99F742D0A1"
 		rewards: [{
@@ -42,7 +42,7 @@
 		}]
 		tasks: [{
 			id: "09F25811DB8318D4"
-			title: "查閱公會配方資料庫"
+			title: "查一次配方"
 			type: "checkmark"
 		}]
 		title: "公會資料庫：JEI"
@@ -50,7 +50,7 @@
 		y: -0.8d
 	}, {
 		dependencies: ["5323818AFD57B584"]
-		description: ["啟用 Jade 作為現場鑑識工具。看向任意方塊或實體，確認名稱與模組來源；探索、建築與檢查機器時，先辨識目標，再決定拆除、標記或帶回公會。"]
+		description: ["把準心對準任何方塊或生物，Jade 會告訴你它叫什麼、來自哪個模組。拆東西之前先看一眼，可以少挨很多罵。"]
 		icon: "minecraft:spyglass"
 		id: "2F9C47CC7893F1E8"
 		rewards: [{
@@ -66,15 +66,15 @@
 		}]
 		tasks: [{
 			id: "0B5A581FFFC2A61C"
-			title: "完成現場鑑識確認"
+			title: "認出一個東西"
 			type: "checkmark"
 		}]
-		title: "偵查工具：Jade"
+		title: "鑑識眼鏡：Jade"
 		x: 1.5d
 		y: 0.0d
 	}, {
 		dependencies: ["5323818AFD57B584"]
-		description: ["開啟 Xaero's Minimap 或 Xaero's World Map，完成第一份路線圖。遠征隊需要能找到集合點、標記資源、記錄危險區域，並保留回家的路線。"]
+		description: ["打開 Xaero 的小地圖或世界地圖，替集合點、資源和危險地點做記號。最重要的記號只有一個：回家的路。"]
 		icon: "minecraft:map"
 		id: "7D17E7834C36E91D"
 		rewards: [{
@@ -90,15 +90,15 @@
 		}]
 		tasks: [{
 			id: "02B05C0A80AEB5CF"
-			title: "建立第一份遠征路線圖"
+			title: "做出第一個標記"
 			type: "checkmark"
 		}]
-		title: "偵查地圖登記"
+		title: "畫一張路線圖"
 		x: 1.5d
 		y: 0.8d
 	}, {
 		dependencies: ["4C2B2C99F742D0A1", "2F9C47CC7893F1E8", "7D17E7834C36E91D"]
-		description: ["把任務書、JEI、Jade、地圖與公會工具當成標準出勤流程。每次遇到新模組或新設備，先查配方、看來源、標記位置，再用任務書回報進度。"]
+		description: ["公會的出勤習慣：遇到新東西，先查 JEI、再看 Jade、標上地圖，最後回任務書回報。做完這一則，你就是正式成員了。"]
 		icon: "minecraft:writable_book"
 		id: "6A5D13B0E91C4F27"
 		rewards: [{
@@ -119,7 +119,7 @@
 		}]
 		tasks: [{
 			id: "44E7B2C98A0F1D63"
-			title: "完成公會入職手冊"
+			title: "讀完入職手冊"
 			type: "checkmark"
 		}]
 		title: "公會入職手冊"
@@ -127,7 +127,7 @@
 		y: -1.2d
 	}, {
 		dependencies: ["6A5D13B0E91C4F27"]
-		description: ["Waystones 是公會集合與返航的重要工具。放置前先確認位置安全，命名要清楚；多人伺服器中，重要傳送點應寫在公告板或地圖標記裡。這是返航規則確認，不會直接發放傳送石。"]
+		description: ["迷路是遠征隊最常見的死因。Waystones 放在安全的地方、取個大家看得懂的名字，別叫它「這裡」。"]
 		icon: "waystones:waystone"
 		id: "1C7E9A42D0B5F836"
 		rewards: [{
@@ -143,15 +143,15 @@
 		}]
 		tasks: [{
 			id: "7B1A58E36D9C204F"
-			title: "確認公會返航規則"
+			title: "記住返航規則"
 			type: "checkmark"
 		}]
-		title: "返航規則：Waystones"
+		title: "回家的路：Waystones"
 		x: 4.5d
 		y: -1.2d
 	}, {
 		dependencies: ["6A5D13B0E91C4F27"]
-		description: ["使用 FTB Teams 建立或加入公會隊伍，再用 FTB Chunks 宣告基地核心區塊。不要隨意載入過多區塊；多人伺服器要把領地、共享箱與公共機器的使用規則說清楚。"]
+		description: ["用 FTB Teams 組隊，再用 FTB Chunks 圈下本部的核心區塊。地盤圈小一點就好，伺服器會感謝你。共用箱子和機器的規矩，最好一開始就講清楚。"]
 		icon: "minecraft:white_banner"
 		id: "2D4B8F03A6C9175E"
 		rewards: [{
@@ -167,15 +167,15 @@
 		}]
 		tasks: [{
 			id: "35F0C6A7E91D482B"
-			title: "確認隊伍名冊與核心區塊"
+			title: "確認隊伍與地盤"
 			type: "checkmark"
 		}]
-		title: "公會名冊與領地規則"
+		title: "名冊與地盤"
 		x: 4.5d
 		y: 0.0d
 	}, {
 		dependencies: ["6A5D13B0E91C4F27"]
-		description: ["Simple Voice Chat 是遠征通訊頻道。出發前先建立語音群組、調整輸入輸出裝置與音量，避免升空、探索或戰鬥時臨時失聯。"]
+		description: ["Simple Voice Chat 是遠征隊的無線電。出發前先建好語音群組、調好麥克風和音量，不然打 Boss 時只會聽到有人在打字。"]
 		icon: "minecraft:note_block"
 		id: "55E2A7F64C9130BD"
 		rewards: [{
@@ -191,15 +191,15 @@
 		}]
 		tasks: [{
 			id: "638D2F1A0B4C75E9"
-			title: "完成遠征通訊檢查"
+			title: "完成通訊檢查"
 			type: "checkmark"
 		}]
-		title: "遠征通訊檢查"
+		title: "通訊檢查：喂喂？"
 		x: 4.5d
 		y: 1.2d
 	}, {
 		dependencies: ["1C7E9A42D0B5F836", "2D4B8F03A6C9175E", "55E2A7F64C9130BD"]
-		description: ["本包採小步驟驗證。v0.8.x 技術基線為 Minecraft 1.20.1、Forge 47.4.10、Create 1.20.1-6.0.8 與 Ad Astra 1.20.1-1.15.20。遇到效能問題時，先降低視距、關閉高負載畫面設定，並保留 latest.log。"]
+		description: ["電腦開始喘的時候，先把視距調低、關掉吃效能的畫面設定。真的閃退了，記得把 latest.log 留下來給公會，它比你的描述更誠實。"]
 		icon: "minecraft:anvil"
 		id: "7290E4C35B8A16FD"
 		rewards: [{
@@ -215,15 +215,15 @@
 		}]
 		tasks: [{
 			id: "0D95B8E41A6C3F72"
-			title: "確認 v0.8.x 技術基線"
+			title: "記下效能小撇步"
 			type: "checkmark"
 		}]
-		title: "v0.8.x 技術基線確認"
+		title: "工程部的電腦小叮嚀"
 		x: 6.0d
 		y: 0.0d
 	}, {
 		dependencies: ["7290E4C35B8A16FD"]
-		description: ["領取第一批公會補給，準備食物、火把與臨時集合物資。這些只支援第一晚與第一個集合點，不會跳過後續 Create 後勤或星界工程進度。"]
+		description: ["帶上照明和口糧，櫃台會再補一點集合用的物資，夠你們撐過第一晚。之後的物資，得靠工程部自己生出來。"]
 		icon: "minecraft:torch"
 		id: "32D617E88A77E20B"
 		rewards: [{
@@ -256,16 +256,16 @@
 			count: 8
 			id: "19F07E93324B405E"
 			item: "minecraft:torch"
-			title: "攜帶集合點照明"
+			title: "帶上照明"
 			type: "item"
 		}, {
 			count: 2
 			id: "55063EE9C750BF49"
 			item: "minecraft:bread"
-			title: "攜帶出勤口糧"
+			title: "帶上口糧"
 			type: "item"
 		}]
-		title: "領取公會出勤補給"
+		title: "第一晚的補給"
 		x: 3.0d
 		y: 0.0d
 	}]
