@@ -59,3 +59,16 @@ rewards: [{
 | v0.7.3-alpha | 5 | rotten_flesh／bone／spider_eye／paper 樣本 + zombie／skeleton／spider kill tasks → `eg.chapter.5.calamity_foreshadowing` → `eg.gate.calamity_reported` |
 
 這些都是 FTB Quests 任務層的 MVP gate，不是 wave、raid、Guild Threat、Dragon Disaster 或裝備鎖系統。各版本的完整說明見 [`docs/releases/`](../releases/INDEX.md)。
+
+## KubeJS 呼叫原版方法的陷阱
+
+遊戲內已確認（2026-11-29，kubejs-forge-2001.6.5、rhino-forge-2001.2.3）：在 `ForgeEvents.onEvent` 的 handler 裡呼叫原版 `DamageSource#getMsgId()`，執行時會丟出 `TypeError: Cannot find function getMsgId`。Forge event listener 裡沒有被攔下的例外會讓 server 直接 crash。
+
+規則：
+
+- KubeJS 自己的方法（`player.stages`、`getProfile()`、`getServer()`、`isPlayer()`、`runCommandSilent`）可以直接用。
+- 原版 Minecraft 類別的方法改用 1.20.1 的 SRG 名稱呼叫，例如 `DamageSource#getMsgId` → `m_19385_`、`#getEntity` → `m_7639_`。SRG 名稱可以用 Prism 的 `client-1.20.1-*-mappings.txt`（Mojang → 混淆）對照 `mcp_config-1.20.1-*-mappings-merged.txt`（混淆 → SRG）查到。
+- Forge 類別（例如 `LivingHurtEvent`）沒有混淆，方法名稱照原樣用。
+- Forge event handler 一律整段包進 `try/catch`，出錯時只寫 log。
+
+SRG 名稱這個做法本身還需要遊戲內確認，確認後把這一段的「規則」改成已驗證。

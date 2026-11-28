@@ -58,7 +58,7 @@ hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
 
 [[files]]
 file = "kubejs/server_scripts/eg_classes.js"
-hash = "9baea55cff1a68d39092fba4dc5d01aa7fe10b6299a21bf9b843e8a3a72cf9da"
+hash = "f2759a341ea8b0077060f988b803744cdade40ceb272f2be7c5e2239dcb4fb60"
 
 [[files]]
 file = "kubejs/server_scripts/eg_stages.js"
@@ -66,7 +66,7 @@ hash = "e4c839ec9ce84475bee61cef53e3e3e1b3cfe5cb387559501c1a7b99e90d0578"
 
 [[files]]
 file = "kubejs/startup_scripts/eg_gunner_damage.js"
-hash = "e140e09d07fea4431eed263bbd063bf5b5c825f01c84c4b995d1155b4d544da5"
+hash = "6e1a2a9b40661dc658f934abaa35135e98b7b20911f25258c70ffd7d27b4a81b"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
