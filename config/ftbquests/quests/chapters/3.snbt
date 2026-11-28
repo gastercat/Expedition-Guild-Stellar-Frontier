@@ -7,7 +7,7 @@
 	order_index: 3
 	quest_links: [ ]
 	quests: [{
-		description: ["公會公告：第一討伐令的目標是暮色森林的 Naga。完成作戰演習與補給確認後，公會會發給傳送門用的鑽石。Naga 守在暮色森林中被樹籬圍起的庭院裡，建議全隊一起出發。"]
+		description: ["目標：Naga，一條守在暮色森林樹籬庭院裡的巨蛇。演習與補給都確認後，公會會發給你們開門的鑽石。別一個人去。"]
 		icon: "minecraft:paper"
 		id: "3A00000000000001"
 		rewards: [{
@@ -18,15 +18,15 @@
 		}]
 		tasks: [{
 			id: "3A00000000000003"
-			title: "閱讀第一討伐令占位公告"
+			title: "接下討伐令"
 			type: "checkmark"
 		}]
-		title: "公會公告：第一討伐令占位"
+		title: "第一討伐令"
 		x: 0.0d
 		y: 0.0d
 	}, {
 		dependencies: ["3A00000000000001"]
-		description: ["Vanguard 演習：Naga 會衝撞並纏繞目標，前鋒要頂在前面吸引牠的注意，讓 Gunner 從側面輸出。"]
+		description: ["Naga 會衝撞、會纏人。前鋒要站在最前面吸引牠，讓銃士有機會從側面出手。"]
 		icon: "minecraft:shield"
 		id: "3A00000000000004"
 		rewards: [{
@@ -43,15 +43,15 @@
 		tasks: [{
 			id: "3A00000000000007"
 			item: "minecraft:shield"
-			title: "準備近身破盾盾牌"
+			title: "帶上一面盾牌"
 			type: "item"
 		}]
-		title: "Vanguard：近身破盾演習"
+		title: "前鋒演習：頂住"
 		x: 1.5d
 		y: -1.2d
 	}, {
 		dependencies: ["3A00000000000001"]
-		description: ["Gunner 演習：Naga 移動很快、身體很長，保持距離並帶足箭矢，從前鋒的側面輸出。"]
+		description: ["Naga 很快，身體又長。保持距離、箭帶足，從前鋒的側面射牠。"]
 		icon: "minecraft:bow"
 		id: "3A00000000000008"
 		rewards: [{
@@ -68,21 +68,21 @@
 		tasks: [{
 			id: "3A0000000000000B"
 			item: "minecraft:bow"
-			title: "準備遠程壓制武器"
+			title: "帶上一把弓"
 			type: "item"
 		}, {
 			count: 16
 			id: "3A0000000000000C"
 			item: "minecraft:arrow"
-			title: "準備壓制箭矢"
+			title: "帶上 16 支箭"
 			type: "item"
 		}]
-		title: "Gunner：遠程壓制演習"
+		title: "銃士演習：拉開距離"
 		x: 1.5d
 		y: 0.0d
 	}, {
 		dependencies: ["3A00000000000001"]
-		description: ["工程部演習：討伐不是只靠輸出，也需要補給箱、照明、返航點與撤退路線。這是討伐前後勤補給演習，不是自動化產線驗收。"]
+		description: ["討伐不只是衝進去打，還要想好怎麼回來。補給箱、照明、回程的食物和燃料，出發前就準備好。"]
 		icon: "minecraft:chest"
 		id: "6482124F53E14EF8"
 		rewards: [{
@@ -104,47 +104,47 @@
 		tasks: [{
 			id: "20BFB1F21F4B504A"
 			item: "minecraft:chest"
-			title: "準備討伐補給箱"
+			title: "準備補給箱"
 			type: "item"
 		}, {
 			count: 16
 			id: "3A00000000000016"
 			item: "minecraft:torch"
-			title: "準備討伐照明"
+			title: "準備照明"
 			type: "item"
 		}, {
 			count: 4
 			id: "3A00000000000017"
 			item: "minecraft:bread"
-			title: "準備撤退補給"
+			title: "準備回程口糧"
 			type: "item"
 		}, {
 			count: 4
 			id: "3A00000000000018"
 			item: "minecraft:coal"
-			title: "準備補給燃料"
+			title: "準備燃料"
 			type: "item"
 		}]
-		title: "工程部：補給箱與返航點確認"
+		title: "工程部：撤退計畫"
 		x: 3.0d
 		y: 0.0d
 	}, {
 		dependencies: ["3A00000000000004", "3A00000000000008"]
 		dependency_requirement: "one_completed"
-		description: ["隊伍中至少完成一項職業演習即可。"]
+		description: ["隊上只要有人完成一項職業演習，這一則就能打勾。"]
 		icon: "minecraft:target"
 		id: "EE00000000000301"
 		tasks: [{
 			id: "EE00000000000302"
-			title: "確認作戰演習"
+			title: "確認演習"
 			type: "checkmark"
 		}]
-		title: "作戰演習完成"
+		title: "演習完成"
 		x: 3.0d
 		y: -0.6d
 	}, {
 		dependencies: ["EE00000000000301", "6482124F53E14EF8"]
-		description: ["第一討伐令：預備核准。公會發給一顆鑽石：在 2×2 的水池四周種滿花，把鑽石丟進水裡，就會開啟通往暮色森林的傳送門。"]
+		description: ["這顆鑽石是門票。挖一個 2×2 的水池，四周種滿花，把鑽石丟進水裡，傳送門就會打開。"]
 		icon: "minecraft:item_frame"
 		id: "EE00000000000306"
 		rewards: [{
@@ -165,15 +165,15 @@
 		}]
 		tasks: [{
 			id: "EE00000000000307"
-			title: "取得第一討伐令預備核准"
+			title: "領取門票"
 			type: "checkmark"
 		}]
-		title: "公會：第一討伐令預備核准"
+		title: "通往暮色森林"
 		x: 4.5d
 		y: 0.0d
 	}, {
 		dependencies: ["EE00000000000306"]
-		description: ["第一討伐令：在暮色森林擊敗 Naga。隊伍中任何一人完成擊殺，全隊都算完成。"]
+		description: ["前鋒頂住牠的衝撞，銃士從側面射。只要隊上有人給出最後一擊，整隊都算完成，回來記得領賞。"]
 		icon: "twilightforest:naga_scale"
 		id: "3C00000000000001"
 		rewards: [{
@@ -195,11 +195,11 @@
 		tasks: [{
 			entity: "twilightforest:naga"
 			id: "3C00000000000002"
-			title: "擊敗第一討伐目標：Naga"
+			title: "擊敗 Naga"
 			type: "kill"
 			value: 1L
 		}]
-		title: "第一討伐令：Naga"
+		title: "討伐：Naga"
 		x: 6.0d
 		y: 0.0d
 	}]

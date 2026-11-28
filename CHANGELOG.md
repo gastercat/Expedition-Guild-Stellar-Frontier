@@ -4,6 +4,7 @@ This changelog is a short project overview. Full release notes are organized in 
 
 ## Unreleased
 
+- 改寫 Ch0–3 全部 43 則任務的標題、描述與小任務標題：改用公會職員對玩家說話的口吻，移除「占位」「尚未實作」等開發者用語，遊戲資訊（任務條件、獎勵、傳送門做法、職業加成）不變。
 - Ch0–3 垂直切片：兩職業（Vanguard／Gunner）登記後取得起始裝備與被動加成（`kubejs/server_scripts/eg_classes.js`、`kubejs/startup_scripts/eg_gunner_damage.js`），職業互斥由 KubeJS 保證；第一個 Boss 改為 Twilight Forest 的 Naga，公會發給開傳送門用的鑽石；Arcanist 暫時移出；Ch4–11 標題加上【預告】。修正 Ch1 驗收要求三職業全部完成、Ch3 與 Ch7 共用 quest ID 的問題。
 - 精簡治理層：移除 AOCI 認知索引、`docs/collaboration/` 的流程文件（保留 `VERIFIED_FORMATS.md`）、task files、`/merge-prep` skill、merge-sync reminder workflow、`docs/archive/quest-backups/` 與 `docs/archive/agent-guides/`；重寫 `AGENTS.md`、`PROGRESS.md`、PR template 與 `docs/operations/PROJECT_STRUCTURE.md`。CI 通過且 Project Maintainer 在對話中同意時，Agent 可以代為 merge PR。
 - 新增 Pack CI：packwiz index 檢查、`scripts/` 驗證、`.mrpack` export 與 dedicated server smoke test；每個 PR 都能下載 `.mrpack` artifact 測試（PR #10）。
