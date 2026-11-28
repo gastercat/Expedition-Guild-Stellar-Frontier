@@ -38,7 +38,7 @@ Do Not Use For: 當前實作真相、已核准的實作範圍，或已確認的 
 
 - 玩家（或公會）已完成至少一次火箭發射並抵達外星世界——這是既有 Ad Astra 進度，不是新系統。
 - 武器本身已在武器記憶系統的可追蹤清單內（提案使用 `#egsf:trackable_weapons` tag，這個 tag 與武器記憶系統目前都尚未建立）。
-- Stage 2 版本額外依賴：Celestisynth mod 提供的 Solar Crystal（見第 6 節），這個 mod 目前不在本模組包內，加入前要先走 `RUNTIME_MODS` 任務。
+- Stage 2 版本額外依賴：Celestisynth mod 提供的 Solar Crystal（見第 6 節），這個 mod 目前不在本模組包內，加入前要先另外評估並通過 server smoke test。
 - Stage 2 不依賴星界前哨站評級系統（見第 9 節決策 2），兩個系統可以分開排程。
 
 ## 4. Stage 1：MVP 純任務版本（建議優先做這版）
@@ -124,7 +124,7 @@ Stage 2 不要求星界前哨站評級達標，所以兩個系統可以分開開
 
 ### 決策 3：材料改用 Celestisynth 的 Solar Crystal
 
-詳見第 6 節。加入 Celestisynth 要新增 Celestisynth 與 playerAnimator 兩個 mod，屬於 `RUNTIME_MODS` 任務，要先通過 server smoke test 與 client runtime 測試。Solar Crystal 保留 Celestisynth 原本的 Nether 生成，不搬到外星球。
+詳見第 6 節。加入 Celestisynth 要新增 Celestisynth 與 playerAnimator 兩個 mod，要先通過 server smoke test 與 client runtime 測試。Solar Crystal 保留 Celestisynth 原本的 Nether 生成，不搬到外星球。
 
 ### 決策 4：先只限武器
 
@@ -141,7 +141,7 @@ Stage 2 不要求星界前哨站評級達標，所以兩個系統可以分開開
 
 - 現在（本次規劃）：只確認機制定義與決策，不寫任何 KubeJS，不新增材料，不新增裝置。
 - Stage 1 上線時：只做維度任務 + item 任務 + command reward，不碰 NBT。進度鎖若在 Stage 1 就實作，要另外開任務，因為它會修改 Ad Astra 的火箭配方。
-- Stage 2 之前必須先有：武器記憶 Stage A 已穩定、Celestisynth 已通過 `RUNTIME_MODS` 任務加入本模組包。
+- Stage 2 之前必須先有：武器記憶 Stage A 已穩定、Celestisynth 已加入本模組包並通過測試。
 - 不要在 Stage 1、2 都還沒做的情況下，先把公會兵裝進化的「星界灌注觸發進化」連結做出來——那是第 8 節提到的未來可選項，不是這次範圍。
 
 ## 12. 未來用途

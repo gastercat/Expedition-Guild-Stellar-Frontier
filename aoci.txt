@@ -1,7 +1,0 @@
-#AOCI-ROOT-MANIFEST: 1
-#Format-Version: cognition-volumes/v1
-#Locale: en-US
-#Project: packwiz-managed Minecraft 1.20.1 Forge modpack: a multiplayer expedition-guild campaign driven by FTB Quests chapters 0-11 and GameStages rewards, plus agent governance docs and CI
-#Global-Invariants: Agents never push to or merge into main; CI or server smoke evidence is never client runtime PASS; config/, kubejs/, mods/, index.toml, pack.toml and docs/releases/ change only when the authorization allowlist names them; any packed-file change needs packwiz refresh and non-pack files must be in .packwizignore; quest, KubeJS, GameStages and packwiz syntax must come from VERIFIED_FORMATS.md or a cited source; packwiz metadata outranks every doc
-#Volume: id=meta kind=meta path=aoci.meta.txt format=meta-v1 depends=- state=enabled
-#Volume: id=code kind=code path=aoci.code.txt format=object-fras-v2 depends=meta state=enabled

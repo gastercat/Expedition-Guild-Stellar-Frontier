@@ -1,8 +1,6 @@
 # 已驗證格式（Verified Formats）
 
-本文件收錄已經由 Repo diff、既有檔案或遊戲內測試證實可用的格式。Agent 撰寫 FTB Quests、KubeJS、GameStages 相關內容時，優先使用這裡或既有檔案中出現過的格式；使用新語法時，依 [`EXECUTION_GUIDE.md`](EXECUTION_GUIDE.md) 的「第一次使用新語法」流程查證來源、通過測試，再補進本文件。
-
-內容移自舊版 `SKILL.md` 的 Verified Formats 一節（原文見 [`docs/archive/agent-guides/SKILL.md`](../archive/agent-guides/SKILL.md)）。
+本文件收錄已經由 Repo diff、既有檔案或遊戲內測試證實可用的格式。Agent 撰寫 FTB Quests、KubeJS、GameStages 相關內容時，優先使用這裡或既有檔案中出現過的格式；第一次使用的新語法，在 PR 中註明來源（官方文件或 mod 原始碼），在遊戲裡確認可用後再補進本文件。
 
 ## GameStages command root
 
