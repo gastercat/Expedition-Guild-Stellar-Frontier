@@ -7,7 +7,7 @@
 	order_index: 2
 	quest_links: [ ]
 	quests: [{
-		description: ["公會公告：本章目標是為第一個 Boss Gate 建立後勤、裝備、補給與偵查基準。真正 Boss Gate 尚未實作，後續會由 KubeJS、GameStages 與 Boss 模組補上正式解鎖。"]
+		description: ["公會公告：本章為第一討伐令建立後勤、裝備、補給與偵查基準。完成後，第 3 章會帶隊伍進入暮色森林討伐 Naga。"]
 		icon: "minecraft:white_banner"
 		id: "2A00000000000001"
 		rewards: [{
@@ -314,7 +314,7 @@
 		y: 4.4d
 	}, {
 		dependencies: ["2A00000000000008", "2A0000000000000C", "2A00000000000012", "2A00000000000018"]
-		description: ["第一討伐令預備完成：工程、鍛造、炊事與偵查基準已達標。真正 Boss Gate 會在後續 KubeJS、GameStages 與 Boss 模組加入後實作；目前這是公會認證占位。"]
+		description: ["第一討伐令預備完成：工程、鍛造、炊事與偵查基準已達標。下一站是暮色森林。"]
 		icon: "minecraft:item_frame"
 		id: "2A0000000000001D"
 		rewards: [{
@@ -343,7 +343,7 @@
 			title: "完成第一討伐令預備"
 			type: "checkmark"
 		}]
-		title: "公會：Boss Gate 預告"
+		title: "公會：第一討伐令預備完成"
 		x: 12.0d
 		y: 1.6d
 	}]

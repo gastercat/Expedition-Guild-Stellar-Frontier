@@ -10,55 +10,63 @@ hash = "e322476487279840e957e00f2a0413c4f3d34c122d42ccb3f47130afdf3329c6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1.snbt"
-hash = "d254d374d9e96ae53e8723265c13ccab36bd8639a959327c639b3cebb7698d72"
+hash = "2d00700fb34a635322b0d42f19788ea9eef989fe66a92d971e116f691d229f64"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10.snbt"
-hash = "4c5384354f65d310b4a3d8691259467463ea09a9c33e6d0f3f732b88b5724cca"
+hash = "d3904f563084efdc8782825af5f905e17dac3c9eda2aa494054b6d8b87cb10b1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/11.snbt"
-hash = "8b3ce6260387f1b44c6d7977bdc01fb16a8c550cc46787ac07288e75a0d8fb20"
+hash = "b5dfadd1c98f7b588e6e9d5267c135df0a43c7aa3420cfe66e98d9d1f8ddd767"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2.snbt"
-hash = "bac937ebfbf22cad0a8a2f27126523e69b50be9777e9d3435bcf0ed4e45a0003"
+hash = "12f8a6eddd8ca52063220229aa6434390e436c27aadceefd1c3619c4ad12cab3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3.snbt"
-hash = "7dab776b1e763fe671b966ed574161c2f5449e74b70c9f754260a2439658caae"
+hash = "ae2370fb5c3eeee6d58511a804e9640c3cddbc8a1b66c5e0e4c0975b20edeb92"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4.snbt"
-hash = "47ed1f9943b91d99ec112d3f91e0555d863d429f223a7e48a3cbdd5c9346007c"
+hash = "0042397990df5d28791701ae32bd864f21d6000a838ce4e422d9e6ece209e2b4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5.snbt"
-hash = "73c82b89a08b910d3d32aa600982e93f248c53486eaa220989c6a27d59baaf4c"
+hash = "1dac687a17b3610ed488e4353e7f5b94cf0f25bf14657e12cd8cdf7cf54c7448"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6.snbt"
-hash = "8e86ecbc98725fd2ac4d0c9296e796afb05d855d298f373d47a6381d8e382579"
+hash = "f42e77e67158f7f29f645dd5b8d2e570b5ce68f338b35a0a478720ed2ed24098"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/7.snbt"
-hash = "48abb5687d9ba2b010e6ef11414302a79958767465e7a56e414bade6409e7614"
+hash = "69ede1bb17364837126e3df4983bdbd4646f7d674ac48b5cab124e964738ff5c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/8.snbt"
-hash = "1e01460ee04d84dc933efc7b5ecdf94e65042a19b08d30dd27be1a6aa8e6cbd4"
+hash = "071645f67f9d57d126ad65cf129329ee28acdcdc2a5647330b925ce5c8c4db66"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/9.snbt"
-hash = "3544c608f5caa7357b7c53ac58a876ee3fbfd6a56a1d6143f62b78ecbd31e8ba"
+hash = "21ca16659acb64f1a7b3375f36879586892a15c2688ede6f721667ca66eaeeae"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
 
 [[files]]
+file = "kubejs/server_scripts/eg_classes.js"
+hash = "9baea55cff1a68d39092fba4dc5d01aa7fe10b6299a21bf9b843e8a3a72cf9da"
+
+[[files]]
 file = "kubejs/server_scripts/eg_stages.js"
-hash = "ab1779eb30eeb75612f67df137cd755908661dddac9f78e37451e3c89bba57b4"
+hash = "e4c839ec9ce84475bee61cef53e3e3e1b3cfe5cb387559501c1a7b99e90d0578"
+
+[[files]]
+file = "kubejs/startup_scripts/eg_gunner_damage.js"
+hash = "e140e09d07fea4431eed263bbd063bf5b5c825f01c84c4b995d1155b4d544da5"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
