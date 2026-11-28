@@ -52,10 +52,22 @@ function modifierUuid(key) {
   return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20, 32)}`
 }
 
+// Vanilla methods are called by their 1.20.1 SRG names, because KubeJS does
+// not reliably remap them (see startup_scripts/eg_gunner_damage.js):
+//   LivingEntity#getHealth -> m_21223_, #getMaxHealth -> m_21233_, #setHealth -> m_21153_
+// getProfile(), getServer() and stages are KubeJS helpers.
 function syncClassBonuses(player) {
+  try {
+    applyClassBonuses(player)
+  } catch (e) {
+    console.error(`[Expedition Guild] Failed to sync class bonuses: ${e}`)
+  }
+}
+
+function applyClassBonuses(player) {
   const server = player.getServer()
   if (!server) return
-  const name = player.getGameProfile().getName()
+  const name = player.getProfile().getName()
 
   CLASS_STAGES.forEach(stage => {
     const bonuses = CLASS_BONUSES[stage] || []
@@ -71,7 +83,8 @@ function syncClassBonuses(player) {
   })
 
   // Removing a max_health bonus can leave health above the new maximum.
-  if (player.getHealth() > player.getMaxHealth()) player.setHealth(player.getMaxHealth())
+  const maxHealth = player.m_21233_()
+  if (player.m_21223_() > maxHealth) player.m_21153_(maxHealth)
 }
 
 GameStageEvents.stageAdded(event => {
