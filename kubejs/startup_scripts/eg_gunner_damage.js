@@ -5,12 +5,16 @@
 // scripts, so this lives here instead of server_scripts/eg_classes.js.
 // Changing this file needs a full game restart; /reload does not apply it.
 //
-// Method names: in game, source.getMsgId() was not found inside this raw
-// Forge event and crashed the server. callVanilla() tries the Mojang name
-// first and falls back to the 1.20.1 SRG name (resolved from Mojang's
-// client-1.20.1 mappings and mcp_config-1.20.1):
-//   DamageSource#getMsgId -> m_19385_
-//   DamageSource#getEntity -> m_7639_
+// What was confirmed in game (kubejs-forge-2001.6.5, rhino-forge-2001.2.3):
+// inside this raw Forge event, DamageSource exposes neither getMsgId() nor its
+// SRG name m_19385_. Its toString() does work and prints
+// "DamageSource (<msgId>)", e.g. "DamageSource (inWall)", so the damage type
+// is read from that string. java.lang.Object#toString is never obfuscated.
+//
+// For the attacker, getEntity() is tried with its SRG fallback m_7639_. The
+// first hurt event logs which DamageSource members are visible, so the next
+// test tells us whether that works.
+//
 // LivingHurtEvent is a Forge class, so getSource/getAmount/setAmount keep
 // their names; isPlayer() and stages are KubeJS helpers.
 //
@@ -23,22 +27,45 @@
 
 const GUNNER_ARROW_MULTIPLIER = 1.25
 let gunnerErrorLogged = false
+let gunnerProbeLogged = false
+let gunnerHitLogged = false
 
-function callVanilla(obj, mojangName, srgName) {
-  if (typeof obj[mojangName] === 'function') return obj[mojangName]()
-  if (typeof obj[srgName] === 'function') return obj[srgName]()
-  throw new Error(`no ${mojangName}/${srgName} on ${obj}`)
+function damageTypeOf(source) {
+  const match = /^DamageSource \((.+)\)$/.exec(String(source))
+  return match ? match[1] : null
+}
+
+function attackerOf(source) {
+  if (typeof source.getEntity === 'function') return source.getEntity()
+  if (typeof source.m_7639_ === 'function') return source.m_7639_()
+  throw new Error(`no getEntity/m_7639_ on ${source}`)
+}
+
+function probeOnce(source) {
+  if (gunnerProbeLogged) return
+  gunnerProbeLogged = true
+  console.info(
+    `[Expedition Guild] DamageSource probe: toString=${String(source)}, ` +
+    `getEntity=${typeof source.getEntity}, m_7639_=${typeof source.m_7639_}, ` +
+    `getMsgId=${typeof source.getMsgId}, m_19385_=${typeof source.m_19385_}`
+  )
 }
 
 function applyGunnerBonus(event) {
   const source = event.getSource()
-  if (callVanilla(source, 'getMsgId', 'm_19385_') !== 'arrow') return
+  probeOnce(source)
+  if (damageTypeOf(source) !== 'arrow') return
 
-  const attacker = callVanilla(source, 'getEntity', 'm_7639_')
+  const attacker = attackerOf(source)
   if (!attacker || !attacker.isPlayer()) return
   if (!attacker.stages.has('eg.class.gunner')) return
 
-  event.setAmount(event.getAmount() * GUNNER_ARROW_MULTIPLIER)
+  const before = event.getAmount()
+  event.setAmount(before * GUNNER_ARROW_MULTIPLIER)
+  if (!gunnerHitLogged) {
+    gunnerHitLogged = true
+    console.info(`[Expedition Guild] Gunner arrow bonus applied: ${before} -> ${event.getAmount()}`)
+  }
 }
 
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', event => {

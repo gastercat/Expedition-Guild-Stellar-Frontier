@@ -66,7 +66,7 @@ hash = "e4c839ec9ce84475bee61cef53e3e3e1b3cfe5cb387559501c1a7b99e90d0578"
 
 [[files]]
 file = "kubejs/startup_scripts/eg_gunner_damage.js"
-hash = "21db900b2a11522a8f566ce0775afd53e91b14c3256b33533e0ac9d0f1b3b620"
+hash = "d796094675524d3dd298ba325988209b0827cc8db975fd39822633548a1a387a"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
